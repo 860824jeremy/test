@@ -1,0 +1,45 @@
+.header {
+		padding: 40px;
+		font-family:verdana;
+		background-color:#E5E5E5  ;
+		font-weight: 700;
+		text-align: center;
+
+
+
+
+
+		/*margin-left: 300px;
+		color: maroon;
+		*/
+		
+	}
+.header .logo{
+	position: absolute;
+	top: 20px;
+	position:relative;
+
+}
+
+.header a
+{
+	text-decoration: none;
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	color:inherit;
+}
+.content{
+	border-top:1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+}
+.content div{
+	padding: 90px 0 50px 0;
+}
+.footer{
+		background-color: #E5E5E5 ;
+	
+		text-align:center;
+		font-size:12px;
+		padding:15px;
+	}
