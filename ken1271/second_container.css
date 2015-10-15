@@ -1,14 +1,17 @@
 #second_container{
 	clear: right;
-	margin-left: 50px 92px;
 }
 #second_container div{
 	float:left;
-	width: 1000px;
-	padding:100px;
+	margin: auto;
 }
 #second_container div div{
 	float: left;
 	width: 350px;
 	padding:0 30px;
+	display: inline-block;
+}
+#second_container div div span{
+	display: block;
+
 }

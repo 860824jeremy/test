@@ -1,9 +1,11 @@
 #header{
 	background-color: #EEE;
 	background-bottom:1px solid black;
-	padding:27px;
 }
-#header div{
+#header>div{
+	text-align: center;
+}
+#header>div>div{
 	margin:0 20px 0 100px; 
 	float: left; 
 	position: relative;
@@ -12,10 +14,11 @@
 	display: inline-block;
 	background-color: #EEE;
 	padding:50px;
+	margin:0;
 }
 #header ul li{
 	background-color: #EEE;
-	float: left;
+	float: right;
 	width: 120px;
 	text-align: center;
 	position: relative;

@@ -3,7 +3,10 @@
 	background-color: #EEE;
 
 }
-#footer  div{
+#footer >div{
+	margin: auto;
+}
+#footer >div>div{
 	float:left;
 	margin: 0 100px;
 }
