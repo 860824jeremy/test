@@ -9,7 +9,11 @@
   </head>
    <body>
       <div id="header">
-      	<div><img src="">Zero Type</div>
+      	<div>
+                              <a href="first_template.html">
+                                    <img src="zerotype.png">
+                              </a>
+                        </div>
       	<ul type="none">
       		<li><a href="">Home</a></li>
       		<li><a href="">Features</a></li>
@@ -36,12 +40,12 @@
       <div id="second_container">
       	<div>
       		<h1>This is just a place holder</h1>
-      		<div>
+      		<div class="divfloat">
       			<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. </p>
       			<p>This is just a place holder, so you can see what the site would look like. </p>
       			<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. This is just a place holder, so you can see what the site would look like. </p>
       		</div>
-      		<div>
+      		<div class="divfloat">
       			<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. </p>
       			<p>This is just a place holder, so you can see what the site would look like. </p>
       			<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. This is just a place holder, so you can see what the site would look like. </p>
@@ -50,10 +54,12 @@
       </div>
       <div id="footer">
       	<span>
-      		<a width="20" href="http://freewebsitetemplates.com/go/googleplus/">google+</a>
-      		<a width="20" href="http://freewebsitetemplates.com/go/facebook/">facebook</a>
-      		<a width="20" href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
-      		<a width="20" href="http://pinterest.com/fwtemplates/">P</a>
+      		<a width="20" href="http://freewebsitetemplates.com/go/googleplus/">
+                                                      <img src="facebook.png">
+                                                </a>
+      		<a width="20" href="http://freewebsitetemplates.com/go/facebook/"><img src="googleplus.png"></a>
+      		<a width="20" href="http://freewebsitetemplates.com/go/twitter/"><img src="twitter.png"></a>
+      		<a width="20" href="http://pinterest.com/fwtemplates/"><img src="p.png"></a>
       	</span>
       	<div>
       		<p>© 2023 Zerotype. All Rights Reserved.</p>

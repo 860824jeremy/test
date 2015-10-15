@@ -4,14 +4,19 @@
 	padding:27px;
 }
 #header div{
+	margin:0 20px 0 100px; 
 	float: left; 
+	position: relative;
 }
 #header ul{
 	display: inline-block;
+	background-color: #EEE;
+	padding:50px;
 }
 #header ul li{
+	background-color: #EEE;
 	float: left;
-	width: 160px;
+	width: 120px;
 	text-align: center;
 	position: relative;
 }
