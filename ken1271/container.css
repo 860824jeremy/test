@@ -1,0 +1,18 @@
+#container{
+	clear: both;
+}
+#container div{
+	width: 800px;
+	margin:0 60px;
+	padding:27px;
+}
+#container div img{
+	float: right;
+	margin-left: 60px;
+}
+#container div div span{
+	display: block;
+}
+#centainer div div span b{
+	display: block;
+}

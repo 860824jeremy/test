@@ -1,0 +1,15 @@
+#footer{
+	clear:left;
+	background-color: #EEE;
+
+}
+#footer  div{
+	float:left;
+	margin: 0 100px;
+}
+#footer span{
+	display: inline-block;
+	padding: 20px 20px 20px 30px;
+	position: relative;
+	left: 300px;
+}
