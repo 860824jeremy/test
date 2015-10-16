@@ -5,6 +5,7 @@
  	<link rel="stylesheet" type="text/css" href="container.css">
  	<link rel="stylesheet" type="text/css" href="second_container.css">
  	<link rel="stylesheet" type="text/css" href="footer.css">
+                        <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
    <body>
@@ -12,7 +13,7 @@
             <div >
       	<div>
                               <a href="first_template">
-                                    <img src="zerotype.png">
+                                    <img src="pic/zerotype.png">
                               </a>
                         </div>
       	<ul type="none">
@@ -26,14 +27,14 @@
       </div>
       <div id="container">
       	<div>
-      		<img width="200" height="200" alt="img" src="https://www.freewebsitetemplates.com/preview/zerotype/images/box.png">
+      		<img width="250" height="250" alt="img" src="https://www.freewebsitetemplates.com/preview/zerotype/images/box.png">
 	      	<div>
 	      		<h1>Idea?</h1>
 	      		<h2>This is just a place holder.</h2>
 	      		<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. 
 	      			<span>
 	      				<a href="">
-                                                                                                                              <img src="button.png">
+                                                                                                                              <img src="pic/button.png">
                                                                                                                         </a>
 	      				<b style="display:block;">Don't worry, it's free</b>
 	      			</span>
@@ -43,7 +44,7 @@
       </div>
       <div id="second_container">
       	<div>
-      		<h1>This is just a place holder</h1>
+      		<h1 style ="padding : 0 30px;">This is just a place holder.</h1>
       		<div class="divfloat">
       			<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. </p>
       			<p>This is just a place holder, so you can see what the site would look like. </p>
@@ -60,11 +61,11 @@
             <div>
       	<span>
       		<a width="20" href="http://freewebsitetemplates.com/go/googleplus/">
-                                                      <img src="facebook.png">
+                                                      <img src="pic/facebook.png">
                                                 </a>
-      		<a width="20" href="http://freewebsitetemplates.com/go/facebook/"><img src="googleplus.png"></a>
-      		<a width="20" href="http://freewebsitetemplates.com/go/twitter/"><img src="twitter.png"></a>
-      		<a width="20" href="http://pinterest.com/fwtemplates/"><img src="p.png"></a>
+      		<a width="20" href="http://freewebsitetemplates.com/go/facebook/"><img src="pic/googleplus.png"></a>
+      		<a width="20" href="http://freewebsitetemplates.com/go/twitter/"><img src="pic/twitter.png"></a>
+      		<a width="20" href="http://pinterest.com/fwtemplates/"><img src="pic/p.png"></a>
       	</span>
       	<div>
       		<p>© 2023 Zerotype. All Rights Reserved.</p>

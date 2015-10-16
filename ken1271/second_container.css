@@ -2,11 +2,10 @@
 	clear: right;
 }
 #second_container div{
-	float:left;
+	width: 830px;
 	margin: auto;
 }
 #second_container div div{
-	float: left;
 	width: 350px;
 	padding:0 30px;
 	display: inline-block;

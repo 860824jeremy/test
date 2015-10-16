@@ -8,7 +8,7 @@
 }
 #container>div>img{
 	float: right;
-	margin-left: 60px;
+	padding: 30px 0px;
 }
 #container div div span{
 	display: block;
