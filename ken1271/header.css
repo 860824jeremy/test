@@ -1,21 +1,26 @@
 #header{
 	background-color: #EEE;
-	background-bottom:1px solid black;
-	padding:27px;
+	border-bottom: 1px solid #E6E6E6;
+	padding: 0 60px;
 }
-#header div{
-	margin:0 20px 0 100px; 
+#header>div{
+	margin: auto;
+	width:800px;
+	background-color: #EEE;
+	border-bottom: 1px solid #E6E6E6;
+}
+#header>div>div{
 	float: left; 
 	position: relative;
+	display: inline-block;
 }
 #header ul{
 	display: inline-block;
-	background-color: #EEE;
 	padding:50px;
+	margin:0;
 }
 #header ul li{
-	background-color: #EEE;
-	float: left;
+	float: right;
 	width: 120px;
 	text-align: center;
 	position: relative;
