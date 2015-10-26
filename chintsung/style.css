@@ -1,0 +1,40 @@
+/*-----global-----------------------------------*/
+.clear {
+    clear: both;
+}
+
+/*-----header-----------------------------------*/
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    float: left;
+}
+
+.logo {
+    float: left;
+}
+
+.menu {
+    float: left;
+}
+
+/*-----content1---------------------------------*/
+.content1-left {
+    width: 300px;
+    float: left;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content1-desc {
+    font-size: 13px;
+}
