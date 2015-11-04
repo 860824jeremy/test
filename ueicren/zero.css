@@ -1,0 +1,137 @@
+body{
+	margin: 0px;
+}
+
+/* header and footer row */
+.border-row{
+	padding-left: 10%;
+	background-color: #eee;
+}
+
+/*header row*/
+header{
+	/*width: 100%;*/
+	height: 120px;
+	padding-top: 25px;
+}
+
+div.logo{
+	float: left;
+	padding-left: 5%;
+}
+
+nav{
+	width: 80%;
+	display: inline-block;
+}
+
+nav a{
+	float: left;
+	width: 10%;
+	padding-top: 30px;
+	padding-left: 5%;
+	color: #818181;
+	text-decoration: none;
+}
+
+a.active{
+	color: #f99600;
+}
+
+/*section rows*/
+.section{
+	padding-left: 20%;
+	height: 460px;
+}
+
+.section-column{
+	width: 35%;
+	height: 100%;
+	display: inline-block;
+	margin-top: 0;
+	margin-right: 5%;
+}
+
+.text-section-column{
+	line-height: 24px;
+}
+
+h1#n_2_1_1{
+	font-size: 60px;
+}
+
+div.btn-area{
+	padding-left: 20%;
+}
+
+button.try-btn{
+	width: 230px;
+	height: 60px;
+	background: url(./bg-button.png) no-repeat;
+	background-position: 0 -70px;
+	color: #ffffff;
+	font: 24px/60px 'OpenSans';
+	border-width: 0;
+}
+
+span#n_2_1_4_2{
+	font-size: 8pt;
+}
+
+
+.up{
+	background: url(./bg-adbox.jpg);
+}
+
+.box-img{
+	float: right;
+	margin-right: 20%;
+}
+
+p{
+	color: #585858;
+}
+
+/*footer*/
+footer{
+	border-top: 1px solid #d8d8d8;
+	height: 50px;
+}
+
+.footer-column{
+	width: 30%;
+	display: inline-block;
+	height: 30px;
+	line-height: 24px;
+}
+
+.copyright{
+	display: inline-block;
+	font-size: 8pt;
+	color: #585858;
+	line-height: 24px;
+	padding-left: 5%;
+	margin-right: 15%;
+}
+
+.link a{
+	background: url(./icons.png) no-repeat; 
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	float: right;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+a.fb{
+	background-position: 0 0;
+}
+a.google{
+	background-position: 0 -40px;
+}
+a.twiter{
+	background-position: 0 -80px;
+}
+a.pin{
+	background-position: 0 -120px;
+}
