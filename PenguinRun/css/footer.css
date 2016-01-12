@@ -1,0 +1,45 @@
+/*黑體*/
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+
+
+
+.clear{
+  clear: both;
+}
+
+
+/*-----footer-----*/
+
+footer{
+  background-color: 000;
+  width: 100%;
+  height: 70px;
+}
+
+footer p{
+  font-family: 'cwTeXHei', sans-serif;
+  font-size: 12pt;
+  color:FFF;
+  width: 20%;
+  margin-left:22px;
+  margin-top:22px;
+  float:left;
+}
+
+footer list{
+  list-style: none;
+  width:auto;
+
+  margin-top:22px;
+  margin-right:40px;
+  float:right;
+}
+
+footer p2{
+  float: right;
+  margin-left: 40px;
+  margin-right: 40px;
+  width:10px;
+  height:auto;
+}
