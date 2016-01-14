@@ -1,53 +1,43 @@
-
 /*黑體*/
+
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 
 /*------globle------*/
 
-.allfont{
+.allfont {
   font-family: 'cwTeXHei', sans-serif;
-  font-size: 15pt;
+  font-size: 20pt;
 }
-
-.clear{
-  clear:both;
+.clear {
+  clear: both;
 }
 
 /*-----private------*/
 
+
 /*-----header-----*/
-header{
-    background-color: 000;
-    width: 100%;
-    height: 70px;
-}
-header img{
-float:left;
-display: block;
-width: 70px;
-height: 70px;
-margin-left: 10px;
-margin-bottom:10px;
-}
 
-
-header list{
-  list-style:none;
+header {
+  background-color: 000;
+  width: 100%;
+  height: 70px;
+}
+header img {
+  float: left;
+  width: 70px;
+  height: 70px margin-left: auto;
+}
+header list {
+  list-style: none;
   float: right;
-  padding-top: 3px;
-  padding-left: 30px;
-  padding-right: 50px;
-  width: auto;
 
+  margin:0 auto;
 }
-
-header p{
+header p {
   font-family: 'cwTeXHei', sans-serif;
   font-size: 15pt;
-  color:FFF;
+  color: FFF;
   float: left;
-  margin-left: 50px;
-  margin-right: 50px;
-  width:10px;
-  height:auto;
+  padding-left:25px;
+  padding-right:25px;
 }
