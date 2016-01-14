@@ -3,12 +3,6 @@
 
 
 
-
-.clear{
-  clear: both;
-}
-
-
 /*-----footer-----*/
 
 footer{
@@ -35,5 +29,6 @@ footer ul{
 
 footer li{
   float: right;
-  margin-left: 40px;
+  padding-left:25px;
+  padding-right:25px;
 }

@@ -25,19 +25,19 @@ header {
 header img {
   float: left;
   width: 70px;
-  height: 70px margin-left: auto;
+  height: 70px;
 }
-header list {
+header ul {
   list-style: none;
   float: right;
-
   margin:0 auto;
 }
-header p {
+header li {
   font-family: 'cwTeXHei', sans-serif;
   font-size: 15pt;
   color: FFF;
   float: left;
+  margin-top: 20px;
   padding-left:25px;
   padding-right:25px;
 }
