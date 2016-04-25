@@ -1,18 +1,18 @@
 /* style.css */
 *{
-  padding:0px;
-  margin:0px;
+    padding:0px;
+    margin:0px;
 }
 .header {
 }
-
 .container {
-   /* width: 1170px;  */
-   margin-left: auto;
-   margin-right: auto;
+    /* width: 1170px;  */
+    margin-left: auto;
+    margin-right: auto;
 }
 .head {
     width: 100%;
+    border-bottom: 1px solid #cecccc;
     /* margin-left: 0; */
     /* margin-right: 0; */
     min-height: 150px;
@@ -25,37 +25,48 @@
     vertical-align: middle;
 }
 .logo > img {
-    padding-left: 10%;
+    padding-left: 50%;
 }
 .nav {
     display: table-cell;
     vertical-align: middle;
+    right: 15%;
 }
 .nav > ul {
-   display: inline-block;
-   list-style: none;
+    display: inline-block;
+    list-style: none;
 }
 .nav-button {
-   float: right;
-   position: relative;
-   margin-left: 20px;
+    float: right;
+    position: relative;
+    margin-left: 70px;
 }
 .nav-button:last-of-type {
     margin-left: 0;
 }
+.nav-button-wrap {
+    padding-left: 15%;
+}
+li > a {
+    text-decoration: none;
+    color: #777777;
+}
+li > a:hover {
+    color: #ff9966;
+}
 
 /* body */
-.body {
-    
-   background-color: #fbfbfb;
+.contentwrap {
+    background-color: #fbfbfb;
 }
 .container.body {
-   width: 70%;
-   padding-top: 3%;
-}
-.content {
+    width: 70%;
+    padding-top: 3%;
     display: flex;
     justify-content: center;
+    padding-bottom: 3%;
+}
+.content {
 }
 .row {
     display: table;
@@ -67,8 +78,8 @@
     margin-left: 2.5%
 }
 .grid_2 > .wrap > img {
-   display: block;
-   margin: auto;
+    display: block;
+    margin: auto;
 }
 
 #trybutton {
@@ -76,8 +87,36 @@
 }
 .buttonwrap {
     text-align: center;
-   /* margin-top: 5%; */
-   /* display: block; */
-   /* margin-left: auto; */
-   /* margin-right: auto; */
+}
+.content > h1 {
+    margin-left: 2.5%;
+    padding-bottom: 3%;
+}
+
+/* footer */
+.footer {
+    padding-top: 5%;
+}
+.container.foot {
+    background-color: #ff66ff;
+}
+
+.footer > div > .contentwrap {
+    border-top: 1px solid #cecccc;
+}
+
+.container.footer {
+    width: 70%;
+    padding-top: 0;
+    display: table;
+    justify-content: center;
+    min-height: 100px;
+}
+.container.footer > .content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.sns {
+    float: right;
+    padding-right: 40px;
 }
