@@ -26,7 +26,7 @@
 
 #contect{
   width: 1300px;
-  height: 360px;
+  height:1000px;
   margin: auto;
   position: relative;
   padding: 10px;
@@ -77,10 +77,6 @@
   margin: 0px;
   top: 20px;
   height: 500px;
-}
-#clear{
-  height: 800px;
-
 }
 #footer{
   background-color: #ebefef;
