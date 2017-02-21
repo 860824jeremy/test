@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+}
+#headbox {
+    font-family: monospace;
+    height: 100px;
+    background-color: #eeeeee;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo{
+    float: left;
+}
+
+#menu {
+    text-align:left;
+    line-height: 90px;
+}
+
+#headbox ul li {
+    list-style-type:none;
+    display:inline;
+}
