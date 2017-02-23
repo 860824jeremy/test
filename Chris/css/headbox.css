@@ -31,7 +31,7 @@ body {
 
 #logo .text{
     text-align:center;
-    font: 14px;
+    font: 15px;
 }
 
 .selected_page{
@@ -59,6 +59,6 @@ body {
 
 #headbox ul li {
     display:inline;
-    margin: 0px 50px;
+    margin: 0px 52px;
     font-size: 15px;
 }
