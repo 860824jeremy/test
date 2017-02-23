@@ -1,24 +1,64 @@
 body {
     margin: 0px;
 }
+
+.side_space{
+    /*margin: 0 20px;*/
+    margin: 0 auto;
+    width: 880px;
+}
+
+.debug_css{
+      border: 1px solid;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #headbox {
     font-family: monospace;
-    height: 100px;
-    background-color: #eeeeee;
-    align-items: center;
-    padding: 20px;
+    background-color: #EEEEEE;
 }
 
 #logo{
     float: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#logo .text{
+    text-align:center;
+    font: 14px;
+}
+
+.selected_page{
+    color: #f99603;
+}
+
+#logo img{
+    height: 80px;
+    width: 52;
+
+    display: block;
+}
+
+#menu.initial{
+    /*margin-top: 0px;
+    margin-bottom: 0px;*/
+    padding-left: 0px;
 }
 
 #menu {
-    text-align:left;
-    line-height: 90px;
+    float: right;
+    text-align: center;
+    margin-top: 52px;
 }
 
 #headbox ul li {
-    list-style-type:none;
     display:inline;
+    margin: 0px 50px;
+    font-size: 15px;
 }
