@@ -86,5 +86,6 @@
     display: block;
     color: #585858;
     line-height: 24px;
-    margin: 28px 0;
+    margin-bottom: 28px;
+    margin-top: 0;   
 }
