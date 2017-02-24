@@ -24,14 +24,14 @@ body {
 }
 
 #logo{
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    width: 85px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 #logo .text{
     text-align:center;
-    font: 15px;
+    font-size: 15px;
 }
 
 .selected_page{
@@ -41,7 +41,7 @@ body {
 #logo img{
     height: 80px;
     width: 52;
-
+    margin: 0 auto;
     display: block;
 }
 
@@ -53,12 +53,12 @@ body {
 
 #menu {
     float: right;
-    text-align: center;
+    text-align: right;
     margin-top: 52px;
 }
 
 #headbox ul li {
     display:inline;
-    margin: 0px 52px;
+    margin: 0 50px;
     font-size: 15px;
 }
