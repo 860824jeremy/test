@@ -32,6 +32,7 @@
 
 #try_it_text p {
     font-size: 16px;
+    color: #585858;
 }
 
 #try_it_text div {
@@ -52,7 +53,7 @@
     border-radius: 6px;
     border-width: 0px;
     height: 60px;
-    width: inherit;;
+    width: inherit;
 }
 
 #content_try_it_content_button {
@@ -82,4 +83,5 @@
 #content_text p{
     display: block;
     margin-top: 0;
+    color: #585858
 }
