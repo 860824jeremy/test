@@ -42,17 +42,18 @@
 
 #try_it_text div p{
     font-size: 12px;
+    margin: 5px 0;
 }
 
 #try_it_button {
     background-color: #4098D3;
     color: #FFF;
-    font-size: 22px;
+    font-size: 25px;
     background-image:
     linear-gradient(#FFBA53 50%, #F99303 50%);
     border-radius: 6px;
     border-width: 0px;
-    height: 60px;
+    height: 59px;
     width: inherit;
 }
 
@@ -63,7 +64,7 @@
 
 
 .content_text_side_space {
-    margin: 0 auto;
+    margin: 151px auto;
     width: 800px;
 }
 
@@ -73,6 +74,7 @@
 
 #content_head {
     font-size: 28px;
+    margin: 28px 0;
 }
 
 #content_text {
@@ -82,6 +84,7 @@
 
 #content_text p{
     display: block;
-    margin-top: 0;
-    color: #585858
+    color: #585858;
+    line-height: 24px;
+    margin: 28px 0;
 }
