@@ -52,7 +52,7 @@
     background-image:
     linear-gradient(#FFBA53 50%, #F99303 50%);
     border-radius: 6px;
-    border-width: 0px;
+    border-style: none;
     height: 59px;
     width: inherit;
 }
@@ -87,5 +87,5 @@
     color: #585858;
     line-height: 24px;
     margin-bottom: 28px;
-    margin-top: 0;   
+    margin-top: 0;
 }
