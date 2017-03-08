@@ -37,8 +37,8 @@ body {
 }
 
 #menu ul li {
+    padding: 0 40px;
     display: inline;
-    margin: 0 45 0px;
     font-size: 17px;
     font-family: sans-serif;
 }
