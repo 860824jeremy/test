@@ -4,7 +4,7 @@ body {
 
 .side_space{
     margin: 0 auto;
-    width: 880px;
+    width: 910px;
 }
 
 .debug_css{
@@ -53,11 +53,12 @@ body {
 #menu {
     float: right;
     text-align: right;
-    margin-top: 52px;
+    margin-top: 70px;
 }
 
 #headbox ul li {
     display:inline;
-    margin: 0 50px;
     font-size: 15px;
+    margin-left:112px;
+    margin:0 52px;
 }

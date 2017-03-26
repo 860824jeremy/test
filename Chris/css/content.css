@@ -14,20 +14,22 @@
 }
 
 #try_it_text {
-    width: 360px;
+    width: 365px;
     padding: 7px;
 }
 
 #try_it_text h1 {
     padding-top: 40px;
     font-size: 50pt;
-    line-height: 0;
+    line-height: 50pt;
+    margin: 0;
 }
 
 #try_it_text h2 {
     padding-top: 0px;
     font-size: 22pt;
-    line-height: 0;
+    line-height: 22pt;
+    margin: 0;
 }
 
 #try_it_text p {
