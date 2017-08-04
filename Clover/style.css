@@ -18,8 +18,14 @@ header {
     
 }
 
-/*圖片無法垂直置中orz*/
-.logo:before{
+.logowrap {
+    float: left;
+/*    為了讓vertical-align:middle;有效指定高度？*/
+    height: 140px;
+}
+
+/*圖片垂直置中*/
+.logowrap:before{
    content:'';
    width:0;
    height:100%;
@@ -28,6 +34,10 @@ header {
    vertical-align:middle;
    background:#f00;
  }
+
+.logowrap img {
+    vertical-align:middle;
+}
 
 header .nav {
     float: right;
@@ -51,6 +61,10 @@ height: 0;
 .content {
     font-size: 0;
     vertical-align : top;
+}
+
+.Article {
+    text-align: justify;
 }
 
 .content .inner {
