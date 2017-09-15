@@ -1,0 +1,49 @@
+body{
+	
+}
+
+header{
+	background-color: #efefef;
+	
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+
+nav{
+	padding-top: 15px;
+
+}
+
+.clearfix{
+	clear: both;
+}
+
+
+li{
+	display: inline;
+	margin: 0px 30px 0px 50px;
+	font-size: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+}
+
+img.p1{
+	float: left;
+}
+
+
+#h{	
+	color: orange;
+}
+
+
+footer{
+	background-color: #efefef;
+}
+
