@@ -2,7 +2,21 @@ body{
 	margin: 0;
 }
 
-.clearfix{
+li{
+	display: inline;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clear{
 	clear: both;
 }
 
@@ -10,51 +24,55 @@ body{
 
 header{
 	background-color: #efefef;
-	padding:10 0 20 0;
 }
 
 .container{
-	width: 80%;
-	margin: 0 auto 0 auto;
+	width: 850px;
+	margin: 0 auto;
 }
 
-nav{
-	padding-top: 15px;
+.link-logo{
+	float: left;
+	margin: 20 0 30 0;
+}
+
+header ul{
+	float: left;
+	margin-top: 55px;
 
 }
 
-li{
-	display: inline;
-	margin: 0px 30px 0px 50px;
-	font-size: 20px;
+header li{
+	margin: 0 40 0 40;
+	font-size: 16px;
 }
 
-a{
-	text-decoration: none;
+header a{
 	color: gray;
 }
 
-.p1{
-	float: left;
+.logo{
+	width: 90px;
+	height: 100px;
 }
 
-#h{	
+#home-color{	
 	color: orange;
 }
 
-/*-----------------------------section-----------------------------*/
+/*-----------------------------section1-----------------------------*/
 .section1{
 	background-color: #fdfdfd;
-	padding: 10 0 80 0;
+	padding-bottom:80px;
 }
 
-.container1{
-	width: 66%;
-	margin: 0 auto 0 auto;
+.container-section1{
+	width: 730px;
+	margin: 0 auto;
 }
 
-.content1-1{
-	width: 40%;
+.content-section1{
+	width: 45%;
 	float: left;
 	margin-top: 40px;	
 }
@@ -62,19 +80,21 @@ a{
 h1{
 	font-size: 48px;
 	font-weight: 400;
-	line-height: 5px;
+	line-height: 5pt;
+	margin-bottom: 30px;
 }
 
 h2{
 	font-size: 24px;
 	font-weight: 400;
-	line-height: 5px;
-	color: rgb(34, 34, 31);
+	line-height: 5pt;
+	color: #282828;
+	margin-bottom: 10px;
 }
 
 p{
 	font-size: 13px;
-	line-height: 20px;
+	line-height: 14pt;
 	color: gray;
 	margin-bottom: 25px;
 }
@@ -92,80 +112,76 @@ p{
 #under-button{
 	font-size: 10px;
 	margin-left: 50px;
+	margin-top: 12px;
 }
 
 .big-logo{
 	float: right;
-	width: 350px;
-	height: 350px;
+	width: 330px;
+	height: 320px;
 	margin-top: 45px;
 }
 
 /*-----------------------------section2-----------------------------*/
 .section2{
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-bottom: 135px;
 }
 
-.container2{
-	width: 68%;
-	margin: 0 auto 0 auto;
+.container-section2{
+	width: 770px;
+	margin: 0 auto;
 	
 }
 
-#h2-2{
-	margin-bottom: 40px;
+.section2 h2{
+	margin-bottom: 25px;
 }
 
-.content2-1{
+.content1-section2{
 	width: 45%;
-	float: left;
+	display: inline-block;
 }
 
-.content2-2{
+.content2-section2{
 	width: 45%;
-	float: right;
-	margin-top: 50px;
-	position: relative;
-	right: 20px;	
+	display: inline-block;
+	margin-left: 40px;
 }
 
-.p2-2{
+.section2 p{
 	font-size: 14px;
 }
 
 /*-----------------------------footer-----------------------------*/
 footer{
 	background-color: #efefef;
-	height: 80px;
 }
 
 .footer-container{
-	width: 70%;
-	margin: 0 auto 0 auto;
+	width: 830px;
+	margin: 0 auto;
 }
 
-#footer-tag{
+footer p{
 	font-size: 12px;
 	float: left;
-	margin: 40 0 0 0;
+	margin: 30 0 20 0;
 }
 
-.footer-nav{
+footer ul{
+	margin: 0;
 	float: right;
-	margin-right: 20px;
+	margin-right: 45px;
 	margin-top: 25px;
 }
 
-.footer-ul{
-	margin: 0;
-}
-
-.footer-li{
+footer li{
 	margin: 0 5 0 5;
+	display: inline-block;
 }
 
-.footer-picture{
-	width: 30px;
-	height: 30px;
+footer img{
+	width: 28px;
+	height: 28px;
 }
