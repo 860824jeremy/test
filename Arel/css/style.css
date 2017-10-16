@@ -10,40 +10,36 @@
 				font-size: 1.8rem;
 			}
 
-			p {
-				font-size: 1.2rem;
-			}
-
 			.text-small {
 				font-size: 1rem;
 
 			}
 
-			.nav {
+			#header {
 				background: #EEEEEE;
-				position: relative;
-				padding: 25px 5%;
-				border-bottom: 1px solid #dbdbdb;
+				border-bottom: 1px solid #dbdbdb;				
 			}
 
+
 			#logo {
-				padding: 0px 50px;
-				margin-left: 50px;
+				display: inline-block;
+				width: 15%;
+				vertical-align: middle;
 			}
 
 			nav {
+				width: 84%;
 				display: inline-block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 1.2rem;
+				font-size: 1vw;
 			}
 
 			nav a, nav a:visited {
 				color: #838383;
 				text-decoration: none;
-				margin: 0px 50px 0px;
+				display:inline-block;
+				width: 19%;
+				text-align: center;
+
 			}
 
 			nav a:hover {
@@ -51,7 +47,7 @@
 			}
 
 			.padding {
-				padding: 25px 20% 50px;
+				padding: 25px 12%;
 			}
 
 			.banner {
@@ -61,8 +57,8 @@
 
 			.block {
 				display: inline-block;
-				width: 45%;
-				padding: 2%;
+				width: 39%;
+				padding: 2% 4%;
 				vertical-align: top;
 				position: relative;
 			}
@@ -87,11 +83,11 @@
 				left: 50%;
 				transform: translate(-50%, 0%);
 				width: 70%;
-				margin: 10% 0%;
+				margin: 5% 0%;
 			}
 
 			.content-head {
-				padding: 0% 2%;
+				padding: 1% 4%;
 			}
 
 			.content p {
@@ -101,17 +97,27 @@
 			.footer {
 				background: #efefef;
 				border-top: 1px solid #dbdbdb;
+				overflow: hidden;
 			}
 
-			.link {
-				text-align: right;
+			.ftr-l, .ftr-r {
+				display:inline-block;				
 			}
 
-			.link a, .link a:visited {
+			.ftr-l {
+				padding: 1% 0%;
+			}
+
+			.ftr-r {
+				float: right;
+				width: 30%;
+				padding-right: 5%;
+			}
+
+			.ftr-r a, .ftr-r a:visited {
 				color: #000;
 			}
 
-			.link i {
+			.ftr-r i {
 				padding: 0% 3%;
-
 			}
