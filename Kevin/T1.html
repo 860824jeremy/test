@@ -5,28 +5,40 @@
 		<title>T1</title>
 
 		<style>
+
+		*{
+			margin:0;
+		}	
+
 		.top nav{
-			height:211px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height:200px;
 			background-color:#eeeeee;
 		}
 
 		.top nav ul{
+			display:flex;
+			justify-content: space-around;
+			align-items: center;
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			overflow: hidden;
 			background-color: #eeeeee;
+			width:1280px;
 		}
 
 		.top nav li{
-			padding-left:5%;
-			float:left;
+		}
+
+		.top nav li img{ 
+			height: 100px;
+			width:auto; 
 		}
 
 		.top nav li a {
-			margin-top: 100px;
-    		display: block;
-    		text-align: center;
+			line-height: 100px;
     		text-decoration: none;
 			color:black;
 		}
@@ -35,41 +47,52 @@
 			color:orange;
 		}
 
+		.container-top .container{
+			width:900px;
+			height:600px;
+			margin:0 auto;
+
+		}
 
 		.container-top{
-			height:600px;
+			margin-top:100px;
+			height:400px;
 			width:100%;
+			background-color: #fdfdfd;
 			/*border:solid white;*/
 		}
 
 		.tl{
 			float:left;
 			height:400px;
-			width:30%;
-			margin-top:80px;
-			margin-left:20%;
-			border:solid white;
+			width:450px;
 			padding:0px;
 		}
 
 		.tl h1{
 			margin:0px;
 			font-size:60px;
+			padding: 0 15px;
 		}
 
 		.tl h2{
 			font-size:32px;
 			margin:0px;
+			padding:0 15px;
 		}
 
 		.tl p{
 			margin:0px;
 			color:#707070;
+			padding:0 15px;
 		}
 
 		.tl .button{
-			margin-top:10px;
-			padding-left:15%;
+			padding:15px 39px;
+		}
+
+		.tl .button p{
+			padding:0;
 		}
 
 		.tl .button button{
@@ -88,74 +111,96 @@
 		}
 
 		.tr{
-			width:35%;
+			width:450px;
 			height:400px;
 			float:left;
-			margin-top:80px;
-			margin-left: 20px;
-			border:solid white 2px;
 		}
 
 		.tr img{
-			padding-top:29px;
-			padding-left: 16px;
+			display:block;
+			margin:0 auto;
 		}
 		.container-bottom{
 			width:100%;
 			height:500px;
-			border:solid white;
+		}
+
+		.container-bottom .box1{
+			width:900px;
+			margin:0 auto;
+			height:300px;
 		}
 
 		.container-bottom h2{
-			font-size:35px;
-			margin-left:20%;
+			font-size:31px;
+			padding-left: 30px;
+			margin-bottom: 50px;
 		}
 
 
 		.left{
 			float:left;
-			margin-left: 20%;
-			width:30%;
-			border:solid white;
+			width:450px;
 		}
 
 		.left p {
+			padding:0 30px;
 			text-align: left;
 			color:#707070;
 
 		}
 
 		.right{
-			margin-left:20px;
 			float:left;
-			width:30%;
-			border:solid white;
-			
+			width:450px;
 		}
 
 		.right p{
+			padding:0 30px;
 			color:#707070;
 		}
 
 		.footer{
-			height:80px;
-			padding-left:20%;
-			padding-right:20%;
-			padding-top:25px;
-			text-align: center;
-			clear: both;
+			height:100px;
 			background: #f0f0f0;
-
 		}
 
-		.footer p{
+		.footer .copyicon{
+			width:900px;
+			margin:0 auto;
+			height:100px;
+		}
+
+		.footer .copyicon .copyright{
+			width:450px;
+			margin:0 auto;
+			height:100px;
 			float:left;
 		}
 
-		.footer .icon a{
+		.footer .copyicon .copyright p{
+			text-align: left;
+			padding-left:30px;
+			line-height: 100px;
+		}
+
+
+		.footer .copyicon .icon{
+			width:450px;
+			margin:0 auto;
+			height:100px;
+			float:left;	
+		}
+
+
+		.footer .copyicon .icon a{
 			color: black;
-			padding-right:5%;
 			float:right;
+			padding-right:30px;
+		}
+
+		.footer .copyicon .icon a i{
+			line-height: 100px;
 		}
 		</style>
 	</head>
@@ -174,44 +219,56 @@
 		</div>
 
 		<div class ="container-top">
-			<div class="tl">
-				<h1>IDEAS?</h1>
-				<h2>This is just a place holder.</h2>
-				<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
-				<div class="button">
-				<a href="#"><button class="button">TRY IT NOW!</button></a>
-				<p>Don't worry it's free!</p>
+			<div class="container">
+				<div class="tl">
+					<h1>IDEAS?</h1>
+					<h2>This is just a place holder.</h2>
+					<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
+					<div class="button">
+					<a href="#"><button class="button">TRY IT NOW!</button></a>
+					<p>Don't worry it's free!</p>
+					</div>
 				</div>
-			</div>
-				<div class="tr">
-				<img src="image/download_pic.png">
-			</div>
+					<div class="tr">
+					<img src="image/download_pic.png">
+				</div>
+			</div>	
 
 		</div>
 		<br><br>
 
 		<div class="container-bottom">
-				<h2>This is just a place holder.</h2>
-				<div class ="left">
-					<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
-					<p>This is just a place holder, so you can see what the site would look like.</p>
-					<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.This is just a place holder, so you can see what the site would look like.</p>
-				</div>
+				<div class="box1">
+						<h2>This is just a place holder.</h2>
+					<div class ="left">
+						<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
+						<br>
+						<p>This is just a place holder, so you can see what the site would look like.</p>
+						<br>
+						<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.This is just a place holder, so you can see what the site would look like.</p>
+					</div>
 
-				<div class="right">
-					<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
-					<p>This is just a place holder, so you can see what the site would look like.</p>
-					<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.This is just a place holder, so you can see what the site would look like.</p>
-				</div>
+					<div class="right">
+						<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</p>
+						<br>
+						<p>This is just a place holder, so you can see what the site would look like.</p>
+						<br>
+						<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.This is just a place holder, so you can see what the site would look like.</p>
+					</div>
+				</div>	
 		</div>
 		<div class="footer">
-			<p>&copy; 2023 Zerotype. All Right Reserced</p>
+			<div class="copyicon">
+				<div class="copyright">
+					<p>&copy; 2023 Zerotype. All Right Reserced</p>
+				</div>	
 				<div class="icon">
 					<a href ="#"><i class="fa fa-pinterest-square fa-3x" aria-hidden="true"></i></a>
 					<a href ="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
 					<a href ="#"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
 					<a href ="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
 				</div>
+			</div>			
 		</div>
 	</body>
 </html>
