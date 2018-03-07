@@ -8,11 +8,13 @@
     <style>
       *{
         margin: 0 auto;
+        font-family: sans-serif;
+        font-weight: normal;
+        line-height: 150%;
       }
       body{
         height:1024px;
         width:960px;
-        font-family: sans-serif;
       }
       header{
         height: 12%;
@@ -69,14 +71,38 @@
         height: 50%;
         width: 100%;
       }
-      section .sud_sect{
-
-        height:100%;
-        width: 50%;
+      .sub{
+        height:90%;
+        width: 30%;
         font-size:10pt;
-        line-height:20px;
         float:left;
       }
+      #title{
+        font-size:34pt;
+        line-height: normal;
+      }
+      #subtitle{
+        font-size:18pt;
+        line-height: normal;
+      }
+      #btn{
+         width:175px;
+         margin-top:15px;
+         margin-left:45px
+      }
+      #btn_subtitle{
+        margin-left:45px;
+        font-size:8pt
+      }
+      #downloadpic{
+        width:310px;
+        padding-left:15px;
+      }
+      #title_02{
+        font-size:18pt;
+        margin-bottom:25px;
+      }
+
     </style>
   </head>
   <body style="background-color:grey;">
@@ -96,36 +122,68 @@
     </header>
     <section>
       <div class="clearfix sect">
-        <div class="sub_sect" style="font-family:sans-serif;
-          padding-top:40px;padding-left:45px;padding-right:15px">
-          <h1 style="font-size:34pt">IDEAS?</h1>
-          <h2 style="font-size:18pt">This is just a place holder.</h2>
-          <p style="font-size:10pt;line-height:20px">
+        <div class="sub" style="padding:40px 16px 0px 176px;">
+          <h1 id="title">IDEAS?</h1>
+          <h2 id="subtitle">This is just a place holder.</h2>
+          <p>
             You can remove any link to our website from this website template,
             you're free to use this website template without linking back to us.
           </p>
           <a href="">
-            <img style="width:175px;margin-top:15px;margin-left:45px"
-                 src="image/try_btn.png">
+            <img id="btn" src="image/try_btn.png">
           </a>
-          <b style="display:block;margin-left:45px;font-size:8pt">Don't worry, it's free</b>
+          <b id="btn_subtitle">Don't worry, it's free</b>
 			  </div>
-        <div class="sub_sect">
-          <img style="width:310px; padding-top:40px;padding-left:15px;"
-            src="image/download_pic.png">
+        <div class="sub" style="padding:40px 176px 0px 16px;">
+          <img id="downloadpic" src="image/download_pic.png">
         </div>
       </div>
-      <div class="clearfix sect">
-        <div class="sub_sect">
-                <a>2222222222222222222222222222222</a>
+      <div class="clearfix sect" >
+        <div class="sub" style="padding:0px 16px 40px 176px;">
+          <h1 id="title_02">This is just a place holder.</h1>
+          <p>
+             You can remove any link to our website from this website template,
+             you're free to use this website template without linking back to us.
+             <br><br>
+          </p>
+          <p>
+             This is just a place holder, so you can see what the site would look like.
+             <br><br>
+          </p>
+          <p>
+             You can remove any link to our website from this website template,
+             you're free to use this website template without linking back to us.
+             This is just a place holder, so you can see what the site would look like.
+           </p>
         </div>
-        <div class="sub_sect">
-                <a>33333333333333333333333333333</a>
+        <div class="sub" style="padding:0px 176px 40px 16px;">
+          <p style="margin-top:60px">
+             You can remove any link to our website from this website template,
+             you're free to use this website template without linking back to us.
+             <br><br>
+          </p>
+          <p>
+             This is just a place holder, so you can see what the site would look like.
+             <br><br>
+          </p>
+          <p>
+             You can remove any link to our website from this website template,
+             you're free to use this website template without linking back to us.
+             This is just a place holder, so you can see what the site would look like.
+           </p>
         </div>
       </div>
     </section>
-    <footer>
-
+    <footer class="clearfix">
+      <div class="sub" style="padding:30px 16px 0px 176px;">
+        <p style="font-size:6pt">© 2023 Zerotype. All Rights Reserved.</p>
+      </div>
+      <div class="sub" style="padding:30px 176px 0px 16px;">
+            <img style="padding-left:130px" src="image/facebook_icon.png">
+            <img style="padding-left:15px" src="image/google+_icon.png">
+            <img style="padding-left:15px" src="image/twitter_icon.png">
+            <img style="padding-left:15px" src="image/pinterest_icon.png">
+      </div>
     </footer>
   </body>
 </html>
