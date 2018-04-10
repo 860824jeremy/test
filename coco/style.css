@@ -1,0 +1,138 @@
+/*to remove white space around backgrounds*/
+body {
+  margin: 0px;
+}
+* {
+  font-family: sans-serif;
+  font-weight: normal;
+}
+/*fix the width for all paragraph*/
+p {
+  font-size: 5px;
+  width: 290px;
+}
+/*fix margin to the edge for class02, class03*/
+h1, h3, p, img {
+  margin-left: 430px;
+}
+h3 {
+  font-size: 20px;
+  height: 20px;
+  margin-bottom: 0;
+}
+/*---------------------------------------------------------------------------------------------class01*/
+.class01 {
+  background-color:#f2f2f2;
+  height: 100px;
+}
+/*fix margin to the edge for class01*/
+.class01 img, .HeadButton {
+  margin-left:350px;
+}
+#zero {
+  padding-top: 10px;
+}
+.HeadButton {
+  display: inline-block; 
+  margin: 30px;
+  border: none;
+  background: none;
+  color: gray;
+  transform: translate(30px, -30px);
+  cursor: pointer;
+}
+.HeadButton:hover {
+  color:orange;
+}
+/*---------------------------------------------------------------------------------------------class02*/
+.class02 {
+  background-color: #FCFBFC;
+  background-image: url("./image/box.png"); /*import the box image as background*/
+  background-repeat: no-repeat;
+  background-size: 250px 250px; /*set the box size*/
+  background-position-x: 66%; /*set the box position on the x-axis*/
+  background-position-y: 20%; /*set the box position on the x-axis*/
+  padding-top: 30px; /*set the distance from content to the upper edge of background*/
+  height: 400px; /*set the height of the background*/
+  }
+/*the top space of class02 is smaller than other classes*/
+.class02 h1, h3, p {
+  margin-top: 5px;
+}
+.class02 h1 {
+  font-size: 40px;
+  height: 30px;  /*if don't set the height, the space will be too large*/
+  margin-bottom: 20px; /*if don't set the margin, the space will be too large*/
+}
+#tryitnow {
+    margin-top: 10px;
+    /*apart from the margin-left space set with class02, this img needs more left spaces*/
+    padding-left: 40px;
+  }
+/*the don't worry text has smaller font and more left space*/
+#dontworry {
+  font-size: 0.5em;
+  margin-top: -5px; 
+  padding-left: 45px;
+}
+/*---------------------------------------------------------------------------------------------class03 04*/
+.class03, .class04{
+  padding-top: 40px;
+  height: 400px;
+  float: left;
+  word-wrap: break-word;
+}
+/*the bottom space of paragraph in class03,class04 is larger than class02*/
+.class03 p, .class04 p {
+  margin-bottom: 20px;
+}
+/*the space around h3 in class03 is larger than the class02 */
+.fixed h3 {
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/*specify the margin space between class03 and class04*/
+.class04 p {
+  margin-left: 50px;
+}
+/*specify top space of the first paragraph in class04 which is larger than the paragraph in class03*/
+#firstline {
+  margin-top: 62px;
+}
+/*the last paragraph in class03, class04 has larger width*/
+p.lastline {
+  width: 300px;
+}
+/*---------------------------------------------------------------------------------------------class05*/
+.class05 {
+  margin-top: 450px;
+  height: 70px;
+  background-color: #f2f2f2;
+  margin-bottom: 0;
+}
+.class05 i {
+  float: left;
+  color: gray;
+  font-size: 3px;
+  margin-left: 400px;
+  margin-top: 35px;
+}
+.SocialMedia i, .SocialMedia img {
+  color:black;
+  float: right;
+  font-size: 30px;  /*to adjust the icon size*/
+  height: 25.719px; /*to adjust the img size*/
+  width: 25.719px;
+  border-radius: 5px; /*to make the img edge rounded*/
+  margin-right: 20px; /*set the margin between icon and imgs*/
+  margin-left: 0; /*since the margin-left has been set on the upper place, the margin-left has to be set again*/
+  margin-top: 30px; /*set the upper distance from icons to top edge*/
+}
+.SocialMedia img {
+  margin-top: 32px; /*set the upper distance from imgs to top edge*/
+}
+/*for icons on the right, if change to upper place will be covered*/
+i.fa-pinterest-square {
+  margin-right: 400px;
+}
