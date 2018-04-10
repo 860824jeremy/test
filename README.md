@@ -1,4 +1,4 @@
 # CuttingFrame_1
 first practice in HTML and CSS
 
-![alt text](CuttingFrame_1/coco/image/template_finish.png)
+![Preview](https://raw.githubusercontent.com/cocolin041/CuttintFrame_1/master/coco/image/template_finish.png)
