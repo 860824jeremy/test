@@ -4,146 +4,148 @@ body {
   background-color: #f2f2f2;
 }
 * {
+/*  outline: red solid 1px;*/
   font-family: sans-serif;
   font-weight: normal;
-}
-/*fix the width for all paragraph*/
-p {
-  font-size: 5px;
-  width: 380px;
-}
-/*fix margin to the edge for class02, class03*/
-h1, h3, p, img {
-  margin-left: 500px;
+  overflow: auto;
+
 }
 h3 {
-  font-size: 27.5px;
-  height: 20px;
-  margin-bottom: 15px;
+  font-size: 25.5px;
+}
+p {
+  font-size: 14px;
 }
 /*---------------------------------------------------------------------------------------------class01*/
 .class01 {
-  /*background-color:#f2f2f2;*/
-  height: 150px;
+  width: 60%;
+  height: 15%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-/*fix margin to the edge for class01*/
-.class01 img, .HeadButton {
-  margin-left:450px;
+.class01 img {
+  height: 70%; 
+  width: auto;
+  margin-left: 20px;
 }
-#zero {
-  padding-top: 20px;
-  height: 90px; 
-  width:auto;
-}
-.HeadButton {
-  display: inline-block; 
-  margin: 40px;
+.class01 button {
+  margin: 5%;
   border: none;
   background: none;
   color: gray;
-  transform: translate(30px, -28px);
   cursor: pointer;
 }
-.HeadButton:hover {
+.class01 button:hover {
   color:orange;
 }
 /*---------------------------------------------------------------------------------------------class02*/
+
 .class02 {
   background-color: #FCFBFC;
-  background-image: url("./image/box.png"); /*import the box image as background*/
-  background-repeat: no-repeat;
-  background-size: 330px 330px; /*set the box size*/
-  background-position-x: 63%; /*set the box position on the x-axis*/
-  background-position-y: 45%; /*set the box position on the x-axis*/
-  padding-top: 50px; /*set the distance from content to the upper edge of background*/
-  height: 380px; /*set the height of the background*/
+  height: 60%;
+  overflow: hidden;
+  /*box-sizing: border-box;*/
+  display: flex;
+  /*justify-content: center;*/
+  flex-wrap: nowrap;
+  /*background-size: 330px 330px; /*set the box size*/
+  /*background-position-x: 63%; /*set the box position on the x-axis*/
+  /*background-position-y: 45%; /*set the box position on the x-axis*/
   }
-/*the top space of class02 is smaller than other classes*/
-.class02 h1, h3, p {
-  margin-top: 3px;
+#wrap01 {
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: #FCFBFC;
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.container01 {
+  margin-right: 0;
+  width: 45%;
+}
+.class02 p {
+  width: 91%;
+}
+.class02 h1, .class02 h3, .class02 p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .class02 h1 {
   font-size: 53px;
-  height: 35px;  /*if don't set the height, the space will be too large*/
-  margin-bottom: 25px; /*if don't set the margin, the space will be too large*/
 }
 #tryitnow {
     margin-top: 10px;
-    /*apart from the margin-left space set with class02, this img needs more left spaces*/
     padding-left: 60px;
     width: 230px; 
   }
-/*the don't worry text has smaller font and more left space*/
 #dontworry {
   font-size: 0.1em;
   margin-top: -5px; 
   padding-left: 65px;
 }
+.container02 {
+  width: 40%;
+  display: table-cell;
+  text-align: center;
+}
+.container02 img {
+  width: 100%;
+}
+
 /*---------------------------------------------------------------------------------------------class03*/
 .class03 {
+  clear: both;
   background-color: white;
-  height: 480px;
+  height: 55%;
+  overflow: hidden;
+  position: relative;
 }
-/*---------------------------------------------------------------------------------------------article01 02*/
-.article01, .article02 {
-  padding-top: 40px;
-  float: left;
-  word-wrap: break-word;
+#wrap02 {
+  background-color: white;
+  width: 51%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.class03 h3 {
+  margin-top: 0;
+}
+.class03 p {
   margin: 0;
-}
-/*the bottom space of paragraph in class03,class04 is larger than class02*/
-.article01 p, .article02 p {
   margin-bottom: 20px;
+  column-count: 2;
+  column-gap: 80px;
 }
-/*the space around h3 in class03 is larger than the class02 */
-.fixed h3 {
-  height: 30px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+/*---------------------------------------------------------------------------------------------class04*/
+.class04 {
+  background-color: #f2f2f2;
+  height: 7%;
+  width: 57%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.article01 p, .article01 h3{
-  margin-left: 480px;
-}
-/*specify the margin space between class03 and class04*/
-.article02 p {
-  margin-left: 70px;
-}
-/*specify top space of the first paragraph in class04 which is larger than the paragraph in class03*/
-#firstline {
-  margin-top: 62px;
-}
-/*the last paragraph in class03, class04 has larger width*/
-p.lastline {
-  width: 380px;
-}
-/*---------------------------------------------------------------------------------------------class05*/
-.class05 {
-  margin-top: 0px;
-  margin-bottom: 5px;
-  height: 70px;
-}
-.class05 i {
-  float: left;
+.class04 i {
   color: gray;
   font-size: 3px;
-  margin-left: 450px;
-  margin-top: 35px;
+  display: inline-flex;
 }
-.SocialMedia i, .SocialMedia img {
-  color:black;
-  float: right;
+#SocialMedia i {
   font-size: 30px;  /*to adjust the icon size*/
-  height: 25.719px; /*to adjust the img size*/
-  width: 25.719px;
-  border-radius: 5px; /*to make the img edge rounded*/
-  margin-right: 20px; /*set the margin between icon and imgs*/
-  margin-left: 0; /*since the margin-left has been set on the upper place, the margin-left has to be set again*/
-  margin-top: 30px; /*set the upper distance from icons to top edge*/
+  color: black;
+  margin: 10px;
 }
-.SocialMedia img {
-  margin-top: 32px; /*set the upper distance from imgs to top edge*/
+#left {
+  color: grey;
 }
-/*for icons on the right, if change to upper place will be covered*/
-i.fa-pinterest-square {
-  margin-right: 500px;
+#left span {
+  font-size: xx-small;
 }
