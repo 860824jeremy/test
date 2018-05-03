@@ -4,7 +4,7 @@ body {
   background-color: #f2f2f2;
 }
 * {
-/*  outline: red solid 1px;*/
+  /*outline: red solid 1px;*/
   font-family: sans-serif;
   font-weight: normal;
   overflow: auto;
@@ -47,9 +47,7 @@ p {
   background-color: #FCFBFC;
   height: 60%;
   overflow: hidden;
-  /*box-sizing: border-box;*/
   display: flex;
-  /*justify-content: center;*/
   flex-wrap: nowrap;
   /*background-size: 330px 330px; /*set the box size*/
   /*background-position-x: 63%; /*set the box position on the x-axis*/
