@@ -1,47 +1,77 @@
 body{
-    width: 100vw;
+    margin: 0; /* 去除chrome白邊 */
+    box-sizing: border-box; 
+}
+ul{
+    padding: 0; /*消除ul前的空白 */
+}
+ul li{
+    list-style-type: none; /* 消除li的預設點點 */
 }
 
+h1, h2, p{
+    margin: 0;
+    font-weight: normal;
+}
 h1 {
-    font-size: 60px;
+    line-height: 4rem;
+    font-size: 74px;
 }
+
 h2 {
-    font-size: 30px;
+    font-size: 38px;
 }
-p{
-    font-size: 15px;
+
+p {
+    font-size: 20px;
+}
+button{
+    padding: 0;
 }
 
 header{
     width: 100%;
-    height: 100px;
+    min-height: 180px;
     background: #eeeeee;
     border-bottom:1px solid #e6e6e6;
-    padding: 20px;
-    position: relative;
+    position: relative; /* 因為沒有父層的參考點，會以瀏覽器視窗為參考點 */
     top: 0;
     left: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+}
+
+header::after{
+    clear: both;
+    content: "";
+    display: block;
 }
 
 .logo{
-    width: auto;
-    height: auto;
+    display: inline-block;
 }
 
-nav ul{
-    width: 70vw ;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+.logo img{
+    width: 110px;
+    display: block; /* 消除行高 */
 }
+
+nav{
+    float: right;
+}
+
+
+
+nav ul li{
+    display: inline;
+    margin-left: 126px; /* 推開nav的間距 */
+}
+
+nav ul li:first-child{ /* 消除nav中第一個element的margin-left */
+    margin-left: 0;
+}
+
 nav ul a{
     color: #686868;
     text-decoration: none;
-
 }
 
 nav ul a:hover{
@@ -51,95 +81,138 @@ nav ul a:active{
     color: red;
 }
 
+.content{
+    margin: 0 auto 0;
+    width: 940px;
+    position: relative;
+    top: 0;
+    
+}
 
 .banner{
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    position: relative;
+    margin-top: 74px;
 }
+.banner::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
 .info{
     float: left;
-    width: 40vw;
-
+    width: 470px;
+    margin-left: 22px;
 }
 
 .info button{
     background: none;
     border: none;
     outline: none;
-    margin: 0 auto;
-    display: block;
+    margin: 0 0 0 72px;
 } 
 
+.info img{
+    width: 270px;
+}
 .info .notice{
-    text-align: center;
-    font-size: 8px;
+    margin-left: 86px;
 }
 
 
 
 .box {
     float: right;
-    width: 40vw;
-
+    margin-right: 2px;
+    width: 425px;
 }
 .box img{
-    width: auto;
-    height: auto;
-    transform: scale(0.7)
-}
-
-.content{
     width: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    height: auto;
+    display: block;
 }
 
-.contentA{
-    float: left;
-    width: 40%;
+.cloumn{
+    width: 100%;
+    position: relative;
+    /* top: 100px; */
+    margin-top: 100px;
+    padding-bottom: 100px;
+    -moz-column-width: 120px;
+    -webkit-column-width: 120px;
+    column-width: 120px;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+
 }
 
-.contentB{
-    float: right;
-    width: 40%;
+
+.cloumn p {
+    margin-bottom: 22px;
+}
+.cloumn p:last-child {
+    margin-bottom: 0;
 }
 
-.info, .baner, .contentA, .contentB{
-    padding: 60px;
-    width: 50%;
-}
 
-p{
-    margin: 10px;
-}
 
 footer{
     background: #eeeeee;
     width: 100%;
-    height: 30px;
+    min-height: 65px;
     border-top: 1px solid #e6e6e6;
-    padding: 20px;
     position: relative;
     bottom: 0;
     left: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+}
+footer::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+.copyright{
+    float: left;
+    margin-left: 216px;
+    font-size: 14px;
+}
+
+.contact{
+    float: right;
+    margin-right: 232px;
 }
 
 footer a{
     color: black;
+    margin-left: 20px;
 }
 
 footer i{
     transition: all 1s ease-in-out;
+    font-size: 36px;
 }
 
 footer i:hover{
     transform: rotate(360deg);
 }
+
+
+
+.template{
+    position: fixed;
+    width: 100%;
+    top: -800px;
+    left: 0;
+    z-index: 1;
+    opacity: 0.7;
+    display: none;
+}
+
+/* *{
+    outline: 1px solid red;
+} */
+
