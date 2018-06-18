@@ -197,6 +197,7 @@ footer::after{
 .wrapper-contact {
     float: right;
     padding-right: 226px;
+    padding-top: 10px;
 }
 .contact{
     display: inline-block;
