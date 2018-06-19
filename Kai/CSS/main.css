@@ -1,0 +1,148 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeef;
+  height: 120px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  size: 8px;
+  padding: 0 50px;
+  text-decoration: none;
+  color: #9e9e9e;
+}
+
+.clearfix {
+  clear: both;
+  height: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  height: 340px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.content p {
+  margin: 0 auto;
+}
+
+.content_left {
+  float: left;
+  color: gray;
+}
+
+.title {
+  font-size: 48px;
+  color: #040404;
+}
+
+.title_second {
+  font-size: 24px;
+  color: #040404;
+}
+
+.p_modify {
+  color: gray;
+}
+
+.button_put {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+button {
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 15px 32px;
+  background: -webkit-linear-gradient(90deg, rgba(255, 158, 74, 1)35%, rgba(234, 197, 91, 0.8)70%);
+}
+
+.button_down {
+  font-size: 6px;
+  padding-left: 50px;
+  color: gray;
+}
+
+.content_right {
+  float: left;
+  margin-left: 80px;
+  color: gray;
+}
+
+.content_2_title {
+  font-size: 24px;
+  margin-left: 270px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.foolter {
+  width: 100%;
+  height: 75px;
+  position: relative;
+  margin-top: 0px;
+  background-color: #eeeeef;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foolter_width {
+  width: 960px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.foolter_left {
+  margin-left: 60px;
+  float: left;
+  color: #2b2a2a;
+  font-size: 8px;
+}
+
+.foolter_logo {
+  float: right;
+  margin-right: 80px;
+}
+
+.foolter img {}
