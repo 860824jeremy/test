@@ -114,7 +114,7 @@ nav ul a:active{
 .info{
     float: left;
     width: 470px;
-    margin-left: 22px;
+    margin-left: 22px; /* 文字沒對準 */
 }
 
 .info .button-wrapper{
