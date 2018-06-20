@@ -14,8 +14,6 @@ body {
   height: 100%;
 }
 
-.container_center {}
-
 .logo {
   margin-top: 9px;
   float: left;
@@ -55,8 +53,10 @@ nav a {
   height: 320px;
 }
 
-.content_center {
-  margin: auto;
+.content_center {}
+
+.content_img_center {
+  text-align: center;
 }
 
 .content p {
@@ -65,6 +65,11 @@ nav a {
 }
 
 .content_left {
+  padding-left: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
   float: left;
   color: gray;
 }
@@ -85,6 +90,7 @@ nav a {
 
 .button_put {
   padding-top: 20px;
+  padding-left: 55px;
   margin: 0 auto;
 }
 
@@ -100,18 +106,23 @@ button {
 }
 
 .button_down {
+  padding-left: 55px;
   font-size: 4px;
   color: gray;
 }
 
 .content_right {
-  margin-left: 80px;
+  width: 50%;
   float: left;
   color: gray;
 }
 
 .content_sub_title {
-  margin: 20px 0px;
+  padding-left: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
   font-family: sans-serif;
   font-size: 24px;
 }
