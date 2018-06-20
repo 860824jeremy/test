@@ -53,7 +53,9 @@ nav a {
   height: 320px;
 }
 
-.content_center {}
+.content_center {
+  text-align: center;
+}
 
 .content_img_center {
   text-align: center;
@@ -61,30 +63,32 @@ nav a {
 
 .content p {
   font-family: sans-serif;
-  margin: 0 auto;
+}
+
+.div_top {
+  vertical-align: middle;
 }
 
 .content_left {
-  padding-left: 50px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 50%;
-  float: left;
+  text-align: left;
+  display: inline-block;
   color: gray;
 }
 
 .title {
+  margin: 0 auto;
   font-size: 48px;
   color: #040404;
 }
 
 .title_second {
+  margin: 0 auto;
   font-size: 24px;
   color: #040404;
 }
 
 .p_modify {
+  margin: 0 auto;
   color: gray;
 }
 
@@ -106,22 +110,20 @@ button {
 }
 
 .button_down {
+  margin: 0 auto;
   padding-left: 55px;
   font-size: 4px;
   color: gray;
 }
 
 .content_right {
-  width: 50%;
-  float: left;
+  text-align: left;
+  display: inline-block;
   color: gray;
 }
 
 .content_sub_title {
-  padding-left: 50px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  color: #000000;
   margin-bottom: 20px;
   font-family: sans-serif;
   font-size: 24px;
