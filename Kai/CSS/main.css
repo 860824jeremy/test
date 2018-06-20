@@ -118,6 +118,7 @@ button {
 }
 
 .content_right {
+  margin-left: 40px;
   width: 400px;
   text-align: left;
   display: inline-block;
