@@ -4,17 +4,11 @@ body {
 }
 
 #header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #eeeeef;
   height: 120px;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 960px;
   margin: 0 auto;
 }
@@ -46,10 +40,7 @@ nav a {
   height: 40px;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-}
+.content {}
 
 .content p {
   font-family: sans-serif;
@@ -77,9 +68,6 @@ nav a {
 
 .button_put {
   padding-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -95,7 +83,7 @@ button {
 }
 
 .button_down {
-  font-size: 6px;
+  font-size: 4px;
   padding-left: 63px;
   color: gray;
 }
@@ -106,9 +94,8 @@ button {
   color: gray;
 }
 
-.content_2_title {
+.content_sub_title {
   padding-left: 120px;
-  display: flex;
   padding-bottom: 10px;
   padding-top: 10px;
   margin: 0 auto;
@@ -125,9 +112,6 @@ button {
   background-color: #eeeeef;
   position: fixed;
   bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .foolter_width {
@@ -146,4 +130,8 @@ button {
 .foolter_logo {
   float: right;
   margin-right: 40px;
+}
+
+.foolter_logo img {
+  margin: 0px 10px;
 }
