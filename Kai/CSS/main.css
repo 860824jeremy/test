@@ -66,10 +66,11 @@ nav a {
 }
 
 .div_top {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .content_left {
+  width: 400px;
   text-align: left;
   display: inline-block;
   color: gray;
@@ -117,6 +118,7 @@ button {
 }
 
 .content_right {
+  width: 400px;
   text-align: left;
   display: inline-block;
   color: gray;
