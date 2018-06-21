@@ -5,24 +5,24 @@ body {
 
 #header {
   background-color: #eeeeef;
-  height: 120px;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
-  line-height: 120px;
 }
 
 nav {}
 
 nav ul {
-  margin: 0;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
   display: inline;
+  line-height: 120px;
   float: left;
 }
 
@@ -43,9 +43,10 @@ nav li img {
 }
 
 .content {
-  width: 960px;
+  width: 840px;
   margin: 40px auto;
   height: 320px;
+  font-size: 0;
 }
 
 .content_center {
@@ -65,7 +66,8 @@ nav li img {
 }
 
 .content_left {
-  width: 400px;
+  font-size: 16px;
+  width: 50%;
   text-align: left;
   display: inline-block;
   color: gray;
@@ -102,7 +104,9 @@ button {
   display: inline-block;
   border-radius: 4px;
   padding: 15px 32px;
-  background: -webkit-linear-gradient(90deg, rgba(255, 158, 74, 1)35%, rgba(234, 197, 91, 0.8)70%);
+  /*
+  background: linear-gradient(180deg, #ffb500 50%, #D16900 50%);*/
+  background: -webkit-linear-gradient(90deg, rgba(255, 158, 74, 1)50%, rgba(255, 197, 91, 0.8)50%);
 }
 
 .button_down {
@@ -113,18 +117,31 @@ button {
 }
 
 .content_right {
-  margin-left: 40px;
-  width: 400px;
+  font-size: 16px;
+  width: 50%;
   text-align: left;
   display: inline-block;
   color: gray;
 }
 
 .content_sub_title {
+  text-align: left;
   color: #000000;
   margin-bottom: 20px;
   font-family: sans-serif;
   font-size: 24px;
+}
+
+.content_sub {
+  text-align: left;
+  column-count: 2;
+  color: gray;
+  column-gap: 80px;
+}
+
+.content_sub p {
+  margin-top: 0;
+  font-size: 16px;
 }
 
 .foolter {
@@ -142,17 +159,13 @@ button {
 }
 
 .foolter_left {
-  margin-left: 60px;
+  margin-left: 40px;
   color: #2b2a2a;
   font-size: 8px;
   display: inline;
 }
 
 .foolter_logo {
+  margin-right: 60px;
   float: right;
-  margin-right: 40px;
-}
-
-.foolter_logo img {
-  /*margin: 0px 10px;*/
 }
