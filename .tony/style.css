@@ -1,0 +1,106 @@
+/* original setting */
+html, body {
+  width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #989898;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover, a:focus {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 85%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* add design plot */
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: url(img/0Template_1.png);
+    z-index: -100;
+    background-size: cover;
+}
+
+/* Add navigation */
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #efefef;
+	z-index: 100;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo {
+	float: left;
+	padding: 20px 26px 24px 64px;
+}
+
+#logo-img {
+	margin: 0 auto;
+	width: 40px;
+	height: auto;
+}
+
+#logo p {
+	position: relative;
+	bottom: 6px;
+	text-align: center;
+	font-size: 11px;
+}
+
+.nav {
+  float: left;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #989898;
+  display: block;
+  padding: 48px 32px;
+}
+
+.nav li a:hover {
+    color:#f5ad41;
+}
