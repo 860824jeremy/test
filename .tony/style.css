@@ -8,7 +8,7 @@ html, body {
 body {
   padding: 0px;
   margin: 0px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.42857143;
   color: #989898;
   background-color: #fff;
@@ -50,10 +50,10 @@ img {
 
 /* add design plot */
 body{
-    font-family: 'Courier New', Courier, monospace;
-    background: url(img/0Template_1.png);
-    z-index: -100;
-    background-size: cover;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: url(img/0Template_1.png);
+	z-index: -100;
+	background-size: cover;
 }
 
 /* Add navigation */
@@ -64,12 +64,11 @@ header {
   right: 0;
   background-color: #efefef;
 	z-index: 100;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #logo {
 	float: left;
-	padding: 20px 26px 24px 64px;
+	padding: 20px 16px 24px 64px;
 }
 
 #logo-img {
@@ -98,9 +97,68 @@ header {
   text-decoration: none;
   color: #989898;
   display: block;
-  padding: 48px 32px;
+  padding: 49px 39px;
 }
 
 .nav li a:hover {
     color:#f5ad41;
 }
+
+/* session 1 IDEAS */
+.ideas {
+	position: absolute;
+	margin-top: 126px;
+	width: 100%;
+	color: black;
+}
+
+.ideas > .container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 40px 0px;
+}
+
+.idea-text h1{
+	font-size: 36px
+}
+.idea-text, .idea-img {
+	padding: 0px 10px 0px 0px;
+	float: left;
+	display: inline-block;
+	width: 300px;
+}
+.idea-text p {
+	color: #666666;
+}
+.idea-img {
+	left: 10px;
+}
+
+.botton-box {
+	position: absolute;
+	width: 300px;
+	height: auto;
+}
+.botton {
+	position: relative;
+	width: 100%;
+	top: 30px;
+}
+.botton botton {
+	padding: 12px 31px;
+	margin: 18px 53px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 17px;
+	color: #fbf9f9;
+	background-image: linear-gradient(0deg, #f38100 0%, #fcbd5f 70%);
+}
+
+.idea-botton-hint {
+	display: block;
+	position: relative;
+	top: 42px;
+	left: 52px;
+	color: #989898;
+}
+
