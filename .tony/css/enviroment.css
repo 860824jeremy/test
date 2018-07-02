@@ -47,3 +47,13 @@ img {
   margin: 0 auto;
   position: relative;
 }
+
+.clearfix::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+section {
+  overflow: hidden;
+}
