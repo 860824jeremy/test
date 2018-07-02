@@ -9,7 +9,7 @@ body {
   margin: 0px;
 	font-family: sans-serif;
   font-size: 12px;
-  line-height: 1.42857143;
+  line-height: 1.2;
   color: #989898;
   background-color: #fff;
 }
@@ -46,4 +46,14 @@ img {
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
+}
+
+.clearfix::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+section {
+  overflow: hidden;
 }
