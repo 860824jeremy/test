@@ -2,8 +2,8 @@
   position: relative;
   height: 380px;
   margin-top: 12vw;
-  padding: 40px 160px;
-  outline: 1px solid red;
+  padding: 35px 160px;
+  /* outline: 1px solid red; */
 }
 
 .col-left, .col-right{
@@ -35,8 +35,8 @@
 
 .try-me {
   position: relative;
-  width: 175px;
-  height: 59px;
+  width: 177px;
+  height: 64px;
   left: 51px;
   top: 20px;
   /* outline: 1px solid blue; */
