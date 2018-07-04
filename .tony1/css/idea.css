@@ -1,8 +1,6 @@
-/* .idea {
-  position: relative;
-  height: 380px;
-  margin-top: 12vh;
-  padding: 35px 160px;
+.idea {
+  /* margin-top: 12vh; */
+  padding-top: 35px;
   outline: 1px solid red;
 }
 
@@ -13,58 +11,55 @@
 }
 
 .col-left {
-  padding: 0px 10px 0px 20px;
+  outline: 3px dashed green;
 }
 
-.col-left h1 {
-  font-size: 44px;
+.idea-text {
+  width: 360px;
+  margin: 34px 10px 20px 130px;
+  outline: 4px dotted black;
+}
+.idea-text h1 {
+  font-size: 60px;
   text-transform: uppercase;
   color: #333;
 }
 
-.col-left h2 {
-  font-size: 22px;
+.idea-text h2 {
+  font-size: 30px;
+  line-height: 1;
   color: #333;
 }
 
-.col-left p {
-  font-size: 14px;
+.idea-text p {
+  padding: 2px;
+  line-height: 1.5;
   color: #666;
   outline: 1px solid green;
 }
 
 .try-me {
-  position: relative;
-  width: 177px;
-  height: 64px;
-  left: 51px;
-  top: 20px;
+  margin-left: 200px;
   outline: 1px solid blue;
 }
 
-.botton {
-  position: relative;
-  padding: 0px;
-  top: 11px;
-  outline: 1px solid yellow;
-}
-
-.botton a {
-  padding: 13px 32px;
-	border-radius: 5px;
-	text-align: center;
-	font-size: 18px;
+.try-button {
+  width:230px;
+  height: 60px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font: 24px/60px 'OpenSans';
 	color: #fbf9f9;
 	background-image: linear-gradient(0deg, #f38100 0%, #fcbd5f 70%);
 }
 
-.botton-hint {
-  position: absolute;
-	bottom: 0px;
-	color: #989898;
+.try-me h6 {
+  padding: 5px 0px;
+  outline: 1px solid pink;
 }
 
-.col-right {
-  padding: 0px 10px 0px 30px;
+.col-right .toolbox {
+  width: 360px;
+  margin-left: 40px;
+  margin-top: 32px;
 }
- */
