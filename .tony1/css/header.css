@@ -6,6 +6,8 @@ body {
 
 /* ========== navigation ========== */
 #header {
+  position: fixed;
+  width: 100%;
   padding: 27px  0;
   background-color: #efefef;
   /* outline: 4px dashed black; */
