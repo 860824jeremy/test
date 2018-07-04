@@ -1,7 +1,7 @@
 body {
   background: url(../img/0Template_1.png) top center no-repeat;
   background-size: 120%;
-  outline: 4px solid red;
+  /* outline: 4px solid red; */
 }
 
 /* ========== navigation ========== */

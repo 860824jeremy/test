@@ -1,23 +1,23 @@
 .idea {
   /* margin-top: 12vh; */
   padding-top: 35px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .col-left, .col-right{
   width: 50%;
   float: left;
-  outline: 3px dashed blue;
+  /* outline: 3px dashed blue; */
 }
 
 .col-left {
-  outline: 3px dashed green;
+  /* outline: 3px dashed green; */
 }
 
 .idea-text {
   width: 360px;
   margin: 34px 10px 20px 130px;
-  outline: 4px dotted black;
+  /* outline: 4px dotted black; */
 }
 .idea-text h1 {
   font-size: 60px;
@@ -35,12 +35,12 @@
   padding: 2px;
   line-height: 1.5;
   color: #666;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .try-me {
   margin-left: 200px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .try-button {
@@ -55,7 +55,7 @@
 
 .try-me h6 {
   padding: 5px 0px;
-  outline: 1px solid pink;
+  /* outline: 1px solid pink; */
 }
 
 .col-right .toolbox {
