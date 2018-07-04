@@ -1,0 +1,70 @@
+.idea {
+  position: relative;
+  height: 380px;
+  margin-top: 12vh;
+  padding: 35px 160px;
+  outline: 1px solid red;
+}
+
+.col-left, .col-right{
+  width: 50%;
+  float: left;
+  outline: 3px dashed blue;
+}
+
+.col-left {
+  padding: 0px 10px 0px 20px;
+}
+
+.col-left h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.col-left h2 {
+  font-size: 22px;
+  color: #333;
+}
+
+.col-left p {
+  font-size: 14px;
+  color: #666;
+  outline: 1px solid green;
+}
+
+.try-me {
+  position: relative;
+  width: 177px;
+  height: 64px;
+  left: 51px;
+  top: 20px;
+  outline: 1px solid blue;
+}
+
+.botton {
+  position: relative;
+  padding: 0px;
+  top: 11px;
+  outline: 1px solid yellow;
+}
+
+.botton a {
+  padding: 13px 32px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	color: #fbf9f9;
+	background-image: linear-gradient(0deg, #f38100 0%, #fcbd5f 70%);
+}
+
+.botton-hint {
+  position: absolute;
+	bottom: 0px;
+	color: #989898;
+}
+
+.col-right {
+  padding: 0px 10px 0px 30px;
+}
+
