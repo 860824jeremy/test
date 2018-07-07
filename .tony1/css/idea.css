@@ -1,13 +1,23 @@
+#idea {
+  /* margin-top: 23vh; */
+  padding-top: 68px;
+  outline: 1px solid red;
+}
+
 .idea {
-  margin-top: 23vh;
-  padding-top: 35px;
-  /* outline: 1px solid red; */
+  margin: 0 auto;
+  max-width: 775px;
+}
+
+.idea-container {
+  max-width: 775px;
+  outline: 1px dashed yellow;
 }
 
 .col-left, .col-right{
-  width: 50%;
+  min-width: 360px;
   float: left;
-  /* outline: 3px dashed blue; */
+  outline: 3px dashed blue;
 }
 
 .col-left {
@@ -16,8 +26,7 @@
 
 .idea-text {
   width: 360px;
-  margin: 34px 10px 20px 130px;
-  /* outline: 4px dotted black; */
+  outline: 4px dotted black;
 }
 .idea-text h1 {
   font-size: 60px;
@@ -35,16 +44,17 @@
   padding: 2px;
   line-height: 1.5;
   color: #666;
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
 }
 
 .try-me {
-  margin-left: 200px;
-  /* outline: 1px solid blue; */
+  width: 230px;
+  margin: 40px auto;
+  outline: 1px solid blue;
 }
 
 .try-button {
-  width:230px;
+  width:100%;
   height: 60px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -55,11 +65,10 @@
 
 .try-me h6 {
   padding: 5px 0px;
-  /* outline: 1px solid pink; */
+  outline: 1px solid pink;
 }
 
 .col-right .toolbox {
   width: 360px;
-  margin-left: 40px;
-  margin-top: 32px;
+  margin: 0 auto;
 }
