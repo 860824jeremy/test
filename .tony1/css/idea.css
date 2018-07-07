@@ -1,7 +1,7 @@
 #idea {
   /* margin-top: 23vh; */
   padding-top: 68px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .idea {
@@ -10,23 +10,24 @@
 }
 
 .idea-container {
-  max-width: 775px;
-  outline: 1px dashed yellow;
-}
-
-.col-left, .col-right{
-  min-width: 360px;
-  float: left;
-  outline: 3px dashed blue;
+  /* outline: 1px dashed yellow; */
 }
 
 .col-left {
-  /* outline: 3px dashed green; */
+  min-width: 360px;
+  float: left;
+  /* outline: 3px dashed red; */
+}
+
+.col-right {
+  min-width: 360px;
+  float: right;
+  /* outline: 3px dashed blue; */
 }
 
 .idea-text {
   width: 360px;
-  outline: 4px dotted black;
+  /* outline: 4px dotted black; */
 }
 .idea-text h1 {
   font-size: 60px;
@@ -44,13 +45,13 @@
   padding: 2px;
   line-height: 1.5;
   color: #666;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .try-me {
   width: 230px;
   margin: 40px auto;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .try-button {
@@ -65,7 +66,7 @@
 
 .try-me h6 {
   padding: 5px 0px;
-  outline: 1px solid pink;
+  /* outline: 1px solid pink; */
 }
 
 .col-right .toolbox {

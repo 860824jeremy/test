@@ -1,5 +1,4 @@
 .intro {
-  /* padding: 115px 0; */
   margin: 115px auto;
   max-width: 830px;
   /* outline: 1px solid red; */
@@ -17,10 +16,5 @@
 }
 
 .intro .col-left {
-  /* margin-left: 110px; */
   margin-right: 27px;
-}
-
-.intro .col-right p {
-  /* margin-left: 27px; */
 }
