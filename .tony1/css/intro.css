@@ -1,11 +1,12 @@
 .intro {
-  padding: 115px 0;
-  margin: 0 auto;
+  /* padding: 115px 0; */
+  margin: 115px auto;
+  max-width: 830px;
   /* outline: 1px solid red; */
 }
 
 .intro h2 {
-  padding: 35px 110px;
+  padding: 35px 0px;
   font-size: 30px;
   color: #333;
 }
@@ -15,10 +16,11 @@
   line-height: 1.5;
 }
 
-.intro .col-left p {
-  margin-left: 110px;
+.intro .col-left {
+  /* margin-left: 110px; */
+  margin-right: 27px;
 }
 
 .intro .col-right p {
-  margin-left: 27px;
+  /* margin-left: 27px; */
 }
