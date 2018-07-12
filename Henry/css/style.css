@@ -3,6 +3,7 @@
 /*******************************/
 
 /* Tag */
+
 h1 {
     color: #2c2c2c;
     font-weight: normal;
@@ -29,7 +30,7 @@ a {color: white; text-decoration: none;}
 /* Container & Column */
 .section {
     margin: 0 auto; 
-    width: 70%;
+    width: 1200px;
 }
 
 .span-6-of-12{
@@ -61,11 +62,15 @@ a {color: white; text-decoration: none;}
 .links li {
     float: left;
     line-height: 91px;
-    margin-right: 7vw;
+    margin-right: 130px;
 }
 
 .links li:first-child {
     line-height: 0;
+}
+
+.links li:last-child {
+    margin-right: 0;
 }
 
 .links a {
@@ -78,7 +83,7 @@ a {color: white; text-decoration: none;}
 /*******************************/
 /* TOPIC */
 /*******************************/
-.topic {padding: 0 40px; margin-bottom: 100px;}
+.topic {margin-bottom: 100px;}
 .topic-idea h2 {color: #2c2c2c;}
 
 .button {
@@ -88,7 +93,7 @@ a {color: white; text-decoration: none;}
 }
 
 .button a {
-    background: linear-gradient(#ffb94f, #f99503); 
+    background: linear-gradient(#ffb94f 50%, #f99503 50%); 
     border-radius: 10px;
     display: inline-block;
     font-size: 25px;
@@ -96,7 +101,7 @@ a {color: white; text-decoration: none;}
     text-transform: uppercase;
 }
 
-.button a:hover {background: linear-gradient(#f99503, #ffb94f);}
+.button a:hover {background: linear-gradient(#f99503 50%, #ffb94f 50%);}
 .button div {
     color: #2c2c2c;
     display: block;
@@ -133,6 +138,7 @@ a {color: white; text-decoration: none;}
     font-size: 8px;
     position: absolute;
     top: 50%;
+    margin-top: -4px;
 }
 
 .social {
