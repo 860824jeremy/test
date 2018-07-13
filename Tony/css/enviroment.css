@@ -21,9 +21,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
   font-weight: 100;
+}
+
+p:first-child {
+  margin-top: 0;
 }
 
 ul, ol {
@@ -52,7 +55,7 @@ img {
 }
 
 .clearfix::after {
-  content: ' ';
+  content: '';
   display: table;
   clear: both;
 }

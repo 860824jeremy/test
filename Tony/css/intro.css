@@ -15,6 +15,6 @@
   line-height: 1.5;
 }
 
-.intro .col-left {
-  margin-right: 27px;
+p:first-child {
+  margin-top: 0px;
 }
