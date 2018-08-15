@@ -6,15 +6,14 @@ body {
 
 /* ========== navigation ========== */
 #header {
-  position: fixed;
-  width: 100%;
-  padding: 27px  0;
+  padding: 27px 0;
   background-color: #efefef;
   /* outline: 4px dashed black; */
 }
 
 nav {
-  margin-left: 68px;
+  max-width: 87%;
+  margin: 0 auto;
   /* outline: 1px dashed green; */
 }
 
@@ -37,20 +36,12 @@ nav #logo {
   color: #333;
 }
 
-nav ul.nav {
-  display: flex;
-  justify-content: space-between;
-  width: 750px;
-  padding-left: 70px;
-  /* outline: 2px dashed red; */
-}
-
 .nav li {
   display: inline-block;
-  padding: 40px 0px;
 }
 
 .nav li a {
+  padding: 40px 5.4vw;
   text-transform: capitalize;
   text-decoration: none;
   color: #989898;
