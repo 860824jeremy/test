@@ -5,18 +5,19 @@ html {
     */
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-family: 'helvetica', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'helvetica', Arial, sans-serif;
     font-size: 20px;
     margin: 0;
 }
 
-html, body, body * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    box-sizing:    border-box;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 /*
@@ -102,7 +103,7 @@ header .header__menu {
     margin-left: 3%;
 }
 
-.header__menu .menu-btn {
+.header__menu .menu-button {
     font-size: 1.2rem;
     color: #666;
     display: inline-block;
@@ -110,14 +111,14 @@ header .header__menu {
     cursor: pointer;
 }
 
-.header__menu .menu-btn:last-child {
+.header__menu .menu-button:last-child {
     margin-right: 0;
 }
 
-.header__menu .menu-btn:hover {
+.header__menu .menu-button:hover {
     color: #f7c872;
 }
-.header__menu .menu-btn__light {
+.header__menu .menu-button--light {
     color: orange;
 }
 
@@ -156,13 +157,13 @@ header .header__menu {
     column-gap: 5%;
 }
 
-.call-to-action-btn-box {
+.call-to-action-box {
     margin: 20px auto;
     width: 60%;
-    
+    min-width: 200px;
 }
 
-.call-to-action-btn-box .main-call-to-action-btn {
+.call-to-action-box .call-to-action-box__button {
     outline: 0;
     border: 0;
     color: #fff;
@@ -182,7 +183,7 @@ header .header__menu {
     cursor: pointer;
 }
 
-.call-to-action-btn-box .call-to-action-btn__description {
+.call-to-action-box .call-to-action-box__description {
     font-size: .8rem;
 }
 
@@ -209,6 +210,7 @@ footer .social-media {
 footer .social-media a {
     color: #000;
     font-size: 2rem;
+    margin: 0 10px;
 }
 
 footer .social-media a:hover {
@@ -217,5 +219,4 @@ footer .social-media a:hover {
 
 footer .social-media i {
     display: inline-block;
-    margin: 0 10px;
 }
