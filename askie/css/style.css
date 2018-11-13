@@ -84,7 +84,7 @@ header .header__logo {
     width: 20%;
 }
 
-header__logo a {
+.header__logo a {
     display: block;
 }
 
@@ -171,13 +171,13 @@ header .header__menu {
     margin-bottom: .5rem;
     padding: 15px 0;
     width: 100%;
-    background: #fac873;
-    background: -moz-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #fac873 100%);
+    background: #f57f00;
+    background: -moz-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #f57f00 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #fac873), color-stop(50%, #ffb133), color-stop(51%, #f57f00), color-stop(100%, #fac873));
-    background: -webkit-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #fac873 100%);
-    background: -o-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #fac873 100%);
-    background: -ms-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #fac873 100%);
-    background: linear-gradient(to bottom, #fac873 0%, #ffb133 50%, #f57f00 51%, #fac873 100%);
+    background: -webkit-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #f57f00 100%);
+    background: -o-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #f57f00 100%);
+    background: -ms-linear-gradient(top, #fac873 0%, #ffb133 50%, #f57f00 51%, #f57f00 100%);
+    background: linear-gradient(to bottom, #fac873 0%, #ffb133 50%, #f57f00 51%, #f57f00 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac873', endColorstr='#fac873', GradientType=0 );
     cursor: pointer;
 }
