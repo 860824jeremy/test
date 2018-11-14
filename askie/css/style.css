@@ -46,21 +46,21 @@ a {
     text-decoration: none;
 }
 
-.inline-block {
+.column-half-box__middle {
     display: inline-block;
     vertical-align: middle;
-    width: 49%;
+    width: 50%;
+    font-size: 1rem;
 }
 
 .whole-max-width {
-    width: 80%;
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 1024px;
+    margin: auto;
+    font-size: 0; /* correct the white space when display is inline-block */
 }
 
 .content-max-width {
-    width: 65%;
-    max-width: 1024px;
+    max-width: 960px;
     margin: 50px auto 120px;
 }
 
@@ -88,8 +88,6 @@ header .header__logo {
 header .header__logo img {
     width: 100%;
     max-width: 80px;
-    display: block;
-    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -128,15 +126,20 @@ header .header__menu {
 
 .index-content__call-to-action {
     margin-bottom: 120px;
+    font-size: 0; /* correct the white space when display is inline-block */
 }
 
 .index-content__call-to-action h2 {
     margin-bottom: 5px;
 }
 
+.index-content__call-to-action p {
+    font-size: 1.2rem;
+}
+
 .index-content__call-to-action .download-photo {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     max-width: 400px;
 }
 
@@ -151,16 +154,16 @@ header .header__menu {
 }
 
 .index-content__words p {
-    margin-bottom: 40px; /* margin collapsing */
+    margin-bottom: 20px; /* margin collapsing */
+    font-size: 1.2rem;
 }
 
-.call-to-action-box {
-    margin: 20px auto;
-    width: 60%;
-    min-width: 200px;
+.index-content__words p:first-child {
+    margin-top: 0;
 }
 
-.call-to-action-box .call-to-action-box__button {
+.call-to-action-box__button {
+    position: relative;
     outline: 0;
     border: 0;
     color: #fff;
@@ -168,14 +171,20 @@ header .header__menu {
     border-radius: 5px;
     margin-bottom: .5rem;
     padding: 15px 0;
-    width: 100%;
     background: #f57f00;
     background: linear-gradient(to bottom, #fac873 0%, #ffb133 50%, #f57f00 51%);
     cursor: pointer;
+    width: 50%;
+    margin: 25px auto 0;
+    display: block;
+
 }
 
-.call-to-action-box .call-to-action-box__description {
+.call-to-action-box__description {
     font-size: .8rem;
+    position: absolute;
+    top: 110%;
+    color: #333;
 }
 
 
@@ -186,6 +195,7 @@ footer {
     color: #666;
     border-top: 1px solid #ccc;
     padding: 30px 0 25px 0;
+    font-size: 0; /* correct the white space when display is inline-block */
 }
 
 footer .copyright {
@@ -195,7 +205,6 @@ footer .copyright {
 
 footer .social-media {
     text-align: right;
-    padding-right: 3%;
 }
 
 footer .social-media a {
