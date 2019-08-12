@@ -20,6 +20,7 @@ body {
   padding: 40px 0;
 }
 
+
 .logo {
   display: inline-block;
   margin-right: 55px;
@@ -28,7 +29,7 @@ body {
 .logo img {
   vertical-align: top;
 }
-.logo p {
+.logo h1 {
   font-size: 15px;
   margin: 0;
   font-weight: 500;
@@ -38,17 +39,21 @@ ul {
   display: inline-block;
   padding: 0;
   margin: 0;
+  list-style: none
   font-size: 0;
 }
 ul li {
   display: inline-block;
   color: #607D8B;
   font-weight: 500;
-  margin: 0px 55px;
   cursor: pointer;
   font-size: 16px;
-
 }
+
+li+li{
+  margin-left: 120px;
+}
+
 ul li:hover {
   color: #F28500;
 }
@@ -59,7 +64,7 @@ ul li:hover {
 }
 
 .row1{
-  background-color: #fafafa;
+  background-color: #fbfbfb;
   padding-bottom: 50px;
 }
 
@@ -83,23 +88,25 @@ ul li:hover {
   width: 330px;
   display: inline-block;
   font-size: 15px;
-  margin: 60px 65px;
+  margin: 60px 40px;
   vertical-align: top;
   text-align: left;
 }
 .column h1, .column h2, .column h3, .column p {
   margin: 0;
 }
-.column h1 {
+.column h2 {
   font-size: 60px;
   letter-spacing: 1px;
   line-height: 50px;
   font-weight: 400;
+  color: #333;
 }
-.column h2 {
+.column h3 {
   font-size: 26px;
   font-weight: normal;
   letter-spacing: 1px;
+  color: #333;
 }
 .column p {
   color: #333;
@@ -107,7 +114,6 @@ ul li:hover {
 }
 
 .button_outer {
-  /* margin: 0 auto; */
   margin-top: 20px;
   text-align: center;
 }
@@ -122,9 +128,10 @@ ul li:hover {
   border-color: #FFA000;
   border-radius: 5px;
   color: white;
-  line-height: 40px;
-  font-size: 18px;
+  line-height: 50px;
+  font-size: 20px;
   background: linear-gradient(to bottom, #FFA726 50%, #F28500 50%);
+  border: none;
   cursor: pointer;
 }
 
@@ -154,36 +161,26 @@ ul li:hover {
   padding-bottom: 30px;
 }
 
-.footer {
-  width: 100%;
+footer {
   padding: 25px 0;
   background-color: #eee;
 }
 
 .copyright {
-  width: 880px;
+  width: 840px;
   color: #333;
   margin: 0 auto;
-
-}
-.copyright::after{
-  content:'';
-  display: block;
-  clear: both;
 }
 
 .text {
-  display: inline-block;
-  vertical-align: middle;
   float: left;
   line-height: 25px;
 }
 
 .icons {
-  display: inline-block;
-  vertical-align: middle;
+  width: 150px;
   font-size: 0;
-  margin-left: 400px;
+  margin-left: auto;
 }
 
 .icons img {
