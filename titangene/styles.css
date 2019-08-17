@@ -111,7 +111,7 @@ main .container {
   width: 230px;
   text-align: center;
   padding-top: 20px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 .btn {
   background: linear-gradient(to bottom, #fbba55 50%, #f99603 50%);
