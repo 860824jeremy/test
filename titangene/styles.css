@@ -23,9 +23,16 @@ h3 {
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 p {
   font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
 }
 .row {
   font-size: 0;
@@ -47,7 +54,6 @@ header {
 }
 header .container {
   width: 900px;
-  margin: 0 auto;
   padding: 26px 0 40px 0;
   font-size: 0;
 }
@@ -57,10 +63,8 @@ header .container {
   padding-right: 10px;
   vertical-align: middle;
   text-align: center;
-  font-size: 0;
 }
 .logo a {
-  text-decoration: none;
   color: black;
 }
 nav {
@@ -70,7 +74,6 @@ nav {
   text-align: center;
 }
 nav ul {
-  list-style-type: none;
   width: 800px; 
 }
 nav li {
@@ -80,7 +83,6 @@ nav li {
   padding: 0 10px;
 }
 nav li a {
-  text-decoration: none;
   color: #818181;
   font-size: 16px;
 }
@@ -95,13 +97,11 @@ main {
 }
 main .container {
   width: 820px;
-  margin: 0 auto;
 }
 .info {
   padding-left: 24px;
 }
 .info p {
-  font-size: 16px;
   margin-top: 4px;
 }
 .info-img {
@@ -143,7 +143,6 @@ footer {
 }
 footer .container {
   width: 880px;
-  margin: 0 auto;
   padding: 20px 0;
   font-size: 0;
 }
@@ -159,7 +158,6 @@ footer .container {
 .social ul {
   /* width: 800px; */
   display: inline-block;
-  list-style-type: none;
 }
 .social li {
   display: inline-block;
