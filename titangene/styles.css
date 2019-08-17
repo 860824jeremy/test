@@ -162,7 +162,10 @@ footer .container {
 .social li {
   display: inline-block;
   /* width: calc((100% - 100px) / 5); */
-  padding: 0 10px;
+  padding-left: 20px;
+}
+.social li:first-of-type {
+  padding-left: 0;
 }
 .social a {
   font-size: 36px;
