@@ -2,10 +2,35 @@ body {
   margin: 0;
   font-family: 'Open Sans';
 }
-
-h1 {
+h1, h2, h3, p {
   margin: 0;
 }
+h2 {
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+}
+p {
+  font-size: 16px;
+}
+.row {
+  font-size: 0;
+}
+.col-2 {
+  width: calc((100% - 40px) / 2);
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 40px;
+}
+.row .col-2:first-of-type {
+  padding-left: 0;
+}
+
 
 header {
   width: 100%;
@@ -67,4 +92,42 @@ nav li a {
 
 nav li a:hover {
   color: #f99603;
+}
+
+main {
+  width: 100%;
+  padding-top: 60px;
+}
+main .container {
+  width: 820px;
+  margin: 0 auto;
+}
+.info {
+  padding-left: 24px;
+}
+.info p {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.info-img {
+  text-align: right
+}
+.action {
+  width: 230px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto 0 auto;
+}
+.btn {
+  background: linear-gradient(to bottom, #fbba55 50%, #f99603 50%);;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.action p {
+  font-size: 12px;
+  text-align: left;
 }
