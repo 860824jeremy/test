@@ -76,7 +76,7 @@ header ul {
 header li {
   /* float: left; */
   display: inline-block;
-  width: calc((100% - 100px) / 5);
+  width: calc(100% / 5);
   padding: 0 10px;
   box-sizing: border-box;
 }
