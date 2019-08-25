@@ -13,17 +13,14 @@ body {
   text-align: center;
 }
 
-nav {
+header {
   padding: 40px 0;
-}
-
-.navbar {
   background-color: #eee;
 }
 
 .logo {
   display: inline-block;
-  margin-right: 55px;
+  margin-right: 100px;
   vertical-align: middle;
   font-size: 0;
 }
@@ -45,15 +42,16 @@ li {
   display: inline-block;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #666;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
+  padding: 5px;
 }
 
 li+li {
-  margin-left: 120px;
+  margin-left: 95px;
 }
 
 ul a:hover {
@@ -62,13 +60,17 @@ ul a:hover {
 main{
   padding-bottom: 130px;
 }
-.row1, .row2 {
+
+section{
+  padding-top: 65px;
+}
+.row2 {
   background-color: white;
 }
 
 .row1 {
   background-color: #fbfbfb;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .box {
@@ -76,46 +78,49 @@ main{
   margin: 0 auto;
 }
 
-h3 {
-  font-size: 26px;
+h3,h4 {
+  font-size: 27px;
   font-weight: 500;
   text-align: left;
   color: #333;
-
 }
 
-.box h3 {
-  color: #333;
-  margin-bottom: 30px;
+h4 {
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .column {
   width: 330px;
   display: inline-block;
   font-size: 15px;
-  margin: 60px 40px;
   vertical-align: top;
   text-align: left;
+}
+
+.column:first-child{
+  margin-right: 50px;
 }
 
 h1,h2,h3,p {
   margin: 0;
 }
-.column h2 {
-  font-size: 60px;
+
+h2 {
+  font-size: 45px;
   letter-spacing: 1px;
-  line-height: 50px;
+  line-height: 0.9;
   font-weight: 400;
   color: #333;
 }
 
 .column p {
   color: #333;
-  line-height: 20px;
+  line-height: 1.4;
 }
 
 .button_outer {
-  margin-top: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -139,6 +144,7 @@ button {
 .dontWorry {
   text-align: left;
   line-height: 25px;
+  color: #333;
 }
 
 .download {
@@ -157,36 +163,35 @@ button {
   -webkit-column-gap: 80px;
           column-gap: 80px;
 }
+
 .article p {
   margin: 0;
   padding-bottom: 30px;
 }
 
 footer {
-  padding: 25px 0;
-  background-color: #eee;
-}
-
-.footer {
-  width: 840px;
-  margin: 0 auto;
+  padding: 25px 18%;
+  background-color: #eeeeee;
 }
 
 .copywright {
   font-size: 14px;
   float: left;
-  line-height: 25px;
+  line-height: 2.3;
   color: #333;
 }
 
-.icons {
-  width: 200px;
+.contact {
+  width: 140px;
   margin-left: auto;
+  font-size: 0;
 }
 
-.icons a {
+.contact a {
   font-size: 25px;
-  margin-left: 15px;
   color: black;
+}
 
+.contact a+a{
+  margin-left: 15px;
 }
