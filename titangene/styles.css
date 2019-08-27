@@ -67,26 +67,24 @@ header .container {
 .logo a {
   color: black;
 }
-nav {
-  /* width: 796px; */
+header ul {
+  width: calc(100% - 100px); 
   display: inline-block;
   vertical-align: middle;
   text-align: center;
 }
-nav ul {
-  width: 800px; 
-}
-nav li {
+header li {
   /* float: left; */
   display: inline-block;
-  width: calc((100% - 100px) / 5);
+  width: calc(100% / 5);
   padding: 0 10px;
+  box-sizing: border-box;
 }
-nav li a {
+header li a {
   color: #818181;
   font-size: 16px;
 }
-nav li a:hover {
+header li a:hover {
   color: #f99603;
 }
 
