@@ -31,17 +31,6 @@ h1 {
   font-weight: 500;
 }
 
-ul {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  list-style: none
-}
-
-li {
-  display: inline-block;
-}
-
 header a {
   text-decoration: none;
   color: #666;
@@ -50,11 +39,11 @@ header a {
   padding: 5px;
 }
 
-li+li {
+header a+a{
   margin-left: 95px;
 }
 
-ul a:hover {
+header a:hover {
   color: #F28500;
 }
 main{
@@ -174,10 +163,10 @@ footer {
   background-color: #eeeeee;
 }
 
-.copywright {
+.copyright {
   font-size: 14px;
   float: left;
-  line-height: 2.3;
+  line-height: 25px;
   color: #333;
 }
 
@@ -188,8 +177,12 @@ footer {
 }
 
 .contact a {
-  font-size: 25px;
   color: black;
+  /* line-height: 14.5px; */
+}
+
+i {
+  font-size: 25px;
 }
 
 .contact a+a{
