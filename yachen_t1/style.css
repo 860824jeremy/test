@@ -161,6 +161,7 @@ button {
 footer {
   padding: 25px 18%;
   background-color: #eeeeee;
+  overflow: hidden;
 }
 
 .copyright {
