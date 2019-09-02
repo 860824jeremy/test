@@ -37,13 +37,13 @@ a {
 .row {
   font-size: 0;
 }
-.col-2 {
+.col-half {
   width: calc((100% - 40px) / 2);
   display: inline-block;
   vertical-align: top;
   padding-left: 40px;
 }
-.row .col-2:first-of-type {
+.col-half:first-of-type {
   padding-left: 0;
 }
 
