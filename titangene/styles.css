@@ -108,7 +108,7 @@ main .container {
   padding-top: 20px;
   margin: 0 auto;
 }
-.btn {
+.button {
   background: linear-gradient(to bottom, #fbba55 50%, #f99603 50%);
   color: #fff;
   border: none;
