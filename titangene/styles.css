@@ -150,10 +150,11 @@ footer .container {
   text-align: right;
 }
 .social a {
+  display: inline-block;
   color: #040404;
 }
 .social a + a {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 .social i {
   font-size: 36px;
