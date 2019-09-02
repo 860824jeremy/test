@@ -94,8 +94,8 @@ main .container {
 .info {
   padding-left: 24px;
 }
-.info p {
-  margin-top: 4px;
+.info h3 {
+  margin-bottom: 4px;
 }
 .info-img {
   text-align: right;
