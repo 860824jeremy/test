@@ -138,28 +138,23 @@ footer .container {
   padding: 20px 0;
   font-size: 0;
 }
+.copyright,
+.social {
+  vertical-align: middle;
+}
 .copyright {
   font-size: 12px;
   display: inline-block;
-  vertical-align: middle;
 }
 .social {
-  vertical-align: middle;
   text-align: right;
 }
-.social ul {
-  /* width: 800px; */
-  display: inline-block;
+.social a {
+  color: #040404;
 }
-.social li {
-  display: inline-block;
-  /* width: calc((100% - 100px) / 5); */
+.social a + a {
   padding-left: 20px;
 }
-.social li:first-of-type {
-  padding-left: 0;
-}
-.social a {
+.social i {
   font-size: 36px;
-  color: #040404;
 }
