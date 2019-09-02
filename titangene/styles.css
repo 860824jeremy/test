@@ -59,7 +59,7 @@ header .container {
 .logo {
   width: 90px;
   display: inline-block;
-  padding-right: 10px;
+  margin-right: 10px;
   vertical-align: middle;
   text-align: center;
 }
