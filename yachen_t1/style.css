@@ -64,7 +64,7 @@ section {
 
 .row_article {
   width: 800px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 h3,h4 {
@@ -76,6 +76,7 @@ h3,h4 {
 h4 {
   margin: 0;
   padding-bottom: 30px;
+  column-span: all;
 }
 
 .columns_box{
@@ -163,7 +164,7 @@ footer {
   overflow: hidden;
 }
 
-.fixed_footer{
+.footer_box{
   width: 830px;
   margin: auto;
 }
