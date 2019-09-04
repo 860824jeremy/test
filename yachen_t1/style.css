@@ -9,18 +9,18 @@ html, body {
   min-width: 992px;
 }
 
-body {
-  text-align: center;
-}
-
 header {
   padding: 40px 0;
   background-color: #eee;
+  text-align: center;
+}
+
+h1,h2,h3,p {
+  margin: 0;
 }
 
 .logo {
   display: inline-block;
-  margin-right: 100px;
   vertical-align: middle;
   font-size: 0;
 }
@@ -32,37 +32,37 @@ h1 {
 }
 
 header a {
+  display: inline-block;
   text-decoration: none;
   color: #666;
   font-weight: 500;
   font-size: 14px;
-  padding: 5px;
+  vertical-align: middle;
 }
 
 header a+a{
   margin-left: 95px;
+  padding: 5px;
 }
 
-header a:hover {
+header a+a:hover {
   color: #F28500;
 }
 main{
   padding-bottom: 130px;
 }
 
-section{
-  padding-top: 65px;
-}
-.row2 {
-  background-color: white;
-}
-
-.row1 {
+.row_download {
   background-color: #fbfbfb;
   padding-bottom: 40px;
 }
 
-.box {
+section {
+  background-color: white;
+  padding-top: 65px;
+}
+
+.row_article {
   width: 800px;
   margin: 0 auto;
 }
@@ -70,7 +70,6 @@ section{
 h3,h4 {
   font-size: 27px;
   font-weight: 500;
-  text-align: left;
   color: #333;
 }
 
@@ -79,8 +78,13 @@ h4 {
   padding-bottom: 30px;
 }
 
+.columns_box{
+  width: 800px;
+  text-align: center;
+  margin: auto;
+}
 .column {
-  width: 330px;
+  width: 40%;
   display: inline-block;
   font-size: 15px;
   vertical-align: top;
@@ -89,10 +93,6 @@ h4 {
 
 .column:first-child{
   margin-right: 50px;
-}
-
-h1,h2,h3,p {
-  margin: 0;
 }
 
 h2 {
@@ -110,12 +110,11 @@ h2 {
 
 .button_outer {
   padding-top: 20px;
-  text-align: center;
 }
 
 .button_inner {
-  display: inline-block;
   width: 200px;
+  margin: auto
 }
 
 button {
@@ -159,9 +158,14 @@ button {
 }
 
 footer {
-  padding: 25px 18%;
+  padding: 25px 0;
   background-color: #eeeeee;
   overflow: hidden;
+}
+
+.fixed_footer{
+  width: 830px;
+  margin: auto;
 }
 
 .copyright {
