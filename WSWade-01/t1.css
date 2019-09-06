@@ -1,0 +1,226 @@
+* {
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+/* ///////////////////////  nav  /////////////////////// */
+nav {
+    height: 182px;
+    width: 100%;
+    font-size: 0;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+nav img {
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+nav .navbar {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    vertical-align: top;
+}
+
+nav .navbar div {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    margin-left: 120px;
+    color: #969696;
+}
+
+nav .navbar .home {
+    margin-left: 50px;
+    color: #F3973E;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* /////////////////////// section .head /////////////////////// */
+
+section .head {
+    height: 567px;
+    width: 100%;
+    background-color: #FDFDFD;
+    font-size: 0;
+}
+
+section .head .left{
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+section .head .left .click {
+    width: 450px;
+    float: right;
+    margin-top: 75px;
+}
+
+section .head .left .click .ideas h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+section .head .left .click .ideas h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+section .head .left .click .ideas h2 {
+    font-size: 27px;
+}
+
+section .head .left .click .button {
+    text-align: center;
+}
+
+section .head .left .click .button_center {
+    display: inline-block;
+}
+
+section .head .left .click .button img {
+    width: 260px;
+    height: 70px;
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+section .head .left .click .button p {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+}
+
+section .head .right{
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+section .head .right img{
+    margin-top: 60px;
+    height: 60%;
+    width: 60%;
+}
+
+/* /////////////////////// section .content /////////////////////// */
+
+section .content {
+    height: 700px;
+    width: 100%;
+    font-size: 0;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 65px;
+}
+
+section .content h1 {
+    /* height: ; */
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+section .content .left {
+    /* height: ; 500/420; */
+    width: 50%;
+    display: inline-block;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 1px;
+}
+
+section .content .left h1 {
+    width: 70%;
+    float: right;
+}
+
+section .content .left h2 {
+    width: 70%;
+    float: right;
+    margin-bottom: 45px;
+}
+
+section .content .right {
+    /* height: ; */
+    width: 50%;
+    display: inline-block;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 1px;
+}
+
+section .content .right h2 {
+    width: 70%;
+    margin-bottom: 45px;
+}
+/* /////////////////////// footer /////////////////////// */
+
+footer {
+    height: 87px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    font-size: 0;
+    text-align: center;
+}
+footer .jumbotron {
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+footer .jumbotron .footnote {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .jumbotron .link {
+    /* display: inline-block; */
+    position: relative;
+    font-size: 18px;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .jumbotron .link i {
+    margin: 12px;
+}
