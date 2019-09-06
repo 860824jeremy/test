@@ -161,15 +161,17 @@ button {
 footer {
   padding: 25px 0;
   background-color: #eeeeee;
-  overflow: hidden;
 }
 
 .footer_box{
   width: 830px;
   margin: auto;
+  font-size: 0;
 }
 
 .copyright {
+  display: inline-block;
+  width: 50%;
   font-size: 14px;
   float: left;
   line-height: 25px;
@@ -177,14 +179,14 @@ footer {
 }
 
 .contact {
-  width: 140px;
-  margin-left: auto;
+  display: inline-block;
+  text-align: right;
+  width: 50%;
   font-size: 0;
 }
 
 .contact a {
   color: black;
-  /* line-height: 14.5px; */
 }
 
 i {
