@@ -2,16 +2,21 @@
   /* outline: 1px solid #000; */
 }
 
+/*----------------------reset---------------------------*/
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
-  min-width: 1200px;
+  min-width: 992px;
 }
 
 h1,h2,h3,p {
   margin: 0;
 }
+
+
+/*-----------------------header--------------------------*/
 
 header {
   padding: 40px 0;
@@ -36,6 +41,11 @@ header li{
   text-align: center;
 }
 
+header ul li {
+  width: 8%;
+  margin-left: 10%;
+}
+
 header a {
   display: inline-block;
   text-decoration: none;
@@ -46,10 +56,6 @@ header a {
   box-sizing: border-box;
 }
 
-header ul li {
-  width: 8%;
-  margin-left: 10%;
-}
 
 header ul a{
   padding: 5px;
@@ -62,7 +68,6 @@ header ul a:hover {
 
 nav {
   width: 880px;
-  min-width: 500px;
   box-sizing: border-box;
   margin: auto;
 }
@@ -73,9 +78,7 @@ nav {
   font-size: 0;
 }
 
-main {
-  padding-bottom: 130px;
-}
+/*----------------------main-----------------------*/
 
 .advertise {
   background-color: #fbfbfb;
@@ -87,21 +90,13 @@ section {
   padding-top: 65px;
 }
 
-.row_article {
-  width: 800px;
-  margin: auto;
-}
 
-h3,h4 {
+h3 {
   font-size: 27px;
-  font-weight: 500;
-  color: #333;
+  font-weight: 400;
+  color: #444;
 }
 
-h4 {
-  padding-bottom: 30px;
-  column-span: all;
-}
 
 .wrapper{
   width: 820px;
@@ -129,8 +124,8 @@ h2 {
   color: #333;
 }
 
-.column p {
-  color: #333;
+p {
+  color: #444;
   line-height: 1.4;
 }
 
@@ -156,7 +151,7 @@ button {
 .text {
   text-align: left;
   line-height: 25px;
-  color: #333;
+  color: #444;
 }
 
 .image {
@@ -168,24 +163,33 @@ button {
 }
 
 .article {
-  width: 100%;
-  margin: 0;
+  width: 800px;
+  margin: auto;
+  padding-bottom: 130px;
   -webkit-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: 80px;
-          column-gap: 80px;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+}
+
+.article h3 {
+  padding-bottom: 30px;
+  column-span: all;
 }
 
 .article p {
   padding-bottom: 30px;
 }
 
+
+/*------------------footer-------------------*/
+
 footer {
   padding: 25px 0;
   background-color: #eeeeee;
 }
 
-.footer_box{
+.footer_wrap{
   width: 830px;
   margin: auto;
   font-size: 0;
@@ -195,9 +199,9 @@ footer {
   display: inline-block;
   width: 50%;
   font-size: 14px;
-  float: left;
   line-height: 25px;
   color: #333;
+  vertical-align: middle;
 }
 
 .contact {
@@ -205,6 +209,7 @@ footer {
   text-align: right;
   width: 50%;
   font-size: 0;
+  vertical-align: middle;
 }
 
 .contact a {
