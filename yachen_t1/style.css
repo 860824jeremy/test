@@ -1,34 +1,39 @@
 * {
   /* outline: 1px solid #000; */
-  font-family: "Red Hat Display", sans-serif;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  min-width: 992px;
-}
-
-header {
-  padding: 40px 0;
-  background-color: #eee;
-  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  min-width: 1200px;
 }
 
 h1,h2,h3,p {
   margin: 0;
 }
 
-.logo {
-  display: inline-block;
-  vertical-align: middle;
+header {
+  padding: 40px 0;
+  background-color: #eee;
   font-size: 0;
 }
 
 h1 {
   font-size: 15px;
-  margin: 0;
   font-weight: 500;
+}
+
+header ul{
+  padding: 0;
+  display: inline-block;
+  width: 90%;
+  font-size: 0;
+}
+
+header li{
+  display: inline-block;
+  text-align: center;
 }
 
 header a {
@@ -38,21 +43,41 @@ header a {
   font-weight: 500;
   font-size: 14px;
   vertical-align: middle;
+  box-sizing: border-box;
 }
 
-header a+a{
-  margin-left: 95px;
+header ul li {
+  width: 8%;
+  margin-left: 10%;
+}
+
+header ul a{
   padding: 5px;
+  width: 100%;
 }
 
-header a+a:hover {
+header ul a:hover {
   color: #F28500;
 }
-main{
+
+nav {
+  width: 880px;
+  min-width: 500px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.logo{
+  width: 10%;
+  text-align: center;
+  font-size: 0;
+}
+
+main {
   padding-bottom: 130px;
 }
 
-.row_download {
+.advertise {
   background-color: #fbfbfb;
   padding-bottom: 40px;
 }
@@ -74,18 +99,18 @@ h3,h4 {
 }
 
 h4 {
-  margin: 0;
   padding-bottom: 30px;
   column-span: all;
 }
 
-.columns_box{
-  width: 800px;
+.wrapper{
+  width: 820px;
   text-align: center;
   margin: auto;
 }
+
 .column {
-  width: 40%;
+  width: 42%;
   display: inline-block;
   font-size: 15px;
   vertical-align: top;
@@ -109,13 +134,11 @@ h2 {
   line-height: 1.4;
 }
 
-.button_outer {
-  padding-top: 20px;
-}
 
-.button_inner {
+.area_button {
   width: 200px;
-  margin: auto
+  margin: auto;
+  padding-top: 20px;
 }
 
 button {
@@ -130,17 +153,17 @@ button {
   cursor: pointer;
 }
 
-.dontWorry {
+.text {
   text-align: left;
   line-height: 25px;
   color: #333;
 }
 
-.download {
+.image {
   font-size: 0;
   
 }
-.download img {
+.image img {
   width: 100%;
 }
 
@@ -154,7 +177,6 @@ button {
 }
 
 .article p {
-  margin: 0;
   padding-bottom: 30px;
 }
 
@@ -189,10 +211,11 @@ footer {
   color: black;
 }
 
+.contact a+a {
+  margin-left: 15px;
+}
+
 i {
   font-size: 25px;
 }
 
-.contact a+a{
-  margin-left: 15px;
-}
