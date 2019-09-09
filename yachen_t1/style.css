@@ -1,129 +1,142 @@
 * {
   /* outline: 1px solid #000; */
-  font-family: "Red Hat Display", sans-serif;
 }
 
+/*----------------------reset---------------------------*/
 
 html, body {
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Display", sans-serif;
   min-width: 992px;
 }
 
+h1,h2,h3,p {
+  margin: 0;
+}
 
-body {
+
+/*-----------------------header--------------------------*/
+
+header {
+  padding: 40px 0;
+  background-color: #eee;
+  font-size: 0;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+header ul {
+  padding: 0;
+  display: inline-block;
+  width: 90%;
+  font-size: 0;
+}
+
+header li {
+  display: inline-block;
   text-align: center;
 }
 
-.navbar {
-  background-color: #eee;
-  padding: 40px 0;
+header ul li {
+  width: 8%;
+  margin-left: 10%;
 }
 
-
-.logo {
+header a {
   display: inline-block;
-  margin-right: 55px;
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
   vertical-align: middle;
-}
-.logo img {
-  vertical-align: top;
-}
-.logo h1 {
-  font-size: 15px;
-  margin: 0;
-  font-weight: 500;
+  box-sizing: border-box;
 }
 
-ul {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  list-style: none
-  font-size: 0;
-}
-ul li {
-  display: inline-block;
-  color: #607D8B;
-  font-weight: 500;
-  cursor: pointer;
-  font-size: 16px;
+
+header ul a {
+  padding: 5px;
+  width: 100%;
 }
 
-li+li{
-  margin-left: 120px;
-}
-
-ul li:hover {
+header ul a:hover {
   color: #F28500;
 }
 
-.row {
-  padding: 30px 0;
-  background-color: white;
+nav {
+  width: 880px;
+  box-sizing: border-box;
+  margin: auto;
 }
 
-.row1{
+.logo{
+  width: 10%;
+  text-align: center;
+  font-size: 0;
+}
+
+/*----------------------main----------------------*/
+
+.advertise {
   background-color: #fbfbfb;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
-.row2{
-  padding-bottom: 130px;
+section {
+  background-color: white;
+  padding-top: 65px;
 }
-.row .box {
-  width: 800px;
-  margin: 0 auto;
+
+
+h3 {
+  font-size: 27px;
+  font-weight: 400;
+  color: #444;
 }
-.row .box h4 {
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #333;
-  text-align: left;
-  margin-top: 0;
+
+
+.wrapper{
+  width: 820px;
+  text-align: center;
+  margin: auto;
 }
 
 .column {
-  width: 330px;
+  width: 42%;
   display: inline-block;
   font-size: 15px;
-  margin: 60px 40px;
   vertical-align: top;
   text-align: left;
 }
-.column h1, .column h2, .column h3, .column p {
-  margin: 0;
+
+.column:first-child{
+  margin-right: 50px;
 }
-.column h2 {
-  font-size: 60px;
+
+h2 {
+  font-size: 45px;
   letter-spacing: 1px;
-  line-height: 50px;
+  line-height: 0.9;
   font-weight: 400;
   color: #333;
 }
-.column h3 {
-  font-size: 26px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  color: #333;
-}
-.column p {
-  color: #333;
-  line-height: 20px;
+
+p {
+  color: #444;
+  line-height: 1.4;
 }
 
-.button_outer {
-  margin-top: 20px;
-  text-align: center;
-}
 
-.button_inner {
-  display: inline-block;
+.area_button {
   width: 200px;
+  margin: auto;
+  padding-top: 20px;
 }
 
-.button_inner button {
+button {
   width: 100%;
   border-color: #FFA000;
   border-radius: 5px;
@@ -135,56 +148,80 @@ ul li:hover {
   cursor: pointer;
 }
 
-.button_inner p {
+.text {
   text-align: left;
   line-height: 25px;
+  color: #444;
 }
 
-.download {
+.image {
   font-size: 0;
   
 }
-.download img {
+
+.image img {
   width: 100%;
 }
 
 .article {
-  width: 100%;
-  margin: 0;
+  width: 800px;
+  margin: auto;
+  padding-bottom: 130px;
   -webkit-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: 80px;
-          column-gap: 80px;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
 }
+
+.article h3 {
+  padding-bottom: 30px;
+  column-span: all;
+}
+
 .article p {
-  margin: 0;
   padding-bottom: 30px;
 }
 
+
+/*------------------footer-------------------*/
+
 footer {
   padding: 25px 0;
-  background-color: #eee;
+  background-color: #eeeeee;
+}
+
+.footer_wrap {
+  width: 830px;
+  margin: auto;
+  font-size: 0;
 }
 
 .copyright {
-  width: 840px;
-  color: #333;
-  margin: 0 auto;
-}
-
-.text {
-  float: left;
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
   line-height: 25px;
+  color: #333;
+  vertical-align: middle;
 }
 
-.icons {
-  width: 150px;
+.contact {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
   font-size: 0;
-  margin-left: auto;
+  vertical-align: middle;
 }
 
-.icons img {
-  width: 25px;
-  margin-left: 10px;
-  cursor: pointer;
+.contact a {
+  color: black;
 }
+
+.contact a+a {
+  margin-left: 15px;
+}
+
+i {
+  font-size: 25px;
+}
+
