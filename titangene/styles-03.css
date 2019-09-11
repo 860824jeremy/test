@@ -97,9 +97,11 @@ nav ul a:hover {
   padding: 60px 0;
   background-color: #fdfdfd;
 }
-.action {
+.banner-text {
+  padding-bottom: 20px;
+}
+.banner-button {
   width: 230px;
-  padding-top: 20px;
   margin: 0 auto;
 }
 .button {
@@ -112,7 +114,7 @@ nav ul a:hover {
   font-size: 24px;
   cursor: pointer;
 }
-.action p {
+.banner-button p {
   font-size: 12px;
   margin-top: 4px;
   color: #5e5e5e;
