@@ -54,15 +54,16 @@ nav {
   margin: auto;
   font-size: 0;
 }
-nav a {
+.logo {
+  width: 13%;
+  color: black;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
 }
-.logo {
-  width: 14%;
-  margin-right: 1%;
-  color: black;
+.logo img {
+  max-width: 52px;
+  width: 100%;
 }
 nav ul {
   display: inline-block;
