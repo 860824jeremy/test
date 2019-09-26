@@ -1,230 +1,251 @@
 * {
-    /* border: 1px solid #000; */
+    /* outline: 1px solid #000; */
     box-sizing: border-box;
 }
 
 html,body {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: Tahoma;
 }
-/* ///////////////////////  nav  /////////////////////// */
-nav {
+
+h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Trebuchet;
+    font-weight: 100;
+}
+
+/* ///////////////////////  header  /////////////////////// */
+header {
     width: 100%;
     font-size: 0;
     background-color: #eeeeee;
     text-align: center;
 }
 
-nav .zero {
+header nav {
+    width: 74%;
+    display: inline-block;
+}
+
+header .logo {
     display: inline-block;
     font-size: 0;
     vertical-align: middle;
+    width: 12%;
 }
 
-nav .zero img {
-    height: 120px;
+header .logo img {
+    height: 90px;
     display: inline-block;
-    /* font-size: 18px; */
-    /* vertical-align: middle; */
 }
 
-nav .zero p {
-    font-size: initial;
+header .logo img:hover {
+    cursor: pointer;
+}
+
+header .logo h1 {
+    font-size: 16px;
+    font-weight: 600;
     margin: 0;
 }
 
-nav .navbar {
+header .navbar {
     display: inline-block;
     line-height: 182px;
+    width: 88%;
 }
 
-nav .navbar div {
+header .navbar a {
     display: inline-block;
-    font-size: 18px;
-    margin-left: 120px;
-    color: #969696;
     vertical-align: middle;
     line-height: initial;
+    font-size: 18px;
+    text-decoration: none;
+    width: 10%;
+    margin: 5%;
+    padding: 2% 0;
+    color: #969696;
+    
 }
 
-nav .navbar .home {
-    margin-left: 50px;
+header .navbar a:hover {
     color: #F3973E;
+    cursor: pointer;
 }
 
-section {
+main {
     width: 100%;
     margin: 0 auto;
 }
 
-/* /////////////////////// section .head /////////////////////// */
+/* /////////////////////// main section /////////////////////// */
 
-section .head {
-    height: 567px;
+main section {
     width: 100%;
     background-color: #FDFDFD;
     font-size: 0;
-}
-
-section .head .left{
-    width: 50%;
-    display: inline-block;
-    margin: 0;
-    vertical-align: top;
-}
-
-section .head .left .click {
-    width: 450px;
-    float: right;
-    margin-top: 75px;
-}
-
-section .head .left .click .ideas h1,h2,h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-
-section .head .left .click .ideas h1 {
-    font-size: 55px;
-    letter-spacing: 2px;
-}
-
-section .head .left .click .ideas h2 {
-    font-size: 27px;
-}
-
-section .head .left .click .button {
     text-align: center;
 }
 
-section .head .left .click .button_center {
+main section .jumbotron{
+    width: 80%;
+    display: inline-block;
+    /* margin: 0; */
+    /* padding: 0; */
+    line-height: 520px;
+    padding-top: 50px;
+}
+
+main section .jumbotron .topic {
+    line-height: initial;
+    display: inline-block;
+    /* vertical-align: top; */
+    /* text-align: center; */
+    width: 38%;
+}
+
+main section .jumbotron .topic .content {
+    /* line-height: initial; */
+    text-align: left;
+}
+
+main section .jumbotron .topic .content h2 {
+    font-size: 64px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+main section .jumbotron .topic .content h3 {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+main section .jumbotron .topic .content p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #7E7E7E;
+}
+
+main section .jumbotron .topic aside {
     display: inline-block;
     margin-top: 20px;
 }
 
-section .head .left .click .button img {
+main section .jumbotron .topic aside img {
     width: 260px;
-    height: 70px;
-    position: relative;
-    /* left: 50%;
-    transform: translateX(-50%); */
 }
 
-section .head .left .click .button p {
+main section .jumbotron .topic aside img,a:hover {
+    cursor: pointer;
+}
+
+main section .jumbotron .topic p {
     font-size: 16px;
+    font-family: Marlett;
+    font-weight: 100;
     text-align: left;
     margin: 0;
 }
 
-section .head .right{
-    width: 50%;
+main section .jumbotron figure {
     display: inline-block;
-    margin: 0;
+    width: 45%;
+    line-height: initial;
     vertical-align: top;
+    margin: 0;
+    padding-left: 5%;
 }
 
-section .head .right img{
-    margin-top: 60px;
-    height: 60%;
-    width: 60%;
+main section img{
+    width: 100%;
 }
 
-/* /////////////////////// section .content /////////////////////// */
+/* /////////////////////// main article /////////////////////// */
 
-section .content {
-    height: 700px;
+main article {
     width: 100%;
     font-size: 0;
     background-color: #FFFFFF;
     text-align: center;
-    padding-top: 65px;
+    line-height: 700px;
 }
 
-section .content h1 {
-    /* height: ; */
-    width: 70%;
-    position: relative;
+main article .jumbotron {
+    width: 80%;
     display: inline-block;
-    font-size: 40px;
+    line-height: initial;
+    vertical-align: top;
+}
+
+main article .jumbotron h3 {
+    width: 83%;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 65px;
+    margin-bottom: 32px;
+}
+
+main article .paragraph {
+    width: 83%;
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    column-count: 2;
+    column-gap: 6%;
+}
+
+main article .paragraph p {
+    width: 100%;
+    color: #575757;
     margin: 0;
-    text-align: left;
     margin-bottom: 35px;
+    font-size: 20px;
+    /* padding-top: 20px; */
 }
 
-section .content .left {
-    /* height: ; 500/420; */
-    width: 50%;
-    display: inline-block;
-    font-size: 18px;
-    box-sizing: border-box;
-    text-align: left;
-    vertical-align: top;
-    letter-spacing: 1px;
-}
-
-section .content .left h1 {
-    width: 70%;
-    float: right;
-}
-
-section .content .left h2 {
-    width: 70%;
-    float: right;
-    margin-bottom: 45px;
-}
-
-section .content .right {
-    /* height: ; */
-    width: 50%;
-    display: inline-block;
-    font-size: 18px;
-    box-sizing: border-box;
-    text-align: left;
-    vertical-align: top;
-    letter-spacing: 1px;
-}
-
-section .content .right h2 {
-    width: 70%;
-    margin-bottom: 45px;
-}
 /* /////////////////////// footer /////////////////////// */
 
 footer {
-    height: 87px;
-    width: 100%;
-    margin: 0 auto;
     background-color: #EEEEEE;
-    font-size: 0;
-    text-align: center;
+    /* text-align: center; */
 }
 footer .jumbotron {
     width: 70%;
-    height: 100%;
-    display: inline-block;
-    text-align: left;
+    line-height: 87px;
+    /* display: inline-block; */
+    /* text-align: left; */
+    margin: 0 auto;
+    font-size: 0;
 }
 
 footer .jumbotron .footnote {
-    position: relative;
-    display: inline-block;
     font-size: 14px;
-    top: 50%;
-    transform: translateY(-50%);
+    /* float: left; */
+    display: inline-block;
+    width: 50%;
+    line-height: initial;
+    vertical-align: middle;
 }
 
 footer .jumbotron .link {
-    /* display: inline-block; */
-    position: relative;
     font-size: 18px;
-    float: right;
-    top: 50%;
-    transform: translateY(-50%);
+    /* float: right; */
+    text-align: right;
+    display: inline-block;
+    width: 50%;
+    line-height: initial;
+    vertical-align: middle;
 }
 
-footer .jumbotron .link i {
+footer .jumbotron .link a {
     margin: 12px;
+    vertical-align: middle;
+    color: #000000;
 }
