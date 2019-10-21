@@ -1,86 +1,111 @@
 * {
   /* outline: 1px solid #000; */
-  font-family: "Red Hat Display", sans-serif;
 }
+
+/*----------------------reset---------------------------*/
 
 html, body {
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Display", sans-serif;
   min-width: 992px;
 }
 
-body {
-  text-align: center;
+h1,h2,h3,p {
+  margin: 0;
 }
+
+
+/*-----------------------header--------------------------*/
 
 header {
   padding: 40px 0;
   background-color: #eee;
-}
-
-.logo {
-  display: inline-block;
-  margin-right: 100px;
-  vertical-align: middle;
   font-size: 0;
 }
 
 h1 {
   font-size: 15px;
-  margin: 0;
   font-weight: 500;
 }
 
+header ul {
+  padding: 0;
+  display: inline-block;
+  width: 90%;
+  font-size: 0;
+}
+
+header li {
+  display: inline-block;
+  text-align: center;
+}
+
+header ul li {
+  width: 8%;
+  margin-left: 10%;
+}
+
 header a {
+  display: inline-block;
   text-decoration: none;
   color: #666;
   font-weight: 500;
   font-size: 14px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+
+header ul a {
   padding: 5px;
+  width: 100%;
 }
 
-header a+a{
-  margin-left: 95px;
-}
-
-header a:hover {
+header ul a:hover {
   color: #F28500;
 }
-main{
-  padding-bottom: 130px;
+
+nav {
+  width: 880px;
+  box-sizing: border-box;
+  margin: auto;
 }
 
-section{
-  padding-top: 65px;
-}
-.row2 {
-  background-color: white;
+.logo{
+  width: 10%;
+  text-align: center;
+  font-size: 0;
 }
 
-.row1 {
+/*----------------------main----------------------*/
+
+.advertise {
   background-color: #fbfbfb;
   padding-bottom: 40px;
 }
 
-.box {
-  width: 800px;
-  margin: 0 auto;
+section {
+  background-color: white;
+  padding-top: 65px;
 }
 
-h3,h4 {
+
+h3 {
   font-size: 27px;
-  font-weight: 500;
-  text-align: left;
-  color: #333;
+  font-weight: 400;
+  color: #444;
 }
 
-h4 {
-  margin: 0;
-  padding-bottom: 30px;
+
+.wrapper{
+  width: 820px;
+  text-align: center;
+  margin: auto;
 }
 
 .column {
-  width: 330px;
+  width: 42%;
   display: inline-block;
   font-size: 15px;
   vertical-align: top;
@@ -91,10 +116,6 @@ h4 {
   margin-right: 50px;
 }
 
-h1,h2,h3,p {
-  margin: 0;
-}
-
 h2 {
   font-size: 45px;
   letter-spacing: 1px;
@@ -103,19 +124,16 @@ h2 {
   color: #333;
 }
 
-.column p {
-  color: #333;
+p {
+  color: #444;
   line-height: 1.4;
 }
 
-.button_outer {
-  padding-top: 20px;
-  text-align: center;
-}
 
-.button_inner {
-  display: inline-block;
+.area_button {
   width: 200px;
+  margin: auto;
+  padding-top: 20px;
 }
 
 button {
@@ -130,61 +148,80 @@ button {
   cursor: pointer;
 }
 
-.dontWorry {
+.text {
   text-align: left;
   line-height: 25px;
-  color: #333;
+  color: #444;
 }
 
-.download {
+.image {
   font-size: 0;
   
 }
-.download img {
+
+.image img {
   width: 100%;
 }
 
 .article {
-  width: 100%;
-  margin: 0;
+  width: 800px;
+  margin: auto;
+  padding-bottom: 130px;
   -webkit-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: 80px;
-          column-gap: 80px;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+}
+
+.article h3 {
+  padding-bottom: 30px;
+  column-span: all;
 }
 
 .article p {
-  margin: 0;
   padding-bottom: 30px;
 }
 
+
+/*------------------footer-------------------*/
+
 footer {
-  padding: 25px 18%;
+  padding: 25px 0;
   background-color: #eeeeee;
 }
 
+.footer_wrap {
+  width: 830px;
+  margin: auto;
+  font-size: 0;
+}
+
 .copyright {
+  display: inline-block;
+  width: 50%;
   font-size: 14px;
-  float: left;
   line-height: 25px;
   color: #333;
+  vertical-align: middle;
 }
 
 .contact {
-  width: 140px;
-  margin-left: auto;
+  display: inline-block;
+  text-align: right;
+  width: 50%;
   font-size: 0;
+  vertical-align: middle;
 }
 
 .contact a {
   color: black;
-  /* line-height: 14.5px; */
+}
+
+.contact a+a {
+  margin-left: 15px;
 }
 
 i {
   font-size: 25px;
 }
 
-.contact a+a{
-  margin-left: 15px;
-}
