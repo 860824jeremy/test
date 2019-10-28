@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px solid #000; */
+    outline: 1px solid #000;
     box-sizing: border-box;
 }
 
@@ -32,6 +32,7 @@ figure img {
 /* ///////////////////////  header  /////////////////////// */
 header {
     background-color: #eeeeee;
+    padding: 32px 0 45px 0;
 }
 
 nav {
@@ -45,12 +46,12 @@ nav {
     display: inline-block;
     vertical-align: middle;
     width: 11%;
-    margin: 32px 0 45px;
-    font-size: 0;
+    /* margin: 32px 0 45px; */
+    /* font-size: 0; */
 }
 
 .logo a {
-    display: inline-block;
+    display: block;
 }
 
 .logo img {
@@ -69,7 +70,7 @@ nav {
 .navbar {
     display: inline-block;
     width: 89%;
-    font-size: 0;
+    /* font-size: 0; */
 }
 
 .navbar a {
@@ -92,54 +93,59 @@ nav {
 
 section {
     background-color: #FDFDFD;
+    padding: 53px 230px 0 270px;
 }
 
 section .jumbotron{
-    width: 80%;
-    min-height: 570px;
-    margin: 0 auto;
-    text-align: center;
+    /* width: 80%; */
+    /* min-height: 570px; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
     font-size: 0;
 }
 
 .topic {
-    margin-top: 65px;
+    /* margin-top: 65px; */
     display: inline-block;
     width: 50%;
-    padding-left: 8%;
+    /* padding-left: 8%; */
     vertical-align: top;
+    padding: 11px 51px 0 0;
+    text-align: center;
 }
 
 .content {
     text-align: left;
-    padding-left: 6%;
+    margin-bottom: 30px;
+    /* padding-left: 6%; */
 }
 
 .content h2 {
     font-size: 64px;
     letter-spacing: 2px;
     font-weight: 400;
-    padding-left: 5px;
+    /* padding-left: 5px; */
 }
 
 .content h3 {
     font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 1.3px;
-    padding-left: 5px;
+    /* font-weight: 400; */
+    letter-spacing: 1.5px;
+    /* padding-left: 5px; */
 }
 
 .content p {
     font-size: 18px;
-    font-weight: normal;
+    letter-spacing: 0.58px;
+    /* font-weight: normal; */
     color: #7E7E7E;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     line-height: 1.5;
 }
 
 aside {
     display: inline-block;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 aside a {
@@ -174,13 +180,13 @@ aside button:active {
     display: inline-block;
     width: 50%;
     vertical-align: top;
-    text-align: left;
-    margin-top: 55px;
-    padding-left: 2%;
+    /* text-align: left; */
+    /* margin-top: 55px; */
+    /* padding-left: 2%; */
 }
 
 .concept img{
-    width: 83%;
+    width: 100%;
 }
 
 /* /////////////////////// main article /////////////////////// */
