@@ -32,19 +32,21 @@ figure img {
 /* ///////////////////////  header  /////////////////////// */
 header {
     background-color: #eeeeee;
-    padding: 32px 0 45px 0;
+    padding: 32px 0 45px;
 }
 
 nav {
-    width: 74%;
-    text-align: center;
+    /* width: 74%; */
+    /* text-align: center; */
     margin: 0 auto;
     font-size: 0;
+    width: 1063px;
 }
 
 .logo {
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
     width: 11%;
     /* margin: 32px 0 45px; */
     /* font-size: 0; */
@@ -70,16 +72,18 @@ nav {
 .navbar {
     display: inline-block;
     width: 89%;
+    vertical-align: middle;
     /* font-size: 0; */
 }
 
 .navbar a {
     display: inline-block;
     font-size: 18px;
+    text-align: center;
     text-decoration: none;
     width: 10%;
-    margin: 0 4.7%;
-    padding: 2% 0;
+    margin: 0 5%;
+    padding: 20px 0;
     color: #969696;
     
 }
@@ -93,15 +97,19 @@ nav {
 
 section {
     background-color: #FDFDFD;
-    padding: 53px 230px 0 270px;
+    /* padding: 53px 230px 0 270px; */
+    padding: 53px 0;
+    width: 940px;
+    margin: 0 auto;
 }
 
 section .jumbotron{
     /* width: 80%; */
     /* min-height: 570px; */
-    /* margin: 0 auto; */
+    margin: 0 auto;
     /* text-align: center; */
     font-size: 0;
+    /* width: 940px; */
 }
 
 .topic {
@@ -192,19 +200,21 @@ aside button:active {
 /* /////////////////////// main article /////////////////////// */
 
 article {
-    min-height: 710px;
+    /* min-height: 710px; */
     background-color: #FFFFFF;
+    width: 940px;
+    margin: 0 auto;
 }
 
 article .jumbotron {
-    width: 80%;
+    /* width: 940px; */
     margin: 0 auto;
     text-align: center;
 }
 
 article .jumbotron h3 {
-    width: 82%;
-    display: inline-block;
+    /* width: 82%; */
+    /* display: inline-block; */
     font-size: 34px;
     letter-spacing: .7px;
     text-align: left;
@@ -213,7 +223,7 @@ article .jumbotron h3 {
 }
 
 .paragraph {
-    width: 82%;
+    /* width: 82%; */
     display: inline-block;
     text-align: left;
     column-count: 2;
@@ -233,7 +243,8 @@ footer {
     background-color: #EEEEEE;
 }
 footer .jumbotron {
-    width: 70%;
+    /* width: 70%; */
+    width: 1008px;
     margin: 0 auto;
     font-size: 0;
 }
