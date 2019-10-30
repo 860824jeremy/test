@@ -29,7 +29,7 @@ figure img {
     width: 100%;
 }
 
-main,footer {
+article,footer {
     display: none;
 }
 /* ///////////////////////  header  /////////////////////// */
@@ -104,7 +104,6 @@ section {
     background-color: #FDFDFD;
     /* padding: 53px 230px 0 270px; */
     padding: 53px 0;
-    width: 940px;
     margin: 0 auto;
 }
 
@@ -114,6 +113,8 @@ section .jumbotron{
     margin: 0 auto;
     /* text-align: center; */
     font-size: 0;
+    width: 66%;
+    max-width: 940px;
     /* width: 940px; */
 }
 
@@ -135,7 +136,7 @@ section .jumbotron{
 
 .content h2 {
     font-size: 64px;
-    letter-spacing: 2px;
+    letter-spacing: -8px;
     font-weight: 400;
     /* padding-left: 5px; */
 }
@@ -159,15 +160,22 @@ section .jumbotron{
 aside {
     display: inline-block;
     /* margin-top: 30px; */
+    width: 100%;
 }
 
 aside a {
     display: inline-block;
+    width: 60%;
+    max-width: 260px;
+    height: 68px;
 }
 
 aside button {
-    width: 260px;
-    height: 68px;
+    /* max-width: 260px; */
+    /* width: 60%;
+    height: 68px; */
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
     background: linear-gradient(#F7BB53 50%,#F3953D 50%);
     font-size: 26px;
