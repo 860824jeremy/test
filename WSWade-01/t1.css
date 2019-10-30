@@ -29,6 +29,9 @@ figure img {
     width: 100%;
 }
 
+main,footer {
+    display: none;
+}
 /* ///////////////////////  header  /////////////////////// */
 header {
     background-color: #eeeeee;
@@ -36,18 +39,19 @@ header {
 }
 
 nav {
-    /* width: 74%; */
+    width: 74%;
     /* text-align: center; */
     margin: 0 auto;
     font-size: 0;
-    width: 1063px;
+    /* width: 1063px; */
 }
 
 .logo {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    width: 11%;
+    /* width: 11%; */
+    width: 90px;
     /* margin: 32px 0 45px; */
     /* font-size: 0; */
 }
@@ -71,7 +75,8 @@ nav {
 
 .navbar {
     display: inline-block;
-    width: 89%;
+    /* width: 89%; */
+    width: calc(100% - 90px);
     vertical-align: middle;
     /* font-size: 0; */
 }
@@ -81,7 +86,7 @@ nav {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    width: 10%;
+    width: 80px;
     margin: 0 5%;
     padding: 20px 0;
     color: #969696;
