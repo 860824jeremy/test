@@ -1,7 +1,9 @@
 * {
-    outline: 1px solid #000;
+    /* outline: 1px solid #000; */
     box-sizing: border-box;
 }
+
+/* 在 width 1440px 合版 */
 
 html,body {
     margin: 0;
@@ -29,9 +31,6 @@ figure img {
     width: 100%;
 }
 
-article,footer {
-    display: none;
-}
 /* ///////////////////////  header  /////////////////////// */
 header {
     background-color: #eeeeee;
@@ -39,7 +38,8 @@ header {
 }
 
 nav {
-    width: 74%;
+    width: 72%;
+    max-width: 1036px;
     /* text-align: center; */
     margin: 0 auto;
     font-size: 0;
@@ -87,7 +87,7 @@ nav {
     text-align: center;
     text-decoration: none;
     width: 80px;
-    margin: 0 5%;
+    margin: 0 5.7%;
     padding: 20px 0;
     color: #969696;
     
@@ -103,8 +103,8 @@ nav {
 section {
     background-color: #FDFDFD;
     /* padding: 53px 230px 0 270px; */
-    padding: 53px 0;
-    margin: 0 auto;
+    padding: 53px 0 68px;
+    /* margin: 0 auto; */
 }
 
 section .jumbotron{
@@ -124,7 +124,7 @@ section .jumbotron{
     width: 50%;
     /* padding-left: 8%; */
     vertical-align: top;
-    padding: 11px 51px 0 0;
+    padding: 11px 36px 0 16px;
     text-align: center;
 }
 
@@ -195,6 +195,9 @@ aside button:active {
     font-family: Marlett;
     font-weight: 100;
     text-align: left;
+    width: 60%;
+    max-width: 260px;
+    margin: 0 auto;
 }
 
 .concept {
@@ -215,12 +218,15 @@ aside button:active {
 article {
     /* min-height: 710px; */
     background-color: #FFFFFF;
-    width: 940px;
-    margin: 0 auto;
+    /* width: 940px; */
+    padding: 73px 0 200px;
+    /* margin: 0 auto; */
 }
 
 article .jumbotron {
     /* width: 940px; */
+    width: 66%;
+    max-width: 940px;
     margin: 0 auto;
     text-align: center;
 }
@@ -231,7 +237,7 @@ article .jumbotron h3 {
     font-size: 34px;
     letter-spacing: .7px;
     text-align: left;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     margin-bottom: 32px;
 }
 
@@ -254,10 +260,12 @@ article .jumbotron h3 {
 
 footer {
     background-color: #EEEEEE;
+    padding: 35px 0 18px;
 }
 footer .jumbotron {
-    /* width: 70%; */
-    width: 1008px;
+    width: 70%;
+    max-width: 1008px;
+    /* width: 1008px; */
     margin: 0 auto;
     font-size: 0;
 }
@@ -273,16 +281,12 @@ footer .jumbotron span {
     text-align: right;
     display: inline-block;
     width: 50%;
-    margin: 35px 0 18px;
+    /* margin: 35px 0 18px; */
 }
 
 .link a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px 0 0;
     vertical-align: middle;
     color: #000000;
-}
-
-.link a:nth-last-child(1) {
-    margin-right: 18px;
 }
