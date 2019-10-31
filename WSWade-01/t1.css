@@ -40,20 +40,15 @@ header {
 nav {
     width: 72%;
     max-width: 1036px;
-    /* text-align: center; */
     margin: 0 auto;
     font-size: 0;
-    /* width: 1063px; */
 }
 
 .logo {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    /* width: 11%; */
     width: 90px;
-    /* margin: 32px 0 45px; */
-    /* font-size: 0; */
 }
 
 .logo a {
@@ -75,10 +70,8 @@ nav {
 
 .navbar {
     display: inline-block;
-    /* width: 89%; */
     width: calc(100% - 90px);
     vertical-align: middle;
-    /* font-size: 0; */
 }
 
 .navbar a {
@@ -102,28 +95,19 @@ nav {
 
 section {
     background-color: #FDFDFD;
-    /* padding: 53px 230px 0 270px; */
     padding: 53px 0 68px;
-    /* margin: 0 auto; */
 }
 
 section .jumbotron{
-    /* width: 80%; */
-    /* min-height: 570px; */
-    margin: 0 auto;
-    /* text-align: center; */
-    font-size: 0;
     width: 66%;
     max-width: 940px;
-    /* width: 940px; */
+    margin: 0 auto;
+    font-size: 0;
 }
 
 .topic {
-    /* margin-top: 65px; */
     display: inline-block;
     width: 50%;
-    /* padding-left: 8%; */
-    vertical-align: top;
     padding: 11px 36px 0 16px;
     text-align: center;
 }
@@ -131,35 +115,27 @@ section .jumbotron{
 .content {
     text-align: left;
     margin-bottom: 30px;
-    /* padding-left: 6%; */
 }
 
 .content h2 {
     font-size: 64px;
     letter-spacing: -8px;
     font-weight: 400;
-    /* padding-left: 5px; */
 }
 
 .content h3 {
     font-size: 32px;
-    /* font-weight: 400; */
     letter-spacing: 1.5px;
-    /* padding-left: 5px; */
 }
 
 .content p {
     font-size: 18px;
     letter-spacing: 0.58px;
-    /* font-weight: normal; */
     color: #7E7E7E;
-    /* padding-left: 5px; */
     line-height: 1.5;
 }
 
 aside {
-    display: inline-block;
-    /* margin-top: 30px; */
     width: 100%;
 }
 
@@ -171,9 +147,6 @@ aside a {
 }
 
 aside button {
-    /* max-width: 260px; */
-    /* width: 60%;
-    height: 68px; */
     width: 100%;
     height: 100%;
     border-radius: 6px;
@@ -204,9 +177,6 @@ aside button:active {
     display: inline-block;
     width: 50%;
     vertical-align: top;
-    /* text-align: left; */
-    /* margin-top: 55px; */
-    /* padding-left: 2%; */
 }
 
 .concept img{
@@ -216,35 +186,23 @@ aside button:active {
 /* /////////////////////// main article /////////////////////// */
 
 article {
-    /* min-height: 710px; */
     background-color: #FFFFFF;
-    /* width: 940px; */
     padding: 73px 0 200px;
-    /* margin: 0 auto; */
 }
 
 article .jumbotron {
-    /* width: 940px; */
     width: 66%;
     max-width: 940px;
     margin: 0 auto;
-    text-align: center;
 }
 
 article .jumbotron h3 {
-    /* width: 82%; */
-    /* display: inline-block; */
     font-size: 34px;
     letter-spacing: .7px;
-    text-align: left;
-    /* margin-top: 60px; */
     margin-bottom: 32px;
 }
 
 .paragraph {
-    /* width: 82%; */
-    display: inline-block;
-    text-align: left;
     column-count: 2;
     column-gap: 7%;
 }
@@ -265,7 +223,6 @@ footer {
 footer .jumbotron {
     width: 70%;
     max-width: 1008px;
-    /* width: 1008px; */
     margin: 0 auto;
     font-size: 0;
 }
@@ -281,7 +238,6 @@ footer .jumbotron span {
     text-align: right;
     display: inline-block;
     width: 50%;
-    /* margin: 35px 0 18px; */
 }
 
 .link a {
