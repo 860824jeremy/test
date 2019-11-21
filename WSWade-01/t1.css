@@ -109,11 +109,9 @@ section .jumbotron{
     display: inline-block;
     width: 50%;
     padding: 11px 36px 0 16px;
-    text-align: center;
 }
 
 .content {
-    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -140,10 +138,11 @@ aside {
 }
 
 aside a {
-    display: inline-block;
+    display: block;
     width: 60%;
     max-width: 260px;
     height: 68px;
+    margin: 0 auto;
 }
 
 aside button {
@@ -238,11 +237,11 @@ footer .jumbotron span {
     text-align: right;
     display: inline-block;
     width: 50%;
+    vertical-align: middle;
 }
 
 .link a {
     display: inline-block;
     margin: 0 20px 0 0;
-    vertical-align: middle;
     color: #000000;
 }
