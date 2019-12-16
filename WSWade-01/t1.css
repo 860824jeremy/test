@@ -37,7 +37,7 @@ header {
     padding: 32px 30px 45px;
 }
 
-nav {
+header>div {
     /* width: 72%; */
     max-width: 1036px;
     margin: 0 auto;
@@ -68,13 +68,13 @@ nav {
     letter-spacing: 1px;
 }
 
-.navbar {
+nav {
     display: inline-block;
     width: calc(100% - 90px);
     vertical-align: middle;
 }
 
-.navbar a {
+nav a {
     display: inline-block;
     font-size: 18px;
     text-align: center;
@@ -87,7 +87,7 @@ nav {
     
 }
 
-.navbar a:hover {
+nav a:hover {
     color: #F3973E;
     cursor: pointer;
 }
@@ -99,7 +99,7 @@ section {
     padding: 53px 40px 68px;
 }
 
-section .jumbotron{
+section>div{
     /* width: 66%; */
     max-width: 940px;
     margin: 0 auto;
@@ -184,13 +184,13 @@ article {
     padding: 73px 40px 200px;
 }
 
-article .jumbotron {
+article>div {
     /* width: 66%; */
     max-width: 940px;
     margin: 0 auto;
 }
 
-article .jumbotron h3 {
+article>div h3 {
     font-size: 34px;
     letter-spacing: .7px;
     margin-bottom: 32px;
@@ -214,14 +214,14 @@ footer {
     background-color: #EEEEEE;
     padding: 35px 0 18px;
 }
-footer .jumbotron {
+footer>div {
     width: 70%;
     max-width: 1008px;
     margin: 0 auto;
     font-size: 0;
 }
 
-footer .jumbotron span {
+footer>div span {
     font-size: 14px;
     display: inline-block;
     width: 50%;
