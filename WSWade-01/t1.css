@@ -38,7 +38,6 @@ header {
 }
 
 header>div {
-    /* width: 72%; */
     max-width: 1036px;
     margin: 0 auto;
     font-size: 0;
@@ -80,7 +79,6 @@ nav a {
     text-align: center;
     text-decoration: none;
     width: 80px;
-    /* margin: 0 5.7%; */
     margin: 0 54px;
     padding: 20px 0;
     color: #969696;
@@ -100,7 +98,6 @@ section {
 }
 
 section>div{
-    /* width: 66%; */
     max-width: 940px;
     margin: 0 auto;
     font-size: 0;
@@ -185,7 +182,6 @@ article {
 }
 
 article>div {
-    /* width: 66%; */
     max-width: 940px;
     margin: 0 auto;
 }
@@ -198,7 +194,7 @@ article>div h3 {
 
 .paragraph {
     column-count: 2;
-    column-gap: 7%;
+    column-gap: 70px;
 }
 
 .paragraph p {
@@ -212,10 +208,9 @@ article>div h3 {
 
 footer {
     background-color: #EEEEEE;
-    padding: 35px 0 18px;
+    padding: 35px 30px 18px;
 }
 footer>div {
-    width: 70%;
     max-width: 1008px;
     margin: 0 auto;
     font-size: 0;
@@ -225,10 +220,10 @@ footer>div span {
     font-size: 14px;
     display: inline-block;
     width: 50%;
+    vertical-align: middle;
 }
 
 .link {
-    /* font-size: 1rem; */
     text-align: right;
     display: inline-block;
     width: 50%;
@@ -238,7 +233,6 @@ footer>div span {
 .link a {
     display: inline-block;
     margin: 0 28px 0 0;
-    /* font-size: 2rem; */
 }
 
 .link i {
