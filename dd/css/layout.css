@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+header {
+    background-color: #eee;
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+    min-width: 90%;
+    text-align: center;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+.logobox {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.logobox a {
+    text-decoration: none;
+}
+
+.logobox h1 {
+    font-size: 14px;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+.menu ul {
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.menu li:nth-child(-n+4) {
+    margin-right: 60px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu a:link {
+    color: gray;
+}
+
+.menu a:visited {
+    color: gray;
+}
+
+.menu a:hover {
+    color: orange;
+}
