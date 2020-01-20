@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     outline: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .templatepic {
@@ -22,71 +27,45 @@ header {
 }
 
 nav {
-    display: inline-block;
-    width: 100%;
-    padding: 30px 0;
-    position: relative;
-}
-
-.wrapper {
-    text-align: left;
-    width: 100vw;
-    display: inline-block;
+    width: 73%;
+    padding: 76px 0;
+    margin: 0 auto;
     font-size: 0;
-    vertical-align: middle;
 }
 
 .logobox {
-    text-align: center;
+    width: 10%;
     display: inline-block;
-    position: absolute;
-    top: 30px;
-    left: 220px;
-}
-
-.logobox img {
-    width: 90%;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .logobox a {
-    text-decoration: none;
+    display: block;
+}
+
+.logobox img {
+    width: 45%;
 }
 
 .logobox h1 {
-    font-size: 14px;
-}
-
-.clearfloat {
-    clear: both;
+    font-size: 1rem;
+    color: black;
 }
 
 .menu {
+    width: 90%;
     display: inline-block;
     vertical-align: middle;
-    /* margin-left: 100px; */
 }
-
-.menu ul {
-    display: inline-block;
-}
-
-.menu li {
-    display: inline-block;
-    /* width: 220px; */
-    padding: 30px 0;
-    font-size: 1.22rem;
-}
-
-
-/* .menu li:nth-child(-n+4) {
-    
-    width: 220px;
-} */
 
 .menu a {
     display: inline-block;
-    padding: 20px;
-    text-decoration: none;
+    margin-left: 5%;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1%;
+    width: 15%;
 }
 
 .menu a:link {
@@ -101,78 +80,135 @@ nav {
     color: orange;
 }
 
-main {
-    text-align: center;
+.maintextbox {
+    padding: 100px 0;
+    background-color: #FDFDFD;
 }
 
 .maintext {
-    margin-top: 80px;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    max-width: 60%;
-    outline: 3px solid blue;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 0;
 }
 
 .textbox {
-    max-width: 40%;
+    width: 50%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
-.textbox h3 {
-    font-size: 4rem;
+.textbox h2 {
+    font-size: 7rem;
+    line-height: 1em;
     font-weight: 300;
 }
 
-.textbox h4 {
-    font-size: 2rem;
+.textbox h3 {
+    font-size: 3.4rem;
     font-weight: 200;
+    line-height: 1.2em;
 }
 
-.textbox h5 {
-    font-size: 1rem;
-    font-weight: 200;
+.textbox>span {
+    display: inline-block;
+    font-size: 2.2rem;
+    padding-bottom: 48px;
+}
+
+.btnbox {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    background: linear-gradient(#F99602 50%, #FFBB50 50%);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 8% 0;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    color: gray;
+}
+
+.btnbox>span {
+    font-size: 1.5rem;
 }
 
 .imgbox {
-    /* display: inline-block; */
-    vertical-align: middle;
-    max-width: 49%;
-    float: right;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    text-align: right;
 }
 
-.btntry {
-    display: inline-block;
-    padding: 25px 100px;
-    background-color: #f5b95e;
-    color: white;
-    font-size: 1.4rem;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.textbox span {
-    display: inline-block;
-    margin-left: 10px;
+.imgbox img {
+    width: 88%;
 }
 
 .colbox {
-    max-width: 65%;
-    margin: 500px auto 200px;
+    width: 65%;
+    margin: 0 auto;
+    padding: 190px 0 316px;
 }
 
 .column {
-    min-width: 80%;
     column-count: 2;
-    text-align: left;
+    column-gap: 70px;
 }
 
 .column h3 {
+    font-size: 3.3rem;
+    font-weight: 500;
     column-span: all;
-    margin-bottom: 30px;
+    margin-bottom: 56px;
 }
 
 .column p {
-    /* margin-top: 30px; */
+    font-size: 1.9rem;
+    margin-bottom: 70px;
+}
+
+footer {
+    background-color: #EEEEEE;
+}
+
+.outerbox {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 52px 0;
+}
+
+.copyright {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    font-size: 1.4rem;
+}
+
+.iconbox {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: right;
+}
+
+.iconbox a {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.iconbox i {
+    font-size: 3.8rem;
+    color: black;
+}
+
+.iconbox i:hover {
+    color: #F99602;
 }
