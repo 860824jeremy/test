@@ -1,12 +1,15 @@
-* {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+figure {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 1px solid red;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -33,22 +36,22 @@ nav {
     font-size: 0;
 }
 
-.logobox {
+.logo_box {
     width: 10%;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
 }
 
-.logobox a {
+.logo_box a {
     display: block;
 }
 
-.logobox img {
+.logo_box img {
     width: 45%;
 }
 
-.logobox h1 {
+.logo_box h1 {
     font-size: 1rem;
     color: black;
 }
@@ -64,7 +67,7 @@ nav {
     margin-left: 5%;
     font-size: 1.6rem;
     text-align: center;
-    padding: 1%;
+    padding: 1% 0;
     width: 15%;
 }
 
@@ -73,43 +76,44 @@ nav {
 }
 
 .menu a:visited {
-    color: gray;
+    color: grey;
 }
 
 .menu a:hover {
     color: orange;
 }
 
-.maintextbox {
+.maintext_container {
     padding: 100px 0;
     background-color: #FDFDFD;
 }
 
-.maintext {
+.main_text_box {
     width: 65%;
     margin: 0 auto;
     font-size: 0;
 }
 
-.textbox {
+.text {
+    margin-right: 6%;
     width: 50%;
     display: inline-block;
     vertical-align: top;
 }
 
-.textbox h2 {
+.text h2 {
     font-size: 7rem;
     line-height: 1em;
     font-weight: 300;
 }
 
-.textbox h3 {
+.text h3 {
     font-size: 3.4rem;
     font-weight: 200;
     line-height: 1.2em;
 }
 
-.textbox>span {
+.text>span {
     display: inline-block;
     font-size: 2.2rem;
     padding-bottom: 48px;
@@ -143,7 +147,7 @@ nav {
     font-size: 0;
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 44%;
     text-align: right;
 }
 
@@ -151,25 +155,22 @@ nav {
     width: 88%;
 }
 
-.colbox {
+.col_box {
     width: 65%;
     margin: 0 auto;
+    column-count: 2;
+    column-gap: 70px;
     padding: 190px 0 316px;
 }
 
-.column {
-    column-count: 2;
-    column-gap: 70px;
-}
-
-.column h3 {
+.col_box h3 {
     font-size: 3.3rem;
     font-weight: 500;
     column-span: all;
     margin-bottom: 56px;
 }
 
-.column p {
+.col_box p {
     font-size: 1.9rem;
     margin-bottom: 70px;
 }
