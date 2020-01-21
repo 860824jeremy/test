@@ -1,7 +1,8 @@
-*{outline:solid 1px;}
+/* *{outline:solid 1px;} */
 
 body{
 	box-sizing: border-box;
+	min-width:650px;
 }
 
 body , h1 ,h2 , h3 , p , figure{
@@ -55,22 +56,17 @@ h1{
 .menu{
 	display: inline-block;
 	vertical-align: middle;
-	/* margin-left:3.5rem; */
 	width: 90%;
 }
 
 .menu > a{
-	padding:20px;
+	padding:15px;
 	font-size: 16px;
 	text-decoration: none;
 	display: inline-block;
 	color: #818181;
     margin-left:5rem;
 }
-
-/* .menu a + a{
-	margin-left:6rem;
-} */
 
 .menu a:hover{
 	color: #f99603;
@@ -79,13 +75,14 @@ h1{
 main{
 	background-color: #fdfdfd;
 	padding-top: 5%;
+	padding-bottom: 116px;
 }
 
 section{
 	width: 80%;
 	margin:0 auto;
 	font-size: 0;
-	padding-bottom: 116px;
+	
 }
 
 
@@ -115,7 +112,7 @@ section{
 }
 
 .button{
-	margin:0 0 0 77px;
+	margin:0 auto;
 	width: 56%;
 }
 
@@ -201,6 +198,10 @@ footer{
 	width: 178px;
 	margin-left:auto;
 	margin-right:32px;
+}
+
+.contact a{
+	display:inline-block;
 }
 
 
