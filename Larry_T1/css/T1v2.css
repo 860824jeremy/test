@@ -63,9 +63,9 @@ h1{
 	padding:15px;
 	font-size: 16px;
 	text-decoration: none;
-	display: inline-block;
 	color: #818181;
 	margin-left: 90px;
+	line-height: 52px;
 }
 
 .menu a:hover{
@@ -181,26 +181,21 @@ footer{
 }
 
 .copytext{
-	margin-top:10px;
 	font-size: 14px;
-	float:left;
+	line-height: 36px;
 }
 
-.copytext::after{
-	content: "";
-	clear: both;
-}
+
 
 .contact{
 	width: 178px;
-	margin-left:auto;
-	margin-right:32px;
+	float:right;
 }
 
-.contact a{
-	display:inline-block;
+.contact::after{
+	content: "";
+	clear: both;
 }
-
 
 .contact a + a{
 	margin-left:15px;
