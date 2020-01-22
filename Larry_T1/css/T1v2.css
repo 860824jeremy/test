@@ -34,7 +34,7 @@ nav{
 }
 
 nav img{
-	width: 50%;
+	width: 50px;
 	vertical-align: bottom;
 }
 
@@ -88,7 +88,6 @@ section{
 .content{
 	width: 450px;
 	display:inline-block;
-	/* margin-left:11%; */
 }
 
 .content a{
@@ -139,7 +138,6 @@ figure{
 	display:inline-block;
 	vertical-align: top;
 	width: 450px;
-	/* margin-left:3%; */
 }
 
 figure img{
@@ -174,12 +172,11 @@ article{
 footer{
 	background-color: #eeeeee;
 	padding: 21px 0;
-	width: 1000px;
-	margin: 0 auto;
 }
 
 .copyright{
-	/* margin:0 auto; */
+	margin:0 auto;
+	width: 1000px;
 	font-size: 0;
 }
 
