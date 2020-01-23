@@ -1,60 +1,73 @@
-* {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+p,
+figure {
     margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    outline: 1px solid red;
+    text-decoration: none;
+}
+
+.templatepic {
+    width: 100vw;
+    opacity: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.templatepic img {
+    width: 100%;
 }
 
 header {
     background-color: #eee;
-    text-align: center;
 }
 
 nav {
-    display: inline-block;
-    min-width: 90%;
-    text-align: center;
-    padding: 20px 0;
-    vertical-align: middle;
-}
-
-.logobox {
-    display: inline-block;
+    width: 1200px;
+    padding: 56px 0;
+    margin: 0 auto;
     font-size: 0;
+}
+
+nav h1 {
+    display: inline-block;
     vertical-align: middle;
+    text-align: center;
+    width: 120px;
 }
 
-.logobox a {
-    text-decoration: none;
+.logo {
+    display: block;
 }
 
-.logobox h1 {
-    font-size: 14px;
+.logo p {
+    font-size: 1.2rem;
+    color: black;
 }
 
 .menu {
-    display: inline-block;
+    width: 1080px;
     vertical-align: middle;
-    margin-left: 50px;
-}
-
-.menu ul {
     display: inline-block;
-}
-
-.menu li {
-    display: inline-block;
-    font-size: 1rem;
-}
-
-.menu li:nth-child(-n+4) {
-    margin-right: 60px;
 }
 
 .menu a {
-    display: inline-block;
-    padding: 20px;
-    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    line-height: 2x;
+    margin-left: 77px;
+}
+
+.menu a+a {
+    margin-left: 130px;
 }
 
 .menu a:link {
@@ -62,9 +75,134 @@ nav {
 }
 
 .menu a:visited {
-    color: gray;
+    color: grey;
 }
 
 .menu a:hover {
     color: orange;
+}
+
+.maintext_container {
+    padding: 80px 0;
+    background-color: #FDFDFD;
+}
+
+.main_text {
+    width: 1050px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.text {
+    margin-right: 80px;
+    width: 490px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text h2 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.text h3 {
+    font-size: 2.4rem;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.text>p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 33px;
+}
+
+.button {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.button_try {
+    display: block;
+    background: linear-gradient(#F99602 50%, #FFBB50 50%);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 22px 0;
+}
+
+.btn:hover {
+    color: gray;
+}
+
+.button p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.image {
+    display: inline-block;
+    vertical-align: top;
+    width: 480px;
+    height: 450px;
+    background-image: url(../images/box.png);
+    background-size: cover;
+}
+
+.column {
+    width: 1090px;
+    margin: 0 auto;
+    column-count: 2;
+    column-gap: 70px;
+    padding: 120px 0 240px;
+}
+
+.column h3 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    column-span: all;
+    margin-bottom: 36px;
+}
+
+.column p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #EEEEEE;
+}
+
+.footer_outer {
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 40px 0 30px;
+}
+
+.footer_outer span {
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 44px;
+}
+
+.iconbox {
+    float: right;
+}
+
+.iconbox a {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.iconbox i {
+    font-size: 2.8rem;
+    color: black;
+}
+
+.iconbox i:hover {
+    color: #F99602;
 }
