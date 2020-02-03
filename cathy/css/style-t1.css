@@ -4,21 +4,20 @@
 
 body{
     margin: 0;
-    padding: 0;
 }
 
 .template{
     width: 100%;
     height: auto;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 header{
     background-color: #efefef;
 }
 
-.nav{
+nav{
     font-size: 0;
     width: 75%;
     margin: 0 auto;
@@ -33,9 +32,14 @@ header{
     margin-left: 2%;
 } 
 
-.logoimg{
+.logo_image{
     width: 70%;
     vertical-align: middle;
+}
+
+.logo a{
+    text-decoration:none;
+    color: black;
 }
 
 h1{
@@ -48,12 +52,9 @@ h1{
 .list{
     width: 85%;
     font-size: 0;
-    list-style: none;
     display: inline-block;
     vertical-align: middle;
     margin-left: 5%;
-    padding-inline-start: 0px;
-    padding: 0 
 }
 
 .list a{
@@ -67,7 +68,7 @@ h1{
     
 }
 
-a:hover{
+.list a:hover{
     color: #f59830;
 }
 
@@ -75,11 +76,11 @@ main{
     width: 80%;
     font-size: 0;
     margin: 0 auto;
-    padding: 5%;
+    padding: 5% 0;
 
 }
 
-figure{
+figcaption{
     width: 40%;
     background-color: #fdfdfd;
     vertical-align: top;
@@ -87,7 +88,7 @@ figure{
     margin: 0 0 0 11%;
 }
 
-figure h2{
+figcaption h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 70px;
     font-weight: 500;
@@ -95,14 +96,14 @@ figure h2{
     line-height: 60px;
 }
 
-figure h3{
+figcaption h3{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 35px;
     font-weight: 300;
     margin: 0;
 }
 
-figure p{
+figcaption p{
     color: #808080;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -123,7 +124,7 @@ figure p{
 }
 
 button{
-    background: linear-gradient(#f9b94c,#f59530);
+    background: linear-gradient(#f9b94c 50%,#f59530 50%);
     color: white;
     font-size: 28px;
     width: 100%;
@@ -143,6 +144,8 @@ section{
     width: 82%;
     margin: 0 auto;
     padding: 16% 0 11% 0;
+    column-count: 2;
+    column-gap: 50px;
 }
 
 section h3{
@@ -150,14 +153,10 @@ section h3{
     font-size: 35px;
     font-weight: 300;
     margin: 0 0 3% 0;
+    column-span: all;
 }
 
-.info{
-    column-count: 2;
-    column-gap: 50px;
-}
-
-.info p{
+section p{
     color: #808080;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -171,27 +170,30 @@ footer{
 }
 
 .footer_container{
-    width: 1140px;
-    vertical-align: middle;
+    width: 80%;
     margin: 0 auto;
 }
 
+.footer_container::after{
+    content: ""; 
+    display: block;
+    clear: both;
+}
+
 .footer_container p{
+    width:22%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
-    display: inline-block;
-    padding-left: 10%;
+    margin: 0;
+    line-height: 35px;
+    float: left;
     
 }
 
 .social{
     font-size: 0;
-    width: 60%;
-    display: inline-block;
-    vertical-align: middle;}
-
-.social_icon{
-    text-align: right;
+    width: 24%;
+    float: right;
 }
 
 i{
