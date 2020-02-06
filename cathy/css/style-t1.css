@@ -37,7 +37,8 @@ nav{
     vertical-align: middle;
 }
 
-.logo a{
+nav a{
+    display: block;
     text-decoration:none;
     color: black;
 }
@@ -72,7 +73,7 @@ h1{
     color: #f59830;
 }
 
-main{
+figure{
     width: 80%;
     font-size: 0;
     margin: 0 auto;
@@ -111,10 +112,15 @@ figcaption p{
 }
 
 .box_image{
+    width: 40%;
     display: inline-block;
     font-size: 0;
     vertical-align: top;
     margin-left: 3%;
+}
+
+.box_image img{
+    width: 100%;
 }
 
 .try_it_now{
@@ -141,7 +147,7 @@ button{
 
 section{
     font-size: 0;
-    width: 82%;
+    width: 80%;
     margin: 0 auto;
     padding: 16% 0 11% 0;
     column-count: 2;
@@ -181,22 +187,30 @@ footer{
 }
 
 .footer_container p{
-    width:22%;
+    width:50%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     margin: 0;
     line-height: 35px;
     float: left;
+    text-align: left;
     
 }
 
 .social{
     font-size: 0;
-    width: 24%;
+    width: 50%;
     float: right;
+    text-align: right;
 }
 
-i{
+.social a{
+    color: black;
+    display: inline-block;
+    text-decoration:none;
+}
+
+.social i{
     font-size: 35px;
     margin-left: 25px;
     cursor: pointer;
