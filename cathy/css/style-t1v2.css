@@ -1,0 +1,227 @@
+*{
+    /* outline: solid 1px; */
+}
+
+.template{
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    opacity: 0.5;
+
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    width: 1440px;
+    background-color: #efefef;
+}
+
+nav{
+    width: 945px;
+    font-size: 0;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.logo{
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+} 
+
+.logo_image{
+    width: 55px;
+    vertical-align: middle;
+}
+
+nav a{
+    display: block;
+    text-decoration:none;
+    color: black;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.list{
+    width: 810px;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list a{
+    font-family: sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 0 30px;
+    text-decoration:none;
+    color: black;
+    
+}
+
+.list a:hover{
+    color: #f59830;
+}
+
+.container{
+    background-color: #fdfdfd;
+}
+
+main{
+    width: 1440px;
+}
+
+figure{
+    width: 840px;
+    font-size: 0;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+figcaption{
+    width: 400px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+figcaption h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 60px;
+}
+
+figcaption h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0;
+}
+
+figcaption p{
+    color: #808080;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.box_image{
+    width: 400px;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    margin-left: 40px;
+}
+
+.box_image img{
+    width: 100%;
+}
+
+.try_it_now{
+    width: 230px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+button{
+    background: linear-gradient(#f9b94c 50%,#f59530 50%);
+    color: white;
+    font-size: 28px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 15px 0 ;
+    cursor: pointer;
+}
+
+.button_text{
+    font-size: 16px;
+}
+
+section{
+    width: 900px;
+    font-size: 0;
+    margin: 0 auto;
+    padding: 110px 0 175px;
+    column-count: 2;
+    column-gap: 50px;
+}
+
+section h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    column-span: all;
+}
+
+section p{
+    color: #808080;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 40px 0; 
+}
+
+footer{
+    width: 1440px;
+    background-color: #efefef;
+    padding: 35px 0;
+}
+
+.footer_container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.footer_container::after{
+    content: ""; 
+    display: block;
+    clear: both;
+}
+
+.footer_container p{
+    width:50%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    line-height: 35px;
+    float: left;
+    text-align: left;
+    
+}
+
+.social{
+    font-size: 0;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.social a{
+    color: black;
+    display: inline-block;
+    text-decoration:none;
+}
+
+.social i{
+    font-size: 35px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.social i:hover{
+    color: #f59830;
+}
