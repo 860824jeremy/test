@@ -1,0 +1,200 @@
+:root {
+	--header-footer-background-color: #EEEEEE;
+	--header-color: #818181;
+	--active-text-color: #F99603;
+	--button-top-color: #fabc54;
+	--button-bottom-color: #F99603;
+	--header-height: 200px;
+	font-size: 24px;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	line-height: 1.5rem;
+}
+
+#test {
+	position: absolute;
+	opacity: 0.3;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+}
+
+header, main {
+	padding: 0 16.8%;
+}
+
+
+
+header {
+	background-color: var(--header-footer-background-color);
+	position: relative;
+	/* 給 figure 定位用 */
+}
+
+nav {
+	font-size: 0;
+	line-height: 223px;
+	padding-left: 55px;
+	/* 或者使用 float:right */
+}
+
+nav>span {
+	display: inline-block;
+	font-size: 1rem;
+	text-align: center;
+	letter-spacing: -0.4px;
+	width: 160px;
+	margin-left: 70px;
+	vertical-align: bottom;
+	/* 去除 span 底部的空白（baseline 與 bottom 之間的間距） */
+}
+
+figure {
+	text-align: center;
+	/* 讓 logo 對其 parent 中線 */
+	position: absolute;
+	height: fit-content;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+
+figure>img, figure>figcaption {
+	position: relative;
+	right: 45px;
+	line-height: 1rem;
+}
+
+figure>img {
+	width: 78px;
+	/* 為了讓 fugure 的 height 剛剛好符合 img+figcaption */
+}
+
+figcaption {
+	top: -10px;
+	font-size: 0.9rem;
+	letter-spacing: -2px;
+}
+
+
+
+main {
+	margin-top: 95px;
+}
+
+.left-side {
+	padding: 0 40px;
+}
+
+h1, h3 {
+	margin: 0;
+	font-weight: initial;
+}
+
+h1 {
+	font-size: 3.8rem;
+	line-height: 3.8rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	text-align: justify;
+}
+
+.left-side>p {
+	margin: 0;
+	line-height: 1.6rem;
+}
+
+.half-side {
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.button-group {
+	padding: 30px;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+button {
+	font-size: 1.8rem;
+	width: 330px;
+	background: linear-gradient(to top, var(--active-text-color) 0, 50%, var(--button-top-color) 50%);
+	border: 0;
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+}
+
+.right-side {
+	padding: 0 41px;
+	float: right;
+}
+
+.right-side>img {
+	width: 100%;
+}
+
+h2 {
+	font-size: 1.8rem;
+	margin-bottom: 48px;
+	margin-top: 287px;
+}
+
+article {
+	clear: both;
+	columns: 2;
+}
+
+article>p {
+	border: 1px solid red;
+	/* font-size: 1.5em; */
+	/* display: inline; */
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+article>p:nth-child(2n+1) {
+	padding-left: 8px;
+}
+
+article>p:nth-child(2n) {
+	padding-left: 26px;
+}
+
+footer {
+	position: relative;
+	margin: 250px 15% 0 15%;
+	font-size: initial;
+	border: 3px solid;
+	line-height: 120px;
+}
+
+footer:first-child {
+	font-size: 0.7rem;
+}
+
+.icon-group {
+	height: fit-content;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	line-height: 0;
+	margin: auto 0;
+	font-size: 0;
+}
+
+
+footer img {
+	width: 45px;
+	height: 45px;
+	margin: 15px;
+}
