@@ -61,7 +61,6 @@ section .banner{
     width: 75%;
     margin: auto;
     display: flex;
-    /* outline: 1px solid #ccc; */
 }
 section .intro{
     width: 50%;
@@ -69,7 +68,6 @@ section .intro{
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 1px solid #aaa;
 }
 section .intro .title{
     margin-left: 90px;
@@ -118,7 +116,6 @@ article{
     margin: 120px auto 0;
     display: flex;
     flex-wrap: wrap;
-    /* outline: 1px solid red; */
 }
 article .txt-title{
     width: 100%;
@@ -148,11 +145,7 @@ article .txt p{
 
 
 footer{
-    /* position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%; */
+    width: 100%;
     background-color: #eee;
     margin-top: 200px;
 }
@@ -162,13 +155,7 @@ footer .footer{
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0 10px 0;
-}
-footer .copyright{
-    font-size: 15px;
-}
-footer .link-icon a{
-    padding: 0 10px;
+    padding: 60px 0 10px 0;
 }
 footer .link-icon a img{
     width: 32px;
