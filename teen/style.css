@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.t1{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    opacity: .5;
+}
+.wrap{
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    background-color: #eee;
+}
+header .header{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+header img{
+    vertical-align: center;
+    padding: 25px 20px 45px 0px;
+}
+header nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav a{
+    text-decoration: none;
+    color: #888;
+    display: flex;
+    padding: 0 40px 0 40px;
+    font-size: 19px;
+}
+header nav a:hover{
+    color: #f90;
+}
+
+
+section{
+    width: 100%;
+    margin: 60px auto;
+}
+section .banner{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    /* outline: 1px solid #ccc; */
+}
+section .intro{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid #aaa;
+}
+section .intro .title{
+    margin-left: 90px;
+    line-height: 1.05;
+}
+section .intro h1{
+    font-size: 70px;
+    font-weight: 500;
+    color: #222;
+}
+section .intro h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #222;
+}
+section .intro p{
+    font-size: 22px;
+    line-height: 1.2;
+    color: #888;
+}
+section .button{
+    margin: 25px 15px 0 0;
+}
+section .button img{
+    width: 155%;
+}
+section .button p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+}
+section .pic{
+    width: 55%;
+    display: flex;
+}
+section .pic img{
+    width: 80%;
+    margin: auto;
+}
+section article h3{
+    font-size: 30px;
+}
+
+article{
+    width: 70%;
+    margin: 120px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* outline: 1px solid red; */
+}
+article .txt-title{
+    width: 100%;
+    margin-bottom: 26px;
+}
+article .txt-title h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: #777;
+}
+article .txt{
+    display: flex;
+    flex-direction: coulumn;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #777;
+}
+article .txt-title h3,
+article .text1,
+article .text2{
+    margin-left: 35px;
+}
+article .txt p{
+    margin-bottom: 35px;
+    line-height: 1.2;
+}
+
+
+footer{
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; */
+    background-color: #eee;
+    margin-top: 200px;
+}
+footer .footer{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 10px 0;
+}
+footer .copyright{
+    font-size: 15px;
+}
+footer .link-icon a{
+    padding: 0 10px;
+}
+footer .link-icon a img{
+    width: 32px;
+    vertical-align: center;
+}
+
+
