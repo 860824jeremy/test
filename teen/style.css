@@ -1,9 +1,6 @@
 *{
     outline: 1px solid red;
 }
-html{
-    min-width: 925px;
-}
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -21,12 +18,11 @@ body,p,h1,h2,h3{
     z-index: 1;
     opacity: .3;
 }
-header{
+header,footer{
     background-color: #eee;
 }
 .header-container{
     width: 925px;
-    box-sizing: border-box;
     padding: 25px 0 40px;
     margin: 0 auto;
     font-size: 0;
@@ -52,7 +48,6 @@ nav a{
     color: #888;
     font-size: 18px;
     padding: 10px;
-    box-sizing: border-box;
 }
 nav a + a{
     margin-left: 90px;
@@ -64,14 +59,13 @@ main{
     margin-bottom: 220px;
 }
 .main-container{  
-    font-size: 0;
     background-color: #fdfdfd;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 55px 0;
 }
 .main-container article{
     width: 850px;
     margin: 0 auto;
+    font-size: 0;
 }
 .main-intro{
     width: 50%;
@@ -79,8 +73,6 @@ main{
     vertical-align: top;
 }
 .main-intro-title{
-    box-sizing: border-box;
-    text-align: left;
     padding-left: 25px;
 }
 .main-intro-title h2{ 
@@ -127,12 +119,10 @@ main{
     width: 100%;
 }
 .main-content{
-    width: 900px;
+    width: 850px;
     margin: 30px auto 0;
-    box-sizing: border-box;
-    columns: 250px 2;
+    column-count: 2;
     column-gap: 30px;
-    padding: 0 30px;
 }
 .main-content h3{
     font-size: 35px;
@@ -149,9 +139,6 @@ main{
     margin-top: 30px;
 }
 
-footer{
-    background-color: #eee;
-}
 .footer-container{
     width: 900px;
     margin: 0 auto;
@@ -163,9 +150,10 @@ footer{
     display: block;
     clear: both;
 }
+
 .copyright{
     font-size: 14px;
-    line-height: 30px;
+    line-height: 34px;
     color: #777;
 }
 .link-container{
@@ -178,9 +166,7 @@ footer{
     cursor: pointer;
 }
 .link-container a i{
-    vertical-align: middle;
     font-size: 34px;
-    line-height: 30px;
     color: black;
 }
 
