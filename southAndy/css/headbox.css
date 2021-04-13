@@ -1,8 +1,22 @@
+body {
+  margin: 0;
+}
+
+/* header ----------------------------------------- */
+
 .headerSection {
   background-color: gainsboro;
   height: 20vh;
 }
 
-.topNavBar {
-  display: flex;
+.log {
+  display: block;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.text {
+  font-size: 15px;
+  text-align: center;
 }
