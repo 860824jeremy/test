@@ -1,0 +1,293 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* MY CODE */
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+header {
+    background-color: #efefef;
+    height: 100px;
+}
+
+nav {
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    float: left;
+    height: 70px;
+    margin: 15px 30px;
+    width: auto;
+}
+
+nav ul {
+    height: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 100px;
+    margin: 0 40px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+    line-height: 100px;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* MAIN */
+main {
+    background-color: #fdfdfd;
+    height: 300px;
+}
+
+main .container {
+    height: calc(100% - 150px);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 280px;
+    padding: 30px 0;
+}
+.banner-left {
+    float: left;
+    width: 50%;
+}
+
+.description-area {
+    padding: 0 40px;
+}
+
+.des-line-1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.des-line-2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.des-line-3 {
+    font-size: 11px;
+    line-height: 18px;
+    
+}
+button {
+    border: none;
+    margin: 15px 90px 0 90px;
+    background-image: linear-gradient( #FFBB62 50%,#FA922B 50%);
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition-duration: 60ms;
+    cursor: pointer;
+}
+
+.button-area p {
+    padding-left: 90px;
+    padding-top: 3px;
+    font-size: 9px;
+}
+
+.banner-right {
+    float: right;
+    width: 50%;
+}
+
+.banner-right img {
+    width: 240px;
+}
+
+article h3 {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.col-left, .col-right {
+    width: 35%;
+    float: left;
+    margin-top: 20px;
+}
+
+.col-left {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+article p {
+    font-size: 11px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    height: 50px;
+    background-color: #efefef;
+    border-top: 1px solid #e9e9e9;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    width: 55%;
+    margin: 0 auto;
+}
+
+footer p {
+    display: inline-block;
+    margin-right: 300px;
+    line-height: 50px;
+    font-size: 9px;
+}
+
+.media-icons {
+    display: inline-block;
+    margin: 15px 0;
+   
+}
+
+.media-icons a {
+    font-size: 12px;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 5px;
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.media-icons a i {
+    padding: 4px 0;
+}
