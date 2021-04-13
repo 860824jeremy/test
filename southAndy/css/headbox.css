@@ -1,0 +1,8 @@
+.headerSection {
+  background-color: gainsboro;
+  height: 20vh;
+}
+
+.topNavBar {
+  display: flex;
+}
