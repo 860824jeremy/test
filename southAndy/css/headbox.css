@@ -1,3 +1,7 @@
+html {
+  display: block;
+}
+
 body {
   margin: 0;
 }
@@ -5,18 +9,33 @@ body {
 /* header ----------------------------------------- */
 
 .headerSection {
-  background-color: gainsboro;
-  height: 20vh;
+  font-family: sans-serif;
+  background-color: rgb(117, 114, 114);
+  height: auto;
 }
 
+/* left :logo */
 .log {
   display: block;
-  float: left;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  padding-left: 200px;
+  float: left;
+  width: 85px;
+  text-align: center;
 }
 
 .text {
   font-size: 15px;
   text-align: center;
+}
+
+/* right:nav */
+.headerLink {
+  float: right;
+  display: inline;
+
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: 110px;
 }

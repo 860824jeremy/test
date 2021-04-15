@@ -1,6 +1,8 @@
 .content {
   justify-content: center;
   background-color: rgb(252, 248, 248);
+  display: block;
+  height: auto;
 }
 .buyButton {
   background-color: orange;
