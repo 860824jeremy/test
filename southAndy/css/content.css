@@ -1,12 +1,49 @@
 .content {
   justify-content: center;
-  background-color: rgb(252, 248, 248);
-  display: block;
+  display: inline-block;
+  width: auto;
   height: auto;
+  overflow: hidden;
+
+  padding-top: 30px;
 }
+.contentText {
+  width: 400px;
+  margin-left: 220px;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+h1 {
+  padding-top: 40px;
+  font-size: 50pt;
+  line-height: 50pt;
+  margin: 0;
+}
+h3 {
+  padding-top: 0px;
+  font-size: 22pt;
+  line-height: 22pt;
+  margin: 0;
+}
+p {
+  font-size: 16px;
+  color: #585858;
+}
+
 .buyButton {
   background-color: orange;
   color: #fff;
+  font-size: 25px;
   border-radius: 10px;
-  height: 50px;
+  height: 60px;
+  width: auto;
+  background-color: gri;
+}
+
+/* Main:Right */
+
+.contentImg {
+  display: block;
+  float: right;
 }
