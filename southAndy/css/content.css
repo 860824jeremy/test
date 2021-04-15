@@ -38,7 +38,7 @@ p {
   border-radius: 10px;
   height: 60px;
   width: auto;
-  background-color: gri;
+  background-image: linear-gradient(#ffba53 50%, #f99303 50%);
 }
 
 /* Main:Right */
@@ -47,3 +47,5 @@ p {
   display: block;
   float: right;
 }
+
+/*-----   ARticle------------ --------- */
