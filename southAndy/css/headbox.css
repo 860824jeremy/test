@@ -1,5 +1,10 @@
+* {
+  outline: 1px solid red;
+  font-family: sans-serif;
+}
+
 html {
-  display: block;
+  /* display: block; */
 }
 
 body {
@@ -11,19 +16,19 @@ body {
 .headerSection {
   font-family: sans-serif;
   background-color: #eeeeee;
-  width: 910px;
-  height: auto;
-  marrgin: 0 auto;
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 /* left :logo */
 .log {
-  padding-top: 20px;
-  padding-bottom: 40px;
   float: left;
   width: 85px;
   text-align: center;
-  display: block;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 150px;
 }
 
 #log img {
@@ -40,13 +45,11 @@ body {
 
 /* right:nav */
 .headerLink {
-  float: right;
-  display: block;
+  display: inline-block;
+  margin-top: 70px;
 }
 li {
   display: inline;
-
-  padding-top: 20px;
-  padding-bottom: 30px;
   margin-left: 110px;
+  margin-top: 100px;
 }
