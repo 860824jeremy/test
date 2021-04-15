@@ -10,8 +10,8 @@ body {
 
 .headerSection {
   font-family: sans-serif;
-  background-color: rgb(117, 114, 114);
-  height: auto;
+  background-color: #eeeeee;
+  width: 910px;
 }
 
 /* left :logo */
@@ -33,7 +33,10 @@ body {
 /* right:nav */
 .headerLink {
   float: right;
-  display: inline;
+  display: block;
+}
+li {
+  display: inline-block;
 
   padding-top: 20px;
   padding-bottom: 30px;
