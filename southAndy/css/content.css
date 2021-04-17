@@ -49,3 +49,19 @@ p {
 }
 
 /*-----   ARticle------------ --------- */
+
+section {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.leftSection {
+  width: 30%;
+  float: left;
+  margin-left: 200px;
+}
+.rightSection {
+  width: 30%;
+  float: right;
+  margin-right: 200px;
+}
