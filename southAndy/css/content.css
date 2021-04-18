@@ -46,6 +46,7 @@ p {
 .contentImg {
   display: block;
   float: right;
+  margin-left: 50px;
 }
 
 /*-----   Section  --------- */
