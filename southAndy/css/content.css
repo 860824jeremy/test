@@ -48,10 +48,10 @@ p {
   float: right;
 }
 
-/*-----   ARticle------------ --------- */
+/*-----   Section  --------- */
 
 section {
-  text-align: center;
+  text-align: left;
   margin-top: 150px;
 }
 
@@ -60,6 +60,15 @@ section {
   float: left;
   margin-left: 200px;
 }
+
+.articleH3 {
+  font-size: 22pt;
+  line-height: 22pt;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+/* RightSection */
 .rightSection {
   width: 30%;
   float: right;
