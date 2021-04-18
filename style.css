@@ -1,33 +1,37 @@
 /* MY CODE */
 
-* {
+/* * {
     outline: 1px solid red;
     font-family: 'Noto Sans TC', sans-serif;
-    color: blue;
-} 
+}  */
+ 
+html {
+    position: relative;
+}
 
 body {
-    margin: 0;
+    min-width: 780px;
+    margin: 0 auto;
 }
 
 header {
     background-color: #efefef; 
     height: 180px;
-}
-
-nav {
-    width: 80%;
-    margin: auto;
     text-align: center;
 }
 
-nav a {
+nav {
     display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
 }
 
 .logo {
+    position: relative;
+    top: 25px;
     width: 90px;
-    vertical-align: bottom;
+    vertical-align: middle;
 } 
 
 ul {
@@ -44,7 +48,7 @@ li {
 li a {
     padding: 4px;
     text-decoration: none;
-    color: #000;
+    color: #808080;
     font-size: 18px;
 }
 
@@ -66,10 +70,16 @@ main .container {
 section {
     display: flow-root;
 }
+
 .main-intro {
     float: left;
     width: 50%;
-    margin: auto;
+}
+
+.main-intro::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .description-area {
@@ -110,12 +120,15 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    transition-duration: 60ms;
+    transition: 0.5s;
     cursor: pointer;
 }
 
 .button-area span {
-    font-size: 8px;
+    display: inline-block;
+    width: 250px;
+    text-align: start;
+    font-size: 15px;
     margin: 0;
 }
 
@@ -130,77 +143,68 @@ button:hover {
     vertical-align: bottom;
 }
 
-article h3 {
-    margin-left: 20px;
-    font-weight: 400;
-    font-size: 20px;
+article {
+    margin-top: 160px;
+    margin-bottom: 220px;
+    padding: 0 30px;
 }
 
-.col-left, .col-right {
-    width: 35%;
-    float: left;
-    margin-top: 20px;
-}
-
-.col-left {
-    margin-left: 20px;
-    margin-right: 40px;
+h3 {
+    font-size: 32px;
 }
 
 article p {
-    font-size: 11px;
-    line-height: 18px;
-}
-
-article p + p{
-    margin-bottom: 20px;
-}
+    columns: 2;
+    margin-bottom: 0;
+    font-size: 18px;
+} 
 
 /* FOOTER */
 
-/* footer {
-    clear: both;
-    height: 50px;
+footer {
     background-color: #efefef;
     border-top: 1px solid #e9e9e9;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 footer .container {
-    width: 55%;
+    width: 70%;
+    height: 80px;
     margin: 0 auto;
+    position: relative;
 }
 
-footer p {
-    display: inline-block;
-    margin-right: 300px;
-    line-height: 50px;
-    font-size: 9px;
+.copyright{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    font-size: 14px;
 }
 
 .media-icons {
-    display: inline-block;
-    margin: 15px 0;
-   
+    display: inline-block;  
+    position: absolute;
+    right: 0;
+    top: 25px;
 }
 
 .media-icons a {
-    font-size: 12px;
     display: inline-block;
     background-color: #000;
     border-radius: 5px;
-    width: 19px;
-    height: 19px;
-    color: #fff;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-.media-icons a i {
-    padding: 4px 0;
-} */
+.media-icons i {
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 0;
+}
 
 
 /* Layout */
