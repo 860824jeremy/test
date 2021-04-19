@@ -57,8 +57,9 @@
   font-size: 25px;
   border-radius: 10px;
   height: 60px;
-  width: auto;
+  width: 230px;
   background-image: linear-gradient(#ffba53 50%, #f99303 50%);
+  padding-left: 5px;
 }
 
 /* Main:Right */
@@ -66,7 +67,8 @@
 .contentImg {
   display: block;
   float: right;
-  margin-left: 50px;
+  margin-left: 35px;
+  margin-top: 30px;
 }
 
 /*-----   Section  --------- */
