@@ -1,3 +1,12 @@
+.template {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
 .content {
   justify-content: center;
   display: inline-block;
@@ -26,7 +35,7 @@ h3 {
   line-height: 22pt;
   margin: 0;
 }
-p {
+p.main {
   font-size: 16px;
   color: #585858;
 }
@@ -62,17 +71,21 @@ section {
   float: left;
   margin-left: 200px;
 }
+.sectionP {
+  margin-bottom: 30px;
+}
 
 .articleH3 {
   font-size: 22pt;
   line-height: 22pt;
   margin-left: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /* RightSection */
 .rightSection {
   width: 30%;
   float: right;
-  margin-right: 200px;
+  margin-right: 250px;
 }
