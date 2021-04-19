@@ -9,7 +9,7 @@
 p {
   float: left;
   padding-top: 20px;
-  margin-left: 150px;
+  margin-left: 200px;
   font-size: 12px;
 }
 
@@ -17,4 +17,15 @@ p {
 
 .socialLink {
   float: right;
+  margin-right: 200px;
+}
+
+.socialLogo {
+  font-size: 14px;
+}
+
+i.socialLogo {
+  font-size: 30px;
+  padding-top: 35px;
+  margin-left: 20px;
 }
