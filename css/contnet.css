@@ -13,3 +13,16 @@
 }
 
 .try-it-now {color: red;}
+element.style {
+}
+#headbox {
+    font-family: sans-serif;
+    background-color: #EEEEEE;
+}
+.side_space {
+    margin: 0 auto;
+    width: 910px;
+}
+div {
+    display: block;
+}
