@@ -26,3 +26,9 @@ element.style {
 div {
     display: block;
 }
+.clearfix::after {
+    -webkit-animation-iteration-count: "";
+    clear: both;
+    display: table;
+    
+}
