@@ -2,14 +2,14 @@
     outline: 1px solid red;
 }
 .template {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: auto;
-    opacity: .5;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: auto;
+        opacity: .5;
 }
 
 .try-it-now {color: red;}
@@ -18,10 +18,6 @@ element.style {
 #headbox {
     font-family: sans-serif;
     background-color: #EEEEEE;
-}
-.side_space {
-    margin: 0 auto;
-    width: 910px;
 }
 div {
     display: block;
