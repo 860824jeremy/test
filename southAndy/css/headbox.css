@@ -5,6 +5,8 @@
 
 html {
   display: block;
+  width: 1400px;
+  height: auto;
 }
 
 body {
@@ -29,32 +31,40 @@ body {
   text-align: center;
   padding-top: 20px;
   padding-left: 180px;
-  margin-right: 50px;
+  /*
+  margin-right: 50px;*/
   margin-top: 5px;
 }
 
-#log img {
+/* #log img {
   width: 52px;
   height: 80px;
   display: block;
   margin: 0 auto;
-}
+} */
 
 .text {
   font-size: 13px;
   text-align: center;
   margin-right: 10px;
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 /* right:nav */
+
 .headerLink {
-  display: inline-block;
-  margin-top: 70px;
-  margin-right: 150px;
+  /* display: inline; */
+  margin-top: 60px;
+  /* margin-right: 140px; */
+  /* padding-right: 50px; */
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 1500px;
 }
 li {
   display: inline;
-  margin-left: 110px;
-  margin-top: 100px;
+  /* margin-left: 110px;
+  margin-top: 200px;
+  padding-right: 40px;
+  margin-right: 10px; */
 }
