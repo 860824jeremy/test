@@ -104,7 +104,7 @@ section {
 .rightSection {
   width: 30%;
   float: right;
-  margin-right: 230px;
+  margin-right: 320px;
 }
 
 .rightSection.p:nth-child(2) {
