@@ -1,5 +1,19 @@
-body {
+* {
+    outline: 1px solid red;
+}
+.template {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: auto;
+        opacity: .5;
+}
+.body {
     margin: 0px;
+    display: block;
 }
 
 .side_space {
@@ -26,7 +40,7 @@ body {
     display: block;
     float: left;
     width: 85px;
-    padding-top: 20px
+    padding-top: 20px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -57,9 +71,13 @@ body {
     display: block;
     font-size: 15px;
     line-height: 160px;
-    margin: 15px;
+    margin: 10px;
 }
-
 #headbox ul li + li {
     margin-left: 110px;
+}
+.clearfix::after {
+    -webkit-animation-iteration-count: "";
+    clear: both;
+    display: table;    
 }
