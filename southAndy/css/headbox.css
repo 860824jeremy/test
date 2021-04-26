@@ -1,8 +1,9 @@
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   font-family: sans-serif;
 }
 
+/* html的用途不被用為容器，它主要用於定義翻譯網頁內容 */
 html {
   display: block;
   width: 1400px;
@@ -10,13 +11,13 @@ html {
 }
 
 body {
+  /* 知道為何這邊別人會用margin？ */
   margin: 0;
 }
 
 /* header ----------------------------------------- */
 
 .headerSection {
-  font-family: sans-serif;
   background-color: #eeeeee;
   width: auto;
   height: 160px;
