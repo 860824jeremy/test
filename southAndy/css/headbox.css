@@ -4,11 +4,11 @@
 }
 
 /* html的用途不被用為容器，它主要用於定義翻譯網頁內容 */
-html {
+/* html {
   display: block;
   width: 1400px;
   height: auto;
-}
+} */
 
 body {
   /* 知道為何這邊別人會用margin？ */
@@ -17,55 +17,62 @@ body {
 
 /* header ----------------------------------------- */
 
-.headerSection {
+.web_top {
   background-color: #eeeeee;
-  width: auto;
+  width: 1200px;
   height: 160px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-/* left :logo */
-.log {
-  float: left;
-  width: 85px;
+  /* overflow: hidden; */
   text-align: center;
-  padding-top: 20px;
-  padding-left: 180px;
+  display: inline-block;
+}
+/* left :logo */
+.web_top_logo {
+  /* V1 */
+  /* float: left; */
+  /* text-align: center; */
+  /* padding-top: 20px;
+  padding-left: 180px; */
   /*
   margin-right: 50px;*/
-  margin-top: 5px;
+  /* margin-top: 5px; */
+  /* v2 */
+  width: 85px;
+  display: block;
+  padding: 15px 0 0 175px;
 }
 
-/* #log img {
-  width: 52px;
-  height: 80px;
-  display: block;
-  margin: 0 auto;
-} */
-
-.text {
+.web_top_log_text {
+  /* margin-right: 10px;
+  margin-top: -10px; */
+  /* V2 */
   font-size: 13px;
   text-align: center;
-  margin-right: 10px;
-  margin-top: -10px;
+  display: block;
 }
 
 /* right:nav */
 
-.headerLink {
+.web_top_nav {
+  /* padding: 10px; */
+  /* display: inline-block; */
   /* display: inline; */
-  margin-top: 60px;
+  /* margin-top: 60px; */
   /* margin-right: 140px; */
   /* padding-right: 50px; */
-  padding-top: 5px;
+  /* padding-top: 5px;
   padding-left: 10px;
-  width: 1500px;
+  width: 1500px; */
+
+  /* V2 */
 }
-li {
-  display: inline;
+.web_top_nav_link {
+  /* display: inline; */
   /* margin-left: 110px;
   margin-top: 200px;
   padding-right: 40px;
   margin-right: 10px; */
+  /* V2 */
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
 }
