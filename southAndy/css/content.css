@@ -85,12 +85,25 @@
 
 /*-----   Section  --------- */
 
-section {
-  text-align: left;
-  font-family: sans-serif;
-  margin-top: 120px;
-  margin-bottom: 520px;
-  margin-left: 20px;
+.content {
+  width: 1200px;
+  column-count: 2;
+  column-gap: 100px;
+  margin-top: 150px;
+  
+}
+.content_title {
+  font-family: 'Source Sans Pro', sans-serif;
+  column-span: all;
+}
+
+/* Ｑ：如何抓寬度？ */
+.content_p {
+  /* width: 400px; */
+  line-height: 24px;
+  column-width: 100px;
+  /* margin: 0 40px 40px 200px;  */
+
 }
 
 .leftSection {
@@ -99,7 +112,7 @@ section {
   margin-left: 200px;
   margin-top: 5px;
 }
-.articleH3 {
+/* .articleH3 {
   font-size: 22pt;
   line-height: 22pt;
   margin-left: 200px;
@@ -120,4 +133,4 @@ section {
 
 .rightSection.p:nth-child(2) {
   margin-top: 50px;
-}
+} */
