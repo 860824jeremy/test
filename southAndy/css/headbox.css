@@ -18,12 +18,11 @@ body {
 /* header ----------------------------------------- */
 
 .web_top {
+  /* overflow: hidden; */
+  /* V2 */
   background-color: #eeeeee;
   width: 1200px;
-  height: 160px;
-  /* overflow: hidden; */
   text-align: center;
-  display: inline-block;
 }
 /* left :logo */
 .web_top_logo {
@@ -37,17 +36,17 @@ body {
   /* margin-top: 5px; */
   /* v2 */
   width: 85px;
-  display: block;
-  padding: 15px 0 0 175px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.web_top_log_text {
+.web_top_logo_text {
   /* margin-right: 10px;
   margin-top: -10px; */
   /* V2 */
   font-size: 13px;
+  /* display: block; */
   text-align: center;
-  display: block;
 }
 
 /* right:nav */
@@ -62,8 +61,11 @@ body {
   /* padding-top: 5px;
   padding-left: 10px;
   width: 1500px; */
+  vertical-align: middle;
 
   /* V2 */
+  display: inline-block;
+  width: auto;
 }
 .web_top_nav_link {
   /* display: inline; */
@@ -75,4 +77,6 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #333;
+  line-height: 160px;
+  margin-left: 100px;
 }
