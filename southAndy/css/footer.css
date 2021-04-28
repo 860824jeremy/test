@@ -1,31 +1,36 @@
-.footer {
+.web_social {
   background-color: gainsboro;
-  height: 75px;
-  width: auto;
+  /* height: 75px; */
+  width: 1256px;
   border: 1px solid #d8d8d8;
-  overflow: hidden;
+  /* overflow: hidden; */
+  margin-top: 170px;
 }
 
-p.footerP {
-  float: left;
-  padding-top: 30px;
+.web_social_text {
+  display: inline-block;
+  /* float: left; */
   margin-left: 190px;
   font-size: 12px;
 }
 
 /* RightLink */
 
-.socialLink {
-  float: right;
-  margin-right: 340px;
+.web_social_link {
+  /* float: right; */
+  /* padding-right: 340px; */
+  display: inline-block;
+  vertical-align: super;
+  padding: 10px 0 0 450px;
 }
 
-.socialLogo {
-  font-size: 14px;
-}
-
-i.socialLogo {
+.web_social_socialLogo {
   font-size: 30px;
   padding-top: 35px;
   margin-left: 20px;
+}
+
+.web_social_socialLogo:hover {
+  color: orange;
+  font-size: 50px;
 }

@@ -12,7 +12,9 @@
 
 body {
   /* 知道為何這邊別人會用margin？ */
-  margin: 0;
+  margin: 0 auto;
+  width: 1256px;
+  box-sizing: border-box;
 }
 
 /* header ----------------------------------------- */
@@ -21,7 +23,7 @@ body {
   /* overflow: hidden; */
   /* V2 */
   background-color: #eeeeee;
-  width: 1200px;
+  width: 1256px;
   text-align: center;
 }
 /* left :logo */
@@ -38,6 +40,10 @@ body {
   width: 85px;
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: 30px;
+}
+.web_top_logo img {
+  margin-top: 20px;
 }
 
 .web_top_logo_text {
@@ -45,6 +51,7 @@ body {
   margin-top: -10px; */
   /* V2 */
   font-size: 13px;
+  color: #333;
   /* display: block; */
   text-align: center;
 }
@@ -66,6 +73,7 @@ body {
   /* V2 */
   display: inline-block;
   width: auto;
+  margin-right: 50px;
 }
 .web_top_nav_link {
   /* display: inline; */
@@ -79,4 +87,9 @@ body {
   color: #333;
   line-height: 160px;
   margin-left: 100px;
+}
+
+.web_top_nav-hover:hover {
+  color: orange;
+  font-size: 20px;
 }

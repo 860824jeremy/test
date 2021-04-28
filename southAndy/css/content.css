@@ -20,7 +20,7 @@
   /* padding-top: 30px; */
   /* V2 */
   font-family: sans-serif;
-  width: 1200px;
+  width: 1256px;
 }
 
 .intro {
@@ -61,7 +61,7 @@
 .intro_button {
   padding-left: 65px;
 }
-.buyButton {
+.intro_button-orange {
   background-color: orange;
   color: #fff;
   font-size: 25px;
@@ -86,51 +86,25 @@
 /*-----   Section  --------- */
 
 .content {
-  width: 1200px;
-  column-count: 2;
-  column-gap: 100px;
+  width: 1256px;
   margin-top: 150px;
-  
+}
+
+.wrapper {
+  width: 1100px;
+  column-count: 2;
+  column-gap: 50px;
+  margin: 0 auto;
 }
 .content_title {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   column-span: all;
+  font-size: 25px;
+  /* margin: 0 0 20px 20px; */
 }
 
 /* Ｑ：如何抓寬度？ */
 .content_p {
-  /* width: 400px; */
+  width: 400px;
   line-height: 24px;
-  column-width: 100px;
-  /* margin: 0 40px 40px 200px;  */
-
 }
-
-.leftSection {
-  width: 30%;
-  float: left;
-  margin-left: 200px;
-  margin-top: 5px;
-}
-/* .articleH3 {
-  font-size: 22pt;
-  line-height: 22pt;
-  margin-left: 200px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
-.sectionP {
-  margin-bottom: 30px;
-}
-
-/* RightSection */
-
-.rightSection {
-  width: 30%;
-  float: right;
-  margin-right: 320px;
-}
-
-.rightSection.p:nth-child(2) {
-  margin-top: 50px;
-} */
