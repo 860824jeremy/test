@@ -1,7 +1,7 @@
 /* MY CODE */
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     font-family: 'Noto Sans TC', sans-serif;
 } 
 
@@ -18,7 +18,7 @@ header {
     text-align: center; 
 }
 
-.logo__container {
+h1 {
     display: inline-block;
     vertical-align: middle;
     margin-right: 90px;
@@ -62,18 +62,18 @@ section {
     margin: 0 auto;
 }
 
-.wrapper::after {
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.main__section__intro {
+.intro-area {
     float: left;
     width: 50%;
 }
 
-h1 {
+h2 {
     font-size: 70px;
     text-transform: uppercase;
     margin: 0;
@@ -83,16 +83,16 @@ span {
     font-size: 35px;
 }
 
-.description__area {
+.intro__text {
     margin-bottom: 40px;
 }
 
-.description__area p {
+.intro__text p {
     font-size: 18px;
     margin: 0;
 }
 
-.button__area {
+.intro__button {
     margin: 0 auto;
     width: fit-content;
 }
@@ -111,23 +111,23 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    transition: 0.5s;
+    transition: transform 0.5s;
     cursor: pointer;
 }
 
-.button__area span {
+.intro__button span {
     display: block;
     font-size: 15px;
 }
 
-.main__section__img {
+/* .intro__img {
     float: right;
     width: 50%;
-}
+} */
 
-.main__section__img img {
+.intro-area img {
     width: 100%;
-    display: block;
+    vertical-align: bottom;
 }
 
 article {
@@ -135,17 +135,17 @@ article {
     padding-bottom: 250px;
 }
 
-h2 {
+h3 {
     margin-top: 0;
     font-size: 36px;
 }
 
-.content {
+.article__content {
     columns: 2;
     column-gap: 30px;
 } 
 
-.content p {
+.article__content p {
     font-size: 20px;
     margin-top: 0;
 }  
@@ -159,25 +159,25 @@ footer {
 }
 
 
-.copyright{
+.footer__copyright{
     line-height: 80px;
     font-size: 16px;
 }
 
-.media__icons {
+.footer__link {
     float: right;
 }
 
-.media__icons  a {
+.footer__link  a {
     display: inline-block;
     line-height: 80px;
 }
 
-.media__icons a + a {
+.footer__link a + a {
     margin-left: 20px;
 }
 
-.media__icons i {
+.footer__link i {
     background-color: #000;
     border-radius: 5px;
     width: 30px;
