@@ -150,6 +150,10 @@ h3 {
     margin-top: 0;
 }  
 
+.article__content p:nth-child(3n) {
+    margin-bottom: 0;
+}
+
 
 /* FOOTER */
 
