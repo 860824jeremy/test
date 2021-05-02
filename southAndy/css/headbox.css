@@ -25,6 +25,7 @@ body {
   background-color: #eeeeee;
   width: 1256px;
   text-align: center;
+  font-size: 0;
 }
 /* left :logo */
 .web_top_logo {
