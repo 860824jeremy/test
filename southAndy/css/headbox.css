@@ -11,25 +11,32 @@
 } */
 
 body {
-  /* 知道為何這邊別人會用margin？ */
+  /* v2 */
   margin: 0 auto;
-  width: 1256px;
   box-sizing: border-box;
+  font-size: 0;
 }
 
 /* header ----------------------------------------- */
 
-.web_top {
-  /* overflow: hidden; */
-  /* V2 */
+header {
   background-color: #eeeeee;
-  width: 1256px;
-  text-align: center;
-  font-size: 0;
+  justify-content: center;
 }
-/* left :logo */
-.web_top_logo {
-  /* V1 */
+.container {
+  /* overflow: hidden; */
+  /* v1 */
+  /* background-color: #eeeeee;
+  width: 1256px; */
+  /* text-align: center; */
+  /* V2 */
+  width: auto;
+  padding: 0 35px;
+  text-align: center;
+}
+
+.logo {
+  /* initial */
   /* float: left; */
   /* text-align: center; */
   /* padding-top: 20px;
@@ -37,29 +44,37 @@ body {
   /*
   margin-right: 50px;*/
   /* margin-top: 5px; */
+  /* v1 */
+  /* width: 85px;
+  display: inline-block; */
   /* v2 */
+  text-decoration: none;
   width: 85px;
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 30px;
+  padding: 0 50px 10px 0;
 }
-.web_top_logo img {
-  margin-top: 20px;
+.log img {
+  width: 50px;
 }
 
-.web_top_logo_text {
+.logo_title {
   /* margin-right: 10px;
   margin-top: -10px; */
-  /* V2 */
-  font-size: 13px;
+  /* V1 */
+  /* font-size: 13px;
   color: #333;
   /* display: block; */
-  text-align: center;
+  /* text-align: center; */
+  /* v2 */
+  font-size: 13px;
+  color: #333;
+  margin: 0;
 }
 
 /* right:nav */
 
-.web_top_nav {
+.nav_container {
   /* padding: 10px; */
   /* display: inline-block; */
   /* display: inline; */
@@ -69,28 +84,40 @@ body {
   /* padding-top: 5px;
   padding-left: 10px;
   width: 1500px; */
-  vertical-align: middle;
+  /* vertical-align: middle; */
 
-  /* V2 */
+  /* V1 */
+  /* display: inline-block; */
+  /* width: auto; */
+  /* margin-right: 50px; */
+
+  /* v2 */
   display: inline-block;
-  width: auto;
-  margin-right: 50px;
+  line-height: 150px;
+  font-size: 0;
+  text-align: center;
 }
-.web_top_nav_link {
+.nav_link {
   /* display: inline; */
   /* margin-left: 110px;
   margin-top: 200px;
   padding-right: 40px;
   margin-right: 10px; */
-  /* V2 */
-  display: inline-block;
+  /* V1 */
+  /* display: inline-block;
   text-decoration: none;
   color: #333;
   line-height: 160px;
-  margin-left: 100px;
+  margin-left: 100px; */
+  /* V2 */
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  padding-right: 110px;
 }
 
-.web_top_nav-hover:hover {
+.nav-hover:hover {
   color: orange;
   font-size: 20px;
 }
