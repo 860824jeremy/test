@@ -21,9 +21,8 @@ body {
 
 header {
   background-color: #eeeeee;
-  justify-content: center;
 }
-.container {
+.container_alginwidth {
   /* overflow: hidden; */
   /* v1 */
   /* background-color: #eeeeee;
@@ -35,7 +34,7 @@ header {
   text-align: center;
 }
 
-.logo {
+.logo_displayalign {
   /* initial */
   /* float: left; */
   /* text-align: center; */
@@ -58,7 +57,7 @@ header {
   width: 50px;
 }
 
-.logo_title {
+.logo_titlesize {
   /* margin-right: 10px;
   margin-top: -10px; */
   /* V1 */
@@ -74,7 +73,7 @@ header {
 
 /* right:nav */
 
-.nav_container {
+.link_container_boxstyle {
   /* padding: 10px; */
   /* display: inline-block; */
   /* display: inline; */
@@ -97,7 +96,7 @@ header {
   font-size: 0;
   text-align: center;
 }
-.nav_link {
+.link_link {
   /* display: inline; */
   /* margin-left: 110px;
   margin-top: 200px;
@@ -117,7 +116,7 @@ header {
   padding-right: 110px;
 }
 
-.nav-hover:hover {
+.link-hover:hover {
   color: orange;
   font-size: 20px;
 }
