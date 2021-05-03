@@ -66,9 +66,7 @@
   display: inline-block;
   /* width: 500px; */
 }
-.intro_imgstyle {
-  display: inline-block;
-}
+
 /* button */
 
 .intro_button-orange {
@@ -89,22 +87,26 @@
 
 /*-----   article  --------- */
 
+.article {
+  padding: 150px 25px 80px 25px;
+}
+
 .wrapper {
   /* width: 1100px; */
   column-count: 2;
   column-gap: 50px;
   margin: 0 auto;
-  display: inline-block;
 }
-.content_title {
-  font-family: "Source Sans Pro", sans-serif;
+.article_title {
+  /* v2 */
   column-span: all;
   font-size: 25px;
-  /* margin: 0 0 20px 20px; */
+  margin: 5px 20px;
 }
 
 /* Ｑ：如何抓寬度？ */
-.content_p {
-  width: 400px;
+.article_content {
+  /* v2 */
+  font-size: 14px;
   line-height: 24px;
 }
