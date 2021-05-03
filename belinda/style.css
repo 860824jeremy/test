@@ -68,7 +68,7 @@ section {
     clear: both;
 }
 
-.intro-area {
+.intro {
     float: left;
     width: 50%;
 }
@@ -125,7 +125,7 @@ button:hover {
     width: 50%;
 } */
 
-.intro-area img {
+.intro__img {
     width: 100%;
     vertical-align: bottom;
 }
@@ -153,7 +153,6 @@ h3 {
 .article__content p:nth-child(3n) {
     margin-bottom: 0;
 }
-
 
 /* FOOTER */
 
