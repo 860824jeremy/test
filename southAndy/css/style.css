@@ -1,9 +1,24 @@
+/* 看板輔助用 */
+
 * {
   outline: 1px solid red;
   font-family: sans-serif;
 }
 
-/* html的用途不被用為容器，它主要用於定義翻譯網頁內容 */
+/* 方便比對切版精確度 */
+.template {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+/* 
+V2:
+html的用途不被用為容器，它主要用於定義翻譯網頁內容 
+*/
 /* html {
     display: block;
     width: 1400px;
@@ -12,9 +27,12 @@
 
 body {
   /* v2 */
+  /* margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 0; */
+  width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  font-size: 0;
 }
 
 /* header ----------------------------------------- */
@@ -22,19 +40,20 @@ body {
 header {
   background-color: #eeeeee;
 }
-.container_alginwidth {
+.container {
   /* overflow: hidden; */
   /* v1 */
   /* background-color: #eeeeee;
     width: 1256px; */
   /* text-align: center; */
   /* V2 */
-  width: auto;
+  /* width: auto; */
   padding: 0 35px;
   text-align: center;
+  /* v3 */
 }
 
-.logo_displayalign {
+header a {
   /* initial */
   /* float: left; */
   /* text-align: center; */
@@ -53,11 +72,11 @@ header {
   vertical-align: middle;
   padding: 0 50px 10px 0;
 }
-.log img {
+/* .log img {
   width: 50px;
-}
+} */
 
-.logo_titlesize {
+header a h1 {
   /* margin-right: 10px;
     margin-top: -10px; */
   /* V1 */
@@ -73,7 +92,7 @@ header {
 
 /* right:nav */
 
-.link_container_boxstyle {
+nav {
   /* padding: 10px; */
   /* display: inline-block; */
   /* display: inline; */
@@ -96,7 +115,7 @@ header {
   font-size: 0;
   text-align: center;
 }
-.link_link {
+nav a {
   /* display: inline; */
   /* margin-left: 110px;
     margin-top: 200px;
@@ -116,23 +135,19 @@ header {
   padding-right: 110px;
 }
 
-.link-hover:hover {
+nav a:hover {
   color: orange;
   font-size: 20px;
 }
 
-@import url(headbox.css);
-@import url(footer.css);
+/* .link-hover:hover {
+  color: orange;
+  font-size: 20px;
+} */
 
-/* 方便比對切版精確度 */
-.template {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.7;
-}
+/* --------- Main ----------- */
+
+/* section */
 
 /* article */
 
