@@ -87,8 +87,8 @@
 
 /*-----   article  --------- */
 
-.article {
-  padding: 150px 25px 80px 25px;
+.article_boxmodel {
+  padding: 150px 25px 180px 25px;
 }
 
 .wrapper {
@@ -105,7 +105,7 @@
 }
 
 /* Ｑ：如何抓寬度？ */
-.article_content {
+.article_content_fontstyle {
   /* v2 */
   font-size: 14px;
   line-height: 24px;
