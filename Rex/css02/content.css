@@ -67,8 +67,9 @@ nav a + a {
 }
 
 .main-1 {
-  width: 1000px;
-  margin: 20px auto;
+  width: 900px;
+  margin: 0px auto;
+  padding: 40px 0px 60px 0px;
   display: block;
 }
 
@@ -76,18 +77,21 @@ h1 {
   font-size: 65px;
   line-height: 70px;
   font-weight: 400;
+  color: #292421;
 }
 
 h2 {
   font-size: 30px;
   line-height: 43px;
   font-weight: 400;
+  color: #292421;
 }
 
 .button {
   border-radius: 5px;
   background-color: orange;
   color: white;
+  margin: 5px 60px;
   padding: 15px 0px;
   text-align: center;
   text-decoration: none;
@@ -98,15 +102,16 @@ h2 {
 
 .left-box {
   display: inline-block;
-  margin: 20px 26px;
   width: 400px;
   font-size: 16px;
-  vertical-align: text-bottom;
+  vertical-align: middle;
 }
 
-.left-box div p {
+.try-it-text {
   margin: 5px 60px;
   display: block;
+  font-size: 5px;
+  color: #292421;
 }
 
 .left-box div{
@@ -115,19 +120,24 @@ h2 {
 
 .right-box{
   display: inline-block;
-  margin-left: 70px;
-  vertical-align: text-bottom;
+  margin-left: 120px;
+  vertical-align: middle;
 }
 
 .main-2 {
-  padding: 20px 200px;
+  margin: 0 250px;
 }
 
 .content-box {
-  columns: 2;
+  columns: 2 60px;
+  column-gap: 50px;
 }
 
 footer {
   background-color: #eeeeee;
   border-top: #ffffff;
+}
+
+.content-box p {
+  margin-bottom: 30px;
 }
