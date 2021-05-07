@@ -30,6 +30,7 @@ h1 {
 
 nav {
     display: inline-block;
+    vertical-align: middle;
 }
 
 nav a + a {
@@ -68,7 +69,7 @@ section {
     clear: both;
 }
 
-.intro {
+.intro, .intro__img {
     /* float: left; */
     width: 50%;
     display: inline-block;
@@ -124,9 +125,12 @@ button:hover {
     font-size: 15px;
 }
 
-.intro__img {
-    width: 100%;
-    vertical-align: bottom;
+.intro__img img {
+    /* width: 100%;
+    vertical-align: bottom; */
+    width: 500px;
+    height: 470px;
+    object-fit: contain;
 }
 
 article {
