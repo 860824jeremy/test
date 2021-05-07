@@ -69,7 +69,7 @@ nav a + a {
 .main-1 {
   width: 900px;
   margin: 0px auto;
-  padding: 40px 0px 60px 0px;
+  padding: 40px 0px 100px 0px;
   display: block;
 }
 
@@ -77,21 +77,22 @@ h1 {
   font-size: 65px;
   line-height: 70px;
   font-weight: 400;
-  color: #292421;
+  color: #3e3e3e;
 }
 
 h2 {
+  margin-top: 50px;
   font-size: 30px;
   line-height: 43px;
   font-weight: 400;
-  color: #292421;
+  color: #3e3e3e;
 }
 
 .button {
   border-radius: 5px;
   background-color: orange;
   color: white;
-  margin: 5px 60px;
+  margin: 20px 60px 5px 60px;
   padding: 15px 0px;
   text-align: center;
   text-decoration: none;
@@ -108,10 +109,10 @@ h2 {
 }
 
 .try-it-text {
-  margin: 5px 60px;
+  margin: 0px 60px;
   display: block;
   font-size: 5px;
-  color: #292421;
+  color: #585858;
 }
 
 .left-box div{
@@ -124,6 +125,10 @@ h2 {
   vertical-align: middle;
 }
 
+.right-box img {
+  vertical-align: bottom;
+}
+
 .main-2 {
   margin: 0 250px;
 }
@@ -131,13 +136,36 @@ h2 {
 .content-box {
   columns: 2 60px;
   column-gap: 50px;
-}
-
-footer {
-  background-color: #eeeeee;
-  border-top: #ffffff;
+  margin: 20px 0px 100px;
+  font-size: 17.5px;
+  color: #6e6e6e;
 }
 
 .content-box p {
   margin-bottom: 30px;
+}
+
+footer {
+  padding: 20px 250px 10px;
+  background-color: #eeeeee;
+  border-top: #ffffff;
+}
+
+footer div {
+  vertical-align: middle;
+}
+
+footer a {
+  font-size: 8px;
+}
+
+.footer-icon {
+  margin-left: 530px;
+  font-size: 0px;
+  display: inline-block;
+}
+
+.footer-icon i {
+  margin-left: 25px;
+  font-size: 25px;
 }
