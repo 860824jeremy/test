@@ -61,11 +61,11 @@ header h1 a {
   width: auto;
 }
 
-nav {
+header nav {
   display: inline-block;
   vertical-align: middle;
 }
-nav a {
+header nav a {
   font-size: 14px;
   text-decoration: none;
   color: #333;
@@ -73,22 +73,22 @@ nav a {
   /* margin-right: 70px; */
 }
 
-nav a:first-child {
+header nav a:first-child {
   margin-right: 100px;
 }
-nav a:nth-child(2) {
+header nav a:nth-child(2) {
   margin-right: 50px;
 }
-nav a:nth-child(3) {
+header nav a:nth-child(3) {
   margin-right: 70px;
 }
-nav a:nth-child(4) {
+header nav a:nth-child(4) {
   margin-right: 80px;
 }
-nav a:last-child {
+header nav a:last-child {
   margin-right: 40px;
 }
-nav a:hover {
+header nav a:hover {
   color: orange;
   font-size: 15px;
 }
@@ -144,6 +144,7 @@ section button {
   color: #fff;
   font-size: 25px;
   border-radius: 10px;
+  border: none;
   height: 60px;
   width: 230px;
   background-image: linear-gradient(#ffba53 50%, #f99303 50%);
@@ -164,77 +165,73 @@ div figure {
 
 /*-----   article  --------- */
 
-main article {
-  margin: 100px auto;
-  /* width: 1200px; */
-  padding: 0 200px;
-}
+/* main article {
+} */
 
 article .wrap {
   /* width: 1100px; */
   column-count: 2;
   column-gap: 50px;
-  /* margin: 0 200px; */
+  padding: 50px 100px 220px 100px;
 }
 article h3 {
   /* v2 */
   column-span: all;
   font-size: 25px;
-  margin: 5px 20px;
+  padding: 10px 0 0 120px;
 }
 
-/* Ｑ：如何抓寬度？ */
 article p {
-  /* v2 */
   font-size: 14px;
-  line-height: 24px;
+  font-weight: 500;
+  display: inline-block;
 }
 
-article p:nth-child(2) {
+/* left article */
+article p:nth-child(2),
+article p:nth-child(3),
+article p:nth-child(4) {
   margin: 0;
+  padding: 10px 120px;
 }
 
-/* -----footer----------- */
+/* right article */
+article p:nth-child(6),
+article p:nth-child(7) {
+  padding: 20px 0;
+}
+
+/* -----FOOTER----------- */
 
 footer {
-  /* background-color: gainsboro; */
-  /* height: 75px; */
-  /* width: 1256px; */
-  /* border: 1px solid #d8d8d8; */
-  /* overflow: hidden; */
-  /* margin-top: 170px; */
-
-  /* v2 */
   background-color: gainsboro;
   border: 1px solid #d8d8d8;
-  line-height: 40px;
-  padding-top: 20px;
+  padding: 20px 0;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 footer span {
-  /* float: left; */
   font-size: 12px;
-  /* v3 */
-  display: inline-block;
-  width: 600px;
   margin: 0 auto;
-  text-align: center;
+  float: left;
+  padding: 8px 0 0 190px;
 }
 
-footer div {
-  /* float: right; */
-  /* padding-right: 340px; */
-  display: inline-block;
-  /* v3 */
-  width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  margin-right: 50px;
+footer nav {
+  margin: 0;
+  float: right;
+  padding-right: 180px;
 }
 
 footer a {
   font-size: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
 }
 
 .web_socialLogo_logostyle:hover {
