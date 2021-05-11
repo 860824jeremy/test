@@ -15,21 +15,7 @@
   opacity: 0.7;
 }
 
-/* 
-  V2:
-  html的用途不被用為容器，它主要用於定義翻譯網頁內容 
-  */
-/* html {
-      display: block;
-      width: 1400px;
-      height: auto;
-    } */
-
 body {
-  /* v2 */
-  /* margin: 0 auto;
-    box-sizing: border-box;
-    font-size: 0; */
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -57,8 +43,6 @@ header h1 {
 
 header h1 a {
   display: block;
-  height: auto;
-  width: auto;
 }
 
 header nav {
@@ -70,11 +54,11 @@ header nav a {
   text-decoration: none;
   color: #333;
   padding: 0 20px;
-  /* margin-right: 70px; */
 }
 
 header nav a:first-child {
   margin-right: 100px;
+  color: rgba(255, 166, 0, 0.822);
 }
 header nav a:nth-child(2) {
   margin-right: 50px;
@@ -110,8 +94,6 @@ main div.content {
 }
 main div section {
   width: 400px;
-  /* display: inline-block; */
-  /* vertical-align: middle; */
   float: left;
   margin: 0 0 0 150px;
 }
@@ -157,16 +139,11 @@ section .button_container p {
 
 /* Section img */
 div figure {
-  /* display: inline-block; */
-  /* vertical-align: middle; */
   float: right;
   padding: 5px 80px 0 0;
 }
 
 /*-----   article  --------- */
-
-/* main article {
-} */
 
 article .wrap {
   /* width: 1100px; */
@@ -201,7 +178,7 @@ article p:nth-child(7) {
   padding: 20px 0;
 }
 
-/* -----FOOTER----------- */
+/* ----------FOOTER----------- */
 
 footer {
   background-color: gainsboro;
@@ -232,9 +209,4 @@ footer nav {
 footer a {
   font-size: 30px;
   margin-right: 20px;
-}
-
-.web_socialLogo_logostyle:hover {
-  color: orange;
-  font-size: 50px;
 }
