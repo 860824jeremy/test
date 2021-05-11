@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -81,7 +81,6 @@ h1 {
 }
 
 h2 {
-  margin-top: 50px;
   font-size: 30px;
   line-height: 43px;
   font-weight: 400;
@@ -90,7 +89,8 @@ h2 {
 
 .button {
   border-radius: 5px;
-  background-color: orange;
+  /* background-color: orange; */
+  background: linear-gradient(180deg,#ffe000,#ff8100);
   color: white;
   margin: 20px 60px 5px 60px;
   padding: 15px 0px;
@@ -130,7 +130,7 @@ h2 {
 }
 
 .main-2 {
-  margin: 0 250px;
+  margin: 50px 250px;
 }
 
 .content-box {
@@ -148,7 +148,7 @@ h2 {
 footer {
   padding: 20px 250px 10px;
   background-color: #eeeeee;
-  border-top: #ffffff;
+  border-top: 1px solid #dcdcdc;
 }
 
 footer div {
@@ -160,9 +160,10 @@ footer a {
 }
 
 .footer-icon {
-  margin-left: 530px;
+  /* margin-left: 530px; */
   font-size: 0px;
   display: inline-block;
+  float: right;
 }
 
 .footer-icon i {
