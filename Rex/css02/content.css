@@ -17,7 +17,7 @@
   opacity: .5;
 }
 
-html {
+body {
   min-width: fit-content;
 }
 
@@ -26,7 +26,7 @@ html {
 }
 
 .container {
-  width: 900px;
+  width: 850px;
   margin: 0 auto;
   font-size: 0px;
 }
@@ -42,8 +42,9 @@ h1 img {
 }
 
 nav {
+  width: fit-content;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 nav a {
@@ -58,59 +59,54 @@ nav a:hover {
 }
 
 nav a + a {
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
-.main-fullbox {
+section {
+  background-color: #fdfdfd;
+}
+
+.fullbox {
   width: 900px;
+  font-size: 0px;
   margin: 0px auto;
   padding: 40px 0px 100px 0px;
-  display: block;
+}
+
+.fullbox-section {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  vertical-align: middle;
 }
 
 h2 {
   color: #3e3e3e;
-  display: block;
+  /* display: block; */
   font-size: 65px;
   line-height: 70px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
   font-weight: normal;
 }
 
 h3 {  
   color: #3e3e3e;
-  display: block;
+  /* display: block; */
   font-size: 30px;
   line-height: 43px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
   font-weight: normal
 }
 
-.button {
-  border-radius: 5px;
-  /* background-color: orange; */
-  background: linear-gradient(180deg,#ffe000,#ff8100);
-  color: white;
-  margin: 20px 60px 5px 60px;
-  padding: 15px 0px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
+button {
   font-size: 25px;
-  cursor: pointer;
-}
-
-.left-box {
-  display: inline-block;
-  width: 400px;
-  font-size: 16px;
-  vertical-align: middle;
+  color: white;
+  display: block;
+  background: linear-gradient(#FFB951 50% ,#FA9400 50%);
+  border-radius: 5px;
+  border: 0;
+  padding: 16px 67px;
+  margin: 20px auto 5px;
 }
 
 .try-it-text {
@@ -120,24 +116,20 @@ h3 {
   color: #585858;
 }
 
-.left-box div{
-  margin: 0 auto;
-}
-
-.right-box{
+.fullbox-imgbox {
   display: inline-block;
-  margin-left: 120px;
+  width: 50%;
   vertical-align: middle;
 }
 
-.right-box img {
-  vertical-align: bottom;
+.fullbox-imgbox img {
+  width: 100%;
 }
 
-.main-2 {
+article {
   margin: 0 auto;
-  padding-top: 30px;
-  width: 950px;
+  padding: 30px 100px;
+  width: fit-content;
 }
 
 .content-box {
