@@ -8,6 +8,7 @@
     margin: 0px;
     color: rgb(71, 71, 71);
     line-height: 1.4;
+    
 }
 
 h1 {
@@ -33,14 +34,15 @@ span {
 header {
     background-color: #eeeeee;
     margin: 0px auto;
+
 }
 
 .banner {
-    width: 900px;
+    width: 800px;
     margin: 0 auto;
 }
 
-.banner img {
+.banner > img {
     vertical-align: middle;
     padding:20px;
 }
@@ -54,13 +56,13 @@ nav {
 nav li {
     list-style-type: none;
     display: inline-block;
-    margin: 50px;
+    margin: 40px;
     font-size: 0;
 }
 
 nav a {
     text-decoration: none;
-    font-size: x-small;
+    font-size: small;
 }
 
 nav a:hover {
@@ -71,7 +73,7 @@ nav a:hover {
 
 article {
     width: 800px;
-    margin: 50px auto;
+    margin: 100px auto;
     
 }
 
@@ -88,15 +90,15 @@ figure {
     padding: 20px 70px;
 }
 
-button {
+button{
     color: white;
     font-weight: 900;
     font-size: x-large;
     background: linear-gradient(#ffba52 50%, #f99300 50%);
     border: none;
-    padding: 30px 50px;
+    height:100px;
+    width: 250px;
     border-radius: 10px;
-    padding: 30px 60px;
 }
 
 article img {
@@ -121,7 +123,7 @@ footer {
 }
 
 .box {
-    width: 900px;
+    width: 800px;
     margin: 0 auto;
     line-height: 50px;
     position: relative;
@@ -132,7 +134,6 @@ footer {
     display: inline-block;
     position: absolute;
     right: 15px;
-
     top: 10px;
     font-size: 0px;
 }
