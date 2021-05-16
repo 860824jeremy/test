@@ -5,11 +5,12 @@
     font-family: 'Noto Sans TC', sans-serif;
 } 
 
-html {
+/* html {
     min-width: 1000px;
-}
+} */
 
 body {
+    min-width: 1000px;
     margin: 0 auto;
 } 
 
