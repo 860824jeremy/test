@@ -11,8 +11,7 @@
 
 * {
     outline: 1px solid red;
-    font-family: 'Open Sans', Reguar 400, sans-serif;
-    font-weight 600px;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(71, 71, 71);
 }
 
@@ -21,22 +20,7 @@ body {
     min-width: fit-content;
 }
 
-h1 {
-    font-weight: 900;
-    letter-spacing: 0.1ch;
-    font-size: 55px;
-    color: black;
-    margin: 0px;
- 
-}
 
-h2 {
-    font-size: 28px;
-    font-weight: 1000;
-    color: black;
-    margin: 0px;
-    
-}
 
 p {
     margin: 0px;
@@ -44,65 +28,85 @@ p {
     font-size: 14px;
 }
 
-span {
-    font-size: 5px;
+img{
+    vertical-align:middle;
 }
 
-/* header */
+/* HEADER */
 
 header {
     background-color: #eeeeee;
-    padding:20px;
+    margin: 0px;
 }
 
-.banner {
+.header-box {
     width: 800px;
-    margin: 0 auto;
-    font-size: 0px;
+    margin: 30px auto;
+}
+
+h1, h1>a {
+    display: inline-block;
+    margin: 0px;
 }
 
 nav {
     display: inline-block;
-    line-height: 100px;
-    vertical-align: top;
-    margin-left:50px;
+    font-size:0px;
+    vertical-align: middle;
+    text-align: center;
 }
 
-nav a {
+a {
     text-decoration: none;
-    font-size: small;
-    margin: 0 40px;
-    vertical-align: middle;
+    font-size: 10px;
+    margin-left:45px;
+
 }
 
 nav a:hover {
     color: orange;
 }
 
-/* main */
+/* MAIN */
 
-article {
+main {
     width: 800px;
-    margin: 10px auto;
-    padding: 50px 0;
+    margin: auto;
     font-size: 0px;
 }
 
-/* first article */
+/* SECTION PART  */
 
-section {
+.container {
     display: inline-block;
     vertical-align: top;
     width: 50%;
 }
 
-figure {
-    text-align: start;
+h2 {
+    font-size: 26px;
+    font-weight:normal;
+    color: black;
+    margin: 0px;
+}
+
+.container >p{
+    padding-right:50px;
+}
+.title{
+    font-size: 50px;
+    font-weight:400px;
+    color:black;
+}
+
+.Try-container {
+    margin-top: 30px;
+    
 }
 
 button {
     color: white;
-    font-weight: 900;
+    font-weight: 400;
     font-size: x-large;
     background: linear-gradient(#ffba52 50%, #f99300 50%);
     border: none;
@@ -110,42 +114,49 @@ button {
     padding: 10px 40px;
 }
 
+.bin-box{
+    width:50%;
+    display: inline-block;
+    text-align:center;
+}
 
-/* second article */
+/*ARTICLE PART */
 
-.content{
+.content {
     columns: 2;
+    column-gap: 100px;
+    margin-top:10px;
 }
 
 .content >p{
-padding: 20px 100px 20px 0px;
+    margin-top: 20px;
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
     background-color: #eeeeee;
     margin-top: 150px;
-    
 }
 
-.box {
-   width:800px;
+.footer-box {
+    width: 800px;
     margin: 0 auto;
     line-height: 60px;
-    position: relative;
     font-size: 0px;
+}
+
+span {
+    font-size: 5px;
+    vertical-align: middle;
 }
 
 .links {
-    list-style-type: none;
-    display: inline-block;
-    position: absolute;
-    right:20px;
-    font-size: 0px;
+    float: right;
 }
 
-footer img {
+.links a {
+    display: inline-block;
     vertical-align: middle;
-    margin: 0px 5px;
+    margin-left: 5px;
 }
