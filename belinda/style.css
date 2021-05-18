@@ -10,8 +10,8 @@
 } */
 
 body {
-    min-width: 1000px;
     margin: 0 auto;
+    min-width: 1000px;
 } 
 
 header {
@@ -20,8 +20,8 @@ header {
 
 h1 {
     display: inline-block;
-    vertical-align: middle;
     margin: 0 90px 0 0;
+    vertical-align: middle;
 }
 
 .logo {
@@ -32,6 +32,7 @@ h1 {
 nav {
     display: inline-block;
     vertical-align: middle;
+    line-height: 10;
 }
 
 nav a + a {
@@ -39,8 +40,8 @@ nav a + a {
 }
 
 nav a { 
-    line-height: 10;
     padding: 4px;
+    
     text-decoration: none;
     color: #808080;
     font-size: 18px;
@@ -54,14 +55,17 @@ nav a:hover {
 
 section {
     background-color: #fdfdfd;
-    padding-top: 50px;
-    padding-bottom: 100px;
 }
 
 .wrapper {
     width: 1000px;
     margin: 0 auto;
     font-size: 0;
+}
+
+section .wrapper {
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .clearfix::after {
@@ -72,21 +76,17 @@ section {
 
 .intro, .intro__img {
     /* float: left; */
-    width: 50%;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
 }
 
 h2 {
+    margin: 0;
     font-size: 70px;
     text-transform: uppercase;
-    margin: 0;
 }
 
-
-.intro__text {
-    margin-bottom: 40px;
-}
 
 h2 + p {
     font-size: 35px;
@@ -100,6 +100,7 @@ h2 + p {
 
 .intro__button {
     margin: 0 auto;
+    margin-top: 40px;
     width: fit-content;
 }
 
@@ -130,17 +131,16 @@ button:hover {
     /* width: 100%;
     vertical-align: bottom; */
     width: 500px;
-    height: 470px;
     object-fit: contain;
 }
 
-article {
+article .wrapper {
     padding-top: 60px;
     padding-bottom: 250px;
 }
 
 h3 {
-    margin: 0;
+    margin-top: 0;
     font-size: 36px;
 }
 
@@ -151,8 +151,7 @@ h3 {
 
 .article__content p {
     font-size: 20px;
-    margin: 0; 
-    margin-top: 20px;
+    margin-top: 0; 
     display: inline-block; /* to fix the margin collapse*/
 }  
 
