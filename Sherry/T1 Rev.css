@@ -1,0 +1,162 @@
+.template {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .5;
+}
+
+* {
+    outline: 1px solid red;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(71, 71, 71);
+}
+
+body {
+    margin: 0px;
+    min-width: fit-content;
+}
+
+
+
+p {
+    margin: 0px;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+img{
+    vertical-align:middle;
+}
+
+/* HEADER */
+
+header {
+    background-color: #eeeeee;
+    margin: 0px;
+}
+
+.header-box {
+    width: 800px;
+    margin: 30px auto;
+}
+
+h1, h1>a {
+    display: inline-block;
+    margin: 0px;
+}
+
+nav {
+    display: inline-block;
+    font-size:0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 10px;
+    margin-left:45px;
+
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* MAIN */
+
+main {
+    width: 800px;
+    margin: auto;
+    font-size: 0px;
+}
+
+/* SECTION PART  */
+
+.container {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight:normal;
+    color: black;
+    margin: 0px;
+}
+
+.container >p{
+    padding-right:50px;
+}
+.title{
+    font-size: 50px;
+    font-weight:400px;
+    color:black;
+}
+
+.Try-container {
+    margin-top: 30px;
+    
+}
+
+button {
+    color: white;
+    font-weight: 400;
+    font-size: x-large;
+    background: linear-gradient(#ffba52 50%, #f99300 50%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+.bin-box{
+    width:50%;
+    display: inline-block;
+    text-align:center;
+}
+
+/*ARTICLE PART */
+
+.content {
+    columns: 2;
+    column-gap: 100px;
+    margin-top:10px;
+}
+
+.content >p{
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #eeeeee;
+    margin-top: 150px;
+}
+
+.footer-box {
+    width: 800px;
+    margin: 0 auto;
+    line-height: 60px;
+    font-size: 0px;
+}
+
+span {
+    font-size: 5px;
+    vertical-align: middle;
+}
+
+.links {
+    float: right;
+}
+
+.links a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
