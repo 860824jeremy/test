@@ -142,11 +142,11 @@ article {
     margin: 30px auto 0;
 }
 
-article h2 {
+article h3 {
     font-size: 30px;
     font-weight: 400;
     color: black;
-    margin: 0px;
+    margin-top:  0px;
 }
 
 article .content {
@@ -183,16 +183,16 @@ footer .link {
     font-size: 0px; /*消除內元素與容器底層的空隙*/
 }
 
-.link a {
+.links a {
     display: inline-block;
     width: 23px;
 }
 
-.link a+a {
+.links a+a {
     margin-left: 10px;
 }
 
-.link img {
+.links img {
     width: 100%;
 }
 
