@@ -70,7 +70,7 @@ nav a:hover {
 
 section {
     background-color: #fdfdfd;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .section-container {
@@ -137,9 +137,13 @@ section {
 
 /* Main - ARTICLE PART */
 
-article {
+article{
+    padding:50px 0;
+}
+
+.article-container {
     width: 800px;
-    margin: 30px auto 0;
+    margin: 0 auto;
 }
 
 article h3 {
@@ -157,14 +161,13 @@ article .content {
 .content p {
     font-size: 16px;
     line-height: 1.4;
-    margin-top: 0;    
+    margin-top: 0;    /*解決margin-collapse*/
 }
 
 /* FOOTER */
 
 footer {
     background-color: #efefef;
-    margin-top: 100px;
 }
 
 .footer-container {
@@ -178,7 +181,7 @@ footer {
     line-height: 23px; /*同img高度確保此行文字置中對齊*/
 }
 
-footer .link {
+footer .links {
     float: right;
     font-size: 0px; /*消除內元素與容器底層的空隙*/
 }
