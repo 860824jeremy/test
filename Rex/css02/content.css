@@ -1,12 +1,11 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 
-.template {
+.Template {
   display: block;
   position: absolute;
   top: 0;
@@ -18,33 +17,36 @@
 }
 
 body {
-  min-width: fit-content;
+  min-width: 1000px;
 }
 
-.headerbgcolor {
+.HeaderBackgroundColor {
   background-color: #eeeeee;
 }
 
-.container {
-  width: 850px;
+.Container {
+  width: 1000px;
   margin: 0 auto;
   font-size: 0px;
 }
 
 h1 {
   display: inline-block;
-  vertical-align: middle;
   font-size: 0px;
+  vertical-align: middle;
+  margin: 20px 0px 30px 10px;
 }
 
 h1 img {
-  width: 100%;
+  width: 85px;
+  cursor: pointer;
 }
 
 nav {
   width: fit-content;
   display: inline-block;
-  margin-left: 40px;
+  vertical-align: middle;
+  margin-left: 100px;
 }
 
 nav a {
@@ -59,30 +61,30 @@ nav a:hover {
 }
 
 nav a + a {
-  margin-left: 80px;
+  margin-left: 112px;
 }
 
 section {
   background-color: #fdfdfd;
 }
 
-.fullbox {
-  width: 900px;
+.FullBox {
+  width: 1000px;
   font-size: 0px;
   margin: 0px auto;
   padding: 40px 0px 100px 0px;
 }
 
-.fullbox-section {
+.FullBoxSection {
   display: inline-block;
-  width: 50%;
+  width: 370px;
   font-size: 16px;
-  vertical-align: middle;
+  vertical-align: top;
+  margin-left: 77px;
 }
 
 h2 {
   color: #3e3e3e;
-  /* display: block; */
   font-size: 65px;
   line-height: 70px;
   margin: 0px;
@@ -91,7 +93,6 @@ h2 {
 
 h3 {  
   color: #3e3e3e;
-  /* display: block; */
   font-size: 30px;
   line-height: 43px;
   margin: 0px;
@@ -109,30 +110,29 @@ button {
   margin: 20px auto 5px;
 }
 
-.try-it-text {
-  margin: 0px 60px;
+.TryItText {
+  margin: 0px 45px;
   display: block;
   font-size: 5px;
   color: #585858;
 }
 
-.fullbox-imgbox {
+.FullBoxImgBox {
   display: inline-block;
-  width: 50%;
-  vertical-align: middle;
+  margin-left: 100px;
 }
 
-.fullbox-imgbox img {
+.FullboxImgBox img {
   width: 100%;
 }
 
 article {
   margin: 0 auto;
-  padding: 30px 100px;
-  width: fit-content;
+  padding: 50px 0px;
+  width: 880px;
 }
 
-.content-box {
+.ContentBox {
   columns: 2;
   column-gap: 50px;
   margin: 20px 0px 100px;
@@ -140,7 +140,7 @@ article {
   color: #6e6e6e;
 }
 
-.content-box p {
+.ContentBox p {
   margin-bottom: 30px;
 }
 
@@ -154,12 +154,22 @@ footer span {
   font-size: 8px;
 }
 
-.footer-icon {
+.FooterIcon {
   font-size: 0px;
   float: right;
 }
 
-.footer-icon i {
+.FooterIcon i {
   margin-left: 25px;
   font-size: 25px;
+  color: initial;
+  cursor: pointer;
+}
+
+.FooterIcon i:hover {
+  color: orange;
+}
+
+.AfterBox {
+  clear: both;
 }
