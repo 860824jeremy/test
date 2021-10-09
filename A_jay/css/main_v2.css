@@ -1,0 +1,173 @@
+* {
+  outline: 1px solid blue;
+  box-sizing: border-box;
+}
+html {
+  min-width: 900px;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  min-width: 900px;
+  margin: 0 auto;
+  font-weight: 200;
+
+}
+
+/* -- header -- */
+header {
+  background-color: #eee;
+  padding: 20px 0;
+}
+/* 使用l-wrap 協助內元素置中 */
+.l-wrap {
+  width: 900px;
+  margin: 0 auto;
+  font-size: 0; /* 消除inline-block空白字元間隙 */
+}
+h1 {
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+h1 p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+nav {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+}
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #555;
+}
+nav a:hover {
+  color: #fa0;
+}
+nav a:nth-child(1) {
+  margin-left: 70px;
+}
+nav a + a {
+  margin-left: 100px;
+}
+
+/* -- main -- */
+
+main .l-wrap {
+  width: 750px;
+}
+.intro {
+  padding: 50px 0;
+  background-color: #fdfdfd;
+}
+.intro_text {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+.intro_text h2{
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+}
+.intro_text h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+.intro_text p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+.button-try {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+.button-try a {
+  display: inline-block;
+  width: 100%;
+  padding: 13px 0;
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(#f6ba53 50%, #f19533 50%);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.button-try p{
+  padding: 3px 0;
+  font-size: 12px;
+  color: #555;
+}
+.intro_img {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.intro_img img {
+  width: 80%;
+  vertical-align: middle;
+}
+
+.main_content {
+  width: 100%;
+  display: inline-block;
+  padding: 30px 0 30px 0;
+}
+.main_content h3{
+  margin: 0;
+  font-size: 26px;
+  font-weight: 300;
+}
+.main_content_text {
+  padding: 20px 0;
+  column-count: 2;
+  column-gap: 20px;
+}
+.main_content_text p {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* -- footer -- */
+footer {
+  padding: 10px 0;
+  background-color: #eee;
+}
+footer .l-wrap {
+  width: 800px;
+}
+.copyright{
+  display: inline-block;
+  width: 50%;
+  font-size: 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+.social-media {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  text-align: right;
+}
+.social-media a {
+  display: inline-block;
+}
+.social-media i {
+  margin-right: 15px;
+  font-size: 30px;
+  color: #000;
+}

@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid blue;
 }
 body {
   font-family: Helvetica, sans-serif;
   color: #333;
+  font-weight: 100;
 }
 
 /* header */
@@ -55,7 +57,7 @@ main {
   margin-bottom: 100px;
   padding: 40px 0 60px 0;
 }
-/* 將mian的內元素內縮 */
+/* 將main的內元素內縮 */
 .main_wrap {
   width: 800px;
   margin: 0 auto;
@@ -70,6 +72,7 @@ main {
 .main_left h2 {
   font-size: 50px;
   font-weight: 100;
+
 }
 .main_left h3 {
   font-size: 28px;
@@ -97,14 +100,13 @@ main {
   display: inline-block;
   color: #fff;
   padding: 15px 38px;
-  font-weight: 100;
   font-size: 20px;
   border-radius: 4px;
   text-decoration: none;
   background: linear-gradient(#f6b850 50%, #f19333 50%);
 }
 .button-try p {
-  margin-right: 85px;
+  margin-right: 75px;
   font-size: 11px;
   color: #555;
   line-height: 2;
@@ -125,7 +127,7 @@ section h3 {
 }
 /* 將content切割成2欄 */
 section .content {
-  columns: 2;
+  column-count: 2;
   column-gap: 40px;
   padding: 20px 0;
 }
@@ -151,13 +153,12 @@ footer::after {
   clear: both;
   display: table;
 }
-.right-declration {
+.right-declaration {
   float: left;
   width: 50%;
   text-align: center;
   line-height: 70px;
   font-size: 11px;
-  font-weight: 100;
 }
 .social-media {
   float: left;
