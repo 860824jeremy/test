@@ -76,9 +76,14 @@ header {
 
 /* MAIN */
 
+.section-idea {
+  background-color: #fcfcfc;
+  padding: 64px 0;
+}
+
 .container {
   width: 960px;
-  margin: 64px auto;
+  margin: 0 auto;
 }
 
 .w-50 {
@@ -131,4 +136,31 @@ header {
 .article-cols p {
   margin: 0;
   margin-bottom: 24px;
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+}
+
+.footer-wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.footer-wrapper span {
+  display: inline-block;
+  margin: 24px 0;
+  font-size: 12px;
+}
+
+.socials-links {
+  float: right;
+  margin-top: 24px;
+}
+
+.socials-links i {
+  margin-right: 12px;
+  font-size: 24px;
+  border-radius: 4px;
 }
