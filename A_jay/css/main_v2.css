@@ -1,11 +1,12 @@
 * {
-
+  /* outline: 1px solid blue; */
   box-sizing: border-box;
 }
 
 body {
   font-family: Helvetica, sans-serif;
   margin: 0 auto;
+  min-width: 1000px;
   font-weight: 200;
 }
 
@@ -47,7 +48,7 @@ nav {
 }
 nav a {
   display: inline-block;
-  padding: 3px;
+  padding: 10px;
   text-decoration: none;
   font-size: 14px;
   color: #555;
@@ -55,7 +56,6 @@ nav a {
 nav a:hover {
   color: #fa0;
 }
-
 nav a + a {
   margin-left: 100px;
 }
@@ -71,7 +71,6 @@ main .wrapper {
 .intro-text {
   display: inline-block;
   width: 50%;
-  vertical-align: middle;
 }
 .intro-text h2{
   margin: 0;
@@ -93,7 +92,6 @@ main .wrapper {
 
 /* button-component block */
 .button-try {
-  display: block;
   width: 200px;
   margin: 0 auto;
 }
@@ -118,15 +116,14 @@ main .wrapper {
   display: inline-block;
   width: 50%;
   text-align: center;
+  vertical-align: top;
 }
 .intro-img img {
   width: 80%;
-  vertical-align: middle;
 }
 
 .main-content {
   width: 100%;
-  display: block;
   padding: 30px 0 100px 0;
 }
 .main-content h3{
@@ -178,4 +175,5 @@ footer .wrapper {
 .social-media i {
   font-size: 30px;
   color: #000;
+  font-style: unset;
 }
