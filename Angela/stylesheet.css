@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Verdana, sans-serif;
+  outline: solid 1px red;
+}
+
+body {
+  min-width: 1000px;
+  position: relative;
+}
+
+/*header*/
+
+header {
+  background-color: #f2f3f4;
+}
+
+header .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  float: left;
+  margin-top: 24px;
+}
+
+.logo img {
+  width: 60px;
+  vertical-align: middle;
+}
+
+nav {
+  margin-right: 50px;
+  float: inline-end;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #515a5a;
+  margin: 70px 60px 70px;
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav a:nth-last-child(1) {
+  margin-right: 0;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/*main*/
+
+main {
+  width: 860px;
+  margin: 0 auto;
+}
+
+/*intro*/
+
+.intro {
+  margin-top: 72px;
+}
+
+.intro .wrapper {
+  width: 420px;
+  float: left;
+}
+
+.intro_txt h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.intro_txt h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.intro_txt p {
+  color: #515a5a;
+}
+
+.intro_btn {
+  border: none;
+  width: 250px;
+  margin: 1.5em auto;
+}
+
+.intro_btn button {
+  background-image: linear-gradient(#ffbb55 50%, #f99303 50%);
+  width: 250px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.intro_btn p {
+  font-size: 14px;
+  color: #515a5a;
+}
+
+.intro_img img {
+  width: 420px;
+  float: right;
+}
+
+/*article*/
+article {
+  margin: 200px auto;
+  column-width: 400px;
+  column-gap: 20px;
+}
+
+article h2 {
+  font-size: 30px;
+  font-weight: 400;
+  column-span: all;
+}
+
+article p {
+  padding: 16px 0 16px;
+  color: #515a5a;
+}
+
+footer {
+  background-color: #f2f3f4;
+}
+
+footer .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 24px 0 24px;
+}
+
+footer .copyright {
+  font-size: 14px;
+  font-weight: lighter;
+  float: left;
+}
+
+footer .media_link {
+  float: right;
+}
+
+.media_link a {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.media_link a:first-child {
+  margin-left: 0;
+}
+
+.media_link a:hover {
+  color: orange;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .template {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.5
+} */
