@@ -8,7 +8,6 @@
 
 body {
   min-width: 1000px;
-  position: relative;
 }
 
 /*header*/
@@ -17,15 +16,41 @@ header {
   background-color: #f2f3f4;
 }
 
+/* 用float */
+/* header .wrapper {
+  width: 960px;
+  margin: 0 auto;
+  font-size: 0;
+  display: flow-root;
+  padding-right: 50px;
+} */
+
+/* 用float */
+/* .logo {
+  display: inline-block;
+  text-align: center;
+  margin-top:20px;
+}
+
+
+/* 不用float */
 header .wrapper {
   width: 960px;
   margin: 0 auto;
-  text-align: center;
+  font-size: 0;
+  display: flow-root;
 }
 
+/* 不用float */
 .logo {
-  float: left;
-  margin-top: 24px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo a{
+  text-decoration: none;
+  color: black;
 }
 
 .logo img {
@@ -33,25 +58,57 @@ header .wrapper {
   vertical-align: middle;
 }
 
-nav {
-  margin-right: 50px;
-  float: inline-end;
+.logo h1{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* 不用float */
+nav{
+  display: inline-block;
+  vertical-align: middle;
 }
 
 nav a {
   display: inline-block;
+  font-size: 16px;
+  color:#515a5a;
   text-decoration: none;
-  color: #515a5a;
-  margin: 70px 60px 70px;
+  text-align: center;
+  line-height: 160px;
+  margin: 0 65px 0;
 }
 
-nav a:first-child {
-  margin-left: 0;
+nav a:first-child{
+  margin-left: 56px;
 }
 
-nav a:nth-last-child(1) {
+nav a:last-child{
   margin-right: 0;
 }
+
+/* 用float */
+/* nav{
+  float: right;
+  display: inline-block;
+}
+
+nav a {
+  font-size: 16px;
+  color:#515a5a;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 65px 0;
+  line-height: 160px;
+} */
+
+/* nav a:first-child{
+  margin-left: 0;  
+}
+
+nav a:nth-last-child(1){
+  margin-right: 0;
+} */
 
 nav a:hover {
   color: orange;
@@ -67,17 +124,14 @@ main {
 /*intro*/
 
 .intro {
-  margin-top: 72px;
+  font-size: 0;
+  padding: 50px 0;
 }
 
 .intro .wrapper {
-  width: 420px;
-  float: left;
-}
-
-.intro_txt h1 {
-  font-size: 72px;
-  font-weight: 400;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
 }
 
 .intro_txt h2 {
@@ -85,14 +139,19 @@ main {
   font-weight: 400;
 }
 
-.intro_txt p {
-  color: #515a5a;
+.intro_txt p:first-child{
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.intro_txt p:last-child{
+  color:#515a5a;
+  font-size: 16px;
 }
 
 .intro_btn {
-  border: none;
   width: 250px;
-  margin: 1.5em auto;
+  margin: 24px auto;
 }
 
 .intro_btn button {
@@ -100,31 +159,34 @@ main {
   width: 250px;
   height: 60px;
   border-radius: 5px;
-  border: none;
+  border:none;
   font-size: 28px;
   font-weight: 400;
-  color: white;
+  color:white;
 }
 
-button:hover {
+button:hover{
   transform: scale(1.1);
 }
 
 .intro_btn p {
   font-size: 14px;
-  color: #515a5a;
+  color:#515a5a;
 }
 
-.intro_img img {
-  width: 420px;
-  float: right;
+.intro_img {
+  display: inline-block;
+  width: 50%;
+}
+
+img {
+  width: 100%;
 }
 
 /*article*/
 article {
-  margin: 200px auto;
-  column-width: 400px;
-  column-gap: 20px;
+  column-count: 2;
+  padding: 80px 0;
 }
 
 article h2 {
@@ -133,58 +195,47 @@ article h2 {
   column-span: all;
 }
 
-article p {
-  padding: 16px 0 16px;
-  color: #515a5a;
+article p{
+  color:#515a5a;
+  font-size: 16px;
+  padding: 16px 0;
+  /* margin-top: 1px; */
 }
 
 footer {
-  background-color: #f2f3f4;
+  background-color:#f2f3f4;
 }
 
 footer .wrapper {
   width: 960px;
   margin: 0 auto;
-  text-align: center;
-  padding: 24px 0 24px;
+  padding: 30px 0 20px;
 }
 
 footer .copyright {
+  display: inline-block;
   font-size: 14px;
   font-weight: lighter;
-  float: left;
 }
 
-footer .media_link {
+footer .media_link{
+  /* display: inline-block; */
+  font-size: 0;
   float: right;
 }
 
-.media_link a {
-  margin-left: 20px;
+.media_link a{
   display: inline-block;
+  color: black;
+  font-size: 15px;
+  margin-left: 20px;
 }
 
-.media_link a:first-child {
-  margin-left: 0;
+.media_link a:first-child{
+  margin-left:0
 }
 
 .media_link a:hover {
   color: orange;
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* .template {
-  position:absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-  opacity: 0.5
-} */
