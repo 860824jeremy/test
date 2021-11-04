@@ -16,7 +16,7 @@ a {
 }
 
 body {
-  min-width: fit-content;
+  min-width: 1000px;
 }
 
 /*header*/
@@ -26,30 +26,32 @@ header {
   border-bottom: solid 1px #eaecee;
 }
 
-.header_wrapper {
+header .wrapper {
   width: 960px;
   font-size: 0;
   margin: 0 auto;
   padding: 30px 50px 30px 0;
 }
 
-h1 {
+.logo {
   display: inline-block;
   vertical-align: middle;
   margin-right: 60px;
 }
 
-h1 a {
-  display: block;
-}
-
-h1 .imgbox {
-  width: 80px;
+.logo .imgbox {
+  width: 60px;
   margin: 0 auto;
 }
 
-h1 img {
+.logo img {
   width: 100%;
+}
+
+.logo h1 {
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
 }
 
 nav {
@@ -80,41 +82,40 @@ nav a:hover {
 /*intro*/
 
 section {
-  background-color: #fbfcfc;
+  background-color: #FBFCFC ;
 }
 
-.section_wrapper {
+section .wrapper {
   width: 860px;
   vertical-align: top;
   font-size: 0;
   margin: 0 auto;
-  padding: 60px 0px 120px;
+  padding: 60px 0 120px;
 }
 
-.intro_text {
+.intro_txt {
   display: inline-block;
   width: 50%;
-  margin-right: 2%;
+  padding-right: 10px;
 }
 
-.intro_text h2 {
+.intro_txt h2 {
   font-size: 30px;
   font-weight: 400;
 }
 
-.intro_text p:first-child {
+.intro_txt p:first-child {
   font-size: 72px;
   font-weight: 400;
   color: black;
 }
 
-.intro_button {
-  /* width: 250px; */
+.intro_btn {
+  width: 250px;
   margin: 24px auto;
-  text-align: center;
 }
 
-.intro_button button {
+.intro_btn button {
   background-image: linear-gradient(#ffbb55 50%, #f99303 50%);
   width: 250px;
   height: 60px;
@@ -129,18 +130,16 @@ button:hover {
   opacity: 0.7;
 }
 
-.intro_button p {
+.intro_btn p {
   font-size: 14px;
   color: #515a5a;
-  text-align: left;
-  width: 250px;
-  margin: 0 auto;
 }
 
 section .imgbox {
   display: inline-block;
-  width: 48%;
+  width: 50%;
   vertical-align: top;
+  padding-left: 10px;
 }
 
 section img {
@@ -152,7 +151,7 @@ article {
   background-color: white;
 }
 
-.article_wrapper {
+article .wrapper {
   width: 860px;
   column-count: 2;
   column-gap: 20px;
@@ -164,20 +163,18 @@ article h2 {
   column-span: all;
   font-size: 30px;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 
 article p {
-  /* padding: 16px 0; */
-  margin-bottom: 20px;
+  padding: 16px 0;
 }
 
 footer {
   background-color: #f2f3f4;
-  border-top: solid 1px #eaecee;
+  border-top:   border-bottom: solid 1px #eaecee;;
 }
 
-.footer_wrapper {
+footer .wrapper {
   display: flow-root;
   width: 960px;
   margin: 0 auto;
@@ -197,9 +194,8 @@ footer .media_link {
 
 .media_link a {
   display: inline-block;
-  font-size: 30px;
-  line-height: 30px;
   color: black;
+  font-size: 15px;
 }
 
 .media_link a + a {
