@@ -33,31 +33,25 @@ header {
   padding: 30px 50px 30px 0;
 }
 
-h1 {
+.logo {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 60px;
 }
 
-h1 a {
-  display: block;
-}
-
-h1 .imgbox {
+.logo_image {
+  display: inline-block;
   width: 80px;
-  margin: 0 auto;
 }
 
-h1 img {
+.logo_image img {
   width: 100%;
 }
 
 nav {
   display: inline-block;
   vertical-align: middle;
-  width: calc(100% - 80.8px - 60px);
   font-size: 0;
-  margin-right: 0;
+  margin-left: 75px;
 }
 
 nav a {
@@ -65,11 +59,10 @@ nav a {
   font-size: 16px;
   color: #515a5a;
   padding: 20px;
-  float: inline-end;
 }
 
 nav a + a {
-  margin-left: calc((100% - 453.61px) / 4);
+  margin-left: 75px;
 }
 
 nav a:hover {
@@ -77,7 +70,6 @@ nav a:hover {
 }
 
 /*main*/
-/*intro*/
 
 section {
   background-color: #fbfcfc;
@@ -85,7 +77,6 @@ section {
 
 .section_wrapper {
   width: 860px;
-  vertical-align: top;
   font-size: 0;
   margin: 0 auto;
   padding: 60px 0px 120px;
@@ -94,24 +85,24 @@ section {
 .intro_text {
   display: inline-block;
   width: 50%;
-  margin-right: 2%;
+  vertical-align: top;
+  padding-right: 10px;
 }
 
-.intro_text h2 {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.intro_text p:first-child {
+.intro_text .title {
   font-size: 72px;
   font-weight: 400;
   color: black;
 }
 
+.intro_text .subtitle {
+  font-size: 30px;
+  font-weight: 400;
+}
+
 .intro_button {
-  /* width: 250px; */
+  width: fit-content;
   margin: 24px auto;
-  text-align: center;
 }
 
 .intro_button button {
@@ -133,17 +124,16 @@ button:hover {
   font-size: 14px;
   color: #515a5a;
   text-align: left;
-  width: 250px;
-  margin: 0 auto;
 }
 
-section .imgbox {
+.box_image {
   display: inline-block;
-  width: 48%;
+  width: 50%;
   vertical-align: top;
+  padding-left: 10px;
 }
 
-section img {
+.box_image img {
   width: 100%;
 }
 
@@ -160,7 +150,7 @@ article {
   padding: 80px 0 160px;
 }
 
-article h2 {
+.article_title {
   column-span: all;
   font-size: 30px;
   font-weight: 400;
@@ -168,7 +158,6 @@ article h2 {
 }
 
 article p {
-  /* padding: 16px 0; */
   margin-bottom: 20px;
 }
 
@@ -184,13 +173,13 @@ footer {
   padding: 30px 0 20px;
 }
 
-footer .copyright {
+.copyright {
   display: inline-block;
   font-size: 14px;
   font-weight: lighter;
 }
 
-footer .media_link {
+.media_link {
   font-size: 0;
   float: right;
 }
