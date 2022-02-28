@@ -1,0 +1,136 @@
+/* * {
+  outline: 1px solid red;
+} */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+header {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 0;
+}
+header .wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+header h1 {
+  display: inline-block;
+  font-size: 12px;
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+}
+header span {
+  display: block;
+}
+header nav {
+  display: inline-block;
+}
+header nav a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #333;
+}
+nav a + a {
+  margin-left: 107px;
+}
+nav a:hover {
+  color: #fa0;
+}
+article {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+article .content {
+  display: inline-block;
+  width: 350px;
+  margin-left: 120px;
+  vertical-align: top;
+}
+article .content h2 {
+  font-size: 50px;
+  margin: 0;
+}
+article .content h3 {
+  font-size: 28px;
+  margin: 0;
+}
+article .content p {
+  margin: 0;
+  margin-bottom: 15px;
+  color: gray;
+  line-height: 1.4;
+}
+.btn {
+  margin: 0 auto;
+  width: 200px;
+}
+.btn button {
+  width: 100%;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  padding: 15px 0;
+  font-size: 20px;
+  background: linear-gradient(#faba53 50%, #fa0 50%);
+}
+.btn span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px 0;
+  color: #555;
+}
+article .bigimg {
+  display: inline-block;
+  margin-left: 50px;
+}
+.textmain {
+  width: 850px;
+  column-count: 2;
+  column-gap: 50px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.textmain h1 {
+  font-size: 28px;
+  column-span: all;
+}
+.textmain p {
+  color: gray;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+}
+footer {
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  margin-top: 200px;
+}
+footer .status {
+  width: 900px;
+  margin: 0 auto;
+}
+footer p {
+  display: inline-block;
+}
+footer .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 634px;
+  text-align: right;
+}
+footer .icon a {
+  display: inline-block;
+}
+footer .icon i {
+  color: #000;
+  font-size: 25px;
+}
+footer a + a {
+  margin-left: 10px;
+}
