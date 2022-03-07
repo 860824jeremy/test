@@ -1,136 +1,180 @@
-/* * {
-  outline: 1px solid red;
-} */
+* {
+  /* outline: 1px solid red; */
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "helvetica", Arial, sans-serif;
   font-weight: 400;
+  margin: 0;
+  min-width: 900px;
 }
 header {
-  background-color: #f5f5f5;
-  width: 100%;
-  padding: 20px 0;
-  font-size: 0;
+  background-color: #eeeeee;
+  border-bottom: 1px solid rgb(220, 220, 220);
 }
-header .wrap {
+header .nav_box {
   width: 900px;
   margin: 0 auto;
+  font-size: 0;
+  padding: 20px 0;
+}
+header .nav_box img {
+  width: 100%;
+  height: 100%;
 }
 header h1 {
   display: inline-block;
-  font-size: 12px;
-  width: 20%;
-  text-align: center;
   vertical-align: middle;
+  width: 10%;
 }
-header span {
-  display: block;
+header .logo_box {
+  display: inline-block;
+  width: 55%;
+}
+header p {
+  margin: 0;
+  font-size: 15px;
 }
 header nav {
   display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  width: 90%;
 }
 header nav a {
+  display: inline-block;
   font-size: 12px;
   text-decoration: none;
-  color: #333;
+  color: rgb(99, 99, 99);
+  padding: 20px;
 }
 nav a + a {
-  margin-left: 107px;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 88px;
 }
 nav a:hover {
   color: #fa0;
 }
-article {
-  width: 1000px;
-  height: 500px;
-  margin: 0 auto;
-  margin-top: 50px;
+main {
+  padding: 50px 0px 100px 0px;
 }
-article .content {
+section {
+  width: 850px;
+  margin: 0 auto;
+  font-size: 0;
+}
+section .content {
   display: inline-block;
-  width: 350px;
-  margin-left: 120px;
+  width: 50%;
   vertical-align: top;
 }
-article .content h2 {
+section .content h2 {
   font-size: 50px;
   margin: 0;
+  font-weight: 350;
+  color: #3e3e3e;
 }
-article .content h3 {
+section .content h3 {
   font-size: 28px;
   margin: 0;
+  font-weight: 350;
+  color: #3e3e3e;
 }
-article .content p {
+section .content p {
   margin: 0;
   margin-bottom: 15px;
-  color: gray;
+  color: #6e6e6e;
   line-height: 1.4;
+  font-size: 19px;
 }
-.btn {
+.button_box {
   margin: 0 auto;
   width: 200px;
 }
-.btn button {
+.button_box :hover {
+  color: #000;
+}
+.button_box button {
   width: 100%;
   color: #fff;
-  display: inline-block;
   border: none;
   padding: 15px 0;
   font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
   background: linear-gradient(#faba53 50%, #fa0 50%);
 }
-.btn span {
+.button_box span {
   font-size: 12px;
   display: inline-block;
   padding: 5px 0;
-  color: #555;
+  color: #6e6e6e;
 }
-article .bigimg {
+section .img_box {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 55px;
+  width: 43.5%;
 }
-.textmain {
+section img {
+  width: 100%;
+  height: 100%;
+}
+article {
   width: 850px;
   column-count: 2;
   column-gap: 50px;
   font-size: 0;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 100px;
 }
-.textmain h1 {
+article h3 {
+  color: #3e3e3e;
+  font-weight: 350;
   font-size: 28px;
   column-span: all;
+  margin: 0;
+  padding-bottom: 15px;
 }
-.textmain p {
-  color: gray;
-  font-size: 20px;
-  margin: 0 0 20px 0;
-  line-height: 1.4;
+article p {
+  color: #6e6e6e;
+  font-size: 22px;
+  margin: 0;
+}
+article p + p:not(:nth-child(5)) {
+  margin-top: 30px;
 }
 footer {
-  background-color: #f5f5f5;
-  padding: 10px 0;
-  margin-top: 200px;
+  background-color: #eeeeee;
+  font-size: 0;
+  border-top: 1px solid #dcdcdc;
 }
-footer .status {
+.social_media {
   width: 900px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 footer p {
   display: inline-block;
+  margin: 0;
+  font-size: 16px;
+  vertical-align: middle;
 }
-footer .icon {
+footer .icon_box {
   display: inline-block;
   vertical-align: middle;
-  width: 634px;
+  width: 71%;
   text-align: right;
 }
-footer .icon a {
+footer .icon_box a {
   display: inline-block;
 }
-footer .icon i {
+footer .icon_box i {
   color: #000;
-  font-size: 25px;
+  font-size: 30px;
 }
 footer a + a {
   margin-left: 10px;
+}
+footer a :hover {
+  color: #fa0;
 }
