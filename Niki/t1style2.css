@@ -2,6 +2,7 @@
 *{
     /* outline: solid red 1px; */
     font-family: Arial, Helvetica, sans-serif;
+    /* 字型 */
 } 
 
 .body{
@@ -10,7 +11,19 @@
     padding: 0;
 }
 
-.head{
+
+.template{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    opacity: .5;
+}
+
+header{
     margin: 0; 
     padding: 0;
     border-width: 0px 0px 1px 0px;
@@ -18,57 +31,32 @@
     border-color: #D7d7d7;
     height: 24%;
     width: 100%;
-    display: flex ; 
-    align-items: center;
-    /* 垂直置中 */
-    justify-content: center; 
-    /* 水平置中 */
     background-color:#ededed;
+
 }
 
-.head-center{
+
+.head-left{
     margin: 0; 
-    padding: 0;
-    height: 100%;
-    width: 72%;
-    display: flex ; 
-    align-items: center;
-    justify-content: left; 
-    /* 垂直置中 */
-    /* 水平置左 */
-    
-}
-
-.table1{
-    border: 0;
-    width : 10%;
-
-    /* table-layout : fixed ; */
-}
-
-.table2{
-    border: 0;
-    width : 90%;
-    table-layout : fixed ;
-    /* 平均欄寬 */
-}
-
-.txt21{
-    font-size:21px;
+    padding: 0px 0px 0px 0px;
+    width: 25%;
+    float: left;
 
 }
 
-a {
-    font-size:20px;
-    font-weight:bold;
-    color:  #808080;
-    line-height: 135%;
-    text-decoration:none ;
-  }
+.head-left1{
+    margin: 0; 
+    padding: 8% 0 0 60%;
+    display: inline-block;
 
-a:hover {
-    color: #ffb65a;
-  }
+}
+
+.head-left2{
+    margin: -35 0 0 0; 
+    padding: 0% 0% 0% 56%;
+    width: 44%;
+    display: inline-block;
+}
 
 .txt20{
     font-size:20px;
@@ -85,21 +73,47 @@ a:hover {
     line-height: 135%;
 }
 
+
+.head-right{
+    margin: 0px 0px 0px 0px; 
+    padding: 99px 0px 0px 27px;
+    width: 65%;    
+    float: left;
+}
+
+.head-right2{
+    margin: 0px 6% 0px 0px; 
+    padding: 90px 40px 90px 40px;
+    display: inline;
+}
+
+.head-right2 {
+    font-size:20px;
+    font-weight:bold;
+    color:  #808080;
+    line-height: 135%;
+    text-decoration:none ;
+  }
+
+.head-right2:hover {
+    color: #ffb65a;
+  }
+
 .center{
-    margin-top: 0%; 
-    margin-bottom: 0%;
-    padding-top: 5%;
-    padding-bottom: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    /* padding-left: 19%;
-    padding-right: 0%; */
-    height: 67%;
-    width: 100%;
-    display: flex ; 
-    /* align-items: center; */
-    justify-content: center; 
-    background-color:#FDFDFD;
+  margin-top: 0%; 
+  margin-bottom: 0%;
+  padding-top: 5%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  /* padding-left: 19%;
+  padding-right: 0%; */
+  height: 67%;
+  width: 100%;
+  /* display: flex ; 
+  align-items: center;
+  justify-content: center;  */
+  background-color:#FDFDFD;
 }
 
 .space{
@@ -107,10 +121,12 @@ a:hover {
 }
 
 .center-left{
-    margin: 0; 
+    margin: 0px 0px 0px 19%; 
     padding: 0;
     height: 100%;
     width: 31%;
+    float: left;
+
 }
 
 .center-txt{
@@ -140,30 +156,37 @@ a:hover {
 .center-txt2{
     line-height: 135%;
     margin-top: 7px; 
-    margin-bottom:0;
+    margin-bottom:58px;
     padding: 0;
 }
 
 .center-right{
-    margin: 0%; 
+    margin: 0px 0px 0px 0px; 
     padding-left: 3%;
     height: 100%;
     width: 28%;
+    float: left;
 }
 
 
-.template{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: auto;
-    opacity: .5;
-}
 
 .button{
+    margin-top: 0; 
+    margin-bottom:0;
+    margin-left: 16%;
+    margin-right: 25%;
+    border: 0px 0px 0px 0px;
+    padding: 25px 65px 25px 65px;
+    width:59% ;
+    height: 87px;
+    background-image: linear-gradient(to top, #ff902a 0% ,#ff902a 41% ,#ffba65 42% ,#ffba65 100%) ;
+    color:#fff;
+    border-radius:10px;
+    font-size:33px;
+    text-decoration:none ;
+}
+/* 
+.button:hover{
     margin-top: 36px; 
     margin-bottom:0;
     margin-left: 16%;
@@ -175,10 +198,10 @@ a:hover {
     color:#fff;
     border-radius:10px;
     font-size:33px;
-}
+} */
 
 .minitxt{
-    margin-top: 6px; 
+    margin-top: 25px; 
     margin-bottom:0;
     margin-left: 16%;
     margin-right: 25%;
@@ -186,7 +209,6 @@ a:hover {
     font-size:19px;
     color: #595959;
 }
-
 
 .center2{
     margin-top: 0; 
@@ -209,7 +231,8 @@ a:hover {
 .center2-bottom{
     /* height: 92%; */
     width: 100%;
-    display: flex ; 
+    /* float: left; */
+    /* display: flex ;  */
 }
 
 .center2-left{
@@ -217,8 +240,8 @@ a:hover {
     margin-bottom:0;
     margin-left: 17%;
     margin-right: 0;
-    height: 100%;
     width: 33%;
+    float: left;
 }
 
 .center2-txt{
@@ -234,32 +257,30 @@ a:hover {
     margin-bottom:0;
     margin-left: 2%;
     margin-right: 15%;
-    height: 100%;
     width: 33%;
+    float: left;
 }
 
-.footer{
+footer{
     margin: 0;
     border-width: 1px 0px 0px 0px;
     border-style: solid;
     border-color:  #D7d7d7;
     height: 12%;
-    width: 100%; 
-    display: flex ; 
+    width: 100%;  
     background-color:#eeeeee;
     /* align-items: center; */
     /* justify-content: center;  */
 }
 
 .footer-left{
-    margin-top: 0; 
+    margin-top: 2%; 
     margin-bottom:0;
     margin-left: 15%;
     margin-right: 0%;
-    height: 100%;
     width: 35%; 
-    display: flex ; 
-    align-items: center;
+    float: left;
+    /* align-items: center; */
     /* justify-content: center;  */
 }
 
@@ -275,14 +296,13 @@ a:hover {
 }
 
 .footer-right{
-    margin-top: 12px; 
+    margin-top: 2%; 
     margin-bottom:0;
     margin-left: 358px;
     margin-right: 0%;
-    height: 100%;
-    width: 16%; 
-    display: flex ; 
-    align-items: center;
+    width: 17%; 
+    float: left;
+    /* align-items: center; */
     /* justify-content: center;  */
 }
 
@@ -290,9 +310,10 @@ a:hover {
     margin-top: 0; 
     margin-bottom:0;
     margin-left: 0;
-    margin-right: 10%;
+    margin-right: 8%;
 }
-/* 
-.red{
-    outline: solid red 1px;
+
+/* .A-img{
+    border-color: #eeeeee;
+    ;
 } */
