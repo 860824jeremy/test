@@ -1,0 +1,63 @@
+ 
+*{
+    /* outline: solid red 1px; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* 字型 */
+} 
+
+body{
+    margin: 0; 
+}
+
+header{
+    height: 25%;
+}
+
+main{
+    height: 175%;
+}
+
+footer{
+    height: 10%;
+}
+
+.header-container-background{
+    background-color:#ededed;
+}
+
+.background-range{
+    height: 100%;
+    width: 100%;
+}
+
+.header-container-bording{
+    border-bottom: 1px solid #D7d7d7;
+}
+
+.header-container-logrange{
+
+    align-items: center;
+    justify-content: center; 
+}
+
+.header-content-logimg{
+    height: 50%;
+}
+
+.header-content-logtitle{
+    font-size:20px;
+    font-weight:bold;
+    color: black;
+}
+
+
+.template{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    opacity: .5;
+}

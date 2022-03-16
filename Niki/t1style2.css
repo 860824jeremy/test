@@ -39,6 +39,7 @@ header{
 .head-left{
     margin: 0; 
     padding: 0px 0px 0px 0px;
+    height: 100%;
     width: 25%;
     float: left;
 
@@ -179,7 +180,7 @@ header{
     padding: 25px 65px 25px 65px;
     width:59% ;
     height: 87px;
-    background-image: linear-gradient(to top, #ff902a 0% ,#ff902a 41% ,#ffba65 42% ,#ffba65 100%) ;
+    background-image: linear-gradient(to top, #ff902a 0% ,#ff902a 50% ,#ffba65 51% ,#ffba65 100%) ;
     color:#fff;
     border-radius:10px;
     font-size:33px;
