@@ -1,0 +1,22 @@
+.menu {
+    height: 200px;
+    width: 300vw;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+}
+.menu ul li{
+    display: inline-block;  
+    /* 讓直向清單變為橫向 */
+    padding: 20px;          /* 清單元素間隔 */
+}
+
+.content h1{
+    font-family: sans-serif;
+}
+
+
+.footer{
+    height: 200px;
+    width: 300vw;
+    background-color: rgba(0, 0, 0, 0.05);
+}
