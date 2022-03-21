@@ -1,0 +1,72 @@
+* {
+  font-family: sans-serif;
+  outline: 1px black solid;
+}
+body {
+    margin: 0;
+    background-image: linear-gradient(#FCFCFC 50%, white 20%);
+}
+/*#FDFDFD*/
+.headbox {
+  background-color: #EEEEEE;
+  text-align:center;/*讓他們置中*/
+  /*width: auto; 用不用都沒差，自動讓他填滿
+    height: 160px; 不訂高*/
+}
+
+.box_container { /*設定項目存在的框框*/
+  display:inline-block;
+  text-align-last: justify;
+  width: 900px;
+  /*height: 160px;*/
+}
+.title {
+  display:inline-block;
+  /*影響ul的垂直位置*/
+  width: 100px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  /*設定這一條，要在box_container中*/
+}
+.title img {
+  display: block;/*圖片原本都會是inline*/
+  margin: 0px auto;
+  vertical-align: middle;
+  /*要讓這一條的置中，圖片要先置中，否則會對其文字的baseline*/
+}
+
+.title h1 {
+  margin: 0px auto;/*取消P原本帶margin的屬性*/
+  text-align-last: initial;/*取消父輩影響像兩邊靠*/
+  font-weight: normal;
+  font-size: 12px;
+
+  }
+
+.headbox nav{
+  display: inline-block;
+  vertical-align: middle;
+
+  }
+
+.headbox nav li {
+  display: inline-block;
+  margin-right: 90px;
+  cursor: pointer;
+
+  }
+.headbox nav li a {
+  text-decoration: none;
+
+  }
+
+.headbox nav li a:visited {
+  color: black;
+
+  }
+
+.headbox nav li a:hover {
+  color:orange;
+
+  }

@@ -1,0 +1,102 @@
+.contentbox {
+  font-family: sans-serif;
+  margin: 0px auto;
+  margin-top: 33px;
+  width: 800px;
+}
+
+.top_box {
+  margin: 0px;
+  margin-top: 50px;
+  font-size: 0px;
+  text-align-last: justify;
+}
+
+.img-frame {
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+  width: 50%;
+  width: fit-content;
+  margin-top: 10px;
+  /*font-size: 0px; 沒作用*/
+}
+
+.try_it_text {
+  display: inline-block;
+  margin-top: 0px;
+  text-align-last: initial;
+  width: 50%;
+  vertical-align: top;
+  /*font-size: 0px; 沒作用*/
+}
+.try_it_text h1 {
+  margin: 0px;
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.try_it_text h2 {
+  margin: 0px;
+  margin-top: -20;
+  font-size: 30px;
+  font-weight: 350;
+}
+.try_it_text p {
+  margin-top: 0;
+  font-size: 16px;
+  color: #585858;
+}
+.button {
+  display: block;
+  color: white;
+  background: linear-gradient(to top, #F99303 50%, #FFBA53 50%);
+  /*background-color: orange;*/
+  border: none;
+  border-radius: 6px;
+  font-size: 25px;
+  padding: 15px 40px;
+  height: 59px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+.button:hover {opacity: 0.6}
+
+.button_text {
+  display: block;
+  width: fit-content;
+  margin: 0px auto;
+  /*還是用手動移動他
+  margin-left: 60px;*/
+  /*text-align-last: center;連字都置中*/
+  /*用margin:0px auto;沒用，消除inline-block也一樣，
+  用text-align居然可以*/
+}
+.button_text p{
+  text-align: left;
+  font-size: 12px;
+  color: #585858;
+  margin-top: 1px;
+  width: inherit;
+}
+
+.detail {
+  /*height: 550px;用高度挖距離*/
+  margin-top: 151px;
+}
+.detail h2 {
+  font-size: 30px;
+  font-weight: 350;
+}
+.detail_text{
+  column-count: 2;
+  column-gap: 24px;
+  vertical-align: middle;/*無用，但覺得是需要先放著*/
+  width: inherit;
+}
+.detail_text p {
+  display: block;
+  margin: 0px 0px 16px 0px;/*將<p>的自動margin屬性調掉*/
+}
