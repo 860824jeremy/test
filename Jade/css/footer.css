@@ -1,16 +1,14 @@
-.footbox {
+footer {
   background-color: #EEEEEE;
-  margin-top: 150px;
 }
 
 .footbox_text {
-  /*display: inline-block;*/
   text-align-last: justify;
   width: 850px;
   margin: 0px auto;
 }
 
-.footbox p {
+.footbox_text p {
   display: inline-block;
   vertical-align: middle;
   font-size: 12px;
@@ -20,11 +18,12 @@
 .footbox_text nav {
   display: inline-block;
   vertical-align: middle;
+  font-size: 0px;
 }
 
 .footbox_text li {
   display: inline-block;
-  padding: 0 0 0 20;
+  margin-left: 20;
 }
 .footbox_text li i {
   font-size: 30px;
