@@ -1,24 +1,32 @@
+
 * {
     font-family: sans-serif;
-    outline: 1px black solid;
+    outline: 1px solid black;
   }
-  body {
-      margin: 0;
-      background-image: url("../img/0Template_1拷貝.png");
-      background-size: contain;
-      background-position: 45% 60%;
-      background-color: transparent #00ffcca3;;
-  }
-  
-  a {
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  a:link , a:visited{
-    color:black;
-  }
-  
-  a:hover {
-    color: orange;
-  }
+body {
+    margin: 0;
+}
+h1 , h2 , h3 , p {
+    margin: 0;
+}
+
+a {
+display: block;
+text-decoration: none;
+cursor: pointer;
+}
+a:link , a:visited{
+color:black;
+}
+
+a:hover {
+color: orange;
+}
+
+.try-it-text .button {
+    color: white;
+}
+
+a:active {
+    color: white;
+}

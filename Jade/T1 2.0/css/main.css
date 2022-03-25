@@ -1,7 +1,7 @@
 
 section {
   padding: 60px 0px 100px 0px;
-  /* background: #FDFDFD; */
+  background: #FDFDFD;
 }
 
 article {
@@ -9,10 +9,8 @@ article {
 }
 
 .banner {
-  width: 800px;
-  margin: 0 auto;
   font-size: 0px;
-}
+} 
 
 .img-frame {
   display: inline-block;
@@ -33,58 +31,44 @@ article {
   vertical-align: top;
 }
 .banner-text h2 {
-  margin: 0;
   line-height: 1;
   font-size: 65px;
   font-weight: 400;
 }
 
 .banner-text h3 {
-  margin: 0;
   font-size: 30px;
   font-weight: 350;
 }
-.banner-text p {
-  margin: 0;
+.banner-text > p {
   margin-bottom: 16px;
   font-size: 16px;
   color: #585858;
 }
-.button {
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 15px 40px;
-  height: 59px;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-  background: linear-gradient(to top, #F99303 50%, #FFBA53 50%);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.button:hover {opacity: 0.6}
 
 .try-it-text {
   width: fit-content;
   margin: 0 auto;
 }
 
+.button {
+  padding: 15px 50px;
+  font-size: 25px;
+  background: linear-gradient(to top, #F99303 50%, #FFBA53 50%);
+  border: none;
+  border-radius: 6px;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.button:hover {opacity: 0.6}
+
 .try-it-text p {
-  margin: 0;
   font-size: 12px;
   color: #585858;
 }
 
-.about {
-  margin: 0 auto;
-  width: 800px;
-}
-
 .about h3 {
-  margin: 0px;
   margin-bottom: 24px;
   font-size: 30px;
   font-weight: 350;
@@ -95,6 +79,5 @@ article {
 }
 .article-text p {
   display: block;
-  margin: 0px;
   margin-bottom: 30px;
 }

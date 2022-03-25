@@ -1,22 +1,14 @@
 footer {
-  /* background-color: #EEEEEE; */
-}
-
-.footerbox {
-  box-sizing: border-box;
-  margin: 0px auto;
-  padding: 20px;
-  width: 850px;
-  text-align-last: justify;
+  background-color: #EEEEEE;
 }
 
 .footerbox p {
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
   font-size: 12px;
 }
 .footerbox ul {
+  text-align-last: inherit;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -24,7 +16,6 @@ footer {
   font-size: 0px;
   text-decoration: none;
   vertical-align: middle;
-  text-align-last: inherit;
 }
 
 .footerbox li {
