@@ -9,23 +9,27 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
   cursor: pointer;
 }
+a:link , a:visited{
+  color:black;
+}
+
 a:hover {
   color: orange;
 }
+
 
 header {
   background-color: #EEEEEE;
   text-align:center;
 }
 
-.box_container {
-  display:inline-block;
+.headbox {
   padding: 15px;
-  text-align-last: justify;
   width: 900px;
+  margin: 0px auto;
+  text-align-last: justify;
 }
 .title {
   display:inline-block;
@@ -36,22 +40,36 @@ header {
   display: block;
   margin: 0px auto;
   vertical-align: middle;
-
 }
 
 .title h1 {
   margin: 0px auto;
-  text-align-last: initial;
-  font-weight: normal;
   font-size: 12px;
+  font-weight: normal;
+  text-align-last: center;
   }
 
 header nav{
   display: inline-block;
   vertical-align: middle;
+  font-size: 0px;
   }
 
 header nav li {
   display: inline-block;
-  margin-right: 90px;
+  font-size: 15px;
+  margin: 0px 53px;
+  color: #585858;
   }
+
+header nav li a:link{
+  color: #585858;
+}
+
+header nav li a:visited{
+  color: #585858;
+}
+
+header nav li a:hover{
+  color: orange;
+}

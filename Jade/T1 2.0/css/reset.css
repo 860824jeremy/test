@@ -1,0 +1,24 @@
+* {
+    font-family: sans-serif;
+    outline: 1px black solid;
+  }
+  body {
+      margin: 0;
+      background-image: url("../img/0Template_1拷貝.png");
+      background-size: contain;
+      background-position: 45% 60%;
+      background-color: transparent #00ffcca3;;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:link , a:visited{
+    color:black;
+  }
+  
+  a:hover {
+    color: orange;
+  }

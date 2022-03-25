@@ -1,7 +1,7 @@
 main {
   margin: 0px auto;
-  padding-top: 30px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 180px;
   width: 800px;
 }
 
@@ -11,11 +11,12 @@ figure {
 }
 
 .img-frame {
-  display: inline-block;}
+  display: inline-block;
+  vertical-align: bottom;
+}
 
 figcaption {
   display: inline-block;
-  margin-top: 0px;
   text-align-last: left;
   vertical-align: top;
   width: 50%;
@@ -34,7 +35,6 @@ figcaption h2 {
 }
 figcaption p {
   margin-top: 0;
-  font-size: 16px;
   color: #585858;
 }
 .button {
@@ -54,7 +54,6 @@ figcaption p {
 .button:hover {opacity: 0.6}
 
 .button_text {
-  display: block;
   width: fit-content;
   margin: 0px auto;
 
@@ -67,9 +66,10 @@ figcaption p {
 }
 
 article {
-  margin-top: 151px;
+  margin-top: 170px;
 }
 article h2 {
+  margin-top: 0px;
   font-size: 30px;
   font-weight: 350;
 }
@@ -79,5 +79,5 @@ article h2 {
 }
 .article_text p {
   display: block;
-  margin: 0px 0px 16px 0px;
+  margin: 0px 0px 30px 0px;
 }

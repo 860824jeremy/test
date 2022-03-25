@@ -2,29 +2,28 @@ footer {
   background-color: #EEEEEE;
 }
 
-.footbox_text {
-  text-align-last: justify;
-  width: 850px;
+.footbox {
   margin: 0px auto;
+  padding: 25px 0px;
+  width: 850px;
+  text-align-last: justify;
 }
 
-.footbox_text p {
+.footbox p {
   display: inline-block;
   vertical-align: middle;
   font-size: 12px;
-  margin: 30px;
-
 }
-.footbox_text nav {
+.footbox nav {
   display: inline-block;
   vertical-align: middle;
   font-size: 0px;
 }
 
-.footbox_text li {
+.footbox li {
   display: inline-block;
   margin-left: 20;
 }
-.footbox_text li i {
+.footbox li i {
   font-size: 30px;
 }

@@ -1,0 +1,35 @@
+footer {
+  /* background-color: #EEEEEE; */
+}
+
+.footerbox {
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 20px;
+  width: 850px;
+  text-align-last: justify;
+}
+
+.footerbox p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 12px;
+}
+.footerbox ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  font-size: 0px;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align-last: inherit;
+}
+
+.footerbox li {
+  display: inline-block;
+}
+.footerbox li i {
+  font-size: 30px;
+}
