@@ -1,0 +1,17 @@
+p:first-child {
+    font-size: 32px;
+}
+
+p:link {
+    font-size: 32px;
+    color: black;
+}
+
+a:visited {
+    font-size:24px ;
+    color: yellow;
+}
+
+p:lang(en-us) {
+    color: yellow;
+}
