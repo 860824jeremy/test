@@ -3,6 +3,7 @@ footer {
 }
 
 .footerbox p {
+  margin: 0;
   display: inline-block;
   vertical-align: middle;
   font-size: 12px;

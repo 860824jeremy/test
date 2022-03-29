@@ -1,12 +1,7 @@
-* {
-    outline: 1px solid black;
-}
+
 body {
     margin: 0;
     font-family: sans-serif;
-}
-h1 , h2 , h3 , p {
-    margin: 0;
 }
 
 ul {

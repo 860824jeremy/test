@@ -12,15 +12,20 @@ header {
 .logo img {
   display: block;
   margin: 0 auto;
-  vertical-align: middle;
+}
+
+.logo a {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .logo h1 {
+  margin: 0;
   font-weight: normal;
   font-size: 12px;
   }
 
-.navbar{
+nav {
   text-align-last: inherit;
   display: inline-block;
   width: 750px;
@@ -28,13 +33,13 @@ header {
   
   }
 
-.navbar li {
+nav li {
   display: inline-block;
   font-size: 15px;
   color: #585858;
   }
 
-.navbar li a {
+nav li a {
   display: inline-block;
   padding: 10px;
 }
