@@ -1,32 +1,18 @@
-
 * {
-    font-family: sans-serif;
     outline: 1px solid black;
-  }
+}
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 h1 , h2 , h3 , p {
     margin: 0;
 }
 
-a {
-display: block;
-text-decoration: none;
-cursor: pointer;
-}
-a:link , a:visited{
-color:black;
+ul {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
-a:hover {
-color: orange;
-}
 
-.try-it-text .button {
-    color: white;
-}
-
-a:active {
-    color: white;
-}

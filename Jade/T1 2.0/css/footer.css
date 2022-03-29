@@ -10,17 +10,14 @@ footer {
 .footerbox ul {
   text-align-last: inherit;
   display: inline-block;
-  margin: 0;
-  padding: 0;
   width: 150px;
   font-size: 0px;
-  text-decoration: none;
   vertical-align: middle;
 }
 
 .footerbox li {
   display: inline-block;
 }
-.footerbox li i {
+.footerbox i {
   font-size: 30px;
 }

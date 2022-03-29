@@ -1,27 +1,22 @@
-
 section {
-  padding: 60px 0px 100px 0px;
   background: #FDFDFD;
 }
 
-article {
-  padding: 100px 0px 180px 0px;
-}
-
 .banner {
+  padding: 60px 0px 100px 0px;
   font-size: 0px;
 } 
 
 .img-frame {
   display: inline-block;
   width: 50%;
+  height: 360px;
   text-align: right;
 }
 
 .img-frame img {
-  margin: 0 auto;
-  width: 368px;
-  height: 342px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -41,14 +36,17 @@ article {
   font-weight: 350;
 }
 .banner-text > p {
-  margin-bottom: 16px;
   font-size: 16px;
   color: #585858;
 }
 
 .try-it-text {
   width: fit-content;
-  margin: 0 auto;
+  margin: 16px auto 0 auto;
+}
+
+.try-it-text >a {
+  display: inline-block;
 }
 
 .button {
@@ -63,21 +61,31 @@ article {
 
 .button:hover {opacity: 0.6}
 
+.try-it-text .button {
+    color: white;
+}
+
 .try-it-text p {
   font-size: 12px;
   color: #585858;
 }
 
+.about {
+padding: 100px 0px 180px 0px;}
+
 .about h3 {
-  margin-bottom: 24px;
   font-size: 30px;
   font-weight: 350;
 }
 .article-text {
+  margin-top: 30px;
   column-count: 2;
   column-gap: 24px;
 }
 .article-text p {
   display: block;
   margin-bottom: 30px;
+}
+.article-text > p:nth-child(3n){
+  margin-bottom: 0;
 }

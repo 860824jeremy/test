@@ -20,7 +20,7 @@ header {
   font-size: 12px;
   }
 
-header nav{
+.navbar{
   text-align-last: inherit;
   display: inline-block;
   width: 750px;
@@ -28,12 +28,13 @@ header nav{
   
   }
 
-header nav li {
+.navbar li {
   display: inline-block;
   font-size: 15px;
   color: #585858;
   }
 
-header nav li a {
+.navbar li a {
+  display: inline-block;
   padding: 10px;
 }
