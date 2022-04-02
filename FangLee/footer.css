@@ -1,0 +1,35 @@
+footer {
+    width: 100vw;
+	background-color: rgb(238,238,238);
+}
+
+.footer_content {
+    width: 80%;
+    text-align-last: justify;
+    margin: 0 auto;
+    padding: 50px 0 25px;
+}
+
+.copyright {
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.footer_copyright p {
+    font-size: 14px;
+}
+
+.footer_media {
+    display: inline-block;
+    vertical-align:middle;
+    font-size: 0;
+}
+
+.footer_media a + a {
+    margin-left: 20px;
+}
+
+.footer_media a i {
+    color: black;
+    font-size: 32px;
+}
