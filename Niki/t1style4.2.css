@@ -18,18 +18,18 @@ body {
     min-width:1180px;
 }
 
-header{
-    /* height: 237px; */
-}
+/* header{
+    height: 237px;
+} */
 
-main{
-    /* margin: auto auto;
-    height: 160%; */
-}
+/* main{
+    margin: auto auto;
+    height: 160%;
+} */
 
-footer{
-    /* height: 95px; */
-}
+/* footer{
+    height: 95px;
+} */
 
 .header-container-background{
     background-color:#ededed;
@@ -98,9 +98,9 @@ footer{
 
 
 
-.textpadding0{
-    /* padding: 0%; */
-}
+/* .textpadding0{
+    padding: 0%;
+} */
 
 .header-container-link{
     display: inline-block;
