@@ -14,7 +14,7 @@ header {
     border-bottom: 1px solid  #D7d7d7; 
 }
 
-.header__container {
+.l-header__container {
     margin: 0 auto;
     padding: 32px 0;
     width: fit-content;
@@ -22,12 +22,10 @@ header {
 }
 
 h1 {
-    margin: 0;
     height: fit-content;
     width:120px;
     display: inline-block;
     vertical-align: middle;
-    font-weight: normal;
 }
 
 h1 a {
@@ -40,7 +38,6 @@ h1 a img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-    vertical-align: bottom;
 }
 
 h1 span {
@@ -48,25 +45,26 @@ h1 span {
     font-size:20px;
     font-weight:bold;
     color: black;
-    text-align-last: initial;
     text-align: center;
 }
 
 header nav {
-    width: fit-content;
+    margin-left: 60px;
     display: inline-block;
     vertical-align: middle;
-    /* text-align-last: justify; */
 }
 
 nav a {
-    margin-left: 60px;
     padding: 50px;
     display: inline-block;
     font-size:20px;
     font-weight:bold;
     color:  #808080;
     text-decoration:none ;
+}
+
+nav a + a {
+    margin-left: 60px;
 }
 
 nav a:hover {
@@ -80,31 +78,31 @@ main section {
 .joinus {
     margin: 0 auto;
     padding: 90px 0 135px;
-    width: 1200px;
+    width: fit-content;
     font-size: 0;
 }
 
-.joinus__contenter ,
+.joinus__content ,
 .joinus__img {
-    padding: 0 2%;
-    width: 46%;
+    margin: 0 30px;
+    width: 540px;
     display: inline-block;
     vertical-align: top;
 }
 
-.joinus__contenter h2 {
+.joinus__content h2 {
     margin: 0;
     font-size:90px;
-    font-weight: initial;
+    font-weight: normal;
 }
 
-.joinus__contenter h3 {
+.joinus__content h3 {
     margin: 0;
     font-size:44px;
-    font-weight: initial;
+    font-weight: normal;
 }
 
-.joinus__contenter p {
+.joinus__content p {
     margin: 0;
     font-size:24px;
     color: #595959;
@@ -112,7 +110,7 @@ main section {
 }
 
 .joinus__button {
-    margin: 32px auto 0 auto;
+    margin: 32px auto 0;
     width: fit-content;
 }
 
@@ -151,11 +149,9 @@ article {
 }
 
 article h3 {
-    margin: 0;
-    margin-bottom: 32px;
-    
+    margin: 0 0 32px 0;
     font-size:44px;
-    font-weight: initial;
+    font-weight: normal;
     column-span: all;
 }
 
@@ -180,33 +176,33 @@ footer {
     border-top: 1px solid  #D7d7d7; 
 }
 
-.footer__container {
+.l-footer__container {
     margin: 0 auto;
     padding: 32px 0;
     width: 1280px;
     font-size: 0;
 }
 
-.footer__container span {
-    width: 50%;
+.l-footer__container span {
+    width: 640px;
     display: inline-block;
     font-size:18px;
     vertical-align: middle;
 }
 
-.footer__friendlink {
-    width: 50%;
+.l-footer__medialink {
+    width: 640px;
     display: inline-block;
     vertical-align: middle;
     text-align: right;
 }   
 
-.footer__friendlink a {
+.l-footer__medialink a i {
     font-size: 48px;
     color: black;
     display: inline-block;
 }
 
-.footer__friendlink a + a{
+.l-footer__medialink a + a{
     margin-left: 24px;
 }
