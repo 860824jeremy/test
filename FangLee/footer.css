@@ -1,16 +1,16 @@
 footer {
-    width: 100vw;
+    width: 100%;
 	background-color: rgb(238,238,238);
 }
 
 .footer_content {
-    width: 80%;
+	width: 70%;
     text-align-last: justify;
+    padding: 40px 0 20px;
     margin: 0 auto;
-    padding: 50px 0 25px;
 }
 
-.copyright {
+.footer_copyright {
     display: inline-block;
     vertical-align:middle;
 }
@@ -26,7 +26,8 @@ footer {
 }
 
 .footer_media a + a {
-    margin-left: 20px;
+    display: inline-block;
+    margin-left: 30px;
 }
 
 .footer_media a i {
