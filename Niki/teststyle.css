@@ -1,0 +1,167 @@
+*{
+    outline: solid red 1px;
+} 
+
+p {
+    text-align: center;
+}
+
+ p:empty{
+background-color: black;
+padding: 100px ;
+}
+/*
+p:nth-child(3n) {
+    color: red;
+}
+
+p:nth-child(3n+1) {
+    font-size: 24px;
+} 
+
+p:nth-child(-n+3) {
+    line-height: 50px;
+} */
+
+/* p:nth-child(even) {
+    font-size: 24px;
+}
+
+p:nth-child(odd) {
+    color: red;
+} */
+
+/* div :only-of-type{
+    color: blue;
+}
+
+div :only-child{
+    color: blue;
+    line-height: 60px;
+} */
+
+/* div p:nth-of-type(3n+2) {
+    font-size: 24px;
+} 
+
+p:first-child {
+    font-size: 32px;
+}
+
+p:last-child {
+    color: green;
+} */
+
+/* .study {
+    margin: 0 auto;
+    width: 500px;
+    font-size: 24px;
+} 
+
+a:link {
+    font-size: 32px;
+    color: green;
+}
+
+a:visited {
+    font-size:24px ;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+a:active {
+    background-color: blueviolet;
+}
+
+a:focus {
+    background-color: blue;
+}
+
+p:lang(en-us) {
+    color: yellow;
+}
+
+div * p {
+    font-size: 50px;
+}
+
+p:first-line { 
+    color: red;
+    font-size: 40px;    
+}
+
+P:first-letter { 
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bold;
+    float: left 
+ } 
+ */
+ /*建立全域變數*/
+/* :root {
+	--csscoke-red: #f00;
+} */
+
+/*套用變數*/
+/* .section-item {
+	color: var( --csscoke-red );
+} */
+
+p ::after{
+    content: (很久很久以前有12T);
+}
+
+pre {
+    height: 80px;
+    width: 120px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    background-color: palegreen;
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* border-style example classes */
+  .b1 {
+    border-style: none;
+  }
+  
+  .b2 {
+    border-style: hidden;
+  }
+  
+  .b3 {
+    border-style: dotted;
+  }
+  
+  .b4 {
+    border-style: dashed;
+  }
+  
+  .b5 {
+    border-style: solid;
+  }
+  
+  .b6 {
+    border-style: double;
+  }
+  
+  .b7 {
+    border-style: groove;
+  }
+  
+  .b8 {
+    border-style: ridge;
+  }
+  
+  .b9 {
+    border-style: inset;
+  }
+  
+  .b10 {
+    border-style: outset;
+  }
