@@ -72,14 +72,14 @@ main section {
     background-color:#FDFDFD;
 }
 
-.joinus {
+.joinus__container {
     margin: 0 auto;
     padding: 90px 0 135px;
     width: 1200px;
     font-size: 0;
 }
 
-.joinus__container ,
+.joinus__content ,
 .joinus__img {
     padding: 0 2%;
     width: 50%;
@@ -88,19 +88,19 @@ main section {
     box-sizing: border-box;
 }
 
-.joinus__container h2 {
+.joinus__content h2 {
     margin: 0;
     font-size:90px;
     font-weight: normal;
 }
 
-.joinus__container h3 {
+.joinus__content h3 {
     margin: 0;
     font-size:44px;
     font-weight: normal;
 }
 
-.joinus__container p {
+.joinus__content p {
     margin: 0;
     font-size:24px;
     color: #595959;
