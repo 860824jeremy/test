@@ -14,7 +14,8 @@ header {
     border-bottom: 1px solid  #D7d7d7; 
 }
 
-.l-header__container {
+.header__container ,
+.footer__container{
     margin: 0 auto;
     padding: 32px 0;
     width: fit-content;
@@ -22,15 +23,14 @@ header {
 }
 
 h1 {
-    height: fit-content;
     width:120px;
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
 }
 
 h1 a {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     width: 85px;
 }
 
@@ -38,14 +38,11 @@ h1 a img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    font-size: 24px;
 }
 
 h1 span {
-    display: block;
     font-size:20px;
-    font-weight:bold;
-    color: black;
-    text-align: center;
 }
 
 header nav {
@@ -78,31 +75,32 @@ main section {
 .joinus {
     margin: 0 auto;
     padding: 90px 0 135px;
-    width: fit-content;
+    width: 1200px;
     font-size: 0;
 }
 
-.joinus__content ,
+.joinus__container ,
 .joinus__img {
-    margin: 0 30px;
-    width: 540px;
+    padding: 0 2%;
+    width: 50%;
     display: inline-block;
     vertical-align: top;
+    box-sizing: border-box;
 }
 
-.joinus__content h2 {
+.joinus__container h2 {
     margin: 0;
     font-size:90px;
     font-weight: normal;
 }
 
-.joinus__content h3 {
+.joinus__container h3 {
     margin: 0;
     font-size:44px;
     font-weight: normal;
 }
 
-.joinus__content p {
+.joinus__container p {
     margin: 0;
     font-size:24px;
     color: #595959;
@@ -135,6 +133,7 @@ main section img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    font-size: 24px;
 }
 
 article {
@@ -148,8 +147,8 @@ article {
     column-gap: 60px;
 }
 
-article h3 {
-    margin: 0 0 32px 0;
+.article__container h3 {
+    margin: 0 0 32px;
     font-size:44px;
     font-weight: normal;
     column-span: all;
@@ -176,33 +175,29 @@ footer {
     border-top: 1px solid  #D7d7d7; 
 }
 
-.l-footer__container {
-    margin: 0 auto;
-    padding: 32px 0;
-    width: 1280px;
-    font-size: 0;
-}
-
-.l-footer__container span {
+.footer__container span {
     width: 640px;
     display: inline-block;
-    font-size:18px;
     vertical-align: middle;
+    font-size:18px;
 }
 
-.l-footer__medialink {
+.footer__medialink {
     width: 640px;
     display: inline-block;
     vertical-align: middle;
     text-align: right;
 }   
 
-.l-footer__medialink a i {
-    font-size: 48px;
-    color: black;
+.footer__medialink a {
     display: inline-block;
 }
 
-.l-footer__medialink a + a{
+.footer__medialink a i {
+    font-size: 48px;
+    color: black;
+}
+
+.footer__medialink a + a{
     margin-left: 24px;
 }
