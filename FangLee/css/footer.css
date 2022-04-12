@@ -1,36 +1,30 @@
-footer {
-	background-color: rgb(238,238,238);
-}
-
 .footer_wrapper {
-	width: 700px;
 	padding: 50px 0 30px;
-	margin: 0 auto;    
-    text-align-last: justify;
 }
 
-.footer_copyright {
+.footer_copyright , .footer_media {
     width: 300px;
     display: inline-block;
     vertical-align:middle;
+}
+/* 將寬度設定300px讓兩區塊彼此不會佔到對方的位置(內容增加時) */
+
+.footer_copyright {
     text-align-last: initial;
 }
 
 .footer_copyright p {
     font-size: 14px;
-    color: rgb(90, 90, 90);
 }
 
 .footer_media {
-    width: 200px;
     font-size: 0;
-    display: inline-block;
-    vertical-align:middle;
-    text-align-last: initial;
+    text-align-last:right;
 }
 
 .footer_media a {
     display: inline-block;
+    margin-left: 20px;
 }
 
 .footer_media a i {
