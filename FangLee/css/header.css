@@ -7,11 +7,14 @@ h1 , nav {
 	vertical-align: middle;
 }
 
-h1 > a {
+h1 {
+	font-size: 0;
+}
+
+h1 a {
 	width: 150px;
 	height: 100px;
 	display: inline-block;
-	vertical-align: bottom;
 }
 
 nav {
@@ -20,7 +23,9 @@ nav {
 
 nav a {
 	color: rgb(90, 90, 90);
+	display: inline-block;
 	text-decoration: none;
+	padding: 10px;
 }
 
 nav a:hover {

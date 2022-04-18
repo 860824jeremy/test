@@ -24,10 +24,18 @@
 
 .footer_media a {
     display: inline-block;
+}
+
+.footer_media a + a {
     margin-left: 20px;
 }
 
 .footer_media a i {
     font-size: 32px;
     color: black;
+}
+
+
+.footer_media a :hover {
+	color: gray;
 }
