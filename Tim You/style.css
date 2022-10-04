@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 50px 60px;
+}
+body {
+  min-width: 1440px;
+  /* max-width: 2560px; */
+}
+h1 {
+  font-size: 5rem;
+  font-weight: normal;
+  line-height: 4rem;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+header {
+  background-color: #efefef;
+  padding: 0 130px;
+}
+
+.logoPic {
+  display: inline-block;
+  text-align: center;
+}
+.headerLink {
+  border: none;
+  color: #929292;
+}
+.headerLink:hover {
+  color: orange;
+}
+.active {
+  color: orange;
+}
+
+.section {
+  background-color: #f5f5f5;
+  padding: 50px 250px;
+}
+
+section .section-firstspan {
+  margin: 50px 60px 50px 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+section .section-secondspan {
+  margin: 50px 0 50px 60px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+
+.tryButton {
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(
+    to bottom,
+    #ffd0a4 0%,
+    #ffd0a4 50%,
+    #f49602 50%,
+    #f49602 100%
+  );
+  color: white;
+  padding: 15px 50px;
+  margin: 20px 0 0 50px;
+  font-size: 1.5rem;
+}
+.worryTxt {
+  margin-left: 50px;
+}
+footer span {
+  display: inline-block;
+  width: 400px;
+}
+
+footer {
+  background-color: #efefef;
+}
+
+footer div {
+  padding: 40px 250px;
+}
+
+footer ul li {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: black;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+.copyright {
+  margin-right: 60px;
+}
+.icon {
+  text-align: right;
+  margin-left: 60px;
+}
