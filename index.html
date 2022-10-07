@@ -10,80 +10,114 @@
 <body>
     <div id="wrap">
         <div id="navbar">
-            <table>
-                <td>
-                    <tr><img id="logo" src="/img/logo.png"><p>ZERO TYPE</p></tr>
-                    <tr>Home</tr>
-                    <tr>Feature</tr>
-                    <tr>News</tr>
-                    <tr>About</tr>
-                    <tr>Contact</tr>
-                </td>
-            </table>
+            <div id="logo-cont">
+                <img id="logo" src="/img/logo.png">
+                <div class="logo-text">ZERO TYPE</div>
+            </div>
+            <!-- <table border="1" width="500">
+                <tr>
+                    <td class="nav-text">Home</td>
+                    <td class="nav-text">Feature</td>
+                    <td class="nav-text">News</td>
+                    <td class="nav-text">About</td>
+                    <td class="nav-text">Contact</td>
+                </tr>
+            </table> -->
+            <div id="nav-url">
+                <ul class="nav-text">
+                    <li><a href="#">Home</a></li><li><a href="#">Feature</a></li><li><a href="#">News</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
 
         <div id="content1">
-        <div id="text1">
-            <h1>IDEAS?</h1>
-            <h3>This is just a place holder.</h3>
-            <p>You can remove any link to our website from this
-                website template, you're free to use this website
-                template without linking back to us.</p>
-        </div>
-        <div id="box-content">
-            <img id="box" src="/img/box.png">
-        </div>
+            <div id="text1" class="cf">
+                <h1>IDEAS?</h1>
+                <div class="text-box">
+                    <h2>This is just a place holder.</h2>
+                    <p>You can remove any link to our website from this
+                        website template, you're free to use this website
+                        template without linking back to us.
+                    </p>
+                </div>
+                <div class="button-box">
+                    <a href="#"><input type="button" id="try" value="TRY IT NOW!" name="try" style="height: 35px;"></a>
+                    <p id="b-text">Don't worry it's for free</p>
+                </div>
+                
+            </div>
+
+            <div id="box-cont" class="cf">
+                
+                <img id="box" src="/img/box.png">
+                
+            </div>
+
         </div>
 
         <div id="content2">
-        <div id="c-title">
-            <p>This is just a place holder.</p>
-        </div>
-        <div id="text2-L">
-            <p>You can remove any link to our website from this
-                website template, you're free to use this website
-                template without linking back to us.
-            </p>
-            <br>
-            <p>This is just a place holder, so you can see what the
-                site would look like.
-            </p>
-            <br>
-            <p>You can remove an link to our website from this
-                website template, you're free to use this website
-                template without linking back to us. This is just a
-                place holder, so you can see what the site would look
-                like.
-            </p>
-        </div>
-        <div id="text2-R">
-            <p>You can remove any link to our website from this
-                website template, you're free to use this website
-                template without linking back to us.
-            </p>
-            <br>
-            <p>This is just a place holder, so you can see what the
-                site would look like.
-            </p>
-            <br>
-            <p>You can remove an link to our website from this
-                website template, you're free to use this website
-                template without linking back to us. This is just a
-                place holder, so you can see what the site would look
-                like.
-            </p>
-        </div>
+            <div id="c-tittle">
+                <h2>This is just a place holder.</h2>
+            </div>
+            <div id="text2-L" class="cf">
+                <div class="text-box">
+                    <p>You can remove any link to our website from this
+                        website template, you're free to use this website
+                        template without linking back to us.
+                    </p>
+                    <br>
+                    <p>This is just a place holder, so you can see what the
+                        site would look like.
+                    </p>
+                    <br>
+                    <p>You can remove an link to our website from this
+                        website template, you're free to use this website
+                        template without linking back to us. This is just a
+                        place holder, so you can see what the site would look
+                        like.
+                    </p>
+                </div>
+            </div>
+
+            <div id="text2-R" class="cf">
+                <div class="text-box">
+                    <p>You can remove any link to our website from this
+                        website template, you're free to use this website
+                        template without linking back to us.
+                    </p>
+                    <br>
+                    <p>This is just a place holder, so you can see what the
+                        site would look like.
+                    </p>
+                    <br>
+                    <p>You can remove an link to our website from this
+                        website template, you're free to use this website
+                        template without linking back to us. This is just a
+                        place holder, so you can see what the site would look
+                        like.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div id="footer">
-            <p>© 2023 Zerotype. All Rights Reserved.</p>
-            <img src="#">
-            <img src="#">
-            <img src="#">
-            <img src="#">
+            <p id="f-text">© 2023 Zerotype. All Rights Reserved.</p> 
+                <img class="f-icon" src="/img/fb.png">
+                <img class="f-icon" src="/img/gp.png">
+                <img class="f-icon" src="/img/tw.png">
+                <img class="f-icon" src="/img/ig.png">      
         </div>
     </div>
 
    
 </body>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.nav-text li a').click(function(){
+            $('.nav-text li a').removeClass('act'); //先清掉
+            $(this).addClass('act'); //再給選定的
+        }); //end click
+    }); //end ready
+</script>
 </html>

@@ -1,48 +1,227 @@
+@import url("reset.css");
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 42px;
+    color: #666;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+}
+
+p {
+    font-size: 10px;
+    line-height: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
 #wrap {
+    margin: auto;
     width: 900px;
-    height: 1340px;
+    /* height: 1340px; */
 }
 #navbar {
     width: 900px;
-    height: 50ox;
-    background-color: #ddd;
-    margin: auto;
+    height: 80ox;
+    background-color: #eee;
+    border: #ddd solid 1px;
+    
+}
+
+#logo-cont {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    /* background-color: #aa0; */
+    margin-left: 150px;
+    /* text-align: center; */
+    position: relative;
+    
 }
 
 #logo {
     width: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.logo-text{
+    font-size: 10px;
+    color: #666;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    
+}
+
+.nav-text {
+    font-size: 10px;
+}
+
+
+#nav-url {
+    width: 500px;
+    display: inline-block;
+    /* float: left; */
+}
+
+ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
 }
 
 #text1 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
+    float: left;
+    /* background-color: #0bb; */
 }
 
-#box-content {
-    width: 300px;
-    height: 300px;
+.text-box {
+    width: 230px;
 }
+
+#try {
+    /* display: block; */
+    color: #fff;
+    background-color: #FFB630;
+    width: 120px;
+    /* height: 50ox; */
+    border-radius: 5px;
+    border: 0px;
+    font-size: 14px;
+}    
+
+.button-box {
+    width: 150px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,30%);
+}
+
+
+#box-cont {
+    width: 250px;
+    height: 200px;
+    /* display: inline-block; */
+    float: left;
+    /* background-color: #50f; */
+    text-align: center;
+}
+
 #box {
     width: 200px;
 }
 
-#c-title {
-    width: 600px;
-    height: 50px;
+#c-tittle {
+    width: 500px;
+    height: 36px;
+    clear: both;
+    /* background-color: #df5; */
+
 }
 
 #text2-L {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
+    float: left;
+    /* display: inline-block; */
+    /* background-color: #D4FFD4; */
 }
 
 #text2-R {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
+    /* display: inline-block; */
+    float: left;
+    /* background-color: #FFECC9; */
 }
+
+
 
 #footer {
     width: 900px;
-    height: 50px;
-    background-color: #ddd;
+    height: 35px;
+    clear: both;
+    background-color: #eee;
+    position: relative;
+    top: 170px;
+    border: #ddd solid 1px;
+}
+
+#f-text {
+    display: inline-block;
+    margin-left: 180px;
+    margin-right: 250px;
+    position: relative;
+    top: 10px;
+}
+
+.f-icon {
+    width: 15px;
+    margin-right: 7px;
+    position: relative;
+    top: 15px;
+}
+
+#content1 {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top:30px;
+    left: 200px;
+}
+
+#content2 {
+    width: 500px;
+    height: 236px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+.act {
+    color: #FFB630;
+}
+/**
+micro clearfix hack
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
