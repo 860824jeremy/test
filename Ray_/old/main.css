@@ -1,3 +1,5 @@
+/*這個版本原本每個框架物件都有加border*/
+
 body { 
     margin: 0; /*因為header跟footer有白邊*/
 }
@@ -14,27 +16,15 @@ h1 ,h2 ,p {
 header {
     height: 250px;
     background-color: #eeeeee;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
 
 .title {    
     text-align: center;
     margin: 45px 200px;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
 
 .logo {
     display: inline-block;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
 
 .logo-photo {
@@ -51,13 +41,9 @@ header {
     position: relative;
     bottom: 35px;
     margin: 0 20px;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
 
-a {
+.links > a{
     margin: 0px 80px;
 }
 
@@ -83,30 +69,16 @@ article {
     width: 50%;
     height: 100%;
     bottom: 70px;
-    margin: 0%;    
-
-    border-style:solid;
-    border-color:#c90751;
-    border-width: 2px;
 }
 
 h1 {
     font-size: 100px; /*em會繼承上層的設定數值*/
     margin: 0%;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 4 px;
-
 }
 
 h2 {
     font-size: 45px;
     margin: 0%;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
 
 p {
@@ -123,7 +95,6 @@ p {
 
 .dontworry {
     font-size: 15px;
-
     color: rgb(66, 65, 65);
     line-height: 1;
     position: relative;
@@ -134,10 +105,6 @@ p {
     display: inline-block;
     padding-left: 20px;
     width: 500px;
-
-    border-style:solid;
-    border-color:yellow;
-    border-width: 2px;
 }
 
 /*part2*/
@@ -151,30 +118,16 @@ p {
     position: relative;
     left: 15%;
 
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 3px;
-}
-
 .section-content-ba {
     display: inline-block;
     position: relative;
     width: 48%;
-
-    border-style:solid;
-    border-color:#c90751;
-    border-width: 3px;
-}
 
 .section-content-bb {
     display: inline-block;
     position: relative;
     width: 48%;
     left: 3%;
-
-    border-style:solid;
-    border-color:#c90751;
-    border-width: 3px;
 }
 
 /*footer*/
@@ -183,10 +136,6 @@ footer {
     background-color: #eeeeee;
     height: 150px;
     padding: 30px;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
 
 .copyright {
@@ -194,10 +143,6 @@ footer {
     position: relative;
     left: 20%;
     top: 10%;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
 
 .icons {
@@ -205,8 +150,4 @@ footer {
     position: relative;
     left: 50%;
     top: 25%;
-
-    border-style:solid;
-    border-color:#3165aa;
-    border-width: 2px;
 }
