@@ -11,16 +11,18 @@ a {
   text-decoration: none;
 }
 img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+  max-width: 100%;
 }
 header {
-  text-align: center;
   font-size: 0;
   background-color: #dbdbdb;
   border-bottom-style: solid;
   border-bottom-color: #cacaca;
+  padding: 30px 15vw;
+}
+
+header > div {
+  position: relative;
 }
 header h1 {
   display: inline-block;
@@ -28,22 +30,23 @@ header h1 {
 }
 .logo_link {
   display: block;
-  padding: 30px 0;
 }
 .logo_img_container {
   display: block;
   width: 52px;
-  height: 80px;
   margin: 0 auto;
 }
 .logo_companyname {
+  text-transform: uppercase;
   font-size: 1rem;
   color: black;
 }
 
 header nav {
   display: inline-block;
+  position: absolute;
   vertical-align: middle;
+  right: 0;
   font-size: 0;
 }
 .menu_list li {
@@ -53,7 +56,7 @@ header nav {
 .menu_list li a {
   display: block;
   color: #929292;
-  padding: 70px 55px;
+  padding: 40px 60px;
   font-size: 1rem;
 }
 
@@ -65,12 +68,15 @@ header nav {
 }
 
 main section {
-  padding: 50px 238px;
+  padding: 50px 15vw;
   font-size: 0;
   text-align: center;
 }
 section:first-child {
   background-color: #efefef;
+}
+.event_page > div + div {
+  margin-left: 5vw;
 }
 
 h2 {
@@ -94,16 +100,18 @@ p {
 .event_title {
   text-align: start;
 }
-.btn_container {
+.apply_container {
   margin: 25px 0;
 }
-.btn_container div {
+.apply_container div {
   display: inline-block;
 }
-.btn_container p {
+.apply_container p {
   text-align: start;
+  /* text-align: inherit; */
 }
-.apply_btn {
+.apply_link {
+  display: block;
   border: none;
   border-radius: 3px;
   background: linear-gradient(
@@ -115,7 +123,7 @@ p {
   );
   color: white;
   font-size: 1.5rem;
-  padding: 25px 40px;
+  padding: 25px 55px;
 }
 .event_img_container {
   width: 400px;
@@ -133,6 +141,7 @@ p {
 }
 
 .article_container p {
+  break-inside: avoid;
   text-align: start;
 }
 .article_container p + p {
@@ -140,40 +149,36 @@ p {
 }
 
 footer {
+  padding: 40px 15vw;
   background-color: #dbdbdb;
   font-size: 0;
-  text-align: center;
   margin: 0 auto;
   border-top-style: solid;
   border-top-color: #cacaca;
 }
-
 .footer_container {
-  padding: 40px 0;
+  position: relative;
 }
 .footer_container div {
   display: inline-block;
   vertical-align: middle;
 }
 .copyright {
-  width: 482px;
-  text-align: start;
+  width: 50%;
+  line-height: 2rem;
 }
-
 .community {
-  width: 482px;
-  text-align: end;
-}
-.community_list {
+  width: 50%;
+  min-width: 160px;
   text-align: end;
 }
 
 .community_list li {
   display: inline-block;
 }
-.community_list a {
+.community_list a i {
   color: black;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .community_list a:hover {
   color: orange;
