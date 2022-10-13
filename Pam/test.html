@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 0; 
+            /* <p>預設上下margin有值*/
+        }
+        #a{
+            width: 500px;
+            
+            border: 1px solid #000;
+        }
+        #b1{
+            width: 200px;
+            height: 100px;
+            border: 1px solid #f00;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        #b1 p{
+            /* line-height: 100px; */
+        }
+        #b2{
+            border: 1px solid #0aa;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #b2 img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div id="b1">
+            <p>ttttt</p>
+            <p>aaaa</p>
+        </div>
+        <div id="b2">
+            <img src="/Pam/img/box.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

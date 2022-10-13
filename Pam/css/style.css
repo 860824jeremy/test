@@ -1,227 +1,184 @@
-@import url("reset.css");
+/* css reset */
+body{
+    margin: 0; /* chrome default margin:8 px; */
+}
+p{
+    margin: 0; /* chrome default margin-top/ margin-bottom:16 px; */
+}
+/* div間空隙 */
+/* end of css reset */
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    font-size: 34px;
-    line-height: 42px;
-    color: #666;
+h1{
+    font-size: 10px;
+    font-weight: lighter;
+    margin-top: 0px;
+    /* margin-bottom: 0px; 外層容器有設定更大的argin-bottom，h1保留default不影響*/ 
+    color: black;
 }
 
 h2 {
-    font-size: 16px;
-    line-height: 24px;
-    color: #666;
+    font-size: 32px;
+    font-weight:lighter;
+    color:rgb(62,62,62);
+    margin-top: 0px;
+    margin-bottom: 0px; /*h2 margin(top & bottom) default depends on font size*/
+}
+
+h3{
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(62,62,62);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
 }
 
 p {
-    font-size: 10px;
+    font-size: 6px;
     line-height: 14px;
-    color: #666;
+    color: rgb(88,88,88);
 }
 
 a {
     text-decoration: none;
-    color: #666;
+    color:rgb(88,88,88);
 }
 
-#wrap {
-    margin: auto;
+#wrapper {
+    margin: 0 auto;
     width: 900px;
-    /* height: 1340px; */
+    
 }
-#navbar {
+nav {
     width: 900px;
-    height: 80ox;
-    background-color: #eee;
-    border: #ddd solid 1px;
-    
+    background-color: rgb(238,238, 238);
+    border: #ddd solid 1px;   
 }
 
-#logo-cont {
-    width: 80px;
-    height: 80px;
+nav>div:first-child {
     display: inline-block;
-    /* background-color: #aa0; */
-    margin-left: 150px;
-    /* text-align: center; */
-    position: relative;
-    
+    /* background-color: #FFB; */
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 100px;  
 }
 
-#logo {
-    width: 30px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+nav img {
+    width: 25px;
+    margin-top: 15px;
 }
 
-.logo-text{
-    font-size: 10px;
-    color: #666;
-    position: absolute;
-    top: 60px;
-    left: 15px;
-    
+nav>div:first-child>div {
+    margin-bottom: 15px;
 }
 
-.nav-text {
-    font-size: 10px;
-}
-
-
-#nav-url {
-    width: 500px;
+nav>div:nth-child(2) {
     display: inline-block;
-    /* float: left; */
+    /* background-color: aquamarine; */
 }
 
-ul li {
+ul li{
     display: inline-block;
+    text-decoration: none;
     width: 100px;
     text-align: center;
+    /* border: 1px solid #000; */
 }
 
-#text1 {
-    width: 250px;
-    height: 200px;
-    float: left;
+nav a{
+    font-size: 10px;
+    font-weight: lighter;
+    color:rgb(154,154,154);
+}
+
+header{
+    width: 520px; /*要用<header>作定位，需有寬度，不設值會與外層容器同寬，並非由內部內容撐開*/
+    margin: 30px auto;
+}
+
+header>div:first-child {
+    width: 240px;
+    margin: 0 auto;
+    display:inline-block;
     /* background-color: #0bb; */
+    vertical-align: top;
+    padding-right: 20px;
 }
 
-.text-box {
-    width: 230px;
-}
-
-#try {
-    /* display: block; */
+header>div:first-child button {
     color: #fff;
-    background-color: #FFB630;
-    width: 120px;
-    /* height: 50ox; */
+    background-image: linear-gradient(rgb(246,192,110) 50%, rgb(235, 153, 55) 50%);
+    width: 130px;
+    height: 35px;
     border-radius: 5px;
     border: 0px;
-    font-size: 14px;
+    font-size: 12px;
+    cursor: pointer; /*不加<a>用js onclick，游標改pointer*/
 }    
 
-.button-box {
+header>div:first-child div {
     width: 150px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,30%);
+    margin: 15px auto;
 }
 
 
-#box-cont {
-    width: 250px;
-    height: 200px;
-    /* display: inline-block; */
-    float: left;
-    /* background-color: #50f; */
+header>div:nth-child(2) {
+    width: 260px;
+    display: inline-block;
+    /* background-color:burlywood; */
     text-align: center;
 }
 
-#box {
-    width: 200px;
+header>div:nth-child(2) img {
+    width: 220px;
 }
 
-#c-tittle {
-    width: 500px;
-    height: 36px;
-    clear: both;
+main {
+    width: 600px;
+    margin: 0px auto;
+}
+main>div:first-child {
+    padding: 20px 0px;
     /* background-color: #df5; */
 
 }
 
-#text2-L {
-    width: 250px;
-    height: 200px;
-    float: left;
-    /* display: inline-block; */
+.main__text {
+    width: 280px;
+    display: inline-block;
+    vertical-align: top;
     /* background-color: #D4FFD4; */
+    padding-right: 20px;
+    margin-bottom: 100px;
 }
 
-#text2-R {
-    width: 250px;
-    height: 200px;
-    /* display: inline-block; */
-    float: left;
-    /* background-color: #FFECC9; */
-}
-
-
-
-#footer {
+footer {
     width: 900px;
-    height: 35px;
-    clear: both;
-    background-color: #eee;
-    position: relative;
-    top: 170px;
+    height: 45px;
+    background-color: rgb(238,238, 238);
     border: #ddd solid 1px;
 }
 
-#f-text {
+footer p {
+    font-size: 5px;
     display: inline-block;
-    margin-left: 180px;
-    margin-right: 250px;
-    position: relative;
-    top: 10px;
+    /* background-color: #FFB; */
+    /* margin-left: 10px 180px 0px 250px; */
+    margin-left: 100px;
+    margin-right: 350px;
+    margin-top: 20px;
 }
 
-.f-icon {
+footer i {
     width: 15px;
-    margin-right: 7px;
-    position: relative;
-    top: 15px;
+    margin-right: 5px;
 }
 
-#content1 {
-    width: 500px;
-    height: 200px;
-    position: relative;
-    top:30px;
-    left: 200px;
-}
 
-#content2 {
-    width: 500px;
-    height: 236px;
-    position: relative;
-    top: 100px;
-    left: 200px;
-}
 .act {
-    color: #FFB630;
-}
-/**
-micro clearfix hack
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
+    color: rgb(235,155,48);
 }
