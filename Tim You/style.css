@@ -1,28 +1,36 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   outline: 1px solid red;
 }
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 body {
+  margin: 0;
+  padding: 0;
   min-width: 1440px;
 }
 a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  width: 100%;
 }
 header {
   font-size: 0;
-  background-color: #dbdbdb;
-  border-bottom-style: solid;
-  border-bottom-color: #cacaca;
-  padding: 30px 15vw;
+  background-color: #eeeeee;
+  border-bottom: solid #d8d8d8;
+  padding: 30px 200px 35px 200px;
 }
 
 header > div {
-  position: relative;
+  width: 1040px;
+  margin: 0 auto;
 }
 header h1 {
   display: inline-block;
@@ -33,20 +41,20 @@ header h1 {
 }
 .logo_img_container {
   display: block;
-  width: 52px;
+  width: 60px;
   margin: 0 auto;
 }
 .logo_companyname {
+  transform: translate(0, -10px);
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: 200;
   color: black;
 }
 
 header nav {
   display: inline-block;
-  position: absolute;
   vertical-align: middle;
-  right: 0;
   font-size: 0;
 }
 .menu_list li {
@@ -55,65 +63,76 @@ header nav {
 
 .menu_list li a {
   display: block;
-  color: #929292;
-  padding: 40px 60px;
+  padding: 40px 70px;
   font-size: 1rem;
+  color: #929292;
 }
-
+.menu_list .active,
 .menu_list li a:hover {
-  color: orange;
-}
-.menu_list .active {
   color: orange;
 }
 
 main section {
-  padding: 50px 15vw;
   font-size: 0;
-  text-align: center;
 }
+
 section:first-child {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  padding-left: 50px;
   background-color: #efefef;
 }
+.event_page {
+  text-align: center;
+  margin: 0 auto;
+  width: 1040px;
+}
 .event_page > div + div {
-  margin-left: 5vw;
+  margin-left: 50px;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: normal;
   line-height: 4rem;
 }
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: normal;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .event {
   display: inline-block;
   vertical-align: top;
-  width: 400px;
+  width: 450px;
+}
+.article_page {
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 220px;
+  width: 1040px;
 }
 .event_title {
-  text-align: start;
+  text-align: initial;
 }
 .apply_container {
-  margin: 25px 0;
+  margin-top: 25px;
 }
 .apply_container div {
   display: inline-block;
 }
 .apply_container p {
-  text-align: start;
-  /* text-align: inherit; */
+  text-align: initial;
+  font-size: 14px;
 }
 .apply_link {
   display: block;
+  padding: 20px 55px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   background: linear-gradient(
     to bottom,
     #f5b75a 0%,
@@ -123,41 +142,42 @@ p {
   );
   color: white;
   font-size: 1.5rem;
-  padding: 25px 55px;
 }
 .event_img_container {
-  width: 400px;
   display: inline-block;
+  width: 420px;
 }
 .article_title {
   display: block;
-  text-align: start;
-  margin: 0 auto;
+  text-align: initial;
+  margin-left: 50px;
 }
 .article_container {
+  margin-top: 25px;
+  margin-left: 50px;
   columns: 2;
-  column-gap: 2rem;
-  margin-top: 32px;
+  column-gap: 30px;
 }
 
 .article_container p {
+  margin: 0;
+  width: 480px;
   break-inside: avoid;
   text-align: start;
 }
 .article_container p + p {
-  margin-top: 2rem;
+  margin-top: 35px;
 }
 
 footer {
-  padding: 40px 15vw;
-  background-color: #dbdbdb;
+  padding: 30px 30px 25px 30px;
   font-size: 0;
-  margin: 0 auto;
-  border-top-style: solid;
-  border-top-color: #cacaca;
+  background-color: #eeeeee;
+  border-top: solid #d8d8d8;
 }
 .footer_container {
-  position: relative;
+  margin: 0 auto;
+  width: 1040px;
 }
 .footer_container div {
   display: inline-block;
@@ -165,20 +185,26 @@ footer {
 }
 .copyright {
   width: 50%;
-  line-height: 2rem;
+}
+.copyright > p {
+  font-size: 0.8rem;
 }
 .community {
-  width: 50%;
-  min-width: 160px;
   text-align: end;
+  width: 50%;
 }
 
 .community_list li {
   display: inline-block;
+  line-height: 0;
+  margin: 0 15px;
 }
-.community_list a i {
+
+.community_list a {
+  display: inline-block;
   color: black;
   font-size: 2rem;
+  line-height: 0;
 }
 .community_list a:hover {
   color: orange;
