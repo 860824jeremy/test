@@ -32,10 +32,12 @@ header > div {
   width: 1040px;
   margin: 0 auto;
 }
-header h1 {
+.logo {
   display: inline-block;
   vertical-align: middle;
+  width: 10%;
 }
+
 .logo_link {
   display: block;
 }
@@ -44,7 +46,7 @@ header h1 {
   width: 60px;
   margin: 0 auto;
 }
-.logo_companyname {
+.logo p {
   transform: translate(0, -10px);
   text-transform: uppercase;
   font-size: 1rem;
@@ -52,10 +54,15 @@ header h1 {
   color: black;
 }
 
-header nav {
+.menu_list {
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
+  width: 90%;
   font-size: 0;
+}
+.menu_list li + li {
+  padding-left: 50px;
 }
 .menu_list li {
   display: inline-block;
@@ -63,7 +70,7 @@ header nav {
 
 .menu_list li a {
   display: block;
-  padding: 40px 70px;
+  padding: 20px 40px;
   font-size: 1rem;
   color: #929292;
 }
@@ -76,16 +83,20 @@ main section {
   font-size: 0;
 }
 
+section {
+  padding-top: 70px;
+  padding-bottom: 220px;
+}
+
 section:first-child {
   padding-top: 70px;
   padding-bottom: 100px;
-  padding-left: 50px;
   background-color: #efefef;
 }
 .event_page {
   text-align: center;
   margin: 0 auto;
-  width: 1040px;
+  width: 1000px;
 }
 .event_page > div + div {
   margin-left: 50px;
@@ -104,22 +115,21 @@ p {
   font-size: 1.2rem;
 }
 
-.event {
+.event_info {
   display: inline-block;
   vertical-align: top;
   width: 450px;
 }
+.event_info > div + div {
+  padding-top: 25px;
+}
+
 .article_page {
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 220px;
-  width: 1040px;
+  width: 1000px;
 }
 .event_title {
   text-align: initial;
-}
-.apply_container {
-  margin-top: 25px;
 }
 .apply_container div {
   display: inline-block;
@@ -145,18 +155,16 @@ p {
 }
 .event_img_container {
   display: inline-block;
-  width: 420px;
+  width: 400px;
 }
 .article_title {
   display: block;
   text-align: initial;
-  margin-left: 50px;
 }
 .article_container {
   margin-top: 25px;
-  margin-left: 50px;
   columns: 2;
-  column-gap: 30px;
+  column-gap: 40px;
 }
 
 .article_container p {
