@@ -9,10 +9,10 @@
     <script src="https://kit.fontawesome.com/6d730dd036.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div id="wrapper">
         <header>
             <h1>
-                <a href="#"><img src="./img/logo.png"></a>  
+                <img src="./img/logo.png">  
                 <p>ZERO TYPE</p>
             </h1>
 
@@ -36,8 +36,8 @@
                         template without linking back to us.
                     </p>
                 <div>
-                    <a href="#">TRY IT NOW!</a>
-                    <!-- <a href="#"><button type="button">TRY IT NOW!</button></a> -->
+                    <!-- <a href="#"><input type="button" value="TRY IT NOW!" name="try" style="height: 40px;"></a> -->
+                    <a><button type="button">TRY IT NOW!</button></a>
                     <p>Don't worry it's for free</p>
                 </div>
             </div>
@@ -58,26 +58,29 @@
                         website template, you're free to use this website
                         template without linking back to us.
                     </p>
-                
+                    <br>
                     <p>This is just a place holder, so you can see what the
                         site would look like.
                     </p>
-                    
+                    <br>
                     <p>You can remove an link to our website from this
                         website template, you're free to use this website
                         template without linking back to us. This is just a
                         place holder, so you can see what the site would look
                         like.
                     </p>
+                
+            </div><div class="article__text">  <!-- to solve "inline-block element間的換行間隙" -->
+                
                     <p>You can remove any link to our website from this
                         website template, you're free to use this website
                         template without linking back to us.
                     </p>
-                    
+                    <br>
                     <p>This is just a place holder, so you can see what the
                         site would look like.
                     </p>
-                    
+                    <br>
                     <p>You can remove an link to our website from this
                         website template, you're free to use this website
                         template without linking back to us. This is just a
@@ -89,19 +92,17 @@
         </article>
 
         <footer>
-            <p>&copy; 2023 Zerotype. All Rights Reserved.</p>  
-            <div>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
-                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-pinterest"></i></a> 
-            </div>   
+            <p>© 2023 Zerotype. All Rights Reserved.</p>     
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-google-plus"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-pinterest"></i> 
         </footer>
-    
+    </div>
 
 </body>
 
-<!-- <script src="./js/jquery-3.6.1.min.js"></script> -->
+<script src="./js/jquery-3.6.1.min.js"></script>
 <script>
     $(document).ready(function(){
         $('nav a').click(function(){

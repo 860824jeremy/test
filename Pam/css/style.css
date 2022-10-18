@@ -1,181 +1,187 @@
 /* css reset */
+
 body{
     margin: 0; /* chrome default margin:8 px; */
 }
-p{
-    margin: 0; /* chrome default margin-top/ margin-bottom:16 px; */
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
 }
-/* div間空隙 */
 /* end of css reset */
 
-body {
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-h1{
-    font-size: 10px;
-    font-weight: lighter;
-    margin-top: 0px;
-    /* margin-bottom: 0px; 外層容器有設定更大的argin-bottom，h1保留default不影響*/ 
-    color: black;
-}
-
-h2 {
-    font-size: 32px;
-    font-weight:lighter;
-    color:rgb(62,62,62);
-    margin-top: 0px;
-    margin-bottom: 0px; /*h2 margin(top & bottom) default depends on font size*/
-}
-
-h3{
-    font-size: 18px;
-    font-weight: lighter;
-    color: rgb(62,62,62);
-    margin-top: 0px;
-    margin-bottom: 0px;
-
+* {
+    outline: 1px solid red;
 }
 
 p {
-    font-size: 6px;
-    line-height: 14px;
-    color: rgb(88,88,88);
+    margin: 0px; /*reset <p> margin*/
+    font-size: 18px;
+    color: #777;
 }
 
 a {
     text-decoration: none;
-    color:rgb(88,88,88);
-}
-
-#wrapper {
-    margin: 0 auto;
-    width: 900px;
-    
-}
-nav {
-    width: 900px;
-    background-color: rgb(238,238, 238);
-    border: #ddd solid 1px;   
-}
-
-nav>div:first-child {
     display: inline-block;
-    /* background-color: #FFB; */
+}
+
+header {
+    background-color: rgb(238,238, 238);
+    border-bottom: #ddd solid 1px;
+    padding: 25px 200px 30px;
+}
+
+header h1 {
+    display: inline-block;
     text-align: center;
     vertical-align: middle;
-    margin-left: 100px;  
+    font-size: 0px;  
 }
 
-nav img {
-    width: 25px;
-    margin-top: 15px;
+header h1 p  {
+    color: #333;
+    font-size: 14px;
 }
 
-nav>div:first-child>div {
-    margin-bottom: 15px;
+header img {
+    width: 50px;
 }
 
-nav>div:nth-child(2) {
+header nav {
     display: inline-block;
-    /* background-color: aquamarine; */
+    margin-left: 70px;
 }
 
-ul li{
-    display: inline-block;
-    text-decoration: none;
-    width: 100px;
-    text-align: center;
-    /* border: 1px solid #000; */
+ul li {
+    display: inline-block; 
 }
 
-nav a{
-    font-size: 10px;
-    font-weight: lighter;
-    color:rgb(154,154,154);
+ul li+li {
+    margin-left: 100px;
 }
 
-header{
-    width: 520px; /*要用<header>作定位，需有寬度，不設值會與外層容器同寬，並非由內部內容撐開*/
-    margin: 30px auto;
+ul li a {
+    font-size: 16px;
+    color:#666;
+    padding: 15px 15px; /*增加點擊面積*/
 }
 
-header>div:first-child {
-    width: 240px;
-    margin: 0 auto;
-    display:inline-block;
-    /* background-color: #0bb; */
-    vertical-align: top;
-    padding-right: 20px;
+ul li a:hover {
+    color: rgb(255, 154, 0);
 }
 
-header>div:first-child button {
-    color: #fff;
-    background-image: linear-gradient(rgb(246,192,110) 50%, rgb(235, 153, 55) 50%);
-    width: 130px;
-    height: 35px;
-    border-radius: 5px;
-    border: 0px;
-    font-size: 12px;
-    cursor: pointer; /*不加<a>用js onclick，游標改pointer*/
-}    
-
-header>div:first-child div {
-    width: 150px;
-    margin: 15px auto;
+main{
+    padding: 30px 265px ;
+    font-size: 0px; /*消除inline-block間的gap，只影響直接在div打字的，有其他tag包住的不影響*/
 }
 
-
-header>div:nth-child(2) {
-    width: 260px;
-    display: inline-block;
-    /* background-color:burlywood; */
-    text-align: center;
-}
-
-header>div:nth-child(2) img {
-    width: 220px;
-}
-
-main {
-    width: 600px;
-    margin: 0px auto;
-}
 main>div:first-child {
-    padding: 20px 0px;
-    /* background-color: #df5; */
+    width: 48%;
+    margin-right: 10%;
+    display:inline-block;
+    vertical-align: top;
+   
+}
+
+h2 {
+    font-size: 60px;
+    color: #555;
+    font-weight: normal;
+    margin: 0px; /*remove h2 default margin(top & bottom)*/
+}
+
+h3{
+    font-size: 32px;
+    color: #666;
+    font-weight: normal;
+    margin: 0px; /*remove h3 default margin(top & bottom)*/
 
 }
 
-.main__text {
-    width: 280px;
+main>div:first-child div {
+    padding: 20px 20%;
+}
+
+main>div:first-child a {
+    color: #fff;
+    font-size: 26px;
+    background-image: linear-gradient(rgb(254, 199, 111) 50%, rgb(249, 149, 0) 50%);
+    padding: 15px 40px; /* 做出按鈕 左右padding設定如何與容器配合*/
+    border-radius: 3px;    
+} 
+
+/* main>div:first-child button {
+    color: #fff;
+    background-image: linear-gradient(rgb(255,189,84) 50%, rgb(249, 149, 0) 50%);
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 14px;
+    
+}  */
+
+main>div:first-child a~p {
+    font-size: 12px;
+    margin-top: 8px;
+    
+}
+
+main>div:nth-child(2) {
     display: inline-block;
-    vertical-align: top;
-    /* background-color: #D4FFD4; */
-    padding-right: 20px;
-    margin-bottom: 100px;
+    width: 42%;
+}
+
+main>div:nth-child(2) img {
+    width: 100%;
+}
+
+article {
+    padding: 30px 250px;
+    
+}
+article>div:first-child {
+    padding: 40px 0px;
+
+}
+
+.article__text {
+    margin-bottom: 60px;
+    columns: 2 auto;
+    column-gap: 50px;
+}
+
+.article__text p {
+    margin-bottom: 40px;
 }
 
 footer {
-    width: 900px;
-    height: 45px;
     background-color: rgb(238,238, 238);
-    border: #ddd solid 1px;
+    border-top: #ddd solid 1px;
+    padding: 25px 230px 15px;
+    text-align-last: justify;
 }
 
 footer p {
-    font-size: 5px;
+    font-size: 14px;
     display: inline-block;
-    /* background-color: #FFB; */
-    /* margin-left: 10px 180px 0px 250px; */
-    margin-left: 100px;
-    margin-right: 350px;
-    margin-top: 20px;
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+     /*<a>下方會有空隙，是因為<i>視為文字，baseline & bottom間的空隙*/
+}
+
+footer a+a {
+    margin-left: 25px;   
 }
 
 footer i {
-    width: 15px;
-    margin-right: 5px;
+    font-size: 35px;
+    color: black;
 }
 
 
