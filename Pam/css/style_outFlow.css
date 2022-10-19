@@ -4,7 +4,6 @@ body{
     margin: 0; /* chrome default margin:8 px; */
 }
 
-
 ul {
     margin: 0px;
     padding: 0px;
@@ -25,6 +24,13 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 #wrapper {
     width: 1440px;
 }
@@ -47,7 +53,7 @@ header h1 p  {
     font-size: 14px;
 }
 
-header img {
+header h1 img {
     width: 50px;
 }
 
@@ -83,8 +89,8 @@ main{
 main>div:first-child {
     width: 48%;
     margin-right: 10%;
-    display:inline-block;
-    vertical-align: top;  
+    float: left;
+   
 }
 
 h2 {
@@ -110,18 +116,22 @@ main>div:first-child a {
     color: #fff;
     font-size: 26px;
     background-image: linear-gradient(rgb(254, 199, 111) 50%, rgb(249, 149, 0) 50%);
-    padding: 15px 40px; /* 做出按鈕 */
+    /* padding: 15px 40px;  做出按鈕*/
+    /* 做出按鈕 另一個嘗試*/
+    display: block;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
     border-radius: 3px;    
 } 
 
 main>div:first-child a~p {
     font-size: 12px;
-    margin-top: 8px;
-    
+    margin-top: 8px; 
 }
 
 main>div:nth-child(2) {
-    display: inline-block;
+    float: left;
     width: 42%;
 }
 
@@ -130,21 +140,25 @@ main>div:nth-child(2) img {
 }
 
 article {
-    padding: 60px 250px 60px;
-    
+    padding: 60px 250px;
 }
-article>h3 {
+
+article>div:first-child {
     margin-bottom: 40px;
-
 }
 
-.article__text {
-    columns: 2 auto;
-    column-gap: 50px;
+article>div:nth-child(2) {
+    float: left;
+    width: 45%;
 }
 
-.article__text p {
-    margin-bottom: 40px;
+article>div:nth-child(3) {
+    float: right;
+    width: 45%;
+}
+
+article p+p {
+    margin-top: 40px;
 }
 
 footer {
