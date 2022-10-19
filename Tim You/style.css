@@ -1,5 +1,6 @@
 * {
   outline: 1px solid red;
+  box-sizing: border-box;
 }
 
 h1,
@@ -25,7 +26,7 @@ header {
   font-size: 0;
   background-color: #eeeeee;
   border-bottom: solid #d8d8d8;
-  padding: 30px 200px 35px 200px;
+  padding: 30px 0 35px 0;
 }
 
 header > div {
@@ -40,6 +41,7 @@ header > div {
 
 .logo_link {
   display: block;
+  text-align: center;
 }
 .logo_img_container {
   display: block;
@@ -62,7 +64,7 @@ header > div {
   font-size: 0;
 }
 .menu_list li + li {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 .menu_list li {
   display: inline-block;
@@ -79,11 +81,8 @@ header > div {
   color: orange;
 }
 
-main section {
-  font-size: 0;
-}
-
 section {
+  font-size: 0;
   padding-top: 70px;
   padding-bottom: 220px;
 }
@@ -128,10 +127,10 @@ p {
   margin: 0 auto;
   width: 1000px;
 }
-.event_title {
+.event_info_title {
   text-align: initial;
 }
-.apply_container div {
+.event_info_apply div {
   display: inline-block;
 }
 .apply_container p {
@@ -171,14 +170,14 @@ p {
   margin: 0;
   width: 480px;
   break-inside: avoid;
-  text-align: start;
+  text-align: initial;
 }
 .article_container p + p {
   margin-top: 35px;
 }
 
 footer {
-  padding: 30px 30px 25px 30px;
+  padding: 30px 0 25px 0;
   font-size: 0;
   background-color: #eeeeee;
   border-top: solid #d8d8d8;
@@ -205,14 +204,15 @@ footer {
 .community_list li {
   display: inline-block;
   line-height: 0;
-  margin: 0 15px;
+}
+.community_list li + li {
+  margin-left: 20px;
 }
 
 .community_list a {
   display: inline-block;
   color: black;
   font-size: 2rem;
-  line-height: 0;
 }
 .community_list a:hover {
   color: orange;
