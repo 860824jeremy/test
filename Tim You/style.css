@@ -90,7 +90,7 @@ section {
 section:first-child {
   padding-top: 70px;
   padding-bottom: 100px;
-  background-color: #efefef;
+  background-color: #fdfdfd;
 }
 .event_page {
   text-align: center;
@@ -120,7 +120,7 @@ p {
   width: 450px;
 }
 .event_info > div + div {
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .article_page {
@@ -133,7 +133,7 @@ p {
 .event_info_apply div {
   display: inline-block;
 }
-.apply_container p {
+.event_info_apply p {
   text-align: initial;
   font-size: 14px;
 }
