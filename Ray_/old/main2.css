@@ -1,7 +1,10 @@
 *{
     outline: 1px solid red;
-    margin: 0;         /*因為header跟footer有白邊*/
-    padding: 0;
+
+}
+
+html {
+    width: 1920px;
 }
 
 /*fonttype*/
@@ -10,10 +13,17 @@ h1 ,h2 ,p {
     font-weight: normal;
 }
 
+body {
+    margin: 0;         /*因為header跟footer有白邊*/
+    padding: 0;
+}
+
 /*header*/
 
 header {
     background-color: #eeeeee;
+    margin: 0; 
+    padding: 0;
 }
 
 .web-logo {    
@@ -36,7 +46,7 @@ header {
     font-size: 30px;
 }
 
-.links{
+.links {
     display: inline-block;
     width: 65%;
     vertical-align:middle;
@@ -114,6 +124,7 @@ a:hover {
     margin-left: 8%;
     font-size: 0;
 }
+
 .box-photo{
     width: 550px;
 }
@@ -147,11 +158,12 @@ footer {
 .copyright {
     display:inline-block;
     vertical-align: middle;
+    margin-left: 15%;
 }
 
 .icons {
     display:inline-block;
-    width: 70%;
+    width: 60%;
     vertical-align: middle;
     text-align: right;
     font-size: 0;
