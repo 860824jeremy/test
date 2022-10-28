@@ -33,6 +33,7 @@ header > div {
 }
 
 .logo_link {
+  display: inline-block;
   text-align: center;
 }
 .logo_img_container {
@@ -61,6 +62,7 @@ header > div {
 }
 
 .menu_list li a {
+  display: inline-block;
   padding: 20px 40px;
   font-size: 1rem;
   color: #929292;
