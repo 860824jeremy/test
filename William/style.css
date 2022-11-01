@@ -29,14 +29,19 @@ header {
   display: inline-block;
   font-size: 0;
   vertical-align: middle;
-  margin-left: 70px;
+  margin-left: 50px;
+}
+
+.menu .highlight {
+  color: orange;
 }
 
 .menu a {
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
   color: grey;
-  padding: 0 5px;
+  padding: 10px 10px;
 }
 
 .menu a:hover {
@@ -44,7 +49,7 @@ header {
 }
 
 .menu a + a {
-  margin-left: 125px;
+  margin-left: 120px;
 }
 
 main {
@@ -53,7 +58,7 @@ main {
 
 .Banner-wrapper {
   font-family: Helvetica, sans-serif;
-  padding: 50px 285px;
+  padding: 50px 275px;
   height: 350px;
   background-color: #fdfdfd;
 }
@@ -99,9 +104,13 @@ main {
   border: #eee;
 }
 
+.btn:hover {
+  color: rgb(54, 51, 69);
+}
+
 .Banner-btn p {
   margin: 0;
-  padding-left: 70px;
+  padding-left: 75px;
   font-size: 14px;
 }
 
@@ -132,7 +141,6 @@ article h2 {
 
 .article-content p {
   font-size: 17px;
-  text-align: left;
   margin: 0;
   padding: 20px 0;
 }
@@ -158,4 +166,8 @@ footer {
 .icon a {
   margin-right: 10px;
   color: black;
+}
+
+.icon a:hover {
+  color: #f6b850;
 }
