@@ -1,230 +1,177 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    outline: 1px solid red;
+  outline: 1px solid red;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
 }
 
 header {
-    background-color: #eee;
+  background-color: #eee;
+  padding: 30px 230px;
 }
 
-.t1 {
-    font-family: Helvetica, sans-serif;
+.logo-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  width: 75px;
 }
 
-.box1 {
-    display: inline-block;
-    margin-bottom: 50px;
-    
+.logo-box a {
+  display: inline-block;
 }
 
-/* 頂端a連結圖示消除 */
-/* .box_1 {
-    text-decoration: none;
-    color: black;
-} */
-
-
-a:hover {
-    background: yellow;
+.logo {
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
 }
 
-
-
- /* 最上方logo圖標右移100px,下移25px */
-.box1 .logo-box .logo {
-    margin-left: 140px;
-    margin-top: 25px;
-    margin-right: 70px;
+.menu {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+  margin-left: 50px;
 }
 
-/* logo圖片跟底下文字的盒子 */
- .logo-box {
-    display: inline-block;
-    margin-left: 120px;
-} 
-
-/* logo底下文字 */
-.p-1 {    
-    margin-left: 124px ;
-    font-size: 16px;
+.menu .highlight {
+  color: orange;
 }
 
-/* header右半邊導覽列的部份。 */
-.head-right {
-    display: inline-block;
-    font-size: 16px;
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: grey;
+  padding: 10px 10px;
 }
 
-.nav {
-/*     margin-left: -10px; */
-    margin-bottom: 30px;
-    float: left;
+.menu a:hover {
+  color: orange;
 }
 
-.head-right li {
-    display: inline-block;
-    /* text-decoration: none; */
+.menu a + a {
+  margin-left: 120px;
 }
-
-.head-right .nav li a{
-    text-decoration: none;
-    color: black;
-    margin-left: 63px;
-    margin-right: 60px;
-    
-}
-
-/* main  */
 
 main {
-    background-color: #fdfdfd;
-    margin-bottom: 100px;
+  background-color: #fdfdfd;
 }
 
-.model {
-    display: inline-block;
-    margin-left: 100px;
-/*  vertical-align: bottom; */
-    margin-bottom: 60px;
-	font-family: Helvetica, sans-serif;
-    
+.Banner-wrapper {
+  font-family: Helvetica, sans-serif;
+  padding: 50px 275px;
+  height: 350px;
+  background-color: #fdfdfd;
 }
 
-.section-text {
-    display: inline-block;
-    margin-top: 34px;
-    margin-left: 212px;
-    /* vertical-align: bottom; */
-    margin-bottom: 83px;
-/* 	text-align: center; */
-    /* float: left; */
-    margin-right: 50px;
+.Banner-content {
+  display: inline-block;
+  vertical-align: top;
+  /* margin-right: 70px; */
+  width: 415px;
 }
 
-.section-text .idea {
-	font-size: 48px;
+.Banner-content h2 {
+  margin: 0;
+  font-size: 54px;
+  text-align: left;
 }
 
-.section-text .this {
-	font-size: 32px;
-	font-weight: bold;
+.Banner-content h3 {
+  font-size: 32px;
+  margin: 0;
 }
 
-.section-text .text-1 {
-	font-size: 18px;
+.Banner-content p {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 0;
 }
 
-
-/* try it now的部份 */
-.section-text .try {
-	display: inline-block;
-    width: 275px;
-    height: 75px;
-    background-image: linear-gradient(#f6b850 50%, #f19333 50%);
-	margin: auto;
-	text-align: center;
-	line-height:70px;
-    margin-left: 75px;
-	font-size: 26px;
-	color: white;
-/* 	  vertical-align: middle ; */
+.Banner-btn {
+  text-align: center;
 }
 
-.section-text .bot-text{
-	margin-left: 75px;
-	font-size: 14px;
+.Banner-content .btn {
+  display: inline-block;
+  width: 260px;
+  height: 70px;
+  background-image: linear-gradient(#f6b850 50%, #f19333 50%);
+  line-height: 70px;
+  font-size: 26px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: #eee;
 }
 
-.section-toy {
-    display: inline-block;
-    margin-top: 32px;
-    margin-bottom: 30px;
-    margin-left: 50px;
+.btn:hover {
+  color: rgb(54, 51, 69);
 }
 
-* main段落中底下文字的段落部份 */
-.foo {
-    display: inline-block;
-    text-align: center;
-	
+.Banner-btn p {
+  margin: 0;
+  padding-left: 75px;
+  font-size: 14px;
 }
 
-.foot-right {
-    display: inline-block;
-	margin-left: 300px;
-    margin-bottom: 100px;
-    
+.Banner-toyimg {
+  display: inline-block;
+  font-size: 0;
+  width: 368px;
 }
 
-.foot-right p {
-    font-size: 16px;
+.Banner-toyimg .toy-logo {
+  width: 100%;
 }
 
-.foot .right-t {
-	font-size: 32px;
-	font-weight: bold;
+article {
+  width: 840px;
+  margin: 50px auto 100px;
 }
 
-.foot-left {
-    display: inline-block;
-    margin-left: 50px;
-    margin-bottom: 100px;
-    
+article h2 {
+  margin: 0;
+  font-size: 32px;
 }
 
-.foot-left p {
-    font-size: 16px;
+.article-content {
+  column-count: 2;
+  column-gap: 74px;
 }
 
-.left-1 {
-	margin-left: 60px;
-	margin-bottom: 21px;
+.article-content p {
+  font-size: 16px;
+  margin: 0;
+  padding: 20px 0 0;
 }
 
-.left-2 {
-	margin-left: 60px;
-	margin-bottom: 28px;
+footer {
+  background-color: #eee;
+  padding: 40px 260px 20px;
 }
 
-.left-3 {
-	margin-left: 60px;
-	margin-bottom: 21px;
+.copyright {
+  display: inline-block;
+  font-size: 10px;
+  vertical-align: middle;
 }
 
-
-
-
-
-/* 最底部的文字 */
-.bottom {
-    /* height: 70px; */
-    /* margin-top: 80px; */
-    background-color: #eee;
+.icon {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 500px;
+  vertical-align: middle;
 }
 
-.bottom .txt {
-    display: inline-block;
-    margin-left: 277px;
-    margin-top: 50px;
-    font-size: 14px;
+.icon a {
+  margin-right: 10px;
+  color: black;
 }
 
-.bottom .icon {
-    
-    float: right;
-    margin-top: 40px;
-    margin-right: 240px;
-    /* margin-bottom: 50px; */
-
-
+.icon a:hover {
+  color: #f6b850;
 }
-.bottom .icon a {
-    margin-right: 10px;
-    background-color: white;
-    color: black;
-    /* margin-bottom: 50px; */
-}
-
-
