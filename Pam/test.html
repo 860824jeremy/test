@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        p{
-            margin: 0; 
-            /* <p>預設上下margin有值*/
-        }
-        .a{
-            width: 50px;
-            height: 200px;
-            display: inline-block;
-            font-size: 100px;
-            line-height: 120px;
-            border: 1px solid #000;
-        }
-        #b1{
-            width: 200px;
-            height: 100px;
-            border: 1px solid #f00;
-            margin: 0 auto;
-            display: inline-block;
-        }
-        #b1 p{
-            /* line-height: 100px; */
-        }
-        #b2{
-            border: 1px solid #0aa;
-            display: inline-block;
-            vertical-align: middle;
-        }
-        body {
-            font-size: 100px;
-            outline: 1px red solid;
-        }
-        img {
-            width: 20px;
-            border: 1px black solid;
-            vertical-align: baseline;
-        }
+      p {
+        margin: 0;
+        /* <p>預設上下margin有值*/
+      }
+      .a1,
+      .a2 {
+        /* width: 50px;
+        height: 200px; */
+        display: inline-block;
+        position: relative;
+      }
+      .a1 {
+        font-size: 100px;
+        line-height: 150px;
+        color: blue;
+      }
+      .box1 {
+        position: absolute;
+        height: 150px;
+        width: 100px;
+        outline: blue dashed 1px;
+        top: 0;
+      }
+      .box1-1 {
+        position: absolute;
+        height: 150px;
+        width: 100px;
+        outline: blue dashed 1px;
+        top: 0;
+        left: 181px;
+      }
+      .a2 {
+        font-size: 100px;
+        line-height: 1;
+        color: red;
+      }
+      .box2 {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        outline: red dashed 1px;
+        top: 0;
+      }
+      .box2-1 {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        outline: red dashed 1px;
+        top: 25px;
+        left: 278px;
+      }
+      .b {
+        font-size: 50px;
+        display: inline-block;
+      }
+
+      .container {
+        font-size: 100px;
+        outline: 1px red solid;
+        position: relative;
+      }
+      img {
+        width: 20px;
+        border: 1px black solid;
+        vertical-align: baseline;
+      }
     </style>
-</head>
-<body>
-    x
-    <div class="a">X </div>
-   
-    <img src="./img/logo.png" alt="">
+  </head>
+  <body>
+    <div class="container">
+      x X
+      <span class="a1">X</span>
+      <div class="box1-1"></div>
+      <span class="a2">X</span>
+      <div class="box2-1"></div>
+      <span class="b">X</span>
+      <span class="b">x</span>
+
+      <img src="./img/logo.png" alt="" />
+    </div>
+
     <!-- <div id="a">
         
         <div id="b1">
@@ -59,5 +97,5 @@
             <img src="./img/logo.png" alt="">
         </div>
     </div> -->
-</body>
+  </body>
 </html>
