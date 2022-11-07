@@ -9,13 +9,18 @@ body {
 
 header {
   background-color: #eee;
-  padding: 30px 230px;
+  padding: 30px 0;
+}
+
+.head {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 0;
 }
 
 .logo-box {
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
   width: 75px;
 }
 
@@ -31,7 +36,6 @@ header {
 
 .menu {
   display: inline-block;
-  font-size: 0;
   vertical-align: middle;
   margin-left: 50px;
 }
@@ -53,49 +57,47 @@ header {
 }
 
 .menu a + a {
-  margin-left: 120px;
+  margin-left: 115px;
 }
 
 main {
-  background-color: #fdfdfd;
+  background-color: #fafafa;
 }
 
-.Banner-wrapper {
+.banner {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.banner-wrapper {
   font-family: Helvetica, sans-serif;
-  padding: 50px 275px;
-  height: 350px;
-  background-color: #fdfdfd;
+  padding: 50px 0;
+  font-size: 0;
 }
 
-.Banner-content {
-  display: inline-block;
+.banner-content {
   vertical-align: top;
-  /* margin-right: 70px; */
   width: 415px;
+  float: left;
 }
 
-.Banner-content h2 {
+.banner-content h2 {
   margin: 0;
   font-size: 54px;
   text-align: left;
 }
 
-.Banner-content h3 {
+.banner-content h3 {
   font-size: 32px;
   margin: 0;
 }
 
-.Banner-content p {
+.banner-content .banner-text {
   font-size: 18px;
-  text-align: left;
   margin-top: 0;
 }
 
-.Banner-btn {
-  text-align: center;
-}
-
-.Banner-content .btn {
+.banner-content .btn {
   display: inline-block;
   width: 260px;
   height: 70px;
@@ -112,19 +114,24 @@ main {
   color: rgb(54, 51, 69);
 }
 
-.Banner-btn p {
+.banner-btn .btn {
+  text-align: center;
+}
+
+.banner-btn .btn-text {
   margin: 0;
   padding-left: 75px;
   font-size: 14px;
 }
 
-.Banner-toyimg {
+.banner-toypic {
   display: inline-block;
   font-size: 0;
   width: 368px;
+  margin-left: 40px;
 }
 
-.Banner-toyimg .toy-logo {
+.banner-toypic .toy-box {
   width: 100%;
 }
 
@@ -151,27 +158,44 @@ article h2 {
 
 footer {
   background-color: #eee;
-  padding: 40px 260px 20px;
+  padding: 40px 0 20px;
+}
+
+.footer-container {
+  width: 860px;
+  margin: 0 auto;
 }
 
 .copyright {
   display: inline-block;
   font-size: 10px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
-
+/* 對父元素icon下font-size:0，會導致元素中的圖案消失 */
 .icon {
-  display: inline-block;
-  font-size: 30px;
-  margin-left: 500px;
+  /* display: inline-block; */
+  font-size: 0;
   vertical-align: middle;
+  float: right;
 }
 
 .icon a {
-  margin-right: 10px;
   color: black;
+}
+/* 對fab下font-size:32px，使字形重新長出來 */
+nav .fab {
+  font-size: 32px;
+  padding-left: 15px;
 }
 
 .icon a:hover {
   color: #f6b850;
+}
+
+/* 使用：：after偽元素，
+   來清除使用float造成的浮動 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
