@@ -1,0 +1,136 @@
+
+* {
+    outline:1px solid red
+}
+
+/* 共用的container class設定 */
+.container {
+    display: inline-block;
+    text-align: center;
+    max-width: 1280px;
+    width: 100%;
+}
+
+/* 導覽列 */
+header {
+    background-color: lightgray;
+}
+
+.container__header {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 1280px;
+    width: 100%;    
+}
+.zt-main__intro {
+    width: 100%;
+}
+
+.main__ section {
+    max-width: 100%;
+}
+
+
+/* logo */
+.zt-header__logo {
+    text-align:center ;
+    /* vertical-align: middle; */
+    display: inline-block;
+    margin: 30px;
+
+}
+
+.container {
+
+
+}
+.logo p {
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+/* navigation bar */
+nav {
+    display: inline-block;
+    color: gray;
+    /* vertical-align: middle; */
+    margin-left: 20px;
+}
+
+nav li a:hover {
+    color:orange
+}
+
+.nav__list {
+    display: inline-block;
+    /* margin:20px; */
+}
+
+nav li {    
+    display: inline-block;
+    /* margin: 20px; */
+    padding: 40px;
+}
+
+/* 公司簡介容器 */
+.zt-main__intro {
+    margin-left:330px; 
+    margin-right:330px; 
+}
+.container__intro {
+    margin:40px auto;  
+}
+
+/* left intro 左簡介內容*/
+.leftintro {
+    /* float:left; */
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* intro text */
+
+.intro__txt {
+    display: inline-block; 
+    width: 400px;
+    text-align: left;
+}
+
+.intro__txt h1 {
+    font-size: 50px;
+    /* text-align: left; */
+}
+
+.intro__txt h2 {
+    font-size: 28px;
+    /* text-align: left; */
+}
+
+
+/* to try button */
+.intro__btn {
+    display: block;
+}
+/* visual 右圖片*/
+.intro__visual {
+    /* float:right */
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* zt's descr 下方文字描述欄位 */    
+.container__descr {
+    display: inline-block;
+}
+
+/* footer */
+.container__footer {
+    background-color:lightgray;
+}
+
+
