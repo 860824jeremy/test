@@ -5,11 +5,13 @@
 body {
   font-family: Helvetica, sans-serif;
   margin: 0;
+  min-width: 1000px;
 }
 
 header {
   background-color: #eee;
   padding: 30px 0;
+  border-bottom: 2px solid grey;
 }
 
 .head {
@@ -29,9 +31,9 @@ header {
 }
 
 .logo {
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 
 .menu {
@@ -60,31 +62,30 @@ header {
   margin-left: 115px;
 }
 
-main {
+.banner {
   background-color: #fafafa;
 }
 
-.banner {
-  width: fit-content;
-  margin: 0 auto;
-}
-
+/* width設置：840px可以保證容器寬度等於840px
+加總的寬度，即使低於這個寬度也不會造成
+圖片也不會跑到容器下方去造成版面跑版，
+而font-size：0清除圖片下方間隙 */
 .banner-wrapper {
-  font-family: Helvetica, sans-serif;
+  display: flow-root;
+  width: 830px;
+  margin: 0 auto;
   padding: 50px 0;
   font-size: 0;
 }
 
 .banner-content {
-  vertical-align: top;
-  width: 415px;
-  float: left;
+  display: inline-block;
+  width: 50%;
 }
 
 .banner-content h2 {
   margin: 0;
   font-size: 54px;
-  text-align: left;
 }
 
 .banner-content h3 {
@@ -114,30 +115,38 @@ main {
   color: rgb(54, 51, 69);
 }
 
-.banner-btn .btn {
-  text-align: center;
+.banner-btn {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .banner-btn .btn-text {
   margin: 0;
-  padding-left: 75px;
   font-size: 14px;
 }
 
-.banner-toypic {
+.banner-wrapper .banner-pic {
   display: inline-block;
-  font-size: 0;
-  width: 368px;
-  margin-left: 40px;
+  width: 45%;
+  float: right;
 }
 
-.banner-toypic .toy-box {
+.banner-pic .toy-box {
   width: 100%;
 }
 
+/* 先在article容器設置總寬度840px，margin:0 auto讓元素置中 */
 article {
   width: 840px;
-  margin: 50px auto 100px;
+  margin: 0 auto;
+}
+
+/* 之所以設容器section包住裡頭的元素，
+原因是我在article設margin上方距離50px，下方距離100px，
+但是這樣容器下方會有多出來的一個空白空間，
+在section設padding將空白空間消掉 */
+section {
+  padding: 50px 0 100px;
 }
 
 article h2 {
@@ -148,17 +157,18 @@ article h2 {
 .article-content {
   column-count: 2;
   column-gap: 74px;
+  margin-top: 20px;
 }
 
 .article-content p {
   font-size: 16px;
-  margin: 0;
-  padding: 20px 0 0;
+  margin: 0 0 20px;
 }
 
 footer {
   background-color: #eee;
   padding: 40px 0 20px;
+  border-top: 2px solid grey;
 }
 
 .footer-container {
@@ -173,19 +183,18 @@ footer {
 }
 /* 對父元素icon下font-size:0，會導致元素中的圖案消失 */
 .icon {
-  /* display: inline-block; */
   font-size: 0;
-  vertical-align: middle;
   float: right;
 }
 
 .icon a {
   color: black;
+  display: inline-block;
+  margin-left: 10px;
 }
 /* 對fab下font-size:32px，使字形重新長出來 */
 nav .fab {
   font-size: 32px;
-  padding-left: 15px;
 }
 
 .icon a:hover {
@@ -197,5 +206,5 @@ nav .fab {
 .clearfix::after {
   content: "";
   display: block;
-  clear: both;
+  clear: right;
 }
