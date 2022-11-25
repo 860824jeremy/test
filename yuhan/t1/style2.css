@@ -1,224 +1,259 @@
 * {
-    outline:1px solid red
+    outline: 0.7px solid red;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 版面配置(寬度、背景顏色） */
 body {
     min-width: 1440px;
+    margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-size: 0;
+    display: inline-block;
+    font-weight: normal;
+}
+
+nav ul {
+    font-size: 0;
+}
+
+/* 頁首 */
 header {
-    text-align: center;
     background-color: lightgray;
-    padding: 20px;
+    padding: 20px 0;
+    font-size: 0;
 }
 
-main {
-    text-align: center;
-}
 
-footer {
-    min-width: 1440px;
-    background-color: rgb(238, 238, 238); 
-    text-align: center;
-    border-top: lightgray solid 1px;
-}
-
-.introduction {
-    background-color: rgb(248, 248, 248);
-}
-
-.description {
-    background-color:rgb(255, 255, 255);
-}
-
-/* 頁首共用 */
-.header {
-    margin: auto 20px;
+.header__container {
+    display: block;
+    width: 970px;
+    margin: 0 auto;
+    text-align-last: justify;
 }
 
 /* 頁首 - logo */
-.header.logo {
-    display: inline-block;
-    text-align: center;
+.logo {
     vertical-align: middle;
 }
+
+.logo a {
+    color: black;
+    display: block;
+}
+
+.logo p {
+    color: black;
+    font-size: 10px;
+}
+
+.logo-img {
+    width: 56px;
+    margin: 0 auto;
+}
+
+.logo-img img {
+    width: 100%;
+}
+
+
 
 /* 頁首 - 導覽列 */
 nav {
     display: inline-block;
     vertical-align: middle;
-    color:gray;
 }
 
 
-nav li a {
+.nav-list li {
     display: inline-block;
-    margin:10px 40px;
+    font-size: 15px;
+}
+
+
+li+li {
+    margin-inline-start: 100px;
+}
+
+
+.nav-list a {
+    display: block;
     padding: 10px;
+    color: gray
 }
 
-.nav__list li {
-    display: inline-block;
-    /* margin-left: 80px; */
+.nav-list a:hover {
+    color: orange
 }
 
-nav li a:hover {
-    color:orange
+
+/* 頁中 */
+main {
+    padding-block-end: 120px;
 }
 
-.intro__visual img {
-    width: 100%;
-}
-
-/* 頁中共用 */
-.main {
-    padding: 100px 140px;
-}
 
 /* 頁中 - introduction */
-.intro {
-    margin:auto 40px;
+.introduction {
+    background-color: rgb(248, 248, 248);
+    padding: 30px 0;
 }
 
 
-/* introduction - 左欄 */
-.intro.textbtn {
+.intro__container {
+    display: block;
+    width: 900px;
+    margin: 30px auto;
+    text-align-last: justify;
+}
+
+.intro-textandbtn {
     display: inline-block;
     max-width: 370px;
     vertical-align: top;
-    margin-top: 40px;
+    text-align-last: auto;
 }
 
-/* introduction - 文字 */
-.intro__txt {
-    text-align: left;
-}
-
-.intro__txt h1 {
+.intro-txt h2 {
     font-size: 50px;
+    margin: 0;
+    font-weight: normal;
+    display: block;
 }
 
-.intro__txt h2 {
+.intro-txt h3 {
     font-size: 28px;
+    margin: 0;
+    font-weight: normal;
+    display: block;
 }
 
+.intro-btn {
+    max-width: 250px;
+    margin: 0 auto;
+    margin-block-start: 20px;
+}
 
-/* 按鈕 */
-.btn {
+.intro-btn a {
     display: block;
     width: 250px;
     background: -webkit-linear-gradient(#f6c781 50%, #ffb23e 50%);
     border-radius: 3px;
     padding: 20px 0px;
     text-align: center;
-    margin-top: 20px;
 }
 
-/* 按鈕文字 */
-.btn p {
-    color: #ffffff;
-    font-weight: normal;
-    font-family: Arial;
-    font-size: 20px;
-}
-
-.intro__btn {
-    max-width: 250px;
-    margin: 0 auto;
-}
-/* 按鈕說明 */
-
-.btn__descr {
-    text-align: left;
-    font-size: 14px;
-}
-
-.btn:hover{
+.intro-btn a:hover {
     background: -webkit-linear-gradient(#f4c175 50%, #ffa927 50%);
 }
 
+.btn-txt {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.btn-descr {
+    font-size: 14px;
+}
+
 /* introduction - 圖片 */
-.intro.img {
+.intro-img {
     display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 370px;
+}
+
+.intro-img img {
+    width: 100%;
+    vertical-align: bottom;
 }
 
 /* 頁中 - description */
-.descr {
-    display: inline-block;
-    margin: 40px 40px 150px 40px;
-    max-width:390px ;
-    max-width:390px ;
+.description {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 0;
 }
 
-.descr p {
-    margin: 15px auto;
+.descr__container {
+    /* max-height: fit-content; */
+    width: 880px;
+    margin: 30px auto;
+    display: block;
+    column-count: 2;
+    column-gap: 78px;
+    text-align: initial;
 }
 
-.descr.ttltext h2 {
-    font-size: 30px;
+.descr__container h3 {
+    column-span: all;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-block-end: 30px;
+    font-size: 28px;
+    display: block;
 }
 
-/* 頁尾共用 */
-.footer {
-    margin:30px auto;
+.descr__container p {
+    margin: 0 auto 30px;
+}
+
+
+/* 頁尾 */
+footer {
+    background-color: rgb(238, 238, 238);
+    border-top: lightgray solid 1px;
+}
+
+.footer__container {
+    display: block;
+    width: 780px;
+    margin: 0 auto;
+    text-align-last: justify;
+    padding: 30px;
 }
 
 /* 頁尾 - copyright */
-.footer.copyright {
+.copyright {
     display: inline-block;
-    vertical-align: center;
-    margin-right: 220px;
+    vertical-align: middle;
+    font-size: 11px;
 }
 
 /* 頁尾 - sns links */
-.footer.snslinks {
+
+.snslinks {
     display: inline-block;
-    /* vertical-align: center; */
-    /* vertical-align: baseline; */
-    margin-left: 150px;
+    max-height: 30px;
+    vertical-align: middle;
 }
 
 .snslinks li {
     display: inline-block;
-    margin:auto 10px;
     font-size: 30px;
-    margin-top:10px;
 }
 
-
-
-/* 以下檢查 */
-/* 頁中（上）左方介紹 done*/
-/* .leftintro {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 420px;
-    width: 100%;
-}  */
-/* .intro__txt {
-    text-align: left;
+.snslinks li+li {
+    margin-inline-start: 20px;
 }
-.intro__txt h1 {
-    font-size: 50px;
+
+.snslinks a {
+    display: block;
+    height: 30px;
 }
-.intro__txt h2 {
-    font-size: 28px;
-} */
-
-/* .btn span {
-    color: #ffffff;
-    font-weight: normal;
-    font-family: Arial;
-    font-size: 20px;
-} */
-
-/* 頁中(上) 圖 */
-/* .intro__visual  {
-    display: inline-block;
-    padding-left: 30px; 
-    padding-right: 30px;
-} */
-/* 頁中(下) 共用*/
