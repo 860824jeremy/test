@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 * {
-    outline: 0.7px solid red;
-    font-family: Arial, Helvetica, sans-serif;
+    outline: 0.5px solid red;
+    font-family: 'Hind', sans-serif;
 }
 
 body {
@@ -21,12 +22,14 @@ ul {
     padding: 0;
 }
 
-h1,
-h2,
-h3 {
+h1 {
+    display: inline-block;
+    
+}
+
+h1,h2,h3 {
     margin: 0;
     font-size: 0;
-    display: inline-block;
     font-weight: normal;
 }
 
@@ -39,6 +42,7 @@ header {
     background-color: lightgray;
     padding: 20px 0;
     font-size: 0;
+    border-bottom: 1px lightgray;
 }
 
 
@@ -50,26 +54,26 @@ header {
 }
 
 /* 頁首 - logo */
-.logo {
+.header__logo {
     vertical-align: middle;
 }
 
-.logo a {
+.header__logo a {
     color: black;
     display: block;
 }
 
-.logo p {
+.header__logo p {
     color: black;
     font-size: 10px;
 }
 
-.logo-img {
+.header__logo-img {
     width: 56px;
     margin: 0 auto;
 }
 
-.logo-img img {
+.header__logo-img img {
     width: 100%;
 }
 
@@ -82,7 +86,7 @@ nav {
 }
 
 
-.nav-list li {
+.header__nav li {
     display: inline-block;
     font-size: 15px;
 }
@@ -93,13 +97,13 @@ li+li {
 }
 
 
-.nav-list a {
+.header__nav a {
     display: block;
     padding: 10px;
     color: gray
 }
 
-.nav-list a:hover {
+.header__nav a:hover {
     color: orange
 }
 
@@ -120,38 +124,39 @@ main {
 .intro__container {
     display: block;
     width: 900px;
-    margin: 30px auto;
+    margin: 0 auto;
     text-align-last: justify;
 }
 
-.intro-textandbtn {
+.intro__textandbtn {
     display: inline-block;
     max-width: 370px;
     vertical-align: top;
     text-align-last: auto;
 }
 
-.intro-txt h2 {
+.intro__textandbtn-txt h2 {
     font-size: 50px;
     margin: 0;
     font-weight: normal;
     display: block;
+    vertical-align: baseline;
 }
 
-.intro-txt h3 {
+.intro__textandbtn-txt h3 {
     font-size: 28px;
     margin: 0;
     font-weight: normal;
     display: block;
 }
 
-.intro-btn {
+.intro__btn {
     max-width: 250px;
     margin: 0 auto;
     margin-block-start: 20px;
 }
 
-.intro-btn a {
+.intro__btn a {
     display: block;
     width: 250px;
     background: -webkit-linear-gradient(#f6c781 50%, #ffb23e 50%);
@@ -160,27 +165,27 @@ main {
     text-align: center;
 }
 
-.intro-btn a:hover {
+.intro__btn a:hover {
     background: -webkit-linear-gradient(#f4c175 50%, #ffa927 50%);
 }
 
-.btn-txt {
+.intro__btn-txt {
     color: #ffffff;
     font-weight: normal;
     font-size: 20px;
 }
 
-.btn-descr {
+.intro__btn-descr {
     font-size: 14px;
 }
 
 /* introduction - 圖片 */
-.intro-img {
+.intro__img {
     display: inline-block;
     width: 370px;
 }
 
-.intro-img img {
+.intro__img img {
     width: 100%;
     vertical-align: bottom;
 }
@@ -194,7 +199,7 @@ main {
 .descr__container {
     /* max-height: fit-content; */
     width: 880px;
-    margin: 30px auto;
+    margin: 0 auto;
     display: block;
     column-count: 2;
     column-gap: 78px;
@@ -214,11 +219,17 @@ main {
     margin: 0 auto 30px;
 }
 
+.descr__container p:nth-child(7) {
+    margin: 0 auto 0;
+}
+
 
 /* 頁尾 */
 footer {
     background-color: rgb(238, 238, 238);
     border-top: lightgray solid 1px;
+    padding: 30px auto;
+    display: block;
 }
 
 .footer__container {
@@ -226,11 +237,11 @@ footer {
     width: 780px;
     margin: 0 auto;
     text-align-last: justify;
-    padding: 30px;
+    padding:20px;
 }
 
 /* 頁尾 - copyright */
-.copyright {
+.footer__copyright {
     display: inline-block;
     vertical-align: middle;
     font-size: 11px;
@@ -238,22 +249,23 @@ footer {
 
 /* 頁尾 - sns links */
 
-.snslinks {
+.footer__snslinks {
     display: inline-block;
     max-height: 30px;
     vertical-align: middle;
 }
 
-.snslinks li {
+.footer__snslinks li {
     display: inline-block;
     font-size: 30px;
 }
 
-.snslinks li+li {
+.footer__snslinks li+li {
     margin-inline-start: 20px;
 }
 
-.snslinks a {
+.footer__snslinks a {
     display: block;
     height: 30px;
 }
+
