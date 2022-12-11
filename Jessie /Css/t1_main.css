@@ -1,0 +1,49 @@
+.mainbox{
+    padding: 50px 0 0 0 ;
+    margin: 0 260px;
+    width: 900px;
+}
+
+.item{
+    columns: 2;
+    column-gap: 30px;
+    background-color: rgb(253,253,253);
+}
+.btn{
+    justify-content: center;
+    padding: 20px;
+}
+.tryitnow{
+    display: inline-block;
+    background-color: #fa0;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(255, 223, 149)50%,#fa0 50%);
+}
+.tryitnow a{
+    text-decoration: none;
+    color: #fff;
+}
+.tryitnow h2:hover{
+    color: aquamarine;
+}
+
+.free{
+    font-size: 12px;
+}
+/* .boxpic{ } */
+.text{
+    padding: 50px 0 150px 0px;
+    background-color: rgb(255,255,255);   
+}
+.text h2{
+    padding: 0 0 20px 0;
+}
+.wrap{
+    display: inline-block;
+    columns: 2;
+    column-gap: 30px;
+}
+.text p{
+    margin: 0 0 20px 0;
+}
