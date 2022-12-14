@@ -6,7 +6,7 @@ body {
     min-width: 1425px;
 }
 header {  
-    padding: 30px 0 26px;
+    padding: 30px 0 20px;
     border-bottom: 1px solid rgb(231, 231, 231);
     background-color: rgb(239, 239, 239);
 }
@@ -41,7 +41,8 @@ header > div {
 }
 nav {
     display: inline-block;
-    width: 80%;
+    width: 83%;
+    vertical-align: middle;
 }
 nav a {
     display: inline-block;
@@ -58,13 +59,13 @@ nav a:hover {
 }
 section:first-child {
     padding: 80px 0 100px;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(252, 252, 252);
 }
 .infromation_container {
     margin: auto;
     width: 970px;
 }
-.infromation, .picture {
+.infromation,.picture {
     display: inline-block;
 }
 h3 {
@@ -90,11 +91,11 @@ h3 {
 }
 .link_container {
     margin: 50px auto 0 ;
-    width: 255px;
+    width: 275px;
 }
 .link_container a {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 20px 50px;
     font-size: 28px;
     text-decoration: none;
     background: linear-gradient(#fcba4f 55%, #fc9e09 45%);
@@ -146,7 +147,7 @@ footer {
     padding: 40px 0 15px;
     width: 1040px;
 }
-.copyright, .media {
+.copyright,.media {
     display: inline-block;
     width: 50%;
     vertical-align: middle;
