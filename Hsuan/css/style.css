@@ -10,7 +10,7 @@ header {
     border-bottom: 1px solid rgb(231, 231, 231);
     background-color: rgb(239, 239, 239);
 }
-header > div {
+.header_container {
     width: 1080px;
     margin: 0 auto;
     font-size: 0;
@@ -29,29 +29,38 @@ header > div {
 .logo p {
     margin: 0;
     font-size: 18px;
+    text-transform: uppercase;
 }
-.logo_img {
+.logo_container {
     width: 120px;
     height: 100px;
 }
-.logo_img img {
-    width: 100%;
+.logo_container img {
     height: 100%;
     object-fit: contain;
 }
 nav {
     display: inline-block;
-    width: 83%;
+    width: 80%;
     vertical-align: middle;
+}
+ul {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+li {
+    display: inline-block;
 }
 nav a {
     display: inline-block;
     padding: 10px;
     font-size: 16px;
     text-decoration: none;
+    text-transform: capitalize;
     color: rgb(130, 130, 130);
 }
-.selected {
+.active {
     color: rgb(247, 164, 29);
 }
 nav a:hover {
@@ -61,11 +70,14 @@ section:first-child {
     padding: 80px 0 100px;
     background-color: rgb(252, 252, 252);
 }
+section:nth-child(2) {
+    padding: 80px 0 320px;
+}
 .infromation_container {
     margin: auto;
     width: 970px;
 }
-.infromation,.picture {
+.infromation, .picture {
     display: inline-block;
 }
 h3 {
@@ -73,7 +85,7 @@ h3 {
     font-weight: normal;
 }
 .infromation {
-    width: 480px;
+    width: 49%;
     vertical-align: top;
 }
 .infromation h2 {
@@ -81,6 +93,7 @@ h3 {
     font-size: 60px;
     font-weight: normal;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 .infromation h3 {
     margin: 0;
@@ -107,47 +120,43 @@ h3 {
 }
 .picture {
     position: relative;
-    left: 65px;
-    width: 420px;
+    left: 35px;
+    width: 47%;
 }
 .box_img {
     width: 100%;
     object-fit: contain;
     vertical-align: bottom;
 }
-section:nth-child(2) {
-    padding-top: 80px;
-    padding-bottom: 320px;
-}
 .content_container {
     margin: auto;
     width: 990px;
 }
 .content_container h3 {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 }
 .content {
     columns: 2;
     column-gap: 40px;
 }
 .content p {
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
     font-size: 19px;
 }
 .content p:nth-child(3n) {
     margin: 0;
 }
 footer {
+    padding: 40px 0 15px;
     border-top: 1px solid rgb(231, 231, 231);
     background-color: rgb(238, 239, 239);
     font-size: 0;
 }
 .foot_container {
     margin: auto;
-    padding: 40px 0 15px;
-    width: 1040px;
+    width: 1080px;
 }
-.copyright,.media {
+.copyright, .media {
     display: inline-block;
     width: 50%;
     vertical-align: middle;
