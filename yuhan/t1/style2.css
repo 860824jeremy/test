@@ -224,10 +224,10 @@ li+li {
     color:#595959
 }
 
-.descr__container p:nth-child(7) {
+.description__container p:nth-child(7) {
     margin: 0 auto 0;
 }
-.descr__container p:nth-child(4) {
+.description__container p:nth-child(4) {
     margin: 0 auto 0;
 }
 
