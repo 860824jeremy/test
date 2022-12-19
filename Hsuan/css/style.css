@@ -73,32 +73,33 @@ section:first-child {
 section:nth-child(2) {
     padding: 80px 0 320px;
 }
-.infromation_container {
+.information_container {
     margin: auto;
     width: 970px;
+    overflow: auto;
 }
-.infromation, .picture {
+.information, .information_picture {
     display: inline-block;
 }
 h3 {
     font-size: 35px;
     font-weight: normal;
 }
-.infromation {
+.information {
     width: 49%;
     vertical-align: top;
 }
-.infromation h2 {
+.information h2 {
     margin: 0;
     font-size: 60px;
     font-weight: normal;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-.infromation h3 {
+.information h3 {
     margin: 0;
 }
-.infromation p {
+.information p {
     margin: 0;
     font-size: 19px;
 }
@@ -118,10 +119,9 @@ h3 {
 .link_container p {
     font-size: 14px;
 }
-.picture {
-    position: relative;
-    left: 35px;
+.information_picture {
     width: 47%;
+    float: right;
 }
 .box_img {
     width: 100%;
