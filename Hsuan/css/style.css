@@ -18,10 +18,10 @@ header {
 }
 .logo {
     display: inline-block;
+    text-align-last: center;
     vertical-align: middle;
 }
 .logo a {
-    text-align-last: center;
     text-decoration: none;
     color: rgb(0,0,0);
 }
@@ -30,12 +30,9 @@ header {
     font-size: 18px;
     text-transform: uppercase;
 }
-.logo_container {
+.logo img {
     height: 80px;
-}
-.logo_container img {
-    height: 100%;
-}
+} 
 nav {
     display: inline-block;
     width: 80%;
