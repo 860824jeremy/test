@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 body {
     margin: 0;
@@ -75,17 +75,15 @@ section {
 .information {
     margin: 0 auto;
     width: 970px;
-    overflow: auto;
+    font-size: 0;
 }
-.information_container, .information_picture {
+.information_container {
     display: inline-block;
+    width: 49%;
 }
 h3 {
     font-size: 35px;
     font-weight: normal;
-}
-.information_container {
-    width: 49%;
 }
 .information_container h2 {
     margin: 0;
@@ -118,8 +116,9 @@ h3 {
     font-size: 14px;
 }
 .box_img {
+    margin-left: 4%;
     width: 47%;
-    float: right;
+    vertical-align: top;
 }
 article{
     padding: 80px 0 320px;
@@ -136,10 +135,10 @@ article{
     column-gap: 40px;
 }
 .article_content p {
-    margin: 0 0 30px 0;
+    margin: 30px 0 0 0;
     font-size: 19px;
 }
-.article_content p:nth-child(3n) {
+.article_content p:first-child {
     margin: 0;
 }
 footer {
