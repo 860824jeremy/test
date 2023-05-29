@@ -1,4 +1,7 @@
-/* reset CSS start*/
+* {
+  outline: 1px solid red;
+}
+
 body {
   width: 1225px;
   font-family: 'Nunito', sans-serif;
@@ -6,30 +9,9 @@ body {
   color: #6c6c6c
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  color: grey;
-}
-
-ul,
-li {
-  list-style-type: none;
-  /* 拿掉前方圈圈 */
-  margin: 0;
-  padding: 0;
-}
-
+p,
 a {
-  text-decoration: none;
-  /* 拿掉底線 */
+  color: grey;
 }
 
 
@@ -37,24 +19,7 @@ a {
   width: 80%;
   margin: 0 auto;
 }
-
-a {
-  text-decoration: none;
-  color: grey;
-}
-
-ul,
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* reset CSS end */
-* {
-  outline: 1px solid red;
-}
-
+/* header */
 header {
   background-color: #eeeeee;
 }
@@ -120,9 +85,9 @@ nav {
 
 .section {
   font-size: 0;
-  display: inline-block;
-  text-align: left;
+  /* display: inline-block; */
   padding: 0 90px 120px 105px;
+  background-color: #fdfdfd;
 }
 
 .section-title {
@@ -132,15 +97,18 @@ nav {
 }
 
 .section-img-container {
-  width: 365px; 
-  float: right;
-  margin-left: 52px;
+  width: 365px;
+  float: right;  
 }
 
 .section-img {
   width: 100%;
-  object-fit: contain;}
+  object-fit: contain;
+}
 
+.section-msg {
+  width: 50%;
+}
 
 
 .banner {
@@ -179,12 +147,16 @@ nav {
 .section-button-note {
   font-size: 12px;
   text-align: left;
-  padding-left: 80px;
+  padding-left: 90px;
 }
 
 .article {
   padding: 0 85px;
   font-size: 0;
+}
+
+.article-banner {
+  margin-bottom: 20px;
 }
 
 .article-content {
@@ -212,12 +184,12 @@ footer {
 .copyright {
   display: inline-block;
   font-size: 16px;
-  vertical-align: super;
 }
 
 .social-media {
   display: inline-block;
   font-size: 0;
+  vertical-align: middle;
 }
 
 .social-media-link {
