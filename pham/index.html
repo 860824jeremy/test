@@ -11,12 +11,14 @@
             margin: 0px;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: black;
         }
 
         header {
-            padding: 40px 10% 50px 10%;
+            padding: 30px 0 50px 215px;
         }
 
         header>* {
@@ -24,8 +26,30 @@
             vertical-align: middle;
         }
 
+        #logo-set {
+            color: black;
+            max-width: 200px;
+        }
+
+        #logo {
+            margin-bottom: -8px;
+        }
+
+        #logo-text {
+            margin-left: -8px;
+        }
+
+        nav {
+            margin-left: 90px;
+            padding-top: 5px;
+        }
+
+        nav * {
+            display: inline-block;
+        }
+
         nav a {
-            margin: 60px;
+            font-size: 18px;
             text-decoration: none;
             color: #828282;
         }
@@ -34,9 +58,8 @@
             color: #F99603;
         }
 
-        .logo {
-            color: black;
-            max-width: 200px;
+        nav span {
+            width: 120px;
         }
 
         main {
@@ -46,38 +69,42 @@
         }
 
         .banner {
-            margin: 0 50px 100px 50px;
+            margin: 20px 0 170px 130px;
             columns: 2;
         }
 
         #slogans {
-            width: 400px;
+            width: 450px;
         }
 
         #slogan1 {
             color: black;
-            font-size: 60px;
+            margin-bottom: -10px;
+            font-size: 70px;
         }
 
         #slogan2 {
             color: black;
-            font-size: 30px;
+            font-size: 35px;
         }
 
         #slogan3 {
-            padding-top: 4px;
+            font-size: 19px;
+            line-height: 26px;
         }
 
         #button-set {
-            margin: 25px 0 0 60px
+            margin: 30px 0 0 74px;
         }
 
         #try {
-            width: 200px;
-            height: 60px;
+            width: 260px;
+            height: 68px;
             color: white;
-            font-size: 20px;
+            font-size: 28px;
             font-weight: 500;
+            font-family: serif;
+            word-spacing: 0px;
             background: linear-gradient(to bottom, #FFBD59 50%, #F99300 50%);
             border: 0px;
             border-radius: 5px;
@@ -88,11 +115,24 @@
         }
 
         #hint {
-            font-size: 12px;
+            margin-top: -10px;
+            margin-left: -4px;
+            word-spacing: -1px;
+            font-size: 14px;
+        }
+
+        #img-box {
+            margin-left: -30px;
         }
 
         #content-container {
-            padding: 0 30px 0 30px;
+            padding: 0px 54px 180px 104px;
+        }
+
+        h2 {
+            font-weight: 100;
+            font-size: 35.5px;
+            margin-bottom: 12px;
         }
 
         .content {
@@ -101,35 +141,53 @@
 
         .content * {
             display: inline-block;
-            width: 385px
+            width: 450px;
+        }
+
+        .content p {
+            font-size: 18.8px;
+            line-height: 26.5px;
         }
 
         footer {
-            padding: 20px 10% 10px 10%;
+            height: 84px;
+            font-size: 14.5px;
         }
 
-        footer>* {
+        footer .container {
+            padding: 30px 0 0 214px;
+            padding-top: -10px;
+        }
+
+        footer .container>* {
             display: inline-block;
             vertical-align: middle;
         }
-
-        #footer-space {
-            width: 580px;
+        #sns {
+            margin-left: 544px;
+        }
+        #sns a {
+            display: inline-block;
+            width: 52px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png">
-            <div>ZERO TYPE</div>
+        <div id="logo-set">
+            <img id="logo" height="95px" src="img/logo.png">
+            <div id="logo-text">ZERO TYPE</div>
         </div>
         <nav>
             <a href="./home">Home</a>
+            <span></span>
             <a href="./features">Features</a>
+            <span></span>
             <a href="./news">News</a>
+            <span></span>
             <a href="./about">About</a>
+            <span></span>
             <a href="./contact">Contact</a>
         </nav>
     </header>
@@ -143,15 +201,15 @@
                     template without linking back to us.</div>
                 <div id="button-set">
                     <form>
-                    <button id="try" type="button" formaction="https://example.com">TRY IT NOW!</button>
+                        <button id="try" type="button" formaction="https://example.com">TRY IT NOW!</button>
                     </form>
                     <div id="hint">Don't worry, it's for free</div>
                 </div>
             </div>
-            <img src="img/box.png">
+            <img width="420px" id="img-box" src="img/box.png">
         </div>
         <div id="content-container">
-            <h2>This is just a place holder</h2>
+            <h2>This is just a place holder.</h2>
             <div class="content">
                 <div>
                     <p>
@@ -193,14 +251,18 @@
         </div>
     </main>
     <footer>
-        <span>©2023 Zerotype. All Right Reserved.</span>
-        <span id="footer-space"></span>
+        <div class="container">
+        <span>©2023 Zerotype. All Rights Reserved.</span>
         <span id="sns">
-            <a href="https://facebook.com"><img width="30px" height="30px" src="img/facebook.svg"></a>
-            <a href="https://google.com"><img width="30px" height="30px" src="img/google-plus.svg"></a>
-            <a href="https://twitter.com"><img width="30px" height="30px" src="img/twitter.svg"></a>
-            <a href="https://pintrest.com"><img width="30px" height="30px" src="img/pintrest.svg"></a>
+            <a href="https://facebook.com"><img width="36px" height="36px" src="img/facebook.svg"></a>
+            <span></span>
+            <a href="https://google.com"><img width="36px" height="36px" src="img/google-plus.svg"></a>
+            <span></span>
+            <a href="https://twitter.com"><img width="36px" height="36px" src="img/twitter.svg"></a>
+            <span></span>
+            <a href="https://pintrest.com"><img width="36px" height="36px" src="img/pintrest.svg"></a>
         </span>
+        </div>
     </footer>
 </body>
 
