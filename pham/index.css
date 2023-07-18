@@ -1,0 +1,173 @@
+body {
+    color: #5C5C5C;
+    min-width: 1440px;
+    background-color: #EFEFEF;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+}
+
+header {
+    padding: 30px 0 50px 215px;
+}
+
+header>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo-set {
+    color: black;
+    max-width: 200px;
+}
+
+#logo {
+    margin-bottom: -8px;
+}
+
+#logo-text {
+    margin-left: -8px;
+}
+
+nav {
+    margin-left: 90px;
+    padding-top: 5px;
+}
+
+nav * {
+    display: inline-block;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #828282;
+}
+
+nav a:hover {
+    color: #F99603;
+}
+
+nav span {
+    width: 120px;
+}
+
+main {
+    padding: 40px 0 40px 140px;
+    background-color: white;
+    border: 0px;
+}
+
+.banner {
+    margin: 20px 0 170px 130px;
+    max-width: 1440px;
+}
+
+.banner>* {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#slogans {
+    width: 450px;
+}
+
+#slogan1 {
+    color: black;
+    margin-bottom: -10px;
+    font-size: 70px;
+}
+
+#slogan2 {
+    color: black;
+    font-size: 35.2px;
+}
+
+#slogan3 {
+    font-size: 19px;
+    line-height: 26px;
+}
+
+#button-set {
+    margin: 30px 0 0 74px;
+}
+
+#try {
+    width: 260px;
+    height: 68px;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: serif;
+    word-spacing: 0px;
+    background: linear-gradient(to bottom, #FFBD59 50%, #F99300 50%);
+    border: 0px;
+    border-radius: 5px;
+}
+
+#try:hover {
+    background: linear-gradient(to bottom, #EFAD49 50%, #D97300 50%);
+}
+
+#hint {
+    margin-top: -10px;
+    word-spacing: -1px;
+    font-size: 14px;
+}
+
+#img-box {
+    margin-left: 40px;
+}
+
+#content-container {
+    padding: 0px 54px 180px 104px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 35.5px;
+    margin-bottom: 12px;
+}
+
+.content {
+    columns: 2;
+}
+
+.content * {
+    display: inline-block;
+    width: 450px;
+}
+
+.content p {
+    font-size: 18.8px;
+    line-height: 26.5px;
+}
+
+footer {
+    height: 84px;
+    font-size: 14.5px;
+}
+
+footer .container {
+    padding: 30px 0 0 214px;
+    padding-top: -10px;
+}
+
+footer .container>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sns {
+    margin-left: 544px;
+}
+
+#sns a {
+    display: inline-block;
+    width: 52px;
+}
+
