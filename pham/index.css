@@ -1,8 +1,9 @@
 body {
-    position: relative;
     color: #5C5C5C;
     background-color: #EFEFEF;
-    margin: auto;
+    font-size: 0;
+    margin: 0;
+    min-width: fit-content;
 }
 
 img {
@@ -15,12 +16,11 @@ h3 {
     color: black;
 }
 
-header {
-    width: 1080px;
-    height: 110px;
+header .header-container {
     margin: auto;
-    padding: 36px 50px;
-    font-size: 0;
+    width: 1030px;
+    padding: 30px 10px 50px;
+    text-align-last: justify;
 }
 
 header :is(h1, nav) {
@@ -28,34 +28,34 @@ header :is(h1, nav) {
     vertical-align: middle;
 }
 
-
-.logo {
-    color: black;
-    margin: 0 26px;
-}
-
-.logo .img-container {
+h1 .img-container {
     width: 60px;
-    display: block;
     margin: auto;
 }
 
-.logo p {
+h1 img {
+    object-fit: cover;
+    object-position: 0 0;
+    height: 80px;
+}
+
+h1 p {
     font-size: 16px;
-    margin: -16px auto;
+    margin: 0;
+    padding-top: 4px;
 }
 
 nav {
-    margin-top: 20px;
-    padding: 0 50px;
+    margin: 12px 55px 0 0;
 }
 
 nav :is(ul, li, a) {
-    display: inline-block
+    display: inline-block;
+    padding: 0;
 }
 
-nav ul {
-    padding-left: 0px;
+nav li~li {
+    margin-left: 100px;
 }
 
 nav a {
@@ -65,23 +65,19 @@ nav a {
     color: #828282;
 }
 
-nav li~li {
-    margin-left: 100px;
-}
-
 nav a:hover {
     color: #F99603;
 }
 
 main {
-    padding: 45px 0;
+    padding: 65px 0 60px;
     background-color: white;
-    text-align: center;
 }
 
 .banner {
-    display: inline-block;
-    margin: 20px auto;
+    margin: auto;
+    width: 900px;
+    text-align-last: justify;
 }
 
 .banner>div {
@@ -91,26 +87,23 @@ main {
 
 .banner .slogans {
     width: 425px;
-    text-align: center;
-}
-
-.banner .slogans>:is(h2, span, p) {
-    text-align: left;
+    text-align-last: left;
 }
 
 .banner .slogans h2 {
-    color: black;
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-size: 70px;
     font-weight: 100;
     line-height: 70px;
+    margin: 0;
 }
 
-.banner .slogans>span {
+.banner .slogans h3 {
     margin: 0;
-    display: block;
     color: black;
     font-size: 35.2px;
+    letter-spacing: -0.3px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .banner .slogans>p {
@@ -121,96 +114,99 @@ main {
 
 .button-set {
     display: inline-block;
-    margin: 28px 30px 0 0;
-    position: relative;
+    width: 260px;
+    margin: 25px 75px;
 }
 
 .button-set a {
     background: linear-gradient(to bottom, #FFBD59 50%, #F99300 50%);
+    text-align-last: center;
     border-radius: 5px;
     color: white;
     display: inline-block;
     font-family: serif;
     font-size: 28px;
-    font-weight: 500;
     padding: 15px 0;
     text-decoration: none;
-    width: 260px;
+    font-weight: 500;
+    width: 100%;
 }
 
 .button-set a:hover {
     background: linear-gradient(to bottom, #EFAD49 50%, #D97300 50%);
 }
 
-.button-set span {
-    display: inline-block;
-    margin: 4px 0px;
-    position: relative;
-    left: -45px;
+.button-set p {
+    margin: 0;
+    padding: 4px 0 0;
+    font-size: 14px;
 }
 
 .banner .img-container {
     width: 420px;
-    margin-left: 40px;
 }
 
 .detail-container {
-    width: 1140px;
+    text-align: left;
+    width: 970px;
     margin: 175px auto;
 }
 
 h2 {
     font-weight: 100;
     font-size: 35.5px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .detail {
-    width: 985px;
     columns: 2;
+    gap: 50px;
+    padding-top: 30px;
 }
 
 .detail p {
     margin: 0;
-    font-size: 18.8px;
+    font-size: 19px;
     line-height: 26.5px;
 }
 
 .detail p~p {
-    margin-bottom: 10px;
-    font-size: 18.8px;
+    margin-top: 35px;
+    font-size: 20px;
     line-height: 26.5px;
 }
 
-footer {
-    width: 1010px;
+.footer-container {
+    width: 1030px;
     margin: auto;
-    font-size: 14.5px;
+    padding: 25px 10px 10px;
+    text-align-last: justify;
 }
 
-footer .container {
-    margin: 26px auto;
-}
-
-footer .container :is(span, div) {
+.footer-container>:is(p, div) {
     display: inline-block;
     vertical-align: middle;
 }
 
+.footer-container p {
+    font-size: 14.5px;
+}
+
 .sns {
-    padding-left: 544px;
+    margin-right: 20px;
 }
 
 .sns a {
-    width: 36px;
+    vertical-align: middle;
     display: inline-block;
+    font-size: 38px;
+    color: black;
+}
+
+.sns a:hover {
+    font-size: 45px;
 }
 
 .sns a~a {
-    height: 36px;
-    margin-left: 17px;
-}
-
-.sns img {
-    width: 100%;
+    margin-left: 24px;
 }
