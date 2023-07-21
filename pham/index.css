@@ -23,10 +23,11 @@ header {
     font-size: 0;
 }
 
-header>* {
+header :is(h1, nav) {
     display: inline-block;
     vertical-align: middle;
 }
+
 
 .logo {
     color: black;
@@ -49,8 +50,8 @@ nav {
     padding: 0 50px;
 }
 
-nav * {
-    display: inline-block;
+nav :is(ul, li, a) {
+    display: inline-block
 }
 
 nav ul {
@@ -73,37 +74,42 @@ nav a:hover {
 }
 
 main {
-    width: 100%;
-    margin: auto;
-    padding: 45px 100px;
+    padding: 45px 0;
     background-color: white;
-    border: 0px;
+    text-align: center;
 }
 
 .banner {
-    width: 1100px;
+    display: inline-block;
     margin: 20px auto;
 }
 
-.banner>* {
+.banner>div {
     display: inline-block;
     vertical-align: top;
 }
 
 .banner .slogans {
-    width: 450px;
+    width: 425px;
+    text-align: center;
 }
 
-.banner .slogans h1 {
-    color: black;
-    margin: 0 0 -10px 0;
-    font-size: 70px;
-    font-weight: 100;
+.banner .slogans>:is(h2, span, p) {
+    text-align: left;
 }
 
 .banner .slogans h2 {
     color: black;
     margin: 0;
+    font-size: 70px;
+    font-weight: 100;
+    line-height: 70px;
+}
+
+.banner .slogans>span {
+    margin: 0;
+    display: block;
+    color: black;
     font-size: 35.2px;
 }
 
@@ -114,7 +120,9 @@ main {
 }
 
 .button-set {
-    margin: 28px 75px 28px 75px;
+    display: inline-block;
+    margin: 28px 30px 0 0;
+    position: relative;
 }
 
 .button-set a {
@@ -125,7 +133,6 @@ main {
     font-family: serif;
     font-size: 28px;
     font-weight: 500;
-    text-align: center;
     padding: 15px 0;
     text-decoration: none;
     width: 260px;
@@ -135,10 +142,11 @@ main {
     background: linear-gradient(to bottom, #EFAD49 50%, #D97300 50%);
 }
 
-.button-set p {
+.button-set span {
+    display: inline-block;
     margin: 4px 0px;
-    font-size: 14px;
-
+    position: relative;
+    left: -45px;
 }
 
 .banner .img-container {
@@ -146,7 +154,7 @@ main {
     margin-left: 40px;
 }
 
-.content-container {
+.detail-container {
     width: 1140px;
     margin: 175px auto;
 }
@@ -157,17 +165,19 @@ h2 {
     margin-bottom: 10px;
 }
 
-.content {
+.detail {
     width: 985px;
     columns: 2;
 }
 
-.content * {
-    display: inline-block;
-    width: 450px;
+.detail p {
+    margin: 0;
+    font-size: 18.8px;
+    line-height: 26.5px;
 }
 
-.content p {
+.detail p~p {
+    margin-bottom: 10px;
     font-size: 18.8px;
     line-height: 26.5px;
 }
@@ -182,7 +192,7 @@ footer .container {
     margin: 26px auto;
 }
 
-footer .container>* {
+footer .container :is(span, div) {
     display: inline-block;
     vertical-align: middle;
 }
