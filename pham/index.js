@@ -8,8 +8,8 @@ function toggleOutline() {
     domStyle = document.createElement("style");
     domStyle.setAttribute('id', 'styleOutline');
     domStyle.append(`
-        * { 
-            outline: 1px solid red; 
+        * {
+            outline: 1px solid red;
             outlineOffsset: -1px;
         }
     `);
@@ -20,6 +20,12 @@ function toggleTracing() {
     console.log('toggleTracing');
     let domStyle = document.getElementById('styleTracing');
     let template = document.getElementById('template');
+
+    if (template && window.getComputedStyle(template).opacity == "0.3") {
+        template.style.opacity = 1.0;
+        return;
+    }
+
     if (domStyle || template) {
         document.body.removeChild(domStyle);
         document.body.removeChild(template);
@@ -47,10 +53,10 @@ function toggleTracing() {
 
 window.addEventListener("keydown", (event) => {
     switch (event.key) {
-        case 'x': 
+        case 'x':
             toggleOutline();
             break;
-        case 'z': 
+        case 'z':
             toggleTracing();
             break;
     }
