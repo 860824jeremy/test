@@ -8,14 +8,18 @@
     --color-text-simple: #5C5C5C;
     --color-text-heading: black;
     --color-text-heading-detail: #3C3C3C;
-    --color-nav-hover: #F99603;
+    --color-text-nav: #828282 --color-nav-hover: #F99603;
     --color-footer-outline: #D4D4D4;
+
+    /* Magic number, to align template */
+    --padding-header: 30px 210px 45px;
+    --padding-main: 70px 0 240px;
+    --padding-footer: 32px 215px 20px;
 }
 
 body {
     color: var(--color-text-simple);
     background-color: var(--color-background);
-    font-size: 0;
     margin: auto;
     min-width: var(--width-template);
 }
@@ -26,16 +30,36 @@ h3 {
     color: var(--color-text-heading);
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
 img {
     width: 100%;
 }
 
-.header-content {
-    box-sizing: border-box;
+/* Strictly set width for contents of template */
+.content {
     width: var(--width-template);
-    padding: 30px 210px 50px;
+    box-sizing: border-box;
     margin: auto;
+    font-size: 0;
+}
+
+/* Clear surrounding effect after elements using "float" */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header .content {
     text-align-last: justify;
+    padding: var(--padding-header);
 }
 
 header :is(h1, nav) {
@@ -58,12 +82,11 @@ h1 img {
 h1 p {
     font-size: 16px;
     font-weight: 100;
-    margin: 0;
-    padding-top: 4px;
+    padding-top: 6px;
 }
 
 nav {
-    margin: 12px 55px 0 0;
+    margin: 12px 50px 0 0;
 }
 
 nav :is(ul, li, a) {
@@ -76,10 +99,10 @@ nav li~li {
 }
 
 nav a {
-    padding: 14px;
+    padding: 15px;
     font-size: 18px;
     text-decoration: none;
-    color: #828282;
+    color: var(--color-text-nav);
 }
 
 nav a:hover {
@@ -88,26 +111,19 @@ nav a:hover {
 
 main {
     background-color: var(--color-background-main);
-}
-
-.main-content {
-    width: var(--width-template);
-    margin: auto;
+    padding: var(--padding-main);
 }
 
 .banner {
-    padding: 65px 270px;
-    text-align-last: justify;
-}
-
-.banner>div {
-    display: inline-block;
-    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 0;
+    padding: 0 260px 0 270px;
+    /* Magic number, used to align template */
 }
 
 .banner .slogans {
-    width: var(--width-slogans);
-    text-align-last: left;
+    width: 50%;
+    float: left;
 }
 
 .banner .slogans h2 {
@@ -115,12 +131,9 @@ main {
     font-size: 70px;
     font-weight: 900;
     line-height: 70px;
-    margin: 0;
 }
 
 .banner .slogans h3 {
-    margin: 0;
-    color: black;
     font-size: 35.2px;
     letter-spacing: -0.3px;
     font-family: 'Roboto', sans-serif;
@@ -129,24 +142,22 @@ main {
 .banner .slogans>p {
     font-size: 19px;
     line-height: 26px;
-    margin: 0;
 }
 
 .button-set {
-    display: inline-block;
-    width: 260px;
-    margin: 25px 75px;
+    width: 265px;
+    margin: 30px 75px;
 }
 
 .button-set a {
     background: linear-gradient(to bottom, #FFBD59 50%, #F99300 50%);
-    text-align-last: center;
+    text-align: center;
     border-radius: 5px;
     color: white;
     display: inline-block;
     font-family: serif;
     font-size: 28px;
-    padding: 15px 0;
+    padding: 13px 0;
     text-decoration: none;
     font-weight: 500;
     width: 100%;
@@ -157,37 +168,35 @@ main {
 }
 
 .button-set p {
-    margin: 0;
     padding: 4px 0 0;
     font-size: 14px;
 }
 
 .banner .img-container {
-    width: 420px;
+    width: 46%;
+    /* Magic number, used to align template */
+    float: right;
 }
 
 .detail-container {
-    width: var(--width-template);
-    box-sizing: border-box;
-    padding: 110px 245px 235px;
-    margin: auto;
+    padding: 0 245px;
+    margin-top: 170px;
 }
 
 .detail-container h2 {
     font-weight: 100;
     font-size: 35.5px;
-    margin: 0;
     color: var(-color-text-heading-detail);
 }
 
 .detail {
     columns: 2;
+    column-count: 2;
     gap: 50px;
     padding-top: 30px;
 }
 
 .detail p {
-    margin: 0;
     font-size: 19px;
     line-height: 26.5px;
 }
@@ -197,18 +206,15 @@ main {
 }
 
 footer {
-    border-top: 1px solid var(--color-footer-outline); 
+    border-top: 1px solid var(--color-footer-outline);
 }
 
-.footer-content {
-    width: var(--width-template);
-    box-sizing: border-box;
-    margin: auto;
-    padding: 30px 215px 25px;
+footer .content {
+    padding: var(--padding-footer);
     text-align-last: justify;
 }
 
-.footer-content>:is(p, div) {
+footer .content>:is(p, div) {
     display: inline-block;
     vertical-align: middle;
 }
@@ -218,13 +224,13 @@ footer p {
 }
 
 .sns {
+    /* Magic number, to align template */
     margin-right: 20px;
 }
 
 .sns a {
-    vertical-align: middle;
     display: inline-block;
-    font-size: 38px;
+    font-size: 36px;
     color: black;
 }
 
@@ -233,5 +239,5 @@ footer p {
 }
 
 .sns a~a {
-    margin-left: 24px;
+    margin-left: 25px;
 }
