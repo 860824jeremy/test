@@ -14,10 +14,11 @@
 
     /* Magic number, to align template */
     --padding-header: 30px 210px 45px;
-    --padding-main: 70px 0 240px;
-    --padding-footer: 32px 215px 20px;
-    --padding-banner: 0 255px 0 270px;
+    --padding-main: 0 0 70px 0;
+    --padding-banner: 0 255px;
     --padding-article: 0 245px;
+    --padding-footer: 32px 215px 20px;
+    --margin-main-sibling: 70px 0 170px;
 }
 
 body {
@@ -39,10 +40,6 @@ h3,
 p,
 ul {
     margin: 0;
-}
-
-img {
-    width: 100%;
 }
 
 /* Strictly set width for contents of template */
@@ -70,16 +67,13 @@ header :is(h1, nav) {
     vertical-align: middle;
 }
 
-h1 .img-container {
+h1 img {
+    display: block;
+    margin: auto;
     width: var(--width-logo);
     height: var(--height-logo);
-    margin: auto;
-}
-
-h1 img {
     object-fit: cover;
     object-position: 0 0;
-    height: 100%;
 }
 
 h1 p {
@@ -114,20 +108,22 @@ nav a:hover {
 
 main {
     background-color: var(--color-background-main);
-    padding: var(--padding-main);
     border-top: 1px solid var(--color-border-main);
     border-bottom: 1px solid var(--color-border-main);
-
+    padding: var(--padding-main);
 }
 
 .banner {
     font-size: 0;
-    padding: var(--padding-banner)
+    padding: var(--padding-banner);
+    margin: var(--margin-main-sibling);
 }
 
 .banner .slogans {
+    box-sizing: border-box;
     width: 50%;
     float: left;
+    padding-left: 20px;
 }
 
 .banner .slogans h2 {
@@ -176,15 +172,15 @@ main {
     font-size: 14px;
 }
 
-.banner .img-container {
-    width: 46%;
-    /* Magic number, used to align template */
+.banner img {
+    display: block;
     float: right;
+    width: 45%;
 }
 
 article {
     padding: var(--padding-article);
-    margin-top: 170px;
+    margin: var(--margin-main-sibling);
 }
 
 article h2 {
@@ -205,7 +201,7 @@ article h2 {
     line-height: 26.5px;
 }
 
-.detail p~p {
+.detail p+p {
     margin-top: 35px;
 }
 
@@ -238,6 +234,6 @@ footer p {
     transform: scale(1.2)
 }
 
-.sns a~a {
+.sns a+a {
     margin-left: 25px;
 }
