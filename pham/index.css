@@ -8,13 +8,15 @@
     --color-text-simple: #5C5C5C;
     --color-text-heading: black;
     --color-text-heading-detail: #3C3C3C;
-    --color-text-nav: #828282 --color-nav-hover: #F99603;
-    --color-footer-outline: #D4D4D4;
+    --color-text-nav: #828282;
+    --color-nav-hover: #F99603;
+    --color-border-main: #D4D4D4;
 
     /* Magic number, to align template */
     --padding-header: 30px 210px 45px;
     --padding-main: 70px 0 240px;
     --padding-footer: 32px 215px 20px;
+    --padding-banner: 0 255px 0 270px;
     --padding-article: 0 245px;
 }
 
@@ -113,13 +115,14 @@ nav a:hover {
 main {
     background-color: var(--color-background-main);
     padding: var(--padding-main);
+    border-top: 1px solid var(--color-border-main);
+    border-bottom: 1px solid var(--color-border-main);
+
 }
 
 .banner {
-    box-sizing: border-box;
     font-size: 0;
-    padding: 0 260px 0 270px;
-    /* Magic number, used to align template */
+    padding: var(--padding-banner)
 }
 
 .banner .slogans {
@@ -184,7 +187,7 @@ article {
     margin-top: 170px;
 }
 
-.detail-container h2 {
+article h2 {
     font-weight: 100;
     font-size: 35.5px;
     color: var(-color-text-heading-detail);
@@ -204,10 +207,6 @@ article {
 
 .detail p~p {
     margin-top: 35px;
-}
-
-footer {
-    border-top: 1px solid var(--color-footer-outline);
 }
 
 footer .content {
