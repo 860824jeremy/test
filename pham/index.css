@@ -15,6 +15,7 @@
     --padding-header: 30px 210px 45px;
     --padding-main: 70px 0 240px;
     --padding-footer: 32px 215px 20px;
+    --padding-article: 0 245px;
 }
 
 body {
@@ -178,8 +179,8 @@ main {
     float: right;
 }
 
-.detail-container {
-    padding: 0 245px;
+article {
+    padding: var(--padding-article);
     margin-top: 170px;
 }
 
