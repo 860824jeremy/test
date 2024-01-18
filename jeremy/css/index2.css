@@ -83,7 +83,7 @@ button{
 
 .img{
     margin-left: 100px;
-    display: inline;
+    display: inline-block;
 }
 
 .middletext{
