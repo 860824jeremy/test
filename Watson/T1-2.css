@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    background-color: aliceblue;
+}
+.header_content{
+    position: relative;
+    align-items: center;
+    /* padding: 20px 0 20px 0; */
+    display: inline-block;
+    width: 950px;
+    color: #b98181;
+    margin: 0 auto;
+}
+.header_logo{
+    display: inline-block;
+}
+.header_logo p{
+    font-size: 9.6px;
+    color: #000;
+}
+.header_nav{    
+    padding-bottom: 70px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.header_nav a{
+    padding: 0 30px 0 20px;
+    text-decoration: none;
+    color: black;
+}
