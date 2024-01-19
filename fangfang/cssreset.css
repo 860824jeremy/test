@@ -47,10 +47,13 @@ img{
   max-width: 100%;
   height: auto;
 }
+a{
+	text-decoration: none;
+}
 *,*::before,*::after{
 	box-sizing:border-box;
 }
 
 body{
-	font-family: "Microsoft JhengHei", "Arial", sans-serif, serif;
+	font-family: "Open Sans", Verdana, sans-serif;
 }

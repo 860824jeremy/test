@@ -5,31 +5,42 @@
 }
 
 /*header區*/
-.header{
+header{
 	background-color: #eee;
-	
+}
+.header-container{
+	outline: 1px solid blue;
+	width: 980px;
+	margin: 0 auto;
+	padding: 18px 0;
+	font-size: 0; /*處理inline-block縫隙*/
 }
 
-.header .logo h1{
-	font-size: 14px;
-
-}
-
-.header .menu {
-	text-align: center;
-	font-size: 0;
-}
-
-.header .menu > li{
+.logo{
+	outline: 1px solid #aaa;
 	display: inline-block;
-	border: 1px solid #888;
-  
-} 
-.header .menu  li a{
-	text-decoration: none;
-	color: #888;
-	font-size: 16px;
+	vertical-align: middle; /*不懂*/
 
+}
+.logo a > p{
+	font-size: 16px;
+}
+
+nav{
+	outline: 1px solid #aaa;
+	display: inline-block;
+	margin: 0 0 0 50px;
+	
+
+}
+
+.menu li{
+	outline: 1px solid #aaa;
+	display: inline-block;
+	padding: 20px 30px;
+}
+.menu li a{
+	font-size: 18px;
 }
 
 
