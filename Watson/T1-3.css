@@ -1,0 +1,229 @@
+body {
+    /* 讓畫面可以撲滿 */
+    margin: 0;
+    padding: 0;
+}
+
+/* head-below */
+/* head-below */
+/* head-below */
+/* head-below */
+
+header {
+    /* 先建立色塊*/
+    background-color: #e9e7e7;
+}
+
+
+.header__container {
+    /* 此祖先元素置中上層header
+    建立寬度高度為物件作業區 */
+    margin: 0 auto;
+    height: 200px;
+    width: 1000px;
+}
+
+.header__logo {
+    /* 設立logo的父元素寬度讓圖片與字垂直
+    設立margin往下推置中header
+    float讓整塊往右靠,使選單往上*/
+    margin: 50px 0 0 0;
+    width: 52px;
+    height: 100px;
+    float: left;
+}
+
+
+.header__logo p {
+    /* 調整文字邊框設定文字大小 */
+    margin: 0;
+    font-size: 9.6px;
+}
+
+.header__banner--active {
+    /* 挑整選單列整體寬度並且讓子元素至中父元素
+    調整margin往下推水平至中header
+    inline-block可以使內容卡在其祖先元素裡面 */
+    width: 940px;
+    text-align: center;
+    margin: 88.5px 0 0 0;
+    display: inline-block;
+}
+
+.header__banner--active a {
+    /* padding調整文字間距
+    none區消連結底線
+    capitalize自首變大
+    color改變字色 */
+    padding: 0 50px 0 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+.header__banner--active a:hover {
+    /* hover數標碰觸字體變色 */
+    color: #ff9900;
+}
+
+
+/* main-below */
+/* main-below */
+/* main-below */
+/* main-below */
+
+main {
+    background-color: rgb(248, 248, 248);
+}
+
+.main__container {
+    /* 設立工作區域
+    border-box使工作區長寬固定 
+    為了使用padding將內容物推擠調整置中 */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 100px 0 120px 0;
+    width: 1000px;
+    height: 550px;
+}
+
+.main__intro__article {
+    /* justify讓字體在block中撲滿
+    float讓此區塊靠右,box圖片往上
+    margin推開圖片 */
+    text-align: justify;
+    width: 500px;
+    float: left;
+}
+
+.main__intro__article p {
+    margin: 0 0 20px 0;
+}
+
+.main__intro__article h1 {
+    /* 小知識1em=16px */
+    font-size: 3em;
+    margin: 0;
+}
+
+.main__intro__article h2 {
+    /* font-size逃整文字大小
+    margin調整文字上下的間距 */
+    font-size: 45px;
+    margin: 15px 0 15px 0;
+}
+
+.main__intro__button button {
+    /* margin把按鈕往右移動
+    padding逃整外框大小
+    border取消外框線
+    border-radius做R角*/
+    margin: 0 0 5px 145px;
+    padding: 20px 50px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(0deg, #ff9900 45%, #ffbb55 45%);
+}
+
+.main__intro__button button:hover {
+    /* 滑鼠碰觸到按鈕會換色 */
+    background: linear-gradient(0deg, #f8aa34 45%, #fdd69a 45%);
+
+}
+
+.main__intro__button p {
+    /* 位移與按鈕一樣位置 */
+    margin: 0 0 0 145px;
+}
+
+.main__intro__image {
+    float: right;
+    transform: scale(120%);
+}
+
+
+/* article below */
+/* article below */
+/* article below */
+
+.main__container__below__article {
+    /* 使後代元素置中 */
+    text-align: center;
+}
+
+.main__container__below__pack {
+    /* display使其div在父元素內
+    width調整大小
+    margin推開與下方距離 */
+    display: inline-block;
+    width: 1000px;
+    margin: 0 0 80px 0;
+}
+
+.main__container__below__top {
+    /* margin調整位置跟上方的距離
+    float往左移 */
+    margin: 50px 500px 0 0;
+    float: left;
+
+}
+
+.main__container__below__left {
+    /* float將文字整塊左移
+    text-align撲滿整個父元素
+    width來建立與左邊文字間距 */
+    width: 490px;
+    text-align: justify;
+    float: right;
+}
+
+.main__container__below__right {
+    /* float將文字整塊右移
+    text-align撲滿整個父元素
+    width來建立與左邊文字間距 */
+    width: 490px;
+    text-align: justify;
+    float: left;
+
+}
+
+/* footer */
+/* footer */
+/* footer */
+
+footer{
+    background-color: #e9e7e7;
+    height: 100px;
+    }
+
+.footer__container {
+    /* width設立祖先元素總寬
+    margin置中footer
+    padding作用為壓縮其後代元素使物件置中 */
+    padding: 38.5px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.footer__copyright {
+    /* display讓子元素不超出父元素 */
+    display: inline-block;
+}
+.footer__copyright p{
+    margin: 0;
+}
+
+.footer__logo--active{
+    /* 父元素帶子元素一到右邊 */
+    float: right;
+}
+
+.footer__logo--active a {
+    /* 建立子元素的間距 */
+    padding: 0 0 0 50px;
+    color: black;
+}
+
+.footer__logo--active a:hover {
+    color: #ff9900;
+}

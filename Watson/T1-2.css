@@ -3,8 +3,9 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+
 
 .header {
     text-align: center;
@@ -171,6 +172,9 @@ button:hover {
     display: inline-block;
     margin: 70px 0 0 292px;
     width: 1000px;
+}
+.main_2_head h2{
+    margin: 0 0 0 127px;
 }
 
 .main_2_p {
