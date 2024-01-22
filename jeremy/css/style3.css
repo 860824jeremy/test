@@ -49,22 +49,23 @@ nav{
 
 nav ul{
     display: block;
+    width: 700px;
     margin: 0;
     padding: 0;
+    text-align-last: justify;
 }
 
 nav a{
     color: #939393;
 }
 
+nav a:hover{
+    color: #f99204;
+}
+
 nav li{
     display: inline-block;
     padding: 20px 0;
-}
-
-nav li+li{
-    margin-left: 70px;
-
 }
 
 nav a{
@@ -167,15 +168,23 @@ footer{
 
 .footer__icon{
     display: inline-block;
+    font-size: 0;
 }
 
-.footer__icon a{
+/* .footer__icon a{
     margin-left: 20px;
     font-size: 30px;
+    display: inline-block;
+} */
+
+.a{
+    font-size: 30px;
+    margin-left: 20px;
 }
 
 i{
     color: black;
+    display: inline-block;
 }
 
 i:hover {
