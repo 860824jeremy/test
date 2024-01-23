@@ -23,6 +23,10 @@ header{
     width: 150px;
 }
 
+.logo p{
+    margin: 0;
+}
+
 a{
     text-decoration: none;
 }
@@ -74,7 +78,7 @@ nav a{
 }
 
 .main{
-    margin: 60px auto 300px;
+    margin: 60px auto 200px;
 }
 
 .block{
@@ -97,7 +101,7 @@ nav a{
 }
 
 section{
-    padding: 0 100px 200px 100px;
+    padding: 0 80px 150px 80px;
 }
 
 .section-img{    
@@ -105,6 +109,7 @@ section{
     width: 390px;
     height: 362px;
     object-fit: cover;
+    margin-left: 40px;
 }
 .try-it-button{
     width: 200px;
@@ -116,7 +121,7 @@ button{
     height: 50px;
     background-image: linear-gradient(#ffba54 50%, #f99204 50%);
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     font-size: 1.5em;
     color: white;
     cursor: pointer;
@@ -145,12 +150,12 @@ button{
 }
 .article-content p{
     display: inline-block;
-    margin: 0 0 30px 0;
+    margin: 0 10px 30px 0;
 }
 
 
 .article-content{
-    columns: 380px auto;
+    columns: 390px auto;
     margin: 20px 80px;
 }
 
@@ -171,22 +176,19 @@ footer{
     font-size: 0;
 }
 
-/* .footer__icon a{
+.footer__icon a{
     margin-left: 20px;
-    font-size: 30px;
     display: inline-block;
-} */
-
-.a{
-    font-size: 30px;
-    margin-left: 20px;
 }
 
 i{
     color: black;
     display: inline-block;
+    font-size: 30px;
 }
 
 i:hover {
     color: #f99204;
 }
+
+
