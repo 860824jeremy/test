@@ -1,3 +1,6 @@
+* {
+    outline: 1px solid red;
+}
 body {
     /* 讓畫面可以撲滿 */
     margin: 0;
