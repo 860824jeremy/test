@@ -39,16 +39,24 @@ nav li a{
     padding: 20px;
     text-decoration: none;
     color: #939393;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    /* text-align-last: center; */
 }
 
 nav li{
     display: inline-block;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+}
+
+nav li+li{
+    margin-left: 30px;
 }
 
 nav ul{
-    width: 750px;
-    text-align-last: justify;
+    /* width: 750px; */
+    /* text-align-last: justify; */
     padding: 0;
     margin: 0;
 }
@@ -56,7 +64,6 @@ nav ul{
 nav{
     display: inline-block;
     margin-left: 50px;
-    align-items: center;
 }
 
 .block{
@@ -110,6 +117,12 @@ button{
     font-size: 10px;
 }
 
+.box-img{
+    width: 360px;
+    height: 340px;
+    object-fit: cover;
+}
+
 article{
     margin: 0 60px;
 }
@@ -133,7 +146,7 @@ footer{
 }
 .footer__copyright{
     display: inline-block;
-    margin: 30px 0;
+    margin: 30px 0 30px 40px;
     vertical-align: middle;
 }
 
@@ -141,6 +154,7 @@ footer{
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
+    margin-right: 80px;
 }
 
 .footer__icon a{

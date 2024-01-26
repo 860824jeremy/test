@@ -134,11 +134,14 @@ button{
     float: right;
 }
 
-.clearfix::after{
+.clearfix{
+    display: inline-block;
+}
+/* .clearfix::after{
     display: block;
     content: "";
     clear: both;
-}
+} */
 
 .article-title{
     margin: 0 60px;
